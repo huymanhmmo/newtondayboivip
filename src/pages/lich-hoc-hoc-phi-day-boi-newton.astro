@@ -46,18 +46,22 @@ const sortedCourses = courses.sort((a, b) => a.data.order - b.data.order);
                   <strong>{course.data.title}</strong>
                 </td>
                 <td class="price-td">
-                  <span class="price-span">{course.data.price_group_1}</span>
-                  <span class="desc-span">({course.data.price_group_1_desc})</span>
+                  <div class="price-container">
+                    <span class="price-span">{course.data.price_group_1}</span>
+                    <span class="desc-span">({course.data.price_group_1_desc})</span>
+                  </div>
                 </td>
                 <td class="price-td">
-                  {course.data.price_group_2 ? (
-                    <>
-                      <span class="price-span">{course.data.price_group_2}</span>
-                      <span class="desc-span">({course.data.price_group_2_desc})</span>
-                    </>
-                  ) : (
-                    <span class="na-span">-</span>
-                  )}
+                  <div class="price-container">
+                    {course.data.price_group_2 ? (
+                      <>
+                        <span class="price-span">{course.data.price_group_2}</span>
+                        <span class="desc-span">({course.data.price_group_2_desc})</span>
+                      </>
+                    ) : (
+                      <span class="na-span">-</span>
+                    )}
+                  </div>
                 </td>
               </tr>
             ))}
@@ -124,11 +128,16 @@ const sortedCourses = courses.sort((a, b) => a.data.order - b.data.order);
 
   <!-- Register Form Placement -->
   <section class="section-padding register-callout-section" id="register-form">
-    <div class="container max-width-register">
-      <FormRegister 
-        title="ĐĂNG KÝ XẾP LỊCH HỌC PHÙ HỢP"
-        subtitle="Để lại thông tin để giữ chỗ lớp bơi hè và nhận ưu đãi học phí tốt nhất ngay hôm nay."
-      />
+    <div class="container register-split-container">
+      <div class="register-image-box">
+        <img src="/images/tuyen-sinh/tuyen-sinh-hoc-boi-newton-cau-giay.png" alt="Tuyển sinh học bơi Newton Cầu Giấy" class="register-side-img" width="580" height="400" loading="lazy" />
+      </div>
+      <div class="register-form-box">
+        <FormRegister 
+          title="ĐĂNG KÝ XẾP LỊCH HỌC PHÙ HỢP"
+          subtitle="Để lại thông tin để giữ chỗ lớp bơi hè và nhận ưu đãi học phí tốt nhất ngay hôm nay."
+        />
+      </div>
     </div>
   </section>
 </Layout>
@@ -213,6 +222,11 @@ const sortedCourses = courses.sort((a, b) => a.data.order - b.data.order);
   }
 
   .price-td {
+    /* Keep default table-cell display to avoid breaking table layout */
+    vertical-align: middle;
+  }
+
+  .price-container {
     display: flex;
     flex-direction: column;
     gap: 4px;
@@ -350,9 +364,38 @@ const sortedCourses = courses.sort((a, b) => a.data.order - b.data.order);
     margin-bottom: 4px;
   }
 
-  .max-width-register {
-    max-width: 600px;
+  .register-split-container {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    max-width: 1100px;
     margin: 0 auto;
+  }
+
+  .register-image-box {
+    width: 100%;
+    position: relative;
+  }
+
+  .register-side-img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: var(--shadow-lg);
+    border: 4px solid var(--color-white);
+  }
+
+  .register-form-box {
+    width: 100%;
+  }
+
+  @media (max-width: 1024px) {
+    .register-split-container {
+      grid-template-columns: 1fr;
+      gap: 30px;
+      max-width: 600px;
+    }
   }
 
   @media (max-width: 1024px) {

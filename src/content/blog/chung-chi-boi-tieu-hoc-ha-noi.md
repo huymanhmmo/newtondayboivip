@@ -34,7 +34,7 @@ Do đó, sở hữu một tấm [chứng chỉ bơi tiểu học] không chỉ g
 Nhiều phụ huynh chia sẻ rằng việc cho con đi học bơi để thi lấy chứng chỉ gặp không ít khó khăn thực tế:
 * **Học ở các bể bơi công cộng không có kiểm tra sát hạch**: Nhiều bể bơi kinh doanh dịch vụ thông thường chỉ dạy bơi cơ bản mà không liên kết với các đơn vị chức năng để tổ chức thi và cấp chứng chỉ bơi chuẩn quốc gia cho học sinh.
 * **Trẻ nhút nhát học mãi không bơi hết 25m bể**: Các lớp học bơi tập trung quá đông học sinh khiến giáo viên không thể theo sát uốn nắn động tác đạp chân, quạt tay phối hợp nhịp thở. Hậu quả là bé bơi nhanh mệt, không đủ sức để hoàn thành cự ly 25m theo yêu cầu sát hạch.
-* **Mất thời gian di chuyển**: Việc tìm kiếm một bể bơi sạch sẽ, nước ấm bốn mùa kín gió gần nhà để con có thể kiên trì luyện tập đều đặn là điều không dễ dàng đối với phụ huynh bận rộn.
+* **Mất thời gian di chuyển**: Việc tìm kiếm một bể bơi sạch sẽ, có mái che tránh mưa nắng và gần nhà để con có thể kiên trì luyện tập đều đặn là điều không dễ dàng đối với phụ huynh bận rộn.
 
 Chính vì vậy, lựa chọn một trung tâm chuyên nghiệp có giáo trình dạy bơi chuẩn sư phạm và liên kết tổ chức kiểm tra năng lực cấp chứng chỉ chính thức tại chỗ là giải pháp tối ưu hàng đầu cho gia đình.
 
@@ -45,8 +45,8 @@ Chính vì vậy, lựa chọn một trung tâm chuyên nghiệp có giáo trìn
 Nằm ngay tại khuôn viên trường học liên cấp Newton khép kín, cuối ngõ 234 đường Hoàng Quốc Việt (KĐT Nam Cường, Nghĩa Đô, Cầu Giấy), trung tâm CanSwim là địa chỉ tin cậy số một chuyên đào tạo bơi lội trẻ em và hỗ trợ sát hạch lấy chứng chỉ bơi học đường:
 
 ### Cơ sở vật chất đạt tiêu chuẩn phổ cập bơi lội học đường
-* **Bể bơi trong nhà có mái che, kín gió**: Sử dụng hệ thống gia nhiệt nước ấm tự động (luôn giữ ở mức 29 - 31 độ C), giúp trẻ thoải mái luyện tập trong môi trường nước ấm áp quanh năm, không lo bị cảm lạnh.
-* **Lọc nước điện phân muối Châu Âu**: Nguồn nước tinh khiết không mùi clo hóa chất độc hại, bảo vệ làn da nhạy cảm và đôi mắt non nớt của trẻ nhỏ tối đa.
+* **Bể bơi có mái che kín gió**: Bể bơi trường Newton được thiết kế có mái che kiên cố, kín gió giúp tránh nắng gắt ngày hè và che mưa giông tuyệt đối, đảm bảo sức khỏe cho trẻ khi học bơi.
+* **Hệ thống lọc tuần hoàn tiêu chuẩn & Học phí cực rẻ**: Nước bể bơi lọc tuần hoàn tự động liên tục, trong sạch và an toàn cho da, mắt của trẻ. Mức học phí học bơi cực rẻ, trọn gói đã bao gồm 30 vé vào cửa (15 buổi học cùng HLV + 15 buổi tự tập miễn phí) giúp phụ huynh tiết kiệm tối đa chi phí.
 * **Làn bơi tiêu chuẩn dài 25m**: Giúp bé làm quen trực tiếp với cự ly thi sát hạch thực tế, chuẩn bị tâm lý tự tin nhất cho ngày kiểm tra.
 
 ### Giáo trình giảng dạy chuẩn hóa của HLV trưởng Bùi Văn Cán

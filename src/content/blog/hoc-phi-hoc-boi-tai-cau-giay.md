@@ -1,6 +1,6 @@
 ---
 title: "Học phí học bơi ở Cầu Giấy bao nhiêu tiền? Bảng giá khóa học bơi Newton rẻ và trọn gói"
-description: "Cập nhật học phí học bơi ở Hà Nội Cầu Giấy mới nhất. Đăng ký lớp học bơi giá rẻ trọn gói đã gồm vé bơi tại bể bơi nước nóng Newton Cầu Giấy."
+description: "Cập nhật học phí học bơi ở Hà Nội Cầu Giấy mới nhất. Đăng ký lớp học bơi giá rẻ trọn gói đã gồm vé bơi tại bể bơi trường Newton Cầu Giấy."
 pubDate: 2026-05-31
 image: "/images/tuyen-sinh/lop-boi-tap-the-1t5.png"
 tags: ["giá 1 khóa học bơi", "học bơi giá rẻ", "bể bơi Newton", "học bơi Cầu Giấy"]
@@ -43,7 +43,7 @@ Nhiều phụ huynh và học viên vì quá ưu tiên giá rẻ đã tìm kiế
 2. **Sĩ số lớp quá đông**: Lớp học bơi giá rẻ thường gom từ 20 đến 30 học viên vào một ca, giáo viên chỉ đứng trên bờ chỉ đạo mà không xuống nước hướng dẫn trực tiếp, gây mất an toàn nghiêm trọng cho trẻ nhỏ.
 3. **Chất lượng bể bơi quá kém**: Lớp học tổ chức tại các bể bơi công cộng ngoài trời dùng hóa chất tẩy clo nồng độ cao gây cay mắt, đỏ mắt và kích ứng da cho học viên, bể đông đúc không có không gian luyện tập.
 
-Do đó, một lớp học bơi "giá rẻ thực sự" phải là lớp học có chi phí hợp lý đi kèm chất lượng dịch vụ đạt chuẩn, trọn gói rõ ràng từ đầu và được tổ chức tại các bể bơi có cơ sở vật chất khang trang, nước ấm sạch sẽ quanh năm.
+Do đó, một lớp học bơi "giá rẻ thực sự" phải là lớp học có chi phí hợp lý đi kèm chất lượng dịch vụ đạt chuẩn, trọn gói rõ ràng từ đầu và được tổ chức tại các bể bơi có cơ sở vật chất khang trang, sạch sẽ và có mái che chắn nắng mưa tốt.
 
 ---
 
@@ -51,8 +51,8 @@ Do đó, một lớp học bơi "giá rẻ thực sự" phải là lớp học c
 
 Để mang đến giải pháp học bơi tối ưu nhất cho học viên, trung tâm CanSwim triển khai chương trình đào tạo bơi lội trọn gói, chi phí hợp lý tại [Bể bơi Newton Cầu Giấy](/be-boi-newton-hoang-quoc-viet/):
 
-* **Địa điểm học thực hành**: Bể bơi bốn mùa nước ấm trong nhà trường liên cấp Newton, cuối ngõ 234 Hoàng Quốc Việt (KĐT Nam Cường, Nghĩa Đô, Cầu Giấy).
-* **Cơ sở vật chất**: Bể nước ấm ổn định 29 - 31 độ C kín gió, áp dụng công nghệ lọc nước muối điện phân Châu Âu trong sạch tự nhiên, bảo vệ da và mắt tuyệt đối.
+* **Địa điểm học thực hành**: Bể bơi trường liên cấp Newton (bể bơi có mái che), cuối ngõ 234 Hoàng Quốc Việt (KĐT Nam Cường, Nghĩa Đô, Cầu Giấy).
+* **Cơ sở vật chất**: Bể bơi có mái che kiên cố, kín gió giúp học viên tránh nắng gắt ngày hè và che mưa giông. Hệ thống lọc tuần hoàn nước tiêu chuẩn tự động liên tục giúp làn nước trong sạch và an toàn cho da, mắt. Gói học phí cực rẻ trọn gói đã bao gồm 30 vé vào cửa (15 buổi học HLV + 15 buổi tự tập).
 
 ### Bảng học phí khóa học bơi CanSwim chi tiết mới nhất:
 
@@ -71,7 +71,7 @@ Học viên có thể tham khảo chi tiết về lịch học và đăng ký gi
 ## 5. Những dụng cụ học bơi thiết yếu cần chuẩn bị cho khóa học
 
 Để khóa học bơi đạt hiệu quả cao, học viên cần tự chuẩn bị một số dụng cụ cá nhân đạt chuẩn:
-1. **Kính bơi**: Giúp nhìn rõ dưới nước muối và bảo vệ mắt khỏi bụi bẩn.
+1. **Kính bơi**: Giúp nhìn rõ dưới nước và bảo vệ mắt khỏi bụi bẩn.
 2. **Mũ bơi silicon**: Giúp cố định tóc gọn gàng, giảm sức cản của nước.
 3. **Quần áo bơi co giãn**: Thoải mái di chuyển đạp chân quạt tay dưới nước.
 

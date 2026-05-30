@@ -272,7 +272,7 @@ Học viên bắt buộc phải mặc trang phục bơi chuyên dụng (quần b
 
 Bể bơi không cho phép mặc quần đùi jean hoặc áo thun thông thường xuống bể vì sợi vải thô có thể làm tắc nghẽn hệ thống lọc nước tuần hoàn.
 
-Kính bơi giúp bảo vệ mắt bạn khỏi nước bể muối điện phân nhẹ.
+Kính bơi giúp bảo vệ đôi mắt của bạn khỏi tiếp xúc trực tiếp với nước bể.
 
 Mũ bơi là bắt buộc đối với tất cả học viên có mái tóc dài để giữ vệ sinh chung, hạn chế tóc rụng trôi nổi trên mặt nước bể bơi.
 

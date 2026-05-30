@@ -55,8 +55,8 @@ Tại trung tâm dạy bơi CanSwim, các dụng cụ phao bơi tập luyện nh
 
 Để khóa học bơi của học sinh đạt hiệu quả cao và an toàn nhất, việc lựa chọn địa điểm học tập tại các bể bơi hiện đại là điều vô cùng cần thiết. Lớp học bơi trẻ em CanSwim tại [Bể bơi Newton Cầu Giấy](/be-boi-newton-hoang-quoc-viet/) là sự lựa chọn số một cho gia đình cư dân Nghĩa Đô, KĐT Nam Cường, Hoàng Quốc Việt:
 
-* **Bể bơi nước ấm ổn định bốn mùa**: Hệ thống gia nhiệt nước ấm tự động luôn giữ nhiệt độ nước từ 29 - 31 độ C. Bé có thể học bơi thoải mái quanh năm trong không gian kín gió khang trang mà không lo cảm lạnh.
-* **Công nghệ lọc nước điện phân muối Châu Âu**: Nguồn nước được xử lý tự nhiên không hóa chất clo công nghiệp độc hại. Do đó, nước bể cực kỳ êm dịu, không gây cay mắt, đỏ mắt hay khô xơ tóc cho các bé học sinh.
+* **Bể bơi có mái che kín gió, thoáng mát**: Bể bơi trường Newton được thiết kế có mái che kiên cố, kín gió, che mưa che nắng tốt giúp bảo vệ bé khỏi nắng gắt và mưa giông bất chợt ngày hè.
+* **Hệ thống lọc tuần hoàn tiêu chuẩn & Học phí cực rẻ**: Nước bể được lọc tuần hoàn liên tục giúp giữ làn nước luôn trong sạch, vệ sinh an toàn cho làn da học sinh. Đặc biệt, học phí tại CanSwim cực kỳ rẻ, trọn gói đã bao gồm 30 vé vào bể bơi cho học sinh thoải mái rèn luyện (gồm 15 buổi học trực tiếp cùng HLV CanSwim và tặng 15 buổi tự tập bơi miễn phí).
 * **Giáo trình giảng dạy kèm riêng chuyên nghiệp**: Đội ngũ huấn luyện viên dạy bơi kèm riêng nhóm nhỏ (1-3 trẻ) cam kết theo sát uốn nắn kỹ thuật đạp chân quạt tay đúng kỹ thuật và đảm bảo an toàn tuyệt đối.
 
 Phụ huynh có thể tham khảo bảng học phí chi tiết và đăng ký cho bé trải nghiệm tại trang [Lớp học bơi trẻ em](/lop-hoc-boi-tre-em-be-boi-newton) hoặc [Lịch học & Học phí dạy bơi Newton](/lich-hoc-hoc-phi-day-boi-newton) của chúng tôi.
@@ -66,7 +66,7 @@ Phụ huynh có thể tham khảo bảng học phí chi tiết và đăng ký ch
 ## 5. Những lưu ý bảo quản đồ bơi và kính bơi sau khi học
 
 Để trang bị bơi lội của bé bền bỉ lâu dài, phụ huynh cần hướng dẫn con bảo quản đúng cách sau mỗi buổi học bơi:
-1. **Xả sạch bằng nước ngọt ngay sau khi bơi**: Giặt nhẹ nhàng quần áo bơi bằng nước lạnh sạch để loại bỏ nước muối bám trên vải, không vắt mạnh hay giặt bằng máy giặt.
+1. **Xả sạch bằng nước ngọt ngay sau khi bơi**: Giặt nhẹ nhàng quần áo bơi bằng nước lạnh sạch để loại bỏ clo và chất bẩn bám trên vải, không vắt mạnh hay giặt bằng máy giặt.
 2. **Phơi đồ bơi ở nơi thoáng mát**: Tránh phơi trực tiếp dưới ánh nắng mặt trời gắt để giữ màu sắc và độ co giãn đàn hồi của sợi vải thun.
 3. **Bảo quản kính bơi cẩn thận**: Không lau mặt trong của mắt kính bơi bằng ngón tay hay khăn lau để tránh làm xước và mất lớp chống bám sương mù. Hãy tráng kính bằng nước sạch rồi để tự khô tự nhiên.
 

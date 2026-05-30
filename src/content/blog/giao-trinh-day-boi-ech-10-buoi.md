@@ -79,12 +79,12 @@ Lớp học bơi kèm riêng sĩ số chỉ từ 1 đến 3 học viên/ca giúp
 
 ---
 
-## 4. Địa điểm học bơi bốn mùa nước ấm lý tưởng tại Bể bơi Newton Cầu Giấy
+## 4. Địa điểm học bơi có mái che mát mẻ và giá rẻ tại Bể bơi Newton Cầu Giấy
 
 Để thực hành giáo trình bơi ếch một cách thoải mái nhất, lớp học bơi CanSwim được tổ chức tại [Bể bơi Newton Cầu Giấy](/be-boi-newton-hoang-quoc-viet/), cuối ngõ 234 Hoàng Quốc Việt (KĐT Nam Cường, phường Nghĩa Đô):
 
-* **Bể nước ấm ổn định 29 - 31 độ C**: Bể bơi trong nhà có mái che khép kín, hoàn toàn kín gió giúp học viên thoải mái bơi lội quanh năm mà không lo bị cảm lạnh.
-* **Công nghệ điện phân muối Châu Âu**: Nước bể cực kỳ sạch sẽ, trong suốt tự nhiên, không sử dụng hóa chất clo tẩy rửa công nghiệp nên tuyệt đối không cay mắt, đỏ mắt hay khô xơ da của trẻ nhỏ.
+* **Bể bơi có mái che mát mẻ**: Bể bơi trường Newton được thiết kế có mái che kiên cố, thoáng đãng, kín gió giúp tránh ánh nắng gắt ngày hè và che mưa giông tuyệt đối, đảm bảo sức khỏe học viên.
+* **Lọc nước tuần hoàn tiêu chuẩn & Học phí cực rẻ**: Nước bể bơi được lọc tuần hoàn liên tục, vệ sinh định kỳ giữ làn nước trong sạch. Đặc biệt, học phí cực rẻ trọn gói đã bao gồm 30 vé vào cửa (gồm 15 buổi học trực tiếp cùng HLV CanSwim và tặng thêm 15 buổi tự tập bơi miễn phí) giúp học viên thoải mái rèn luyện mà không lo phát sinh chi phí mua vé riêng.
 * **Làn bơi tiêu chuẩn dài 25m**: Rộng rãi và thoáng mát, vô cùng lý tưởng cho việc rèn luyện thể lực bơi quãng dài.
 
 Học viên và phụ huynh muốn nhận tư vấn chi tiết có thể truy cập trang [Lớp dạy bơi bể bơi Newton 234 Hoàng Quốc Việt](/lop-day-boi-be-boi-newton-234-hoang-quoc-viet/).

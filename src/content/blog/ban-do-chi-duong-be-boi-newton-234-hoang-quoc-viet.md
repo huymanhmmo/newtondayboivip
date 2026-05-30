@@ -20,12 +20,12 @@ Nơi đây mang lại một không gian rèn luyện cực kỳ trong lành và 
 
 #### Đặc điểm thiết kế bể bơi có mái che
 
-Bể bơi được thiết kế theo mô hình bể bơi có mái che hiện đại, kín gió tuyệt đối. Học viên tại đây có thể duy trì lịch tập luyện đều đặn suốt bốn mùa mà không lo mưa gió.
+Bể bơi được thiết kế theo mô hình bể bơi có mái che hiện đại, kín gió, che mưa che nắng tốt. Học viên tại đây có thể duy trì lịch tập luyện đều đặn trong suốt mùa hè mà không lo mưa nắng gắt.
 
-Hệ thống mái che kết hợp kính cường lực xung quanh giúp đón ánh sáng tự nhiên tốt. Thiết kế này bảo đảm sức khỏe tối đa cho học viên, tránh cảm lạnh khi bơi lâu.
+Hệ thống mái che kết hợp kính cường lực xung quanh giúp đón ánh sáng tự nhiên tốt. Thiết kế này bảo đảm sức khỏe tối đa cho học viên, tránh nắng gắt chiếu trực tiếp khi bơi lâu.
 
 ![Không gian bể bơi có mái che hiện đại tại trường liên cấp Newton](/images/be-boi-newton-be-boi-co-mai-che.jpg)
-<p class="image-caption">Bể bơi Newton có mái che kín gió, cho phép học viên thoải mái tập luyện suốt bốn mùa.</p>
+<p class="image-caption">Bể bơi Newton có mái che kín gió, cho phép học viên thoải mái tập luyện tránh mưa nắng gắt.</p>
 
 ---
 
@@ -135,7 +135,7 @@ Bể bơi nước nóng Newton 234 Hoàng Quốc Việt ghi điểm nhờ hệ t
 
 Bể bơi trang bị phòng thay đồ và tắm tráng nước nóng lạnh riêng biệt cho nam và nữ. Phòng tắm luôn được vệ sinh sạch sẽ, vòi sen áp lực nước mạnh mẽ.
 
-Nguồn nước ấm được duy trì ổn định giúp học viên tắm tráng thoải mái sau khi lên bờ. Bể bơi cũng cung cấp sẵn máy sấy tóc công suất cao để học viên sử dụng.
+Nguồn nước nóng tắm tráng được duy trì ổn định giúp học viên tắm tráng thoải mái và ấm áp sau khi lên bờ. Bể bơi cũng cung cấp sẵn máy sấy tóc công suất cao để học viên sử dụng.
 
 #### Tủ gửi đồ cá nhân an toàn có khóa riêng
 
@@ -215,11 +215,9 @@ Khung giờ bơi lý tưởng nhất là từ 16h00 đến 20h30 hàng ngày và
 
 Phụ huynh gửi ô tô ngoài lòng đường khu đô thị Nam Cường được miễn phí đỗ xe ô tô. Bạn hãy chú ý đỗ xe đúng vị trí quy định để không cản trở giao thông.
 
-### Bể bơi Newton có nước nóng quanh năm không?
+### Bể bơi Newton có mái che che mưa nắng tốt không?
 
-Có, hồ bơi được trang bị máy cấp nhiệt hiện đại. Nhiệt độ nước luôn được duy trì ổn định từ 28 đến 31 độ C vào mùa lạnh.
-
-Điều này bảo đảm cho học viên có trải nghiệm học bơi tốt nhất. Bạn hoàn toàn có thể an tâm tập luyện vào mùa đông lạnh giá tại hồ bơi.
+Có, hồ bơi được thiết kế có mái che kiên cố và hiện đại, giúp chắn gió, tránh ánh nắng gắt trực tiếp của ngày hè và che mưa giông tuyệt đối. Điều này bảo đảm cho học viên có trải nghiệm học bơi an toàn, không lo say nắng hay gián đoạn lịch học do thời tiết mưa gió. Bể bơi phục vụ rất tốt cho nhu cầu học bơi mát mẻ và tự tập luyện vào mùa hè.
 
 ### Hồ bơi Newton có dịch vụ trông giữ đồ tắm và phao bơi không?
 

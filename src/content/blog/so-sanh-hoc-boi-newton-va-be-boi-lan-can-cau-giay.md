@@ -11,7 +11,7 @@ tags: ["học bơi ở đâu Cầu Giấy", "bể bơi Newton", "bể bơi học
 Học bơi là một hành trình rèn luyện kỹ năng sinh tồn và nâng cao sức khỏe đòi hỏi sự kiên trì đi lại đều đặn từ 2 đến 3 buổi mỗi tuần. Chính vì vậy, khoảng cách di chuyển từ nhà hay cơ quan đến bể bơi là yếu tố quyết định hàng đầu. Đối với cư dân sinh sống tại khu vực phường Nghĩa Đô, KĐT Nam Cường, KĐT Nghĩa Đô và dọc các tuyến đường Hoàng Quốc Việt, Nguyễn Phong Sắc, Trần Cung, Phạm Văn Đồng, việc chọn một bể bơi ngay trong bán kính 1km là tối ưu nhất.
 
 Khi tìm kiếm lớp học bơi tại khu vực này, học viên thường phân vân giữa ba bể bơi nằm rất sát nhau:
-*   **Bể bơi bốn mùa nước ấm Newton Cầu Giấy**: Nằm cuối ngõ 234 Hoàng Quốc Việt (khuôn viên trường tiểu học Newton).
+*   **Bể bơi trường Newton Cầu Giấy (bể có mái che)**: Nằm cuối ngõ 234 Hoàng Quốc Việt (khuôn viên trường tiểu học Newton).
 *   **Bể bơi Học viện Kỹ thuật Quân sự (HVKTQS)**: Nằm tại số 236 Hoàng Quốc Việt (ngay cạnh ngõ 234).
 *   **Bể bơi Học viện Chính trị Quốc gia Hồ Chí Minh**: Nằm tại số 135 Nguyễn Phong Sắc (cách ngõ 234 Hoàng Quốc Việt khoảng 1km).
 
@@ -45,7 +45,7 @@ Dưới đây là bảng tổng hợp so sánh các thông số kỹ thuật, ti
       </tr>
       <tr>
         <td><strong>Không gian & Mái che</strong></td>
-        <td>Bể bơi trong nhà khép kín 100%, trần cao thoáng đãng, kín gió, bơi lội quanh năm.</td>
+        <td>Bể bơi có mái che rộng rãi, thoáng mát, kín gió, che nắng che mưa tốt.</td>
         <td>Bể bơi ngoài trời (chỉ mở cửa vào mùa hè) hoặc có mái vòm tạm thời, chịu ảnh hưởng lớn từ thời tiết.</td>
         <td>Bể bơi ngoài trời/bán ngoài trời, chủ yếu hoạt động vào mùa nắng nóng hè.</td>
       </tr>
@@ -57,13 +57,13 @@ Dưới đây là bảng tổng hợp so sánh các thông số kỹ thuật, ti
       </tr>
       <tr>
         <td><strong>Công nghệ lọc nước</strong></td>
-        <td>Điện phân muối sinh học Châu Âu không hóa chất, nước tinh khiết không mùi clo, bảo vệ da và mắt.</td>
+        <td>Hệ thống lọc tuần hoàn tiêu chuẩn, vệ sinh và thay nước định kỳ thường xuyên.</td>
         <td>Hệ thống lọc tuần hoàn sử dụng hóa chất clo công nghiệp truyền thống khử trùng.</td>
         <td>Hệ thống lọc tiêu chuẩn, có sử dụng hóa chất xử lý nước (mùi clo khá nồng vào mùa hè cao điểm).</td>
       </tr>
       <tr>
         <td><strong>Nhiệt độ nước sưởi</strong></td>
-        <td>Bể sưởi bốn mùa nước ấm tự động 29 - 31 độ C. Bơi lội thoải mái cả khi trời lạnh.</td>
+        <td>Bể ngoài trời có mái che, không gia nhiệt, nước mát tự nhiên (thích hợp học bơi hè & ngày ấm).</td>
         <td>Nước lạnh tự nhiên theo nhiệt độ ngoài trời. Không thể học bơi vào mùa thu, mùa đông hay mưa lạnh.</td>
         <td>Nước lạnh tự nhiên. Chỉ mở cửa phục vụ mùa hè nắng nóng.</td>
       </tr>
@@ -72,6 +72,12 @@ Dưới đây là bảng tổng hợp so sánh các thông số kỹ thuật, ti
         <td>Bể trường học khép kín, phân làn dạy học rõ ràng, không ồn ào xô bồ bởi khách vãng lai.</td>
         <td>Lượng khách bơi tự do và chiến sĩ luyện tập đông, không gian ồn ào, xô bồ trong mùa hè.</td>
         <td>Bể dịch vụ mở cửa tự do cho người dân và sinh viên, rất đông đúc và chật chội vào giờ cao điểm.</td>
+      </tr>
+      <tr>
+        <td><strong>Học phí & Vé vào cửa</strong></td>
+        <td>Học phí cực rẻ, trọn gói đã bao gồm 30 vé vào bể (15 buổi HLV + 15 buổi tự bơi). Vé lượt tự bơi cũng rất rẻ.</td>
+        <td>Học phí cao hơn, chưa bao gồm vé vào cửa (phải tự mua vé riêng khá bất tiện).</td>
+        <td>Chỉ dạy hè, vé rẻ nhưng thường không trọn gói, số buổi thực hành ít hơn.</td>
       </tr>
     </tbody>
   </table>
@@ -85,14 +91,14 @@ Dưới đây là bảng tổng hợp so sánh các thông số kỹ thuật, ti
 Là bể bơi nằm trong khuôn viên trường học liên cấp quốc tế Newton Nghĩa Đô, đây là địa chỉ chuyên biệt tối ưu cho việc dạy và học bơi chất lượng cao:
 
 *   **Ưu điểm vượt trội**:
-    1.  **Nước ấm bốn mùa**: Hệ thống gia nhiệt nước ấm ổn định từ 29 - 31 độ C giúp học viên bơi lội quanh năm mà không lo cảm lạnh hay gián đoạn quá trình học tập.
-    2.  **Nước lọc muối điện phân sinh học**: Đây là điểm cộng lớn nhất của bể bơi Newton. Công nghệ điện phân muối Châu Âu khử trùng nước tự nhiên, không mùi clo hóa chất độc hại, bảo vệ làn da nhạy cảm và đôi mắt của trẻ nhỏ tối đa. Bạn có thể thoải mái mở mắt dưới nước mà không bị xót hay đỏ mắt.
+    1.  **Học phí & Giá vé cực rẻ**: Đây là điểm cộng lớn nhất. Bể bơi Newton có giá vé vào cửa rẻ, kết hợp học phí học bơi vô cùng tiết kiệm. Đặc biệt, học phí đã trọn gói bao gồm vé vào cửa cho 30 buổi (trong đó có 15 buổi học trực tiếp cùng HLV CanSwim và tặng thêm 15 buổi tự bơi để luyện tập miễn phí).
+    2.  **Mái che kín gió, thoáng mát**: Bể bơi được trang bị mái che hiện đại, kiên cố, thoáng mát, kín gió giúp bảo vệ học viên khỏi nắng gắt hay mưa giông bất chợt vào mùa hè.
     3.  **Độ sâu lý tưởng và an toàn**: Độ sâu của bể bơi Newton từ 1.1m đến 1.3m là "khoảng vàng" an toàn để dạy học bơi. Học viên luôn có thể đứng chân chạm đáy để lấy lại thăng bằng khi sặc nước, giúp xóa bỏ tâm lý sợ độ sâu.
-    4.  **Không gian khép kín, văn minh**: Bể bơi nằm trong trường học khép kín, hạn chế tối đa khách vãng lai tự do vào làm nhiễu loạn ca học. Giáo viên CanSwim có thể phân làn dạy học riêng tư, giúp học viên tập trung cao độ.
-*   **Hạn chế**: Giá vé bể bơi đơn lẻ cao hơn so với các bể bơi công cộng thông thường (tuy nhiên, học viên đăng ký khóa học của CanSwim sẽ được bao trọn gói học phí và tặng kèm vé bơi ưu đãi).
+    4.  **Không gian trường học văn minh**: Bể bơi nằm trong khuôn viên trường học, hạn chế bớt lượng khách vãng lai tự do xô bồ vào làm nhiễu loạn ca học. Giáo viên CanSwim có thể phân làn dạy học riêng tư, giúp học viên tập trung cao độ.
+*   **Hạn chế**: Bể có mái che ngoài trời nên nhiệt độ nước phụ thuộc vào thời tiết tự nhiên, không có gia nhiệt sưởi bốn mùa cho mùa đông.
 
-![Học viên luyện tập an toàn dưới nước muối ấm tinh khiết tại Bể bơi Newton](/images/be-boi-newton-lop-hoc-boi.jpg)
-<p class="image-caption">Hình 1: Học viên tập luyện đạp chân ếch trong làn nước muối ấm an toàn tại bể bơi trường Newton Cầu Giấy.</p>
+![Học viên luyện tập an toàn tại Bể bơi Newton](/images/be-boi-newton-lop-hoc-boi.jpg)
+<p class="image-caption">Hình 1: Học viên tập luyện đạp chân ếch thoải mái tại bể bơi trường Newton Cầu Giấy.</p>
 
 ### B. Bể bơi Học viện Kỹ thuật Quân sự (236 Hoàng Quốc Việt)
 Nằm ngay sát cạnh ngõ 234 Hoàng Quốc Việt, đây là bể bơi thuộc sự quản lý của Học viện Kỹ thuật Quân sự phục vụ rèn luyện thể chất quân đội và mở cửa dịch vụ cho người dân vào mùa hè.
@@ -123,16 +129,16 @@ Bể bơi nằm trong khuôn viên của Học viện Chính trị trên đườ
 Dựa trên các phân tích chi tiết về cơ sở vật chất và trải nghiệm học tập thực tế, HLV Bùi Văn Cán đưa ra những lời khuyên chân thành giúp bạn đưa ra lựa chọn:
 
 1.  **Tuyệt đối ưu tiên Bể bơi Newton Cầu Giấy nếu đối tượng học bơi là TRẺ EM**:
-    *   Trẻ nhỏ có làn da mỏng manh, đôi mắt nhạy cảm và cơ thể rất dễ nhiễm lạnh. Sự kết hợp giữa **nước ấm sưởi bốn mùa 29-31 độ C** và **công nghệ lọc muối điện phân** tại bể Newton là lá chắn bảo vệ sức khỏe tốt nhất cho con yêu.
-    *   Độ sâu an toàn 1.1m - 1.3m giúp các bé vững tâm lý, dễ dàng thực hành giáo trình làm quen nước và thi lấy [chứng chỉ bơi tiểu học] mà không bị sợ hãi độ sâu như ở bể quân sự HVKTQS. Phụ huynh tham khảo thêm khóa học hè cho con tại [Lớp học bơi trẻ em bể bơi Newton](/lop-hoc-boi-tre-em-be-boi-newton).
+    *   Bể bơi Newton có mái che thoáng đãng tránh nắng gắt ngày hè, và độ sâu an toàn 1.1m - 1.3m giúp các bé vững tâm lý, dễ dàng thực hành giáo trình làm quen nước và thi lấy [chứng chỉ bơi tiểu học] mà không bị sợ hãi độ sâu như ở bể quân sự HVKTQS.
+    *   Đặc biệt, chi phí học bơi tại đây cực kỳ rẻ và tiết kiệm cho phụ huynh nhờ gói học phí trọn gói đã bao gồm 30 vé vào cửa (15 buổi học trực tiếp cùng HLV CanSwim + 15 buổi tự tập bơi miễn phí). Phụ huynh tham khảo thêm khóa học hè cho con tại [Lớp học bơi trẻ em bể bơi Newton](/lop-hoc-boi-tre-em-be-boi-newton).
 2.  **Lựa chọn Bể bơi Newton cho người lớn mới học bơi từ con số 0 hoặc nhát nước**:
-    *   Những người sợ độ sâu, nhát nước cần một môi trường yên tĩnh, nước ấm giúp thả lỏng cơ bắp dễ dàng và độ sâu vừa phải để chân luôn chạm đáy an toàn. Bể Newton mang lại không gian học tập riêng tư, văn minh giúp bạn vượt qua rào cản tâm lý nhanh nhất. Bạn có thể tham khảo lớp học phù hợp tại [Lớp học bơi người lớn bể bơi Newton](/hoc-boi-nguoi-lon-be-boi-newton).
+    *   Những người sợ độ sâu, nhát nước cần một môi trường yên tĩnh, độ sâu vừa phải để chân luôn chạm đáy an toàn giúp thả lỏng cơ bắp dễ dàng. Bể Newton mang lại không gian học tập riêng tư, giá học phí cực rẻ trọn gói 30 buổi giúp bạn vượt qua rào cản tâm lý nhanh nhất. Bạn có thể tham khảo lớp học phù hợp tại [Lớp học bơi người lớn bể bơi Newton](/hoc-boi-nguoi-lon-be-boi-newton).
 3.  **Bạn có thể cân nhắc bể HVKTQS hoặc bể Học viện Chính trị nếu**:
     *   Bạn là người lớn đã biết bơi cơ bản, có thể lực tốt, muốn tìm một không gian bể sâu để tập luyện bơi đường dài nâng cao sức bền thể chất.
-    *   Bạn chỉ có nhu cầu tắm mát tự do giải nhiệt ngày hè với mức chi phí vé bình dân và không ngại mùi hóa chất clo khử trùng nước bể.
+    *   Bạn chỉ có nhu cầu tắm mát giải nhiệt ngày hè với mức chi phí vé bình dân.
 
-![Bể bơi Newton bốn mùa trong nhà khép kín sang trọng tại Hoàng Quốc Việt](/images/be-boi-newton-be-boi-co-mai-che.jpg)
-<p class="image-caption">Hình 2: Không gian bể bơi Newton trong nhà khép kín hoàn toàn ấm áp, sạch sẽ lý tưởng để học bơi.</p>
+![Bể bơi Newton có mái che tại Hoàng Quốc Việt](/images/be-boi-newton-be-boi-co-mai-che.jpg)
+<p class="image-caption">Hình 2: Không gian bể bơi Newton có mái che mát mẻ lý tưởng để học bơi.</p>
 
 ---
 

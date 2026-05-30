@@ -40,8 +40,7 @@ const galleryImages = [
       <div class="hero-content">
         <span class="hero-badge">Học bơi bài bản từ cơ bản đến nâng cao</span>
         <h1 class="hero-title">
-          TUYỂN SINH<br />
-          <span class="gradient-text">KHÓA HỌC BƠI HÈ 2026</span>
+          TUYỂN SINH <span class="gradient-text">KHÓA HỌC BƠI HÈ 2026</span>
         </h1>
         <h2 class="hero-subtitle">DẠY BƠI TRỰC TIẾP TẠI BỂ BƠI NEWTON</h2>
         
@@ -77,8 +76,8 @@ const galleryImages = [
           </a>
         </div>
       </div>
-      <div class="hero-media animate-wave">
-        <img src="/images/be-boi-newton-giao-vien-huong-dan.jpg" alt="Tuyển sinh học bơi bể bơi Newton" class="hero-img" width="580" height="400" loading="eager" fetchpriority="high" />
+      <div class="hero-media">
+        <img src="/images/tuyen-sinh/uu-dai-tang-30-ve-vao-cua.png" alt="Ưu đãi tuyển sinh học bơi hè 2026 tại bể bơi Newton nhận ngay 30 vé vào bể" class="hero-img" width="580" height="400" loading="eager" fetchpriority="high" />
         <div class="hero-media-backdrop"></div>
       </div>
     </div>
@@ -658,7 +657,7 @@ const galleryImages = [
   <section class="section-padding commitment-section">
     <div class="container commitment-grid">
       <div class="commitment-media">
-        <img src="/images/be-boi-newton-be-tap-boi.jpg" alt="Học viên chưa đạt tiếp tục được kèm tại CanSwim" class="commitment-img" width="480" height="320" loading="lazy" />
+        <img src="/images/tuyen-sinh/hoc-cham-kem-toi-khi-boi-tot.png" alt="Học viên chưa đạt tiếp tục được kèm tại CanSwim cho đến khi bơi tốt" class="commitment-img" width="480" height="320" loading="lazy" />
       </div>
       
       <div class="commitment-content">
@@ -727,10 +726,15 @@ const galleryImages = [
         <h2 class="section-title">ĐÁNH GIÁ CỦA PHỤ HUYNH & HỌC VIÊN</h2>
         <p class="section-subtitle">Những phản hồi chân thực từ các phụ huynh và học viên đã hoàn thành khóa học bơi tại trung tâm CanSwim.</p>
       </div>
+    </div>
 
-      <div class="testimonials-grid">
-        {sortedTestimonials.map((testimonial) => (
-          <TestimonialCard testimonial={testimonial} />
+    <!-- Infinite horizontal marquee slider -->
+    <div class="testimonials-marquee-container">
+      <div class="testimonials-marquee-track">
+        {[...sortedTestimonials, ...sortedTestimonials].map((testimonial) => (
+          <div class="testimonial-card-wrapper">
+            <TestimonialCard testimonial={testimonial} />
+          </div>
         ))}
       </div>
     </div>
@@ -1373,11 +1377,80 @@ const galleryImages = [
     line-height: 1.3;
   }
 
-  /* Testimonials grid */
-  .testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  /* Testimonials Marquee Slider (Infinite Loop) */
+  .testimonials-marquee-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    padding: 30px 0;
+  }
+
+  /* Fade overlays at left and right edges for premium glass gradient look */
+  .testimonials-marquee-container::before,
+  .testimonials-marquee-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 150px;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .testimonials-marquee-container::before {
+    left: 0;
+    background: linear-gradient(to right, var(--color-bg) 0%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  .testimonials-marquee-container::after {
+    right: 0;
+    background: linear-gradient(to left, var(--color-bg) 0%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  /* Dark mode support for fade overlays */
+  @media (prefers-color-scheme: dark) {
+    .testimonials-marquee-container::before {
+      background: linear-gradient(to right, var(--color-bg) 0%, rgba(15, 23, 42, 0) 100%);
+    }
+    .testimonials-marquee-container::after {
+      background: linear-gradient(to left, var(--color-bg) 0%, rgba(15, 23, 42, 0) 100%);
+    }
+  }
+
+  .testimonials-marquee-track {
+    display: flex;
     gap: 30px;
+    width: max-content;
+    animation: marqueeScroll 30s linear infinite;
+  }
+
+  .testimonials-marquee-track:hover {
+    animation-play-state: paused;
+  }
+
+  .testimonial-card-wrapper {
+    width: 380px;
+    flex-shrink: 0;
+  }
+
+  @keyframes marqueeScroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-50% - 15px)); /* negative half of width plus half of gap */
+    }
+  }
+
+  /* Responsive tweaks for marquee cards */
+  @media (max-width: 768px) {
+    .testimonial-card-wrapper {
+      width: 320px;
+    }
+    .testimonials-marquee-container::before,
+    .testimonials-marquee-container::after {
+      width: 50px; /* Smaller overlays on mobile */
+    }
   }
 
   /* Register Section */
@@ -1652,6 +1725,13 @@ const galleryImages = [
 
     .register-visual-box {
       display: none;
+    }
+  }
+
+  /* Headline wrap prevention on desktop */
+  @media (min-width: 1025px) {
+    .section-title, .hero-title, .commitment-title, .register-section-title, .section-heading-left {
+      white-space: nowrap;
     }
   }
 </style>

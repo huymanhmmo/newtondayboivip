@@ -4,6 +4,7 @@ interface Props {
     data: {
       name: string;
       role: string;
+      avatar?: string;
       stars: number;
     };
     body: string;
@@ -11,7 +12,7 @@ interface Props {
 }
 
 const { testimonial } = Astro.props;
-const { name, role, stars = 5 } = testimonial.data;
+const { name, role, avatar, stars = 5 } = testimonial.data;
 
 // Lấy chữ cái đầu tiên của tên để làm avatar mặc định
 const initial = name.charAt(0);
@@ -37,7 +38,11 @@ const initial = name.charAt(0);
 
   <div class="student-profile">
     <div class="student-avatar">
-      {initial}
+      {avatar ? (
+        <img src={avatar} alt={name} class="avatar-image" loading="lazy" />
+      ) : (
+        initial
+      )}
     </div>
     <div class="student-meta">
       <span class="student-name">{name}</span>
@@ -96,11 +101,19 @@ const initial = name.charAt(0);
     font-weight: 700;
     font-size: 1.2rem;
     box-shadow: 0 4px 10px rgba(0, 102, 170, 0.2);
+    overflow: hidden;
+  }
+
+  .avatar-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .student-meta {
     display: flex;
     flex-direction: column;
+    text-align: left;
   }
 
   .student-name {

@@ -1,6 +1,7 @@
 ---
 name: "Minh Anh"
 role: "Học viên"
+avatar: "/images/avatar_minh_anh.png"
 stars: 5
 order: 1
 ---

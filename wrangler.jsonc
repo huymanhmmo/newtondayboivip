@@ -1,12 +1,18 @@
 {
 	"compatibility_date": "2026-05-30",
 	"compatibility_flags": ["global_fetch_strictly_public"],
-	"name": "e-claude-newton-dayboi-vip-newtondayboivip",
+	"name": "newtondayboivip",
 	"main": "@astrojs/cloudflare/entrypoints/server",
 	"assets": {
 		"directory": "./dist",
 		"binding": "ASSETS"
 	},
+	"kv_namespaces": [
+		{
+			"binding": "SESSION",
+			"id": "f75ed197b58e4e01ac00a5d4a346a07b"
+		}
+	],
 	"observability": {
 		"enabled": true
 	}

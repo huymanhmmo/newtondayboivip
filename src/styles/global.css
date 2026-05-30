@@ -630,43 +630,92 @@ input, button, select, textarea {
 /* 5. Unified Tables Style (Premium Glass Look) */
 .canswim-table-wrapper {
   border-radius: 16px;
-  overflow: hidden;
+  overflow-x: auto; /* Enable responsive horizontal scroll on mobile */
   border: 1px solid var(--glass-border);
   box-shadow: var(--shadow-md);
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   background: var(--glass-bg);
+  -webkit-overflow-scrolling: touch;
 }
 
-.canswim-table {
+.canswim-table,
+.canswim-table-wrapper table,
+.markdown-body table {
   width: 100%;
   border-collapse: collapse;
   text-align: left;
+  font-size: 0.95rem;
 }
 
-.canswim-table th {
-  background-color: var(--color-primary);
+/* Premium Table Caption */
+.canswim-table-wrapper table caption,
+.markdown-body table caption,
+table.canswim-table caption {
+  caption-side: top;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  font-size: 1.05rem;
+  padding: 14px 20px;
+  text-align: left;
+  background: linear-gradient(90deg, var(--color-primary-glare) 0%, rgba(255, 255, 255, 0.5) 100%);
+  border-bottom: 3px solid var(--color-secondary);
+  letter-spacing: 0.5px;
+}
+
+.canswim-table th,
+.canswim-table-wrapper table th,
+.markdown-body table th {
+  background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
   color: var(--color-white);
   font-family: var(--font-heading);
   font-weight: 700;
   padding: 16px 20px;
   font-size: 0.95rem;
-  border: none;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.canswim-table td {
+.canswim-table th:last-child,
+.canswim-table-wrapper table th:last-child,
+.markdown-body table th:last-child {
+  border-right: none;
+}
+
+.canswim-table td,
+.canswim-table-wrapper table td,
+.markdown-body table td {
   padding: 16px 20px;
   border-bottom: 1px solid var(--glass-border);
+  border-right: 1px solid var(--glass-border);
   font-size: 0.95rem;
   color: var(--color-text);
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.35);
+  line-height: 1.6;
 }
 
-.canswim-table tr:last-child td {
+.canswim-table td:last-child,
+.canswim-table-wrapper table td:last-child,
+.markdown-body table td:last-child {
+  border-right: none;
+}
+
+/* Zebra Striping for Easy Reading */
+.canswim-table tr:nth-child(even) td,
+.canswim-table-wrapper table tr:nth-child(even) td,
+.markdown-body table tr:nth-child(even) td {
+  background-color: rgba(0, 102, 170, 0.02);
+}
+
+.canswim-table tr:last-child td,
+.canswim-table-wrapper table tr:last-child td,
+.markdown-body table tr:last-child td {
   border-bottom: none;
 }
 
-.canswim-table tr:hover td {
-  background-color: var(--color-primary-glare);
+.canswim-table tr:hover td,
+.canswim-table-wrapper table tr:hover td,
+.markdown-body table tr:hover td {
+  background-color: var(--color-primary-glare) !important;
 }
 
 @media (max-width: 768px) {

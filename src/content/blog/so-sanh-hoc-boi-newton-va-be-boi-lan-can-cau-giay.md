@@ -27,6 +27,7 @@ Dưới đây là bảng tổng hợp so sánh các thông số kỹ thuật, ti
 
 <div class="canswim-table-wrapper">
   <table>
+    <caption>Bảng so sánh chi tiết chất lượng, độ sâu và tiện ích giữa Bể bơi Newton Cầu Giấy, Bể bơi HV Kỹ thuật Quân sự và Bể bơi Học viện Chính trị</caption>
     <thead>
       <tr>
         <th>Tiêu chí so sánh</th>

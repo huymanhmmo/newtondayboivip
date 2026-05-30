@@ -22,33 +22,53 @@ const {
 } = Astro.props;
 
 // Phân loại hình ảnh phù hợp mạng xã hội theo kích thước:
-// banner-tuyen-sinh-1.png: 1734 x 907 (tỷ lệ 1.91:1) -> Đẹp nhất cho Facebook, Zalo, LinkedIn link sharing
-// banner-tuyen-sinh-3.png: 1734 x 907 (tỷ lệ 1.91:1) -> Đẹp nhất cho Twitter
-// banner-tuyen-sinh-2.png: 1536 x 1024 (tỷ lệ 3:2) -> Phù hợp cho chia sẻ dạng hình ảnh ngang
-// banner-tuyen-sinh-4.png: 1536 x 1024 (tỷ lệ 3:2) -> Phù hợp cho chia sẻ dạng hình ảnh ngang
-const ogImage = image || "https://newton.dayboi.vip/images/banner-tuyen-sinh-1.png";
-const twitterImage = image || "https://newton.dayboi.vip/images/banner-tuyen-sinh-3.png";
+// banner-tuyen-sinh-1.webp: 1734 x 907 (tỷ lệ 1.91:1) -> Đẹp nhất cho Facebook, Zalo, LinkedIn link sharing
+// banner-tuyen-sinh-3.webp: 1734 x 907 (tỷ lệ 1.91:1) -> Đẹp nhất cho Twitter
+// banner-tuyen-sinh-2.webp: 1536 x 1024 (tỷ lệ 3:2) -> Phù hợp cho chia sẻ dạng hình ảnh ngang
+// banner-tuyen-sinh-4.webp: 1536 x 1024 (tỷ lệ 3:2) -> Phù hợp cho chia sẻ dạng hình ảnh ngang
+
+// Resolve absolute URL for the image to support social crawlers (Zalo, Facebook, LinkedIn, Twitter/X)
+let ogImage = "https://newton.dayboi.vip/images/banner-tuyen-sinh-1.webp"; // Default fallback
+if (image) {
+  if (image.startsWith("http://") || image.startsWith("https://")) {
+    ogImage = image;
+  } else {
+    ogImage = `https://newton.dayboi.vip${image.startsWith("/") ? "" : "/"}${image}`;
+  }
+}
+
+// Convert any legacy png references to webp since all site assets are webp
+if (ogImage.includes("banner-tuyen-sinh-1.png")) ogImage = ogImage.replace("banner-tuyen-sinh-1.png", "banner-tuyen-sinh-1.webp");
+if (ogImage.includes("banner-tuyen-sinh-2.png")) ogImage = ogImage.replace("banner-tuyen-sinh-2.png", "banner-tuyen-sinh-2.webp");
+if (ogImage.includes("banner-tuyen-sinh-3.png")) ogImage = ogImage.replace("banner-tuyen-sinh-3.png", "banner-tuyen-sinh-3.webp");
+if (ogImage.includes("banner-tuyen-sinh-4.png")) ogImage = ogImage.replace("banner-tuyen-sinh-4.png", "banner-tuyen-sinh-4.webp");
+
+// Use the exact same image for Twitter/X and all other social networks
+const twitterImage = ogImage;
 
 // Tự động phân loại kích thước và định dạng tương thích cho meta tags
 let ogWidth = "1734";
 let ogHeight = "907";
-let ogType = "image/png";
+let ogType = "image/webp";
 
-if (image) {
-  if (image.includes("banner-tuyen-sinh-2") || image.includes("banner-tuyen-sinh-4")) {
-    ogWidth = "1536";
-    ogHeight = "1024";
-    ogType = "image/png";
-  } else if (image.includes("banner-tuyen-sinh-1") || image.includes("banner-tuyen-sinh-3")) {
-    ogWidth = "1734";
-    ogHeight = "907";
-    ogType = "image/png";
-  } else {
-    // Giá trị fallback an toàn
-    ogWidth = "1200";
-    ogHeight = "630";
-    ogType = "image/jpeg";
-  }
+if (ogImage.includes("banner-tuyen-sinh-2") || ogImage.includes("banner-tuyen-sinh-4")) {
+  ogWidth = "1536";
+  ogHeight = "1024";
+} else if (ogImage.includes("banner-tuyen-sinh-1") || ogImage.includes("banner-tuyen-sinh-3")) {
+  ogWidth = "1734";
+  ogHeight = "907";
+} else {
+  // Giá trị fallback an toàn
+  ogWidth = "1200";
+  ogHeight = "630";
+}
+
+if (ogImage.endsWith(".webp")) {
+  ogType = "image/webp";
+} else if (ogImage.endsWith(".png")) {
+  ogType = "image/png";
+} else if (ogImage.endsWith(".jpg") || ogImage.endsWith(".jpeg")) {
+  ogType = "image/jpeg";
 }
 
 // Schema mặc định của LocalBusiness

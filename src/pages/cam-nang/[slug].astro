@@ -664,6 +664,27 @@ const relatedPosts = allPosts
     text-align: justify; /* Justify text align */
   }
 
+  .markdown-body :global(a) {
+    color: var(--color-primary);
+    font-weight: 700;
+    border-bottom: 2px solid var(--color-secondary); /* Accent orange underline */
+    padding: 0 2px;
+    text-decoration: none;
+    transition: all var(--transition-fast);
+    display: inline;
+  }
+
+  .markdown-body :global(a:hover) {
+    color: var(--color-white) !important;
+    background-color: var(--color-secondary); /* Vibrant orange highlight background */
+    border-bottom-color: var(--color-secondary);
+    border-radius: 4px;
+    padding: 2px 6px;
+    margin: -2px -4px; /* Perfectly balances padding to prevent layout shifts */
+    box-shadow: 0 4px 10px rgba(255, 122, 0, 0.25);
+    text-decoration: none;
+  }
+
   .markdown-body :global(p) {
     margin-bottom: 24px;
   }

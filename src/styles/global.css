@@ -675,3 +675,42 @@ input, button, select, textarea {
     font-size: 0.85rem;
   }
 }
+
+/* ==========================================================================
+   PREMIUM HIGH-CONVERTING BACKLINKS & INTERACTIVE TEXT LINKS STYLE
+   ========================================================================= */
+.markdown-body a,
+.intro-p a,
+.faq-answer a,
+.promo-desc-main a,
+.promo-terms a,
+.pricing-table-container p a,
+.safety-content p a,
+li a:not(.btn):not(.nav-link):not(.recent-post-link-card):not(.related-post-card-link) {
+  color: var(--color-primary);
+  font-weight: 700;
+  border-bottom: 2px solid var(--color-secondary); /* Accent orange underline */
+  padding: 0 2px;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  display: inline;
+}
+
+.markdown-body a:hover,
+.intro-p a:hover,
+.faq-answer a:hover,
+.promo-desc-main a:hover,
+.promo-terms a:hover,
+.pricing-table-container p a:hover,
+.safety-content p a:hover,
+li a:not(.btn):not(.nav-link):not(.recent-post-link-card):not(.related-post-card-link):hover {
+  color: var(--color-white) !important;
+  background-color: var(--color-secondary); /* Vibrant orange highlight fill on hover */
+  border-bottom-color: var(--color-secondary);
+  border-radius: 4px;
+  padding: 2px 6px;
+  margin: -2px -4px; /* Perfectly balances padding to prevent layout shifts */
+  box-shadow: 0 4px 10px rgba(255, 122, 0, 0.25);
+  text-decoration: none;
+}
+

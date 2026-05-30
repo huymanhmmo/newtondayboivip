@@ -371,6 +371,7 @@ input, button, select, textarea {
    ========================================================================== */
 
 /* 1. Header wrap prevention on desktop (strictly 1 line for all headings except homepage Hero) */
+/* 1. Header wrap prevention on desktop (strictly 1 line, showing all text with fluid sizes) */
 @media (min-width: 1024px) {
   .section-title,
   .page-title-main,
@@ -385,9 +386,47 @@ input, button, select, textarea {
   h2:not(.hero-title):not(.markdown-body *),
   h3:not(.hero-title):not(.markdown-body *):not(.footer-title) {
     white-space: nowrap !important;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
     max-width: 100% !important;
+  }
+
+  /* Fluid typography to fit headings on 1 line on desktop without cutting off letters */
+  .section-title {
+    font-size: clamp(1.5rem, 2.3vw, 2.2rem) !important;
+  }
+  .page-title-main {
+    font-size: clamp(1.8rem, 3.2vw, 2.5rem) !important;
+  }
+  .section-subheading {
+    font-size: clamp(1.3rem, 2vw, 1.7rem) !important;
+  }
+  .compare-title {
+    font-size: clamp(1.1rem, 1.8vw, 1.4rem) !important;
+  }
+  .register-section-title {
+    font-size: clamp(1.5rem, 2.3vw, 2.1rem) !important;
+  }
+  .commitment-title {
+    font-size: clamp(1.5rem, 2.3vw, 2.1rem) !important;
+  }
+  .form-title {
+    font-size: clamp(1.1rem, 1.6vw, 1.4rem) !important;
+  }
+  .related-section-title {
+    font-size: clamp(1.3rem, 2vw, 1.7rem) !important;
+  }
+  .tuition-title {
+    font-size: clamp(1.3rem, 2vw, 1.7rem) !important;
+  }
+  h1:not(.hero-title):not(.markdown-body *):not(.page-title-main) {
+    font-size: clamp(1.8rem, 3.2vw, 2.5rem) !important;
+  }
+  h2:not(.hero-title):not(.markdown-body *):not(.section-title):not(.section-subheading):not(.commitment-title):not(.register-section-title) {
+    font-size: clamp(1.5rem, 2.3vw, 2.2rem) !important;
+  }
+  h3:not(.hero-title):not(.markdown-body *):not(.footer-title):not(.compare-title):not(.form-title):not(.related-section-title):not(.tuition-title) {
+    font-size: clamp(1.2rem, 1.8vw, 1.5rem) !important;
   }
 }
 

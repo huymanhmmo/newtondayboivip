@@ -191,6 +191,20 @@ const customSchema = {
     </div>
   </section>
 
+  <!-- HOTLINE CTA STRIP -->
+  <section class="hotline-cta-strip">
+    <div class="container hotline-cta-container">
+      <div class="hotline-cta-text">
+        <span class="hotline-cta-label">📞 Liên hệ đăng ký & tư vấn miễn phí</span>
+        <span class="hotline-cta-number">0907 992 336</span>
+      </div>
+      <div class="hotline-cta-actions">
+        <a href="tel:0907992336" class="btn btn-primary btn-hotline-call">GỌI NGAY</a>
+        <a href="http://zalo.me/0907992336" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-hotline-zalo">CHAT ZALO</a>
+      </div>
+    </div>
+  </section>
+
   <!-- Footer link mappings check -->
   <div style="display:none;">
     <a href="/">Trang chủ</a>
@@ -201,3 +215,199 @@ const customSchema = {
     <a href="/lien-he/">Liên hệ</a>
   </div>
 </Layout>
+
+<style>
+  /* Intro Section */
+  .venue-intro-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 50px;
+    align-items: center;
+  }
+
+  .section-subheading {
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+  }
+
+  .intro-p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+    margin-bottom: 18px;
+  }
+
+  .venue-intro-media {
+    position: relative;
+    height: 380px;
+  }
+
+  .img-card-stack {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .stack-img {
+    position: absolute;
+    border-radius: 16px;
+    box-shadow: var(--shadow-lg);
+    border: 4px solid var(--color-white);
+    transition: all var(--transition-normal);
+  }
+
+  .img-1 {
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+    width: 85%;
+    height: auto;
+  }
+
+  .img-2 {
+    bottom: 20px;
+    right: 10px;
+    z-index: 1;
+    width: 80%;
+    height: auto;
+    transform: scale(0.95);
+  }
+
+  .img-card-stack:hover .img-1 {
+    transform: translateY(-5px);
+  }
+
+  .img-card-stack:hover .img-2 {
+    transform: translate(5px, 5px) scale(0.98);
+    z-index: 3;
+  }
+
+  /* Courses section grid */
+  .courses-pricing-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+  }
+
+  .pricing-table-container {
+    background-color: var(--color-white);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--glass-border);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+  }
+
+  .pricing-table-container:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  /* Promo Banner styling */
+  .promo-banner-newton {
+    background: linear-gradient(135deg, hsl(205, 80%, 15%), hsl(205, 90%, 8%));
+    color: var(--color-white);
+    border-radius: 24px;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .promo-badge-hot {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  .promo-title-main {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: var(--color-white);
+    letter-spacing: -0.5px;
+  }
+
+  .promo-desc-main {
+    color: hsl(205, 20%, 85%);
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 800px;
+  }
+
+  .promo-terms {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 0.9rem;
+    color: hsl(205, 15%, 75%);
+  }
+
+  /* Safety Grid */
+  .safety-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 50px;
+    align-items: center;
+  }
+
+  .safety-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .safety-img {
+    border-radius: 20px;
+    box-shadow: var(--shadow-lg);
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  /* Map Container */
+  .map-container {
+    width: 100%;
+    height: 340px;
+    overflow: hidden;
+  }
+
+  /* Responsive styling */
+  @media (max-width: 1024px) {
+    .venue-intro-grid,
+    .safety-grid {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    .venue-intro-media {
+      height: 320px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .courses-pricing-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .promo-banner-newton {
+      padding: 30px 20px;
+    }
+
+    .promo-title-main {
+      font-size: 1.6rem;
+    }
+  }
+</style>

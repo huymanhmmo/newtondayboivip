@@ -15,7 +15,7 @@
 | **Email** | dayboivip@gmail.com |
 | **Fanpage** | https://www.facebook.com/beboinewton |
 | **GA4** | G-74CCVG5VNC |
-| **Form** | Web3Forms (key: d8787c88-e215-4ba2-bed2-3510c5a2c41c) |
+| **Form** | Web3Forms (key: 443a4903-3110-4cd2-8b96-2e867325ad15) |
 
 ---
 
@@ -206,5 +206,12 @@ Hà Nội
 - 🟢 Khắc phục lỗi chính tả AI lặp từ "tiếp tiếp tiếp" thành "lễ tân tiếp nhận" trong bài viết đường đi.
 - 🟢 Thêm whitelist từ khóa "zalo", "bơi", "học" cho script `seo_check.py` để tránh lỗi cảnh báo lặp từ.
 - ✅ Build và biên dịch thành công 10 trang, đạt điểm số tối ưu SEO.
+
+### 2026-05-30 - Cấu hình Web3Forms và Local SEO hoàn tất
+- 🟢 Tạo mới trang Landing Page `/lop-day-boi-be-boi-newton-234-hoang-quoc-viet/` và bài viết vệ tinh định hướng địa lý.
+- 🟢 Thay đổi Web3Forms access key thành `443a4903-3110-4cd2-8b96-2e867325ad15`.
+- 🟢 Cấu hình trường `ccemail` để gửi thông tin đăng ký đồng thời đến `dayboivip@gmail.com` và `buican336@gmail.com`.
+- 🟢 Đẩy toàn bộ thay đổi lên GitHub nhánh `main`.
+- ✅ Build thành công toàn bộ dự án 12 trang tĩnh hoàn chỉnh.
 
 

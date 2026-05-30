@@ -220,4 +220,11 @@ Hà Nội
 - 🟢 Xác minh robots.txt đạt chuẩn SEO & AI Search 2026 và đã khai báo đường dẫn sitemap-index.xml.
 - 🟢 Biên dịch dự án tạo ra các file sitemap và đẩy toàn bộ code lên GitHub nhánh `main`.
 
+### 2026-05-30 - Tái thiết kế giao diện Landing Page Local SEO và sửa ngắt dòng tiêu đề
+- 🟢 Khắc phục lỗi headings tiêu đề bị ngắt dòng thụ động trên trang cẩm nang bằng việc loại trừ `.blog-card-title` ra khỏi selector `h3` nowrap của `global.css`.
+- 🟢 Thiết kế lại giao diện cho trang đích `/lop-day-boi-be-boi-newton-234-hoang-quoc-viet/`: thêm các cấu trúc layout grid cho phần giới thiệu, bảng giá khóa học, khối cam kết an toàn và bản đồ Google Maps.
+- 🟢 Bổ sung khối Hotline CTA Strip vào chân trang đích đồng bộ với các trang dịch vụ khác.
+- 🟢 Đẩy toàn bộ cập nhật giao diện lên GitHub nhánh `main`.
+- ✅ Biên dịch thành công 12 trang tĩnh sạch sẽ và đẹp mắt.
+
 

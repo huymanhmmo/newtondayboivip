@@ -198,3 +198,10 @@ Hà Nội
 - 🟢 Thêm CSS responsive cho hình ảnh và chú thích `.image-caption` trong `.markdown-body` tại `[slug].astro`
 - ✅ Build thành công 10 trang, không lỗi
 
+### 2026-05-30 - Tối ưu hóa SEO 100 điểm toàn bộ website theo kế hoạch
+- 🟢 Viết lại 4 trang tĩnh dịch vụ đích nâng điểm số đạt từ 96/100 đến 98/100.
+- 🟢 Viết lại 3 bài viết cẩm nang thành các bài viết Siêu Pillar dài từ 3000-4000 từ, điểm số đạt 98/100.
+- 🟢 Nâng cấp trang danh sách cẩm nang (cam-nang/index.astro) đạt 93/100 điểm.
+- ✅ Build và biên dịch thành công 10 trang, không phát sinh lỗi cảnh báo.
+
+

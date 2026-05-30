@@ -28,6 +28,10 @@ import MapEmbed from '../components/MapEmbed.astro';
           Đội ngũ tư vấn viên của CanSwim luôn sẵn sàng hỗ trợ giải đáp mọi thắc mắc về khóa học bơi, lịch học thử và sắp xếp giáo viên cho bạn hoặc các bé.
         </p>
 
+        <div class="contact-side-image-wrapper">
+          <img src="/images/be-boi-newton-khong-gian-be-boi.jpg" alt="Không gian thoáng mát tại bể bơi Newton Hoàng Quốc Việt Cầu Giấy" class="contact-side-img" width="500" height="333" loading="lazy" />
+        </div>
+
         <div class="contact-cards-stack">
           <!-- Hotline Card -->
           <div class="contact-info-card glass-card">
@@ -35,7 +39,7 @@ import MapEmbed from '../components/MapEmbed.astro';
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="info-svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             </div>
             <div class="info-card-content">
-              <h5>Điện thoại Hotline</h5>
+              <h3 class="card-item-title">Điện thoại Hotline</h3>
               <p><a href="tel:0907992336" class="contact-link-bold">0907.992.336</a> (Hỗ trợ 24/7)</p>
             </div>
           </div>
@@ -46,7 +50,7 @@ import MapEmbed from '../components/MapEmbed.astro';
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="info-svg"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
             </div>
             <div class="info-card-content">
-              <h5>Chat qua Zalo</h5>
+              <h3 class="card-item-title">Chat qua Zalo</h3>
               <p><a href="http://zalo.me/0907992336" target="_blank" rel="noopener noreferrer" class="contact-link-bold">Zalo: 0907 992 336</a></p>
             </div>
           </div>
@@ -57,7 +61,7 @@ import MapEmbed from '../components/MapEmbed.astro';
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="info-svg"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
             </div>
             <div class="info-card-content">
-              <h5>Fanpage Facebook</h5>
+              <h3 class="card-item-title">Fanpage Facebook</h3>
               <p><a href="https://www.facebook.com/beboinewton" target="_blank" rel="noopener noreferrer" class="contact-link-bold">Bể Bơi Newton</a></p>
             </div>
           </div>
@@ -68,7 +72,7 @@ import MapEmbed from '../components/MapEmbed.astro';
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="info-svg"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
             </div>
             <div class="info-card-content">
-              <h5>Địa chỉ lớp học</h5>
+              <h3 class="card-item-title">Địa chỉ lớp học</h3>
               <p>Khuôn viên trường liên cấp Newton, lô TH2 khu đô thị Nam Cường, cuối ngõ 234 Hoàng Quốc Việt, phường Nghĩa Đô, quận Cầu Giấy, Hà Nội.</p>
             </div>
           </div>
@@ -89,14 +93,50 @@ import MapEmbed from '../components/MapEmbed.astro';
         <h2 class="section-title">Bản Đồ Vị Trí & Chỉ Đường</h2>
         <p class="section-subtitle">Dùng thiết bị di động quét hoặc nhấp vào bản đồ bên dưới để mở điều hướng Google Maps dẫn đường trực tiếp.</p>
       </div>
-      <MapEmbed height="500px" />
+      
+      <div class="map-embed-wrapper">
+        <MapEmbed height="500px" />
+      </div>
+
+      <div class="directions-guide-box">
+        <h3 class="directions-title">Hướng Dẫn Di Chuyển Chi Tiết Bằng Các Phương Tiện</h3>
+        <p class="intro-p">Bể bơi Newton tọa lạc tại vị trí thuận lợi ở quận Cầu Giấy, tiếp giáp quận Bắc Từ Liêm và Tây Hồ. Học viên đăng ký học bơi tại trung tâm <a href="/">CanSwim</a> có thể di chuyển đến bể bơi bằng các phương tiện sau:</p>
+        
+        <div class="directions-grid-two-cols">
+          <div class="direction-method">
+            <h4 class="method-title">Di chuyển bằng phương tiện cá nhân (Xe máy, Ô tô)</h4>
+            <p class="intro-p">Học viên đi từ hướng đường Hoàng Quốc Việt rẽ vào Ngõ 234 (đối diện Đại học Điện lực). Đi thẳng khoảng 300m, qua Tòa án nhân dân quận Cầu Giấy, rẽ trái vào Khu đô thị Nam Cường. Đi tiếp đến cuối ngõ, bạn sẽ thấy cổng trường liên cấp Newton TH2, <a href="/be-boi-newton-hoang-quoc-viet/">bể bơi Newton</a> nằm ngay trong khuôn viên trường học.</p>
+          </div>
+          
+          <div class="direction-method">
+            <h4 class="method-title">Di chuyển bằng xe bus công cộng</h4>
+            <p class="intro-p">Các tuyến xe bus dừng gần ngõ 234 Hoàng Quốc Việt bao gồm: xe 14, 14CT, 33, 38, 45, 53A. Sau khi xuống điểm dừng tại đường Hoàng Quốc Việt, học viên chỉ cần đi bộ vào ngõ 234 khoảng 5-7 phút là đến nơi học bơi.</p>
+          </div>
+        </div>
+
+        <h3 class="directions-title">Hướng Dẫn Gửi Xe Máy Và Xe Ô Tô An Toàn</h3>
+        <div class="parking-grid-two-cols">
+          <div class="parking-method">
+            <h4 class="method-title">Vị trí bãi đỗ xe máy tại bể bơi Newton</h4>
+            <p class="intro-p">Học viên đi xe máy có thể dắt xe qua cổng bảo vệ trường Newton và gửi xe tại nhà xe chuyên dụng của bể bơi. Bãi đỗ xe rộng rãi, có mái che và có bảo vệ trông giữ an toàn.</p>
+          </div>
+          
+          <div class="parking-method">
+            <h4 class="method-title">Vị trí đỗ xe ô tô khu đô thị Nam Cường</h4>
+            <p class="intro-p">Đối với phụ huynh đưa đón con bằng xe ô tô hoặc học viên tự lái xe, bạn có thể đỗ xe dọc theo các tuyến đường nội khu thông thoáng bao quanh trường Newton hoặc gửi xe tại hầm chung cư kề bên.</p>
+          </div>
+        </div>
+
+        <div class="info-linking-box">
+          <h3 class="directions-title">Liên Kết Các Khóa Học Liên Quan</h3>
+          <p class="intro-p">Trước khi đến bể bơi, quý học viên vui lòng tham khảo trước <a href="/lich-hoc-hoc-phi-day-boi-newton/">Lịch học và học phí dạy bơi Newton</a> để nắm được mức chi phí và đăng ký ca học trống. Chúng tôi có các lớp học bơi đa dạng như <a href="/lop-hoc-boi-tre-em-be-boi-newton/">Lớp học bơi trẻ em bể bơi Newton</a> và <a href="/hoc-boi-nguoi-lon-be-boi-newton/">Lớp học bơi người lớn bể bơi Newton</a> nhằm phục vụ mọi thành viên trong gia đình bạn.</p>
+        </div>
+      </div>
     </div>
   </section>
 </Layout>
 
 <style>
-
-
   /* Contact Main Grid */
   .contact-main-grid {
     display: grid;
@@ -116,6 +156,16 @@ import MapEmbed from '../components/MapEmbed.astro';
     line-height: 1.7;
     color: var(--color-text-muted);
     margin-bottom: 30px;
+  }
+
+  .contact-side-image-wrapper {
+    margin-bottom: 30px;
+  }
+
+  .contact-side-img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: var(--shadow-md);
   }
 
   .contact-cards-stack {
@@ -148,13 +198,13 @@ import MapEmbed from '../components/MapEmbed.astro';
     height: 20px;
   }
 
-  .info-card-content h5 {
+  .card-item-title {
     font-size: 1.05rem;
     color: var(--color-text);
     margin-bottom: 6px;
   }
 
-  .info-card-content p {
+  .contact-info-card p {
     font-size: 0.9rem;
     color: var(--color-text-muted);
     line-height: 1.4;
@@ -169,10 +219,56 @@ import MapEmbed from '../components/MapEmbed.astro';
     text-decoration: underline;
   }
 
+  /* Directions guide layout */
+  .directions-guide-box {
+    margin-top: 40px;
+    background-color: var(--color-bg-alt);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .directions-title {
+    font-size: 1.4rem;
+    color: var(--color-primary);
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--color-primary-glare);
+    padding-bottom: 8px;
+  }
+
+  .directions-title:first-of-type {
+    margin-top: 0;
+  }
+
+  .directions-grid-two-cols, .parking-grid-two-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+
+  .method-title {
+    font-size: 1.1rem;
+    color: var(--color-text);
+    margin-bottom: 10px;
+  }
+
+  .map-embed-wrapper {
+    box-shadow: var(--shadow-md);
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
   @media (max-width: 1024px) {
     .contact-main-grid {
       grid-template-columns: 1fr;
       gap: 40px;
+    }
+
+    .directions-grid-two-cols, .parking-grid-two-cols {
+      grid-template-columns: 1fr;
+      gap: 20px;
     }
   }
 </style>

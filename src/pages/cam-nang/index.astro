@@ -71,11 +71,46 @@ const sortedPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDa
       )}
     </div>
   </section>
+
+  <!-- Expanded Content for SEO Depth -->
+  <section class="section-padding blog-expanded-seo-section">
+    <div class="container expanded-content-box">
+      <h2 class="expanded-title">Học Hỏi Kinh Nghiệm Bơi Lội Cùng HLV Bùi Văn Cán</h2>
+      <p class="intro-p">Cẩm nang bơi lội CanSwim là nơi hội tụ các bài viết chia sẻ chuyên sâu về kỹ thuật bơi lội, phương pháp sư phạm dạy bơi cho trẻ nhỏ, khóa học bơi người lớn và các cập nhật mới nhất về địa điểm học bơi tại quận Cầu Giấy.</p>
+      
+      <div class="seo-text-grid">
+        <div class="seo-col-box">
+          <h3 class="seo-sub-title">Mục tiêu chia sẻ kiến thức của CanSwim</h3>
+          <p class="intro-p">Chúng tôi mong muốn mang lại những thông tin hữu ích nhất để bảo vệ an toàn cho mọi người dưới nước. Dưới sự chỉ đạo của HLV trưởng Bùi Văn Cán, các bài viết được đầu tư nghiêm túc về mặt chuyên môn sư phạm bơi lội.</p>
+          
+          <h4 class="seo-leaf-title">Phổ cập kiến thức bơi lội an toàn nước</h4>
+          <p class="intro-p">Cung cấp các kỹ năng phòng chống đuối nước tự cứu, cách xử lý sự cố chuột rút hoặc kiệt sức khi bơi ở sông hồ hay bể nước sâu.</p>
+          
+          <h4 class="seo-leaf-title">Rèn luyện kỹ thuật bơi đúng chuẩn sư phạm</h4>
+          <p class="intro-p">Hướng dẫn chi tiết cơ chế vật lý của lực nổi dưới nước, giúp học viên hiểu rõ cách thả lỏng tự nhiên để thực hành tốt kỹ thuật bơi sải, bơi ếch, bơi ngửa.</p>
+        </div>
+
+        <div class="seo-col-box">
+          <h3 class="seo-sub-title">Các khóa học bơi tiêu chuẩn tại bể bơi Newton</h3>
+          <p class="intro-p">Học viên quan tâm đến các khóa đào tạo bài bản có thể tìm hiểu thêm các thông tin hữu ích về dịch vụ giảng dạy kèm riêng chất lượng cao của trung tâm:</p>
+          
+          <h4 class="seo-leaf-title">Khóa học bơi trẻ em và người lớn</h4>
+          <p class="intro-p">Đăng ký lớp học bơi tại trung tâm với các ca học vô cùng linh động. Tìm hiểu thêm thông tin chi tiết tại trang <a href="/lop-hoc-boi-tre-em-be-boi-newton/">Lớp học bơi trẻ em bể bơi Newton</a> và trang <a href="/hoc-boi-nguoi-lon-be-boi-newton/">Lớp học bơi người lớn bể bơi Newton</a> của chúng tôi.</p>
+          
+          <h4 class="seo-leaf-title">Lịch học và học phí ưu đãi mới nhất</h4>
+          <p class="intro-p">Bảng giá trọn gói và các chương trình khuyến mại tặng vé bơi được cập nhật công khai tại trang <a href="/lich-hoc-hoc-phi-day-boi-newton/">Lịch học và học phí dạy bơi Newton</a>.</p>
+        </div>
+      </div>
+
+      <div class="seo-footer-box">
+        <h3 class="seo-sub-title">Địa điểm học và liên hệ tư vấn trực tiếp</h3>
+        <p class="intro-p">Lớp học bơi của trung tâm được tổ chức tại <a href="/be-boi-newton-hoang-quoc-viet/">bể bơi Newton Cầu Giấy</a>. Để nhận được tư vấn chi tiết từ huấn luyện viên và giữ chỗ khóa học gần nhất, kính mời quý phụ huynh xem chỉ đường và điền biểu mẫu liên hệ tại trang <a href="/lien-he-chi-duong-be-boi-newton/">Liên hệ và chỉ đường bể bơi Newton</a>. Quý học viên cũng có thể theo dõi và tương tác trực tuyến cùng chúng tôi qua <a href="https://www.facebook.com/beboinewton" target="_blank" rel="noopener noreferrer">Fanpage Facebook Bể bơi Newton</a>.</p>
+      </div>
+    </div>
+  </section>
 </Layout>
 
 <style>
-
-
   /* Grid layout */
   .blog-list-section {
     background-color: var(--color-bg);
@@ -194,5 +229,64 @@ const sortedPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDa
     color: var(--color-text-muted);
   }
 
+  /* Expanded SEO Content styling */
+  .blog-expanded-seo-section {
+    background-color: var(--color-bg-alt);
+    border-top: 1px solid rgba(0, 102, 170, 0.05);
+  }
 
+  .expanded-content-box {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .expanded-title {
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .seo-text-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 30px;
+  }
+
+  .seo-sub-title {
+    font-size: 1.3rem;
+    color: var(--color-text);
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--color-primary-glare);
+    padding-bottom: 6px;
+  }
+
+  .seo-leaf-title {
+    font-size: 1.05rem;
+    color: var(--color-primary-dark);
+    margin: 15px 0 5px 0;
+  }
+
+  .seo-footer-box {
+    margin-top: 30px;
+    background-color: var(--color-white);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .intro-p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--color-text-muted);
+    margin-bottom: 15px;
+  }
+
+  @media (max-width: 768px) {
+    .seo-text-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
 </style>

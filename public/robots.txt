@@ -1,0 +1,26 @@
+# Robots.txt chuẩn SEO & AI Search 2026 cho CanSwim Bể bơi Newton
+# Cho phép các công cụ tìm kiếm truyền thống và AI Search trích dẫn dữ liệu
+
+User-agent: *
+Allow: /
+Disallow: /dist/
+Disallow: /node_modules/
+
+# Cho phép các AI Crawlers để phục vụ AI Overviews và AI Citations
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: MicrosoftCopilot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Sitemap khai báo chuẩn
+Sitemap: https://newton.dayboi.vip/sitemap-index.xml

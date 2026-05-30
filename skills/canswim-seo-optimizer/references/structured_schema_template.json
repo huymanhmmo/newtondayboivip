@@ -21,25 +21,19 @@
       "latitude": "21.047464",
       "longitude": "105.792557"
     },
-    "telephone": "0907992336",
+    "telephone": "0907 992 336",
     "priceRange": "$$",
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "16:00",
-        "closes": "20:30"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Saturday", "Sunday"],
-        "opens": "15:00",
-        "closes": "20:30"
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "06:00",
+        "closes": "21:00"
       }
     ],
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "0907992336",
+      "telephone": "0907 992 336",
       "contactType": "customer service",
       "areaServed": ["HN", "Cầu Giấy", "Bắc Từ Liêm"],
       "availableLanguage": "Vietnamese"
@@ -51,10 +45,10 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Bể bơi Newton có mái che không và nước có lạnh không?",
+        "name": "Học bơi tại bể bơi Newton có cam kết biết bơi không?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Bể bơi Newton là bể bơi có mái che hiện đại, kín gió, giúp nước luôn ấm áp vào mùa lạnh và mát mẻ vào mùa hè, đảm bảo an toàn sức khỏe cho trẻ em và người lớn khi học bơi tại đây."
+          "text": "Có, CanSwim cam kết 100% học viên tốt nghiệp đều biết bơi đúng kỹ thuật. Đối với học viên nhát nước, học chậm sẽ được hỗ trợ kèm thêm miễn phí không phát sinh chi phí cho tới khi biết bơi tốt mới kết thúc."
         }
       },
       {
@@ -74,9 +68,12 @@
     "description": "Mô tả ngắn bài viết cẩm nang học bơi để hiển thị trên kết quả tìm kiếm và các AI tóm tắt.",
     "image": "https://newton.dayboi.vip/images/blog-post-cover.png",
     "datePublished": "2026-05-30",
+    "dateModified": "2026-05-30",
     "author": {
-      "@type": "Organization",
-      "name": "CanSwim Bể bơi Newton"
+      "@type": "Person",
+      "name": "Bùi Văn Cán",
+      "jobTitle": "HLV Trưởng CanSwim",
+      "sameAs": "https://www.linkedin.com/in/thay-bui-van-can-canswim"
     },
     "publisher": {
       "@type": "Organization",

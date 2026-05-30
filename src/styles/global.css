@@ -382,7 +382,7 @@ input, button, select, textarea {
   .form-title,
   .related-section-title,
   .tuition-title,
-  h1:not(.hero-title):not(.markdown-body *),
+  h1:not(.hero-title):not(.markdown-body *):not(.post-title-heading),
   h2:not(.hero-title):not(.markdown-body *),
   h3:not(.hero-title):not(.markdown-body *):not(.footer-title) {
     white-space: nowrap !important;

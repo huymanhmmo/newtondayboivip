@@ -1,0 +1,216 @@
+---
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import Layout from '../../layouts/Layout.astro';
+
+// Fetch bài viết và sắp xếp theo ngày xuất bản giảm dần (mới nhất lên đầu)
+const posts = await getCollection('blog');
+const sortedPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+
+<Layout 
+  title="Cẩm Nang Học Bơi & Tin Tức Bể Bơi Newton Cầu Giấy"
+  description="Chia sẻ kinh nghiệm dạy học bơi trẻ em, người lớn, review cơ sở vật chất bể bơi Newton 234 Hoàng Quốc Việt và hướng dẫn kỹ năng phòng chống đuối nước."
+  schemaType="WebSite"
+>
+  <!-- Page Header -->
+  <section class="page-header-section blog-theme">
+    <div class="container text-center">
+      <span class="page-meta-badge">Cẩm nang bơi lội</span>
+      <h1 class="page-title-main">TIN TỨC & KINH NGHIỆM HỌC BƠI</h1>
+      <p class="page-desc-main">Khám phá các bài viết tư vấn hữu ích từ các chuyên gia CanSwim về phương pháp dạy học bơi cho bé, review bể bơi Cầu Giấy và kỹ năng sinh tồn nước.</p>
+    </div>
+  </section>
+
+  <!-- Blog Listing -->
+  <section class="section-padding blog-list-section">
+    <div class="container">
+      {sortedPosts.length === 0 ? (
+        <div class="no-posts-box text-center glass-card">
+          <p>Hiện tại chưa có bài viết nào được xuất bản. Vui lòng quay lại sau.</p>
+        </div>
+      ) : (
+        <div class="blog-posts-grid">
+          {sortedPosts.map((post) => {
+            const formattedDate = new Date(post.data.pubDate).toLocaleDateString('vi-VN', {
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric'
+            });
+
+            return (
+              <article class="blog-card glass-card">
+                {post.data.image && (
+                  <div class="blog-card-img-wrapper">
+                    <a href={`/blog/${post.id}`}>
+                      <Image src={post.data.image} alt={post.data.title} class="blog-card-img" width={360} height={200} quality="high" />
+                    </a>
+                  </div>
+                )}
+                
+                <div class="blog-card-content">
+                  <div class="blog-card-meta">
+                    <span class="blog-date">{formattedDate}</span>
+                    {post.data.tags && post.data.tags.slice(0, 2).map(tag => (
+                      <span class="blog-tag-badge">#{tag}</span>
+                    ))}
+                  </div>
+
+                  <h3 class="blog-card-title">
+                    <a href={`/blog/${post.id}`}>{post.data.title}</a>
+                  </h3>
+
+                  <p class="blog-card-desc">{post.data.description}</p>
+
+                  <a href={`/blog/${post.id}`} class="btn btn-secondary btn-read-more">ĐỌC CHI TIẾT</a>
+                </div>
+              </article>
+            );
+          })}
+        </div>
+      )}
+    </div>
+  </section>
+</Layout>
+
+<style>
+  /* Header styling */
+  .page-header-section {
+    background: linear-gradient(135deg, hsl(205, 70%, 15%) 0%, hsl(205, 90%, 8%) 100%);
+    color: var(--color-white);
+    padding: 140px 20px 70px 20px;
+    border-bottom: 3px solid var(--color-secondary);
+  }
+
+  .blog-theme {
+    background: linear-gradient(135deg, hsl(200, 60%, 16%) 0%, hsl(205, 75%, 9%) 100%);
+  }
+
+  .page-meta-badge {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    padding: 6px 14px;
+    border-radius: 99px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+
+  .page-title-main {
+    font-size: 2.8rem;
+    color: var(--color-white);
+    margin-bottom: 15px;
+    font-weight: 800;
+  }
+
+  .page-desc-main {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: hsl(205, 15%, 80%);
+    line-height: 1.6;
+  }
+
+  /* Grid layout */
+  .blog-list-section {
+    background-color: var(--color-bg);
+  }
+
+  .blog-posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 30px;
+  }
+
+  .blog-card {
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .blog-card-img-wrapper {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+
+  .blog-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+  }
+
+  .blog-card:hover .blog-card-img {
+    transform: scale(1.06);
+  }
+
+  .blog-card-content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .blog-card-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  .blog-date {
+    color: var(--color-text-muted);
+  }
+
+  .blog-tag-badge {
+    color: var(--color-primary);
+    background-color: var(--color-primary-glare);
+    padding: 2px 8px;
+    border-radius: 4px;
+  }
+
+  .blog-card-title {
+    font-size: 1.2rem;
+    color: var(--color-text);
+    margin-bottom: 12px;
+    line-height: 1.4;
+  }
+
+  .blog-card-title a:hover {
+    color: var(--color-primary);
+  }
+
+  .blog-card-desc {
+    font-size: 0.88rem;
+    color: var(--color-text-muted);
+    line-height: 1.5;
+    margin-bottom: 20px;
+    flex-grow: 1;
+  }
+
+  .btn-read-more {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.85rem;
+    border-radius: 8px;
+  }
+
+  .no-posts-box {
+    padding: 50px 20px;
+    color: var(--color-text-muted);
+  }
+
+  @media (max-width: 768px) {
+    .page-title-main {
+      font-size: 2.2rem;
+    }
+  }
+</style>

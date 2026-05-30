@@ -1,0 +1,118 @@
+---
+interface Props {
+  testimonial: {
+    data: {
+      name: string;
+      role: string;
+      stars: number;
+    };
+    body: string;
+  };
+}
+
+const { testimonial } = Astro.props;
+const { name, role, stars = 5 } = testimonial.data;
+
+// Lấy chữ cái đầu tiên của tên để làm avatar mặc định
+const initial = name.charAt(0);
+---
+
+<div class="testimonial-card glass-card">
+  <div class="rating-stars">
+    {Array.from({ length: 5 }).map((_, index) => (
+      <svg 
+        xmlns="http://www.w3.org/2000/svg" 
+        viewBox="0 0 24 24" 
+        fill={index < stars ? "currentColor" : "none"} 
+        stroke="currentColor" 
+        stroke-width="2" 
+        class="star-icon"
+      >
+        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+      </svg>
+    ))}
+  </div>
+
+  <p class="testimonial-text">“{testimonial.body.trim()}”</p>
+
+  <div class="student-profile">
+    <div class="student-avatar">
+      {initial}
+    </div>
+    <div class="student-meta">
+      <span class="student-name">{name}</span>
+      <span class="student-role">{role}</span>
+    </div>
+  </div>
+</div>
+
+<style>
+  .testimonial-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+  }
+
+  .rating-stars {
+    display: flex;
+    gap: 4px;
+    color: #ffb800; /* Star Golden Color */
+    margin-bottom: 18px;
+  }
+
+  .star-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .testimonial-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--color-text-muted);
+    font-style: italic;
+    margin-bottom: 25px;
+    flex-grow: 1;
+  }
+
+  .student-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-top: 1px solid var(--glass-border);
+    padding-top: 16px;
+  }
+
+  .student-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(0, 102, 170, 0.2);
+  }
+
+  .student-meta {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .student-name {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--color-text);
+  }
+
+  .student-role {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    font-weight: 500;
+  }
+</style>

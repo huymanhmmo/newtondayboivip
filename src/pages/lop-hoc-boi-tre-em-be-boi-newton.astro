@@ -1,0 +1,364 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Layout.astro';
+import FormRegister from '../components/FormRegister.astro';
+
+// Import ảnh học viên nhỏ tuổi
+import kidSwim1 from '../assets/be-boi-newton/be-boi-newton-be-tap-boi.jpg';
+import kidSwim2 from '../assets/be-boi-newton/be-boi-newton-giao-vien-huong-dan.jpg';
+---
+
+<Layout 
+  title="Lớp Học Bơi Trẻ Em Bể Bơi Newton Cầu Giấy | CanSwim"
+  description="Lớp dạy bơi cho bé tại bể bơi Newton 234 Hoàng Quốc Việt. Lộ trình học bơi an toàn, huấn luyện viên kèm sát, giúp bé tự tin biết bơi và phòng tránh đuối nước."
+  schemaType="LocalBusiness"
+>
+  <!-- Page Header -->
+  <section class="page-header-section kids-theme">
+    <div class="container text-center">
+      <span class="page-meta-badge">Khóa học chuyên biệt</span>
+      <h1 class="page-title-main">LỚP HỌC BƠI TRẺ EM TẠI BỂ BƠI NEWTON</h1>
+      <p class="page-desc-main">CanSwim thiết kế giáo trình dạy học bơi sinh động, an toàn và khoa học dành riêng cho các bé từ 5 tuổi trở lên tại khu vực Hoàng Quốc Việt, Nghĩa Đô, Cầu Giấy.</p>
+    </div>
+  </section>
+
+  <!-- Service Details -->
+  <section class="section-padding kids-benefits-section">
+    <div class="container benefits-grid-split">
+      <div class="benefits-text">
+        <h2 class="section-subheading">Lợi Ích Của Việc Cho Trẻ Học Bơi Sớm</h2>
+        <p class="intro-p">
+          Bơi lội là kỹ năng sinh tồn thiết yếu mà mọi trẻ em cần được trang bị. Ngoài việc bảo vệ bản thân khỏi các tai nạn nước nguy hiểm, bơi lội còn mang lại nhiều lợi ích vượt trội cho sự phát triển thể chất và tinh thần của trẻ nhỏ:
+        </p>
+
+        <div class="benefits-bullets-box">
+          <div class="benefit-bullet-item">
+            <span class="bullet-check">✓</span>
+            <div>
+              <strong>Kỹ năng sinh tồn dưới nước:</strong> Bé nắm chắc kỹ năng thả nổi tự cứu, kiểm soát hơi thở và thoát hiểm khi gặp sự cố đột ngột.
+            </div>
+          </div>
+          
+          <div class="benefit-bullet-item">
+            <span class="bullet-check">✓</span>
+            <div>
+              <strong>Phát triển chiều cao và thể lực:</strong> Bơi lội kích thích khớp xương kéo dài, hỗ trợ tăng chiều cao tự nhiên và tăng cường dung tích phổi tốt.
+            </div>
+          </div>
+
+          <div class="benefit-bullet-item">
+            <span class="bullet-check">✓</span>
+            <div>
+              <strong>Giải tỏa căng thẳng học tập:</strong> Giúp các bé thư giãn đầu óc sau giờ học văn hóa, hạn chế sự phụ thuộc quá mức vào tivi và điện thoại di động.
+            </div>
+          </div>
+
+          <div class="benefit-bullet-item">
+            <span class="bullet-check">✓</span>
+            <div>
+              <strong>Tăng cường sự tự tin và kỷ luật:</strong> Vượt qua nỗi sợ nước giúp trẻ hình thành tính tự lập, tự tin giao tiếp và rèn luyện tính kỷ luật cao.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="benefits-media">
+        <Image src={kidSwim1} alt="Bé học bơi tại bể bơi Newton" class="kids-benefit-img" width={500} height={355} quality="high" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Learning Process -->
+  <section class="section-padding learning-process-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Lộ Trình Học Bơi Cho Bé Tại CanSwim</h2>
+        <p class="section-subtitle">Giáo trình của chúng tôi được chia nhỏ thành các chặng ngắn giúp trẻ dễ tiếp thu và hào hứng tham gia.</p>
+      </div>
+
+      <div class="process-steps-container">
+        <!-- Step 1 -->
+        <div class="process-step-card glass-card">
+          <span class="step-badge">Chặng 1</span>
+          <h4>Làm quen với nước</h4>
+          <p>Giáo viên hướng dẫn bé các bài tập thổi bong bóng thở nước, lấy hơi bằng miệng, tập thả lỏng cơ thể đứng nước và lướt nước cơ bản.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="process-step-card glass-card">
+          <span class="step-badge">Chặng 2</span>
+          <h4>Kỹ thuật chân & tay</h4>
+          <p>Tập đạp chân ếch trên bờ trước khi xuống nước thực hành kết hợp phao. Hướng dẫn tư thế quạt tay ếch chuẩn xác đồng bộ.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="process-step-card glass-card">
+          <span class="step-badge">Chặng 3</span>
+          <h4>Phối hợp động tác</h4>
+          <p>Học viên kết hợp chân, tay và nhịp thở nhịp nhàng dưới nước. Bắt đầu tự bơi đoạn ngắn không cần sự hỗ trợ của phao bơi.</p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="process-step-card glass-card">
+          <span class="step-badge">Chặng 4</span>
+          <h4>Kỹ năng sinh tồn & Tốt nghiệp</h4>
+          <p>Học kỹ thuật thả nổi ngửa tự cứu, xử lý tình huống chuột rút và tốt nghiệp bơi tự tin tối thiểu 25m bể liên tục đúng kỹ thuật.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Safety & Parent Objections FAQ -->
+  <section class="section-padding safety-section">
+    <div class="container safety-grid">
+      <div class="safety-media">
+        <Image src={kidSwim2} alt="Giáo viên kèm sát bảo vệ trẻ em khi học bơi" class="safety-img" width={480} height={320} quality="high" />
+      </div>
+
+      <div class="safety-content">
+        <h2 class="section-subheading">Cam Kết An Toàn & Giám Sát</h2>
+        <p class="intro-p">
+          Tại CanSwim, **sự an toàn của con em bạn là ưu tiên số một**. Chúng tôi áp dụng quy trình kiểm soát rủi ro chặt chẽ trong suốt buổi học bơi tại bể bơi Newton:
+        </p>
+        
+        <ul class="safety-commit-list">
+          <li>Huấn luyện viên trực tiếp xuống nước kèm sát bên cạnh bé 100% thời gian học bơi.</li>
+          <li>Sĩ số lớp nhóm siêu nhỏ (chỉ từ 1 - 3 học viên hoặc tối đa 4 - 6 học viên/lớp) giúp giáo viên bao quát tuyệt đối.</li>
+          <li>Khu vực học bơi có độ sâu an toàn thiết kế riêng cho bé làm quen với nước.</li>
+          <li>Bể bơi Newton có đội ngũ cứu hộ thường trực quanh thành bể, trang bị đầy đủ dụng cụ sơ cứu y tế.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Register Form Placement -->
+  <section class="section-padding register-callout-section" id="register-form">
+    <div class="container max-width-register">
+      <FormRegister 
+        title="ĐĂNG KÝ HỌC THỬ LỚP BƠI TRẺ EM"
+        subtitle="Để lại thông tin liên hệ, CanSwim sẽ liên hệ xếp lịch kiểm tra trình độ nước miễn phí cho bé tại bể bơi Newton."
+      />
+    </div>
+  </section>
+</Layout>
+
+<style>
+  /* Header styling */
+  .page-header-section {
+    background: linear-gradient(135deg, hsl(205, 70%, 15%) 0%, hsl(205, 90%, 8%) 100%);
+    color: var(--color-white);
+    padding: 140px 20px 70px 20px;
+    border-bottom: 3px solid var(--color-secondary);
+  }
+
+  .kids-theme {
+    background: linear-gradient(135deg, hsl(195, 80%, 15%) 0%, hsl(205, 85%, 8%) 100%);
+  }
+
+  .page-meta-badge {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    padding: 6px 14px;
+    border-radius: 99px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+
+  .page-title-main {
+    font-size: 2.8rem;
+    color: var(--color-white);
+    margin-bottom: 15px;
+    font-weight: 800;
+  }
+
+  .page-desc-main {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: hsl(205, 15%, 80%);
+    line-height: 1.6;
+  }
+
+  /* Benefits split */
+  .benefits-grid-split {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 50px;
+    align-items: center;
+  }
+
+  .section-subheading {
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+  }
+
+  .intro-p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+    margin-bottom: 25px;
+  }
+
+  .benefits-bullets-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .benefit-bullet-item {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .bullet-check {
+    width: 24px;
+    height: 24px;
+    background-color: var(--color-primary-glare);
+    color: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+    margin-top: 3px;
+  }
+
+  .benefit-bullet-item div {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: var(--color-text);
+  }
+
+  .kids-benefit-img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: var(--shadow-md);
+  }
+
+  /* Process steps */
+  .learning-process-section {
+    background-color: var(--color-bg-alt);
+  }
+
+  .process-steps-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    margin-top: 20px;
+  }
+
+  .process-step-card {
+    background-color: var(--color-white);
+    padding: 30px 24px;
+    position: relative;
+  }
+
+  .step-badge {
+    position: absolute;
+    top: -12px;
+    left: 24px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 4px 14px;
+    border-radius: 99px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    box-shadow: 0 4px 8px rgba(0, 102, 170, 0.2);
+  }
+
+  .process-step-card h4 {
+    font-size: 1.15rem;
+    color: var(--color-text);
+    margin-top: 8px;
+    margin-bottom: 12px;
+  }
+
+  .process-step-card p {
+    font-size: 0.88rem;
+    color: var(--color-text-muted);
+    line-height: 1.5;
+  }
+
+  /* Safety section */
+  .safety-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 50px;
+    align-items: center;
+  }
+
+  .safety-img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: var(--shadow-md);
+  }
+
+  .safety-commit-list {
+    list-style: none;
+    margin-top: 20px;
+  }
+
+  .safety-commit-list li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 14px;
+    font-size: 0.95rem;
+    color: var(--color-text);
+  }
+
+  .safety-commit-list li::before {
+    content: '🛡️';
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 0.9rem;
+  }
+
+  .max-width-register {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 1024px) {
+    .page-title-main {
+      font-size: 2.2rem;
+    }
+    
+    .benefits-grid-split {
+      grid-template-columns: 1fr;
+      gap: 35px;
+    }
+
+    .benefits-media {
+      max-width: 500px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .safety-grid {
+      grid-template-columns: 1fr;
+      gap: 35px;
+      text-align: center;
+    }
+
+    .safety-media {
+      max-width: 500px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .safety-commit-list {
+      text-align: left;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+</style>

@@ -1,0 +1,349 @@
+---
+import { getCollection, render } from 'astro:content';
+import { Image } from 'astro:assets';
+import Layout from '../../layouts/Layout.astro';
+
+// 1. Tạo static paths cho toàn bộ các bài viết
+export async function getStaticPaths() {
+  const blogEntries = await getCollection('blog');
+  return blogEntries.map(entry => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+// 2. Lấy dữ liệu bài viết từ props
+const { entry } = Astro.props;
+const { title, description, pubDate, image, tags } = entry.data;
+const { Content } = await render(entry);
+
+const formattedDate = new Date(pubDate).toLocaleDateString('vi-VN', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric'
+});
+
+// Cấu hình Article Schema động cho SEO Google News/AI search
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": title,
+  "description": description,
+  "image": image ? `https://newton.dayboi.vip${image.src}` : "https://newton.dayboi.vip/assets/be-boi-newton-toan-canh-be-boi.jpg",
+  "datePublished": pubDate.toISOString().split('T')[0],
+  "author": {
+    "@type": "Organization",
+    "name": "CanSwim Bể bơi Newton"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Trung tâm dạy bơi CanSwim",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://newton.dayboi.vip/logo.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": `https://newton.dayboi.vip/blog/${entry.id}`
+  }
+};
+---
+
+<Layout 
+  title={`${title} | Tin Tức CanSwim`}
+  description={description}
+  schemaType="Article"
+  customSchema={articleSchema}
+>
+  <article class="blog-post-detail-section">
+    <!-- Header -->
+    <header class="post-header">
+      <div class="container text-center max-width-post-header">
+        <a href="/blog" class="back-to-blog">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="arrow-back-icon" width="16" height="16"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          <span>Quay lại Blog</span>
+        </a>
+        
+        <div class="post-meta">
+          <span class="post-date-span">{formattedDate}</span>
+          {tags && tags.map(tag => (
+            <span class="tag-badge-span">#{tag}</span>
+          ))}
+        </div>
+
+        <h1 class="post-title-heading">{title}</h1>
+        <p class="post-lead-desc">{description}</p>
+      </div>
+    </header>
+
+    <!-- Cover Image -->
+    {image && (
+      <div class="container max-width-post-content">
+        <div class="post-cover-img-wrapper">
+          <Image src={image} alt={title} class="post-cover-img" priority width={800} height={450} quality="high" />
+        </div>
+      </div>
+    )}
+
+    <!-- Body content & Sidebar -->
+    <div class="container max-width-post-layout">
+      <div class="post-layout-grid">
+        <!-- Main Content -->
+        <div class="post-main-content">
+          <div class="markdown-body">
+            <Content />
+          </div>
+
+          <div class="post-footer-cta glass-card">
+            <h4>Đăng Ký Học Bơi Tại Bể Bơi Newton Hôm Nay!</h4>
+            <p>Đội ngũ HLV CanSwim chuyên nghiệp trực tiếp kèm sát 1-1 hoặc nhóm nhỏ cam kết chất lượng đầu ra bài bản, đúng kỹ thuật và rèn luyện thể chất toàn diện.</p>
+            <div class="post-cta-buttons">
+              <a href="/lien-he-chi-duong-be-boi-newton#register" class="btn btn-primary">ĐĂNG KÝ NGAY</a>
+              <a href="tel:0907992336" class="btn btn-secondary">HOTLINE: 0907.992.336</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="post-sidebar">
+          <div class="sidebar-box glass-card quick-register-box">
+            <h4>Tư Vấn Khóa Học</h4>
+            <p>Đặt lịch kiểm tra trình độ bơi lội miễn phí cho bé và nhận ưu đãi tốt nhất.</p>
+            <a href="/lien-he-chi-duong-be-boi-newton#register" class="btn btn-primary sidebar-btn-register">GỬI THÔNG TIN</a>
+          </div>
+
+          <div class="sidebar-box glass-card contact-box-sidebar">
+            <h4>Thông Tin Hỗ Trợ</h4>
+            <p><strong>Hotline:</strong> 0907.992.336</p>
+            <p><strong>Zalo:</strong> 0907 992 336</p>
+            <p><strong>Địa chỉ:</strong> Bể bơi Newton, cuối ngõ 234 Hoàng Quốc Việt, Cầu Giấy, HN</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </article>
+</Layout>
+
+<style>
+  .blog-post-detail-section {
+    padding-top: 140px;
+    padding-bottom: 80px;
+    background-color: var(--color-bg);
+  }
+
+  .post-header {
+    margin-bottom: 40px;
+  }
+
+  .max-width-post-header {
+    max-width: 800px;
+  }
+
+  .back-to-blog {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+  }
+
+  .back-to-blog:hover {
+    color: var(--color-primary-light);
+  }
+
+  .post-meta {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  .post-date-span {
+    color: var(--color-text-muted);
+  }
+
+  .tag-badge-span {
+    color: var(--color-primary);
+  }
+
+  .post-title-heading {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 18px;
+    color: var(--color-text);
+  }
+
+  .post-lead-desc {
+    font-size: 1.15rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+  }
+
+  /* Cover image */
+  .max-width-post-content {
+    max-width: 900px;
+    margin-bottom: 50px;
+  }
+
+  .post-cover-img-wrapper {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--glass-border);
+    height: 400px;
+  }
+
+  .post-cover-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Layout grid split */
+  .max-width-post-layout {
+    max-width: 1000px;
+  }
+
+  .post-layout-grid {
+    display: grid;
+    grid-template-columns: 2.2fr 1fr;
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+  /* Markdown body render */
+  .markdown-body {
+    line-height: 1.8;
+    font-size: 1.05rem;
+    color: var(--color-text);
+    margin-bottom: 50px;
+  }
+
+  .markdown-body :global(p) {
+    margin-bottom: 20px;
+  }
+
+  .markdown-body :global(h2) {
+    font-size: 1.6rem;
+    color: var(--color-primary);
+    margin-top: 35px;
+    margin-bottom: 15px;
+    font-weight: 700;
+  }
+
+  .markdown-body :global(h3) {
+    font-size: 1.3rem;
+    color: var(--color-text);
+    margin-top: 25px;
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+
+  .markdown-body :global(ul) {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    list-style-type: disc;
+  }
+
+  .markdown-body :global(li) {
+    margin-bottom: 8px;
+  }
+
+  .markdown-body :global(strong) {
+    font-weight: 700;
+  }
+
+  /* CTA at bottom of post */
+  .post-footer-cta {
+    background-color: var(--color-primary-glare);
+    padding: 30px;
+    border-left: 5px solid var(--color-primary);
+  }
+
+  .post-footer-cta h4 {
+    font-size: 1.25rem;
+    color: var(--color-primary);
+    margin-bottom: 12px;
+  }
+
+  .post-footer-cta p {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+
+  .post-cta-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .post-cta-buttons a {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+    border-radius: 8px;
+  }
+
+  /* Sidebar */
+  .post-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: sticky;
+    top: 100px;
+  }
+
+  .sidebar-box {
+    padding: 24px;
+  }
+
+  .sidebar-box h4 {
+    font-size: 1.1rem;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+    border-bottom: 2px solid var(--color-primary-glare);
+    padding-bottom: 6px;
+  }
+
+  .sidebar-box p {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    line-height: 1.4;
+    margin-bottom: 15px;
+  }
+
+  .sidebar-btn-register {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.8rem;
+    border-radius: 8px;
+  }
+
+  .contact-box-sidebar p {
+    margin-bottom: 8px;
+  }
+
+  @media (max-width: 1024px) {
+    .post-title-heading {
+      font-size: 2rem;
+    }
+
+    .post-cover-img-wrapper {
+      height: 300px;
+    }
+
+    .post-layout-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .post-sidebar {
+      position: static;
+    }
+  }
+</style>

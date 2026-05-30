@@ -1,0 +1,279 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Layout.astro';
+import FormRegister from '../components/FormRegister.astro';
+
+// Import ảnh học viên lớn tuổi
+import adultSwim1 from '../assets/be-boi-newton/be-boi-newton-hoc-vien-tap-luyen.jpg';
+import adultSwim2 from '../assets/be-boi-newton/be-boi-newton-huong-dan-hoc-vien.jpg';
+---
+
+<Layout 
+  title="Khóa Học Bơi Người Lớn Bể Bơi Newton Cầu Giấy | CanSwim"
+  description="Lớp học bơi người lớn tại bể bơi Newton cuối ngõ 234 Hoàng Quốc Việt. Lịch học linh hoạt phù hợp người đi làm bận rộn, giáo viên kèm riêng giúp nhanh biết bơi."
+  schemaType="LocalBusiness"
+>
+  <!-- Page Header -->
+  <section class="page-header-section adult-theme">
+    <div class="container text-center">
+      <span class="page-meta-badge">Lớp học người lớn</span>
+      <h1 class="page-title-main">KHÓA HỌC BƠI NGƯỜI LỚN TẠI BỂ BƠI NEWTON</h1>
+      <p class="page-desc-main">CanSwim cung cấp các giải pháp dạy học bơi linh hoạt, bảo mật riêng tư và hiệu quả cao nhất cho học viên trưởng thành tại Cầu Giấy và Bắc Từ Liêm.</p>
+    </div>
+  </section>
+
+  <!-- Service Details -->
+  <section class="section-padding adult-intro-section">
+    <div class="container adult-intro-grid">
+      <div class="adult-intro-text">
+        <h2 class="section-subheading">Vượt Qua Trở Ngại Sợ Nước Ở Người Trưởng Thành</h2>
+        <p class="intro-p">
+          Khác với trẻ nhỏ, người lớn học bơi thường gặp các rào cản lớn về tâm lý sợ độ sâu, cơ thể bị cứng khó thả lỏng và lịch trình làm việc bận rộn. CanSwim thấu hiểu sâu sắc những khó khăn này và mang đến phương pháp tiếp cận riêng biệt giúp bạn tự tin làm chủ làn nước:
+        </p>
+
+        <div class="adult-features-list">
+          <div class="adult-feat-item">
+            <span class="feat-icon-bullet">🎯</span>
+            <div>
+              <h5>Giáo trình cá nhân hóa</h5>
+              <p>Không áp đặt một giáo án chung. Giáo viên sẽ kiểm tra thể trạng, mức độ nhát nước và điều chỉnh giáo án bơi theo tốc độ tiếp thu của riêng bạn.</p>
+            </div>
+          </div>
+
+          <div class="adult-feat-item">
+            <span class="feat-icon-bullet">🕒</span>
+            <div>
+              <h5>Lịch học linh động tuyệt đối</h5>
+              <p>Bạn tự chọn khung giờ học bơi phù hợp với lịch làm việc. Có thể học ca muộn chiều tối (từ 19:00 - 20:30) hoặc các ca cuối tuần để không ảnh hưởng công việc.</p>
+            </div>
+          </div>
+
+          <div class="adult-feat-item">
+            <span class="feat-icon-bullet">🛡️</span>
+            <div>
+              <h5>Không gian học bơi lịch sự</h5>
+              <p>Bể bơi Newton có mái che, làn bơi chia lane tiêu chuẩn, hạn chế sự ồn ào và đảm bảo không gian tập luyện lịch sự, kín đáo cho học viên trưởng thành.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="adult-intro-media">
+        <Image src={adultSwim1} alt="Học viên lớn tuổi tập bơi sải" class="adult-img" width={500} height={355} quality="high" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Special Methods Section -->
+  <section class="section-padding adult-methods-section">
+    <div class="container methods-grid">
+      <div class="methods-media">
+        <Image src={adultSwim2} alt="Giáo viên sửa tư thế bơi cho người lớn" class="methods-img" width={480} height={320} quality="high" />
+      </div>
+
+      <div class="methods-content">
+        <h2 class="section-subheading">HLV Đồng Hành & Sửa Lỗi Chi Tiết</h2>
+        <p class="intro-p">
+          Người lớn thường dễ mắc các lỗi kỹ thuật bơi tự phát hoặc cơ thể bị chìm do gồng cứng cơ. HLV của chúng tôi sẽ đồng hành xuống nước để hỗ trợ bạn:
+        </p>
+        
+        <ul class="methods-list-bullets">
+          <li>Giải thích cơ chế vật lý của lực nổi để bạn hiểu rõ cách thả lỏng tự nhiên.</li>
+          <li>Sửa chi tiết kỹ thuật quạt tay, đập chân và xoay đầu thở nước tránh sặc nước.</li>
+          <li>Đào tạo kỹ năng sinh tồn thực tế: đứng nước tự cứu, bơi sinh tồn khi rơi xuống nước sâu.</li>
+          <li>Hỗ trợ bơi bền bỉ để nâng cao sức bền tim mạch, cải thiện đau mỏi vai gáy và cột sống.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Register Form Placement -->
+  <section class="section-padding register-callout-section" id="register-form">
+    <div class="container max-width-register">
+      <FormRegister 
+        title="ĐĂNG KÝ NHẬN TƯ VẤN KHÓA NGƯỜI LỚN"
+        subtitle="Để lại thông tin, CanSwim sẽ liên hệ xếp lịch học thử và sắp xếp huấn luyện viên phù hợp nhất với trình độ của bạn."
+      />
+    </div>
+  </section>
+</Layout>
+
+<style>
+  /* Header styling */
+  .page-header-section {
+    background: linear-gradient(135deg, hsl(205, 70%, 15%) 0%, hsl(205, 90%, 8%) 100%);
+    color: var(--color-white);
+    padding: 140px 20px 70px 20px;
+    border-bottom: 3px solid var(--color-secondary);
+  }
+
+  .adult-theme {
+    background: linear-gradient(135deg, hsl(210, 60%, 16%) 0%, hsl(215, 80%, 9%) 100%);
+  }
+
+  .page-meta-badge {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    padding: 6px 14px;
+    border-radius: 99px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+
+  .page-title-main {
+    font-size: 2.8rem;
+    color: var(--color-white);
+    margin-bottom: 15px;
+    font-weight: 800;
+  }
+
+  .page-desc-main {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: hsl(205, 15%, 80%);
+    line-height: 1.6;
+  }
+
+  /* Intro Section */
+  .adult-intro-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 50px;
+    align-items: center;
+  }
+
+  .section-subheading {
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+  }
+
+  .intro-p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+    margin-bottom: 25px;
+  }
+
+  .adult-features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .adult-feat-item {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .feat-icon-bullet {
+    font-size: 1.8rem;
+    line-height: 1;
+    flex-shrink: 0;
+    margin-top: 4px;
+  }
+
+  .adult-feat-item h5 {
+    font-size: 1.05rem;
+    color: var(--color-text);
+    margin-bottom: 6px;
+  }
+
+  .adult-feat-item p {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    line-height: 1.4;
+  }
+
+  .adult-img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: var(--shadow-md);
+  }
+
+  /* Methods section */
+  .adult-methods-section {
+    background-color: var(--color-bg-alt);
+  }
+
+  .methods-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 50px;
+    align-items: center;
+  }
+
+  .methods-img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: var(--shadow-md);
+  }
+
+  .methods-list-bullets {
+    list-style: none;
+    margin-top: 20px;
+  }
+
+  .methods-list-bullets li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 14px;
+    font-size: 0.95rem;
+    color: var(--color-text);
+  }
+
+  .methods-list-bullets li::before {
+    content: '🏊';
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 0.9rem;
+  }
+
+  .max-width-register {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 1024px) {
+    .page-title-main {
+      font-size: 2.2rem;
+    }
+    
+    .adult-intro-grid {
+      grid-template-columns: 1fr;
+      gap: 35px;
+    }
+
+    .adult-intro-media {
+      max-width: 500px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .methods-grid {
+      grid-template-columns: 1fr;
+      gap: 35px;
+      text-align: center;
+    }
+
+    .methods-media {
+      max-width: 500px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .methods-list-bullets {
+      text-align: left;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+</style>

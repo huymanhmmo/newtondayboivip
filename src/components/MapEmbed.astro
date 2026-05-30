@@ -1,0 +1,128 @@
+---
+interface Props {
+  height?: string;
+}
+
+const { height = "450px" } = Astro.props;
+
+// Sử dụng tọa độ và query chính xác của Trường liên cấp Newton, ngõ 234 Hoàng Quốc Việt
+const mapUrl = "https://maps.google.com/maps?q=Trường%20THCS%20-%20THPT%20Newton,%20Ngõ%20234%20Hoàng%20Quốc%20Việt,%20Nghĩa%20Đô,%20Cầu%20Giấy,%20Hà%20Nội&t=&z=16&ie=UTF8&iwloc=&output=embed";
+---
+
+<div class="map-embed-container">
+  <iframe 
+    src={mapUrl} 
+    width="100%" 
+    height={height} 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade"
+    title="Bản đồ vị trí Bể bơi Newton Cầu Giấy"
+    class="map-iframe"
+  ></iframe>
+
+  <!-- Directions Overlay Info Card -->
+  <div class="map-overlay-card glass-card">
+    <h4 class="overlay-title">Chỉ đường nhanh:</h4>
+    <p class="overlay-text">
+      <strong>Từ đường lớn:</strong> Rẽ từ đường Hoàng Quốc Việt vào <strong>Ngõ 234</strong>.
+    </p>
+    <p class="overlay-text">
+      <strong>Di chuyển:</strong> Đi thẳng kịch ngõ 234 là khu đô thị Nam Cường.
+    </p>
+    <p class="overlay-text">
+      <strong>Vị trí bể:</strong> Bể bơi nằm trong khuôn viên <strong>trường Newton</strong> (cuối ngõ).
+    </p>
+    <a 
+      href="https://maps.google.com/?q=Trường%20Newton,%20Ngõ%20234%20Hoàng%20Quốc%20Việt,%20Cầu%20Giấy,%20Hà%20Nội" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      class="btn btn-primary btn-overlay-action"
+    >
+      <span>MỞ GOOGLE MAPS</span>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="map-icon"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
+    </a>
+  </div>
+</div>
+
+<style>
+  .map-embed-container {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--glass-border);
+  }
+
+  .map-iframe {
+    display: block;
+    filter: grayscale(10%) contrast(100%);
+    transition: filter var(--transition-normal);
+  }
+
+  .map-iframe:hover {
+    filter: grayscale(0%) contrast(100%);
+  }
+
+  .map-overlay-card {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    width: 320px;
+    padding: 24px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--glass-border);
+    z-index: 2;
+  }
+
+  .overlay-title {
+    font-size: 1.1rem;
+    color: var(--color-primary);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .overlay-text {
+    font-size: 0.85rem;
+    color: var(--color-text);
+    margin-bottom: 8px;
+    line-height: 1.4;
+  }
+
+  .btn-overlay-action {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 0.85rem;
+    border-radius: 8px;
+  }
+
+  .map-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  @media (max-width: 768px) {
+    .map-overlay-card {
+      position: relative;
+      bottom: auto;
+      left: auto;
+      width: 100%;
+      border-radius: 0 0 20px 20px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+    }
+    
+    .map-embed-container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+</style>

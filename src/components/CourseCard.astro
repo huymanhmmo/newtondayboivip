@@ -1,0 +1,149 @@
+---
+import { Image } from 'astro:assets';
+
+interface Props {
+  course: {
+    data: {
+      title: string;
+      price_group_1: string;
+      price_group_1_desc: string;
+      price_group_2?: string;
+      price_group_2_desc?: string;
+      image?: any;
+    };
+    body: string;
+  };
+}
+
+const { course } = Astro.props;
+const { title, price_group_1, price_group_1_desc, price_group_2, price_group_2_desc, image } = course.data;
+---
+
+<div class="course-card glass-card">
+  {image && (
+    <div class="course-image-wrapper">
+      <Image src={image} alt={title} class="course-image" width={360} height={220} quality="high" />
+      <span class="course-badge">Đang Tuyển Sinh</span>
+    </div>
+  )}
+  <div class="course-info">
+    <h3 class="course-name">{title}</h3>
+    <p class="course-desc">{course.body.trim()}</p>
+    
+    <div class="course-pricing">
+      <div class="pricing-row">
+        <span class="pricing-label">{price_group_1_desc}</span>
+        <span class="pricing-value">{price_group_1}</span>
+      </div>
+      {price_group_2 && (
+        <div class="pricing-row">
+          <span class="pricing-label">{price_group_2_desc}</span>
+          <span class="pricing-value">{price_group_2}</span>
+        </div>
+      )}
+    </div>
+
+    <a href="/lien-he-chi-duong-be-boi-newton#register" class="btn btn-secondary btn-course-cta">ĐĂNG KÝ HỌC</a>
+  </div>
+</div>
+
+<style>
+  .course-card {
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .course-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+
+  .course-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+  }
+
+  .course-card:hover .course-image {
+    transform: scale(1.08);
+  }
+
+  .course-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    padding: 6px 12px;
+    border-radius: 99px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    font-family: var(--font-heading);
+    box-shadow: 0 4px 10px rgba(255, 122, 0, 0.25);
+  }
+
+  .course-info {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .course-name {
+    font-size: 1.35rem;
+    color: var(--color-primary);
+    margin-bottom: 12px;
+  }
+
+  .course-desc {
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    flex-grow: 1;
+  }
+
+  .course-pricing {
+    background-color: var(--color-primary-glare);
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 20px;
+    border: 1px dashed rgba(0, 102, 170, 0.2);
+  }
+
+  .pricing-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+  }
+
+  .pricing-row:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 102, 170, 0.08);
+  }
+
+  .pricing-label {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--color-text-muted);
+  }
+
+  .pricing-value {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--color-secondary-dark);
+  }
+
+  .btn-course-cta {
+    width: 100%;
+    border-radius: 10px;
+    padding: 12px;
+  }
+</style>

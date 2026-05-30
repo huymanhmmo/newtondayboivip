@@ -1,0 +1,383 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import FormRegister from '../components/FormRegister.astro';
+
+// Fetch dữ liệu các khóa học để lấy giá tự động (CMS-driven)
+const courses = await getCollection('courses');
+const sortedCourses = courses.sort((a, b) => a.data.order - b.data.order);
+---
+
+<Layout 
+  title="Lịch Học Và Học Phí Lớp Dạy Bơi CanSwim Newton Cầu Giấy"
+  description="Xem bảng giá học phí các lớp học bơi ếch, bơi sải, bơi ngửa, bơi bướm và lịch dạy chi tiết tại bể bơi Newton 234 Hoàng Quốc Việt mới nhất."
+  schemaType="LocalBusiness"
+>
+  <!-- Page Header -->
+  <section class="page-header-section">
+    <div class="container text-center">
+      <span class="page-meta-badge">Thông tin học phí & ca học</span>
+      <h1 class="page-title-main">LỊCH HỌC & HỌC PHÍ DẠY BƠI NEWTON</h1>
+      <p class="page-desc-main">Tra cứu bảng học phí chi tiết các khóa học bơi nhóm nhỏ tại trung tâm CanSwim và đăng ký khung giờ bơi phù hợp nhất với quỹ thời gian của bạn.</p>
+    </div>
+  </section>
+
+  <!-- Tuition Table Section -->
+  <section class="section-padding tuition-table-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Bảng Học Phí Lớp Bơi CanSwim Mới Nhất</h2>
+        <p class="section-subtitle">Học phí trọn gói theo khóa học bơi nhóm nhỏ kèm sát. Giá đã bao gồm vé bơi của học viên trong suốt buổi học.</p>
+      </div>
+
+      <div class="tuition-table-wrapper glass-card">
+        <table class="tuition-table">
+          <thead>
+            <tr>
+              <th>Khóa học bơi</th>
+              <th>Học phí Nhóm Nhỏ 1-3 Học viên</th>
+              <th>Học phí Nhóm 4-6 Học viên</th>
+            </tr>
+          </thead>
+          <tbody>
+            {sortedCourses.map((course) => (
+              <tr>
+                <td class="course-td-name">
+                  <strong>{course.data.title}</strong>
+                </td>
+                <td class="price-td">
+                  <span class="price-span">{course.data.price_group_1}</span>
+                  <span class="desc-span">({course.data.price_group_1_desc})</span>
+                </td>
+                <td class="price-td">
+                  {course.data.price_group_2 ? (
+                    <>
+                      <span class="price-span">{course.data.price_group_2}</span>
+                      <span class="desc-span">({course.data.price_group_2_desc})</span>
+                    </>
+                  ) : (
+                    <span class="na-span">-</span>
+                  )}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+
+        <div class="tuition-disclosure-box">
+          <p>📌 <strong>Chính sách cam kết:</strong> Học viên chưa đạt yêu cầu sau khóa học sẽ được **huấn luyện viên kèm thêm miễn phí ngoài số buổi** cho đến khi bơi tốt thực tế mới hoàn thành khóa học.</p>
+          <p>⚠️ <strong>Lưu ý:</strong> Mức học phí trên có tính chất tham khảo tại thời điểm hiện tại và có thể thay đổi linh hoạt theo mùa hoặc chương trình khuyến mại riêng của bể bơi. Vui lòng liên hệ trực tiếp để nhận báo giá chính xác nhất.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Class Schedule Section -->
+  <section class="section-padding schedule-section">
+    <div class="container schedule-grid">
+      <div class="schedule-details-col">
+        <h2 class="section-subheading">Lịch Học & Ca Dạy Bơi Linh Hoạt</h2>
+        <p class="intro-p">
+          Lớp học bơi tại bể bơi Newton được thiết kế linh động cao nhằm tạo điều kiện tốt nhất cho các gia đình đưa đón bé và người đi làm bận rộn. Bạn có thể đăng ký các ca học cố định hoặc linh hoạt theo lịch cá nhân:
+        </p>
+
+        <div class="schedule-slots-list">
+          <div class="slot-card">
+            <span class="slot-days">Thứ 2 - Thứ 6 (Ngày thường)</span>
+            <div class="slot-times">
+              <span>Ca 1: 16:00 - 17:00</span>
+              <span>Ca 2: 17:00 - 18:00 (Đông học viên)</span>
+              <span>Ca 3: 18:00 - 19:00</span>
+              <span>Ca 4: 19:00 - 20:30 (Thoáng bể, thích hợp người lớn)</span>
+            </div>
+          </div>
+
+          <div class="slot-card">
+            <span class="slot-days font-orange">Thứ 7 - Chủ Nhật (Cuối tuần)</span>
+            <div class="slot-times">
+              <span>Ca 1: 15:00 - 16:00</span>
+              <span>Ca 2: 16:00 - 17:00</span>
+              <span>Ca 3: 17:00 - 18:00 (Giờ cao điểm)</span>
+              <span>Ca 4: 18:00 - 19:30</span>
+              <span>Ca 5: 19:30 - 20:30</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="schedule-tips-col glass-card">
+        <h4 class="card-title-highlight">Lời Khuyên Chọn Khung Giờ Học:</h4>
+        <ul class="tips-list">
+          <li>
+            <strong>Dành cho Trẻ em:</strong> Nên ưu tiên các ca cuối tuần ban ngày hoặc ca chiều sớm ngày thường (16:00 - 18:00) để đảm bảo bé có sức khỏe tốt nhất và nước bể ấm áp.
+          </li>
+          <li>
+            <strong>Dành cho Người lớn:</strong> Nên chọn các ca tối muộn sau 19:00 ngày thường để bể vắng người bơi tự do, không gian thoáng đãng giúp tập trung tập luyện tốt hơn.
+          </li>
+          <li>
+            <strong>Chọn ca bơi vắng:</strong> Các ngày đầu tuần (Thứ 2, Thứ 3) lượng khách bơi tự do ít hơn rất nhiều so với cuối tuần, giúp tối ưu hóa không gian thực hành cho học viên.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Register Form Placement -->
+  <section class="section-padding register-callout-section" id="register-form">
+    <div class="container max-width-register">
+      <FormRegister 
+        title="ĐĂNG KÝ XẾP LỊCH HỌC PHÙ HỢP"
+        subtitle="Để lại thông tin để giữ chỗ lớp bơi hè và nhận ưu đãi học phí tốt nhất ngay hôm nay."
+      />
+    </div>
+  </section>
+</Layout>
+
+<style>
+  /* Header styling */
+  .page-header-section {
+    background: linear-gradient(135deg, hsl(205, 70%, 15%) 0%, hsl(205, 90%, 8%) 100%);
+    color: var(--color-white);
+    padding: 140px 20px 70px 20px;
+    border-bottom: 3px solid var(--color-secondary);
+  }
+
+  .page-meta-badge {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    padding: 6px 14px;
+    border-radius: 99px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+
+  .page-title-main {
+    font-size: 2.8rem;
+    color: var(--color-white);
+    margin-bottom: 15px;
+    font-weight: 800;
+  }
+
+  .page-desc-main {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: hsl(205, 15%, 80%);
+    line-height: 1.6;
+  }
+
+  /* Tuition Table */
+  .tuition-table-section {
+    background-color: var(--color-bg);
+  }
+
+  .tuition-table-wrapper {
+    background-color: var(--color-white);
+    padding: 40px;
+    border-radius: 24px;
+  }
+
+  .tuition-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+  }
+
+  .tuition-table th, .tuition-table td {
+    padding: 18px 24px;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .tuition-table th {
+    font-weight: 700;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+  }
+
+  .tuition-table th:first-child {
+    border-radius: 12px 0 0 12px;
+  }
+
+  .tuition-table th:last-child {
+    border-radius: 0 12px 12px 0;
+  }
+
+  .course-td-name {
+    font-size: 1.1rem;
+    color: var(--color-text);
+  }
+
+  .price-td {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .price-span {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 1.3rem;
+    color: var(--color-secondary-dark);
+  }
+
+  .desc-span {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    font-weight: 500;
+  }
+
+  .na-span {
+    color: var(--color-text-muted);
+    font-weight: 600;
+  }
+
+  .tuition-disclosure-box {
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+  }
+
+  /* Schedule layout */
+  .schedule-section {
+    background-color: var(--color-bg-alt);
+  }
+
+  .schedule-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .section-subheading {
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+  }
+
+  .intro-p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+    margin-bottom: 25px;
+  }
+
+  .schedule-slots-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .slot-card {
+    background-color: var(--color-white);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    padding: 20px 24px;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .slot-days {
+    display: inline-block;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--color-primary);
+    margin-bottom: 12px;
+    border-bottom: 2px solid var(--color-primary-glare);
+    padding-bottom: 4px;
+  }
+
+  .font-orange {
+    color: var(--color-secondary-dark);
+    border-bottom-color: rgba(255, 122, 0, 0.1);
+  }
+
+  .slot-times {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-text);
+  }
+
+  .schedule-tips-col {
+    background-color: var(--color-white);
+    padding: 35px 30px;
+  }
+
+  .card-title-highlight {
+    font-size: 1.2rem;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--color-primary-glare);
+    padding-bottom: 8px;
+  }
+
+  .tips-list {
+    list-style: none;
+  }
+
+  .tips-list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 18px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: var(--color-text-muted);
+  }
+
+  .tips-list li::before {
+    content: '💡';
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 0.85rem;
+  }
+
+  .tips-list li strong {
+    color: var(--color-text);
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .max-width-register {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 1024px) {
+    .page-title-main {
+      font-size: 2.2rem;
+    }
+    
+    .tuition-table-wrapper {
+      padding: 20px;
+      overflow-x: auto;
+    }
+
+    .tuition-table th, .tuition-table td {
+      padding: 12px 14px;
+    }
+
+    .schedule-grid {
+      grid-template-columns: 1fr;
+      gap: 35px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .tuition-table {
+      min-width: 500px; /* Force scrollbar on tiny screens for reading */
+    }
+  }
+</style>

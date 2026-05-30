@@ -1,0 +1,128 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  canonicalURL?: string;
+  schemaType?: 'WebSite' | 'LocalBusiness' | 'FAQPage' | 'Article';
+  customSchema?: any;
+}
+
+const { 
+  title, 
+  description, 
+  canonicalURL = Astro.url.href, 
+  schemaType = 'WebSite',
+  customSchema 
+} = Astro.props;
+
+// Schema mặc định của LocalBusiness
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "SportsActivityLocation",
+  "name": "Trung tâm dạy bơi CanSwim tại Bể bơi Newton",
+  "alternateName": "CanSwim Bể bơi Newton Cầu Giấy",
+  "url": "https://newton.dayboi.vip",
+  "logo": "https://newton.dayboi.vip/logo.png",
+  "image": "https://newton.dayboi.vip/assets/be-boi-newton-toan-canh-be-boi.jpg",
+  "description": description || "Lớp học bơi trẻ em và người lớn uy tín tại bể bơi Newton, ngõ 234 Hoàng Quốc Việt, Nghĩa Đô, Cầu Giấy, Hà Nội.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Bể bơi Newton, lô TH2 khu đô thị Hoàng Quốc Việt, cuối ngõ 234 Hoàng Quốc Việt, phường Nghĩa Đô",
+    "addressLocality": "Cầu Giấy",
+    "addressRegion": "Hà Nội",
+    "postalCode": "100000",
+    "addressCountry": "VN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "21.047464", // Tọa độ tương đối khu trường Newton Hoàng Quốc Việt
+    "longitude": "105.792557"
+  },
+  "telephone": "0907992336",
+  "priceRange": "$$",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "16:00",
+      "closes": "20:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Saturday", "Sunday"],
+      "opens": "15:00",
+      "closes": "20:30"
+    }
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "0907992336",
+    "contactType": "customer service",
+    "areaServed": ["HN", "Cầu Giấy", "Bắc Từ Liêm"],
+    "availableLanguage": "Vietnamese"
+  },
+  "sameAs": [
+    "https://www.facebook.com/beboinewton"
+  ]
+};
+
+// Website Schema mặc định
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Trung tâm dạy bơi CanSwim tại Bể bơi Newton",
+  "url": "https://newton.dayboi.vip"
+};
+
+const activeSchema = customSchema 
+  ? customSchema 
+  : (schemaType === 'LocalBusiness' ? localBusinessSchema : websiteSchema);
+---
+
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- SEO Meta Tags -->
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="https://newton.dayboi.vip/assets/be-boi-newton-toan-canh-be-boi.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalURL} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content="https://newton.dayboi.vip/assets/be-boi-newton-toan-canh-be-boi.jpg" />
+
+    <!-- Schema JSON-LD -->
+    <script type="application/ld+json" set:html={JSON.stringify(activeSchema)} />
+
+    <!-- Prefetch for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

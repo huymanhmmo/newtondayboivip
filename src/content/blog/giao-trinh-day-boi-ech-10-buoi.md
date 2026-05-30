@@ -20,21 +20,52 @@ Hãy cùng khám phá chi tiết lộ trình 10 buổi học thực hành bài b
 
 Giáo trình bơi ếch của CanSwim được thiết kế chia làm 4 giai đoạn logic đi từ cơ bản làm quen nước đến hoàn thiện bơi quãng dài và kỹ năng tự cứu:
 
-```mermaid
-gantt
-    title Lộ trình 10 buổi học bơi ếch CanSwim
-    dateFormat  X
-    axisFormat %d
-    section Giai đoạn 1: Làm quen nước
-    Khởi động, tập thở, đứng nước, thả nổi :active, 1, 2
-    section Giai đoạn 2: Kỹ thuật đơn lẻ
-    Đạp chân ếch chuẩn xác : 3, 4
-    Quạt tay phối hợp nhấc đầu lấy hơi : 5, 5
-    section Giai đoạn 3: Phối hợp & Bơi ngắn
-    Phối hợp tay - chân - thở : 6, 8
-    section Giai đoạn 4: Hoàn thiện & Tốt nghiệp
-    Bơi cự ly 15-25m liên tục, kỹ năng tự cứu : 9, 10
-```
+<div class="syllabus-timeline">
+  <div class="timeline-header">
+    <strong>Lộ trình 10 buổi học bơi ếch CanSwim</strong>
+    <span>CanSwim Bể bơi Newton</span>
+  </div>
+  
+  <div class="timeline-step">
+    <div class="timeline-badge highlight">Buổi 1 - 2</div>
+    <div class="timeline-content">
+      <div class="timeline-title">Giai đoạn 1: Làm quen nước</div>
+      <div class="timeline-desc">Khởi động, tập thở nước đúng cách, thả nổi cơ thể thăng bằng và đứng nước sinh tồn.</div>
+    </div>
+  </div>
+  
+  <div class="timeline-step">
+    <div class="timeline-badge">Buổi 3 - 4</div>
+    <div class="timeline-content">
+      <div class="timeline-title">Giai đoạn 2.1: Đạp chân ếch chuẩn xác</div>
+      <div class="timeline-desc">Tập bẻ bàn chân và đạp khép chân mạnh để đẩy lướt nước đi cùng phao tim hỗ trợ.</div>
+    </div>
+  </div>
+  
+  <div class="timeline-step">
+    <div class="timeline-badge">Buổi 5</div>
+    <div class="timeline-content">
+      <div class="timeline-title">Giai đoạn 2.2: Quạt tay kết hợp thở nước</div>
+      <div class="timeline-desc">Tập động tác quạt tay đẩy nước kết hợp nhấc đầu lên cao để hít hơi nhanh bằng miệng.</div>
+    </div>
+  </div>
+  
+  <div class="timeline-step">
+    <div class="timeline-badge">Buổi 6 - 8</div>
+    <div class="timeline-content">
+      <div class="timeline-title">Giai đoạn 3: Phối hợp & Bơi ngắn</div>
+      <div class="timeline-desc">Phối hợp hoàn chỉnh chuỗi động tác: Tay quạt đầu lên thở - Chân đạp lướt nước. Thực hành bơi cự ly ngắn 5m - 10m.</div>
+    </div>
+  </div>
+  
+  <div class="timeline-step">
+    <div class="timeline-badge highlight">Buổi 9 - 10</div>
+    <div class="timeline-content">
+      <div class="timeline-title">Giai đoạn 4: Hoàn thiện & Tốt nghiệp</div>
+      <div class="timeline-desc">Tối ưu hóa kỹ thuật bơi, rèn luyện thể lực bơi liên tục 15-25m dọc bể và tốt nghiệp các kỹ năng tự cứu.</div>
+    </div>
+  </div>
+</div>
 
 ---
 

@@ -6,6 +6,37 @@ import Layout from '../../layouts/Layout.astro';
 // Fetch bài viết và sắp xếp theo ngày xuất bản giảm dần (mới nhất lên đầu)
 const posts = await getCollection('blog');
 const sortedPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const featuredPost = sortedPosts[0];
+const gridPosts = sortedPosts;
+
+// Phân loại danh mục cho từng bài viết để phục vụ bộ lọc thời gian thực
+const getCategories = (tags: string[]): string[] => {
+  const categories = ['all'];
+  const ts = (tags || []).map(t => t.toLowerCase());
+  
+  if (ts.some(t => t.includes('trẻ em') || t.includes('bé') || t.includes('học sinh') || t.includes('tiểu học') || t.includes('dạy bơi trẻ em'))) {
+    categories.push('tre-em');
+  }
+  if (ts.some(t => t.includes('người lớn'))) {
+    categories.push('nguoi-lon');
+  }
+  if (ts.some(t => t.includes('kỹ thuật') || t.includes('giáo trình') || t.includes('tự học') || t.includes('sải') || t.includes('ếch') || t.includes('phối hợp') || t.includes('cách tự học'))) {
+    categories.push('ky-thuat');
+  }
+  if (ts.some(t => t.includes('học phí') || t.includes('giá rẻ') || t.includes('giá 1 khóa') || t.includes('lớp bơi tập thể'))) {
+    categories.push('hoc-phi');
+  }
+  if (ts.some(t => t.includes('đường đi') || t.includes('bản đồ') || t.includes('chỉ đường') || t.includes('review') || t.includes('ở đâu') || t.includes('gửi xe') || t.includes('so sánh'))) {
+    categories.push('review');
+  }
+  
+  if (categories.length === 1) {
+    categories.push('tin-tuc');
+  }
+  
+  return categories;
+}
 ---
 
 <Layout 
@@ -22,53 +53,179 @@ const sortedPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDa
     </div>
   </section>
 
-  <!-- Blog Listing -->
-  <section class="section-padding blog-list-section">
-    <div class="container">
-      {sortedPosts.length === 0 ? (
-        <div class="no-posts-box text-center glass-card">
-          <p>Hiện tại chưa có bài viết nào được xuất bản. Vui lòng quay lại sau.</p>
-        </div>
-      ) : (
-        <div class="blog-posts-grid">
-          {sortedPosts.map((post) => {
-            const formattedDate = new Date(post.data.pubDate).toLocaleDateString('vi-VN', {
-              year: 'numeric',
-              month: 'long',
-              day: 'numeric'
-            });
-
-            return (
-              <article class="blog-card glass-card">
-                {post.data.image && (
-                  <div class="blog-card-img-wrapper">
-                    <a href={`/cam-nang/${post.id}`}>
-                      <img src={post.data.image} alt={post.data.title} class="blog-card-img" width="540" height="360" loading="lazy" />
-                    </a>
+  <!-- Featured Post Hero Section -->
+  {featuredPost && (
+    <section class="section-padding featured-hero-section" id="featured-hero-article">
+      <div class="container">
+        <div class="featured-hero-card glass-card">
+          <div class="hero-card-grid">
+            {featuredPost.data.image && (
+              <div class="hero-image-wrapper">
+                <a href={`/cam-nang/${featuredPost.id}`}>
+                  <img src={featuredPost.data.image} alt={featuredPost.data.title} class="hero-image" width="750" height="500" loading="eager" />
+                </a>
+                <span class="hero-badge">🔥 Mới Nhất</span>
+              </div>
+            )}
+            <div class="hero-content-wrapper">
+              <div class="hero-meta">
+                <span class="hero-date">{new Date(featuredPost.data.pubDate).toLocaleDateString('vi-VN', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
+                {featuredPost.data.tags && featuredPost.data.tags.slice(0, 2).map(tag => (
+                  <span class="hero-tag-badge">#{tag}</span>
+                ))}
+              </div>
+              <h2 class="hero-title">
+                <a href={`/cam-nang/${featuredPost.id}`}>{featuredPost.data.title}</a>
+              </h2>
+              <p class="hero-desc">{featuredPost.data.description}</p>
+              
+              <div class="hero-author-footer">
+                <div class="hero-author-info">
+                  <img src="/images/thay-bui-van-can-canswim.jpg" alt="HLV Bùi Văn Cán" class="hero-author-avatar" />
+                  <div>
+                    <span class="hero-author-name">HLV Bùi Văn Cán</span>
+                    <span class="hero-author-title">HLV Trưởng CanSwim</span>
                   </div>
-                )}
-                
-                <div class="blog-card-content">
-                  <div class="blog-card-meta">
-                    <span class="blog-date">{formattedDate}</span>
-                    {post.data.tags && post.data.tags.slice(0, 2).map(tag => (
-                      <span class="blog-tag-badge">#{tag}</span>
-                    ))}
-                  </div>
-
-                  <h3 class="blog-card-title">
-                    <a href={`/cam-nang/${post.id}`}>{post.data.title}</a>
-                  </h3>
-
-                  <p class="blog-card-desc">{post.data.description}</p>
-
-                  <a href={`/cam-nang/${post.id}`} class="btn btn-secondary btn-read-more">ĐỌC CHI TIẾT</a>
                 </div>
-              </article>
-            );
-          })}
+                <a href={`/cam-nang/${featuredPost.id}`} class="btn btn-primary hero-read-btn">ĐỌC BÀI VIẾT</a>
+              </div>
+            </div>
+          </div>
         </div>
-      )}
+      </div>
+    </section>
+  )}
+
+  <!-- Blog Listing & Sidebar Portal -->
+  <section class="section-padding blog-portal-section">
+    <div class="container">
+      
+      <!-- Interactive Filter & Search Bar Row -->
+      <div class="portal-toolbar glass-card">
+        <div class="filter-tabs-wrapper">
+          <button class="filter-tab-btn active" data-filter="all">Tất cả</button>
+          <button class="filter-tab-btn" data-filter="tre-em">Trẻ em</button>
+          <button class="filter-tab-btn" data-filter="nguoi-lon">Người lớn</button>
+          <button class="filter-tab-btn" data-filter="ky-thuat">Kỹ thuật bơi</button>
+          <button class="filter-tab-btn" data-filter="hoc-phi">Học phí & Gói lớp</button>
+          <button class="filter-tab-btn" data-filter="review">Review & Đường đi</button>
+        </div>
+        
+        <div class="search-box-wrapper">
+          <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="blog-search" placeholder="Tìm kiếm bài viết..." class="search-input" />
+        </div>
+      </div>
+
+      <div class="portal-layout-grid">
+        <!-- Left Column: Blog Cards Grid (72%) -->
+        <main class="portal-main-content">
+          {sortedPosts.length === 0 ? (
+            <div class="no-posts-box text-center glass-card">
+              <p>Hiện tại chưa có bài viết nào được xuất bản. Vui lòng quay lại sau.</p>
+            </div>
+          ) : (
+            <div class="blog-posts-grid-portal" id="blog-posts-container">
+              {gridPosts.map((post, index) => {
+                const formattedDate = new Date(post.data.pubDate).toLocaleDateString('vi-VN', {
+                  year: 'numeric',
+                  month: 'long',
+                  day: 'numeric'
+                });
+                
+                const categories = getCategories(post.data.tags);
+                const categoriesStr = categories.join(',');
+                const isDuplicate = index === 0;
+
+                return (
+                  <article 
+                    class={`grid-blog-card glass-card ${isDuplicate ? 'is-featured-post-duplicate' : ''}`}
+                    data-categories={categoriesStr}
+                    data-title={post.data.title}
+                    data-desc={post.data.description}
+                  >
+                    {post.data.image && (
+                      <div class="blog-card-img-wrapper">
+                        <a href={`/cam-nang/${post.id}`}>
+                          <img src={post.data.image} alt={post.data.title} class="blog-card-img" width="540" height="360" loading="lazy" />
+                        </a>
+                      </div>
+                    )}
+                    
+                    <div class="blog-card-content">
+                      <div class="blog-card-meta">
+                        <span class="blog-date">{formattedDate}</span>
+                        {post.data.tags && post.data.tags.slice(0, 1).map(tag => (
+                          <span class="blog-tag-badge">#{tag}</span>
+                        ))}
+                      </div>
+
+                      <h3 class="blog-card-title">
+                        <a href={`/cam-nang/${post.id}`}>{post.data.title}</a>
+                      </h3>
+
+                      <p class="blog-card-desc">{post.data.description}</p>
+
+                      <a href={`/cam-nang/${post.id}`} class="btn btn-secondary btn-read-more">ĐỌC CHI TIẾT</a>
+                    </div>
+                  </article>
+                );
+              })}
+            </div>
+          )}
+          
+          <!-- No Results Message (Hidden by default) -->
+          <div id="no-results-message" class="no-posts-box text-center glass-card" style="display: none;">
+            <p>Không tìm thấy bài viết nào phù hợp với bộ lọc hoặc từ khóa tìm kiếm của bạn.</p>
+          </div>
+        </main>
+        
+        <!-- Right Column: Sidebar Widgets (28%) -->
+        <aside class="portal-sidebar">
+          
+          <!-- Widget 1: Author Card -->
+          <div class="sidebar-widget glass-card author-widget">
+            <h4 class="widget-title">Ban Biên Tập</h4>
+            <div class="author-widget-body">
+              <img src="/images/thay-bui-van-can-canswim.jpg" alt="HLV Bùi Văn Cán" class="author-widget-avatar" />
+              <h5 class="author-widget-name">HLV Bùi Văn Cán</h5>
+              <span class="author-widget-title">Cố vấn chuyên môn sư phạm</span>
+              <p class="author-widget-bio">Cựu vận động viên cấp cao, hơn 10 năm kinh nghiệm trực tiếp kèm học viên bơi lội và xây dựng giáo trình giảng dạy tại CanSwim Bể bơi Newton.</p>
+              <div class="author-widget-social">
+                <a href="https://www.facebook.com/beboinewton" target="_blank" rel="noopener noreferrer" aria-label="Facebook Bể bơi Newton">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                  <span>Theo dõi Fanpage</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Widget 2: Popular Tags -->
+          <div class="sidebar-widget glass-card tags-widget">
+            <h4 class="widget-title">Chủ Đề Phổ Biến</h4>
+            <div class="tags-cloud">
+              <button class="tag-cloud-btn" data-filter="tre-em"># Dạy bơi trẻ em</button>
+              <button class="tag-cloud-btn" data-filter="nguoi-lon"># Bơi người lớn</button>
+              <button class="tag-cloud-btn" data-filter="ky-thuat"># Kỹ thuật bơi lội</button>
+              <button class="tag-cloud-btn" data-filter="hoc-phi"># Học phí & Gói lớp</button>
+              <button class="tag-cloud-btn" data-filter="review"># Review & Đường đi</button>
+            </div>
+          </div>
+          
+          <!-- Widget 3: Hotline Callout Banner -->
+          <div class="sidebar-widget cta-widget">
+            <div class="cta-widget-glow"></div>
+            <div class="cta-widget-content">
+              <span class="cta-subtitle">KHÓA HỌC CHỦ LỰC</span>
+              <h4 class="cta-title">Học Bơi Kèm Riêng Bể Bơi Newton</h4>
+              <p class="cta-text">Tặng 15 buổi tự bơi khi đăng ký khóa 15 buổi cùng HLV. Tổng cộng 30 lượt vào bể bơi mát mẻ, có mái che!</p>
+              <div class="cta-hotline">Hotline: 0907.992.336</div>
+              <a href="/lien-he#register" class="btn btn-primary cta-btn">ĐĂNG KÝ GIỮ CHỖ</a>
+            </div>
+          </div>
+          
+        </aside>
+      </div>
     </div>
   </section>
 
@@ -111,30 +268,129 @@ const sortedPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDa
 </Layout>
 
 <style>
-  /* Grid layout */
-  .blog-list-section {
+  /* Portal Grid Layout */
+  .blog-portal-section {
     background-color: var(--color-bg);
+    padding-top: 40px;
+    padding-bottom: 80px;
   }
 
-  .blog-posts-grid {
+  .portal-layout-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    grid-template-columns: minmax(0, 7.2fr) minmax(0, 2.8fr);
+    gap: 40px;
+    align-items: start;
   }
 
   @media (max-width: 1024px) {
-    .blog-posts-grid {
-      grid-template-columns: repeat(2, 1fr);
+    .portal-layout-grid {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 50px;
     }
   }
 
-  @media (max-width: 768px) {
-    .blog-posts-grid {
-      grid-template-columns: 1fr;
+  /* Portal Toolbar (Filter Tabs + Search) */
+  .portal-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 16px 24px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    border-radius: 16px;
+    border: 1px solid var(--glass-border);
+  }
+
+  .filter-tabs-wrapper {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .filter-tab-btn {
+    background: transparent;
+    border: 1px solid var(--glass-border);
+    color: var(--color-text-muted);
+    padding: 8px 18px;
+    border-radius: 99px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    font-family: var(--font-heading);
+  }
+
+  .filter-tab-btn:hover {
+    background-color: rgba(0, 102, 170, 0.05);
+    color: var(--color-primary);
+    border-color: var(--color-primary-light);
+  }
+
+  .filter-tab-btn.active {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+    color: var(--color-white);
+    border-color: transparent;
+    box-shadow: 0 4px 12px rgba(0, 102, 170, 0.2);
+  }
+
+  .search-box-wrapper {
+    position: relative;
+    width: 280px;
+  }
+
+  @media (max-width: 850px) {
+    .portal-toolbar {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .search-box-wrapper {
+      width: 100%;
     }
   }
 
-  .blog-card {
+  .search-input {
+    width: 100%;
+    padding: 10px 16px 10px 42px;
+    border-radius: 99px;
+    border: 1px solid var(--glass-border);
+    background-color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+    transition: all var(--transition-fast);
+    color: var(--color-text);
+  }
+
+  .search-input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    background-color: var(--color-white);
+    box-shadow: 0 0 0 3px rgba(0, 102, 170, 0.15);
+  }
+
+  .search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-text-muted);
+    pointer-events: none;
+  }
+
+  /* Main Area Grid */
+  .blog-posts-grid-portal {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+  }
+
+  @media (max-width: 600px) {
+    .blog-posts-grid-portal {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+
+  /* Portal Grid Card */
+  .grid-blog-card {
     padding: 0;
     overflow: hidden;
     display: flex;
@@ -147,7 +403,7 @@ const sortedPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDa
     transition: transform var(--transition-normal), box-shadow var(--transition-normal), border-color var(--transition-normal);
   }
 
-  .blog-card:hover {
+  .grid-blog-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 30px rgba(0, 102, 170, 0.12);
     border-color: var(--color-primary-light);
@@ -155,9 +411,10 @@ const sortedPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDa
 
   .blog-card-img-wrapper {
     width: 100%;
-    height: auto;
     aspect-ratio: 3 / 2;
     overflow: hidden;
+    position: relative;
+    border-bottom: 1px solid var(--glass-border);
   }
 
   .blog-card-img {
@@ -167,7 +424,7 @@ const sortedPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDa
     transition: transform var(--transition-slow);
   }
 
-  .blog-card:hover .blog-card-img {
+  .grid-blog-card:hover .blog-card-img {
     transform: scale(1.05);
   }
 
@@ -199,11 +456,16 @@ const sortedPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDa
   }
 
   .blog-card-title {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     color: var(--color-text);
     margin-bottom: 12px;
     line-height: 1.4;
-    white-space: normal !important;
+    font-family: var(--font-heading);
+    font-weight: 700;
+  }
+
+  .blog-card-title a {
+    transition: color var(--transition-fast);
   }
 
   .blog-card-title a:hover {
@@ -213,9 +475,10 @@ const sortedPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDa
   .blog-card-desc {
     font-size: 0.88rem;
     color: var(--color-text-muted);
-    line-height: 1.5;
+    line-height: 1.6;
     margin-bottom: 20px;
     flex-grow: 1;
+    text-align: justify;
   }
 
   .btn-read-more {
@@ -225,15 +488,379 @@ const sortedPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDa
     border-radius: 8px;
   }
 
-  .no-posts-box {
-    padding: 50px 20px;
+  /* Featured Hero Card Style */
+  .featured-hero-section {
+    background-color: var(--color-bg);
+    padding-top: 40px;
+    padding-bottom: 10px;
+  }
+
+  .featured-hero-card {
+    padding: 0;
+    overflow: hidden;
+    border-radius: 24px;
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .hero-card-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  }
+
+  @media (max-width: 992px) {
+    .hero-card-grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+
+  .hero-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 380px;
+    overflow: hidden;
+    border-right: 1px solid var(--glass-border);
+  }
+
+  @media (max-width: 992px) {
+    .hero-image-wrapper {
+      border-right: none;
+      border-bottom: 1px solid var(--glass-border);
+    }
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+  }
+
+  .featured-hero-card:hover .hero-image {
+    transform: scale(1.03);
+  }
+
+  .hero-badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-secondary-light) 100%);
+    color: var(--color-white);
+    padding: 6px 14px;
+    border-radius: 99px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 10px rgba(255, 122, 0, 0.3);
+  }
+
+  .hero-content-wrapper {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--glass-bg);
+  }
+
+  @media (max-width: 600px) {
+    .hero-content-wrapper {
+      padding: 24px;
+    }
+  }
+
+  .hero-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+    font-size: 0.82rem;
+    font-weight: 600;
+  }
+
+  .hero-date {
     color: var(--color-text-muted);
   }
 
-  /* Expanded SEO Content styling */
+  .hero-tag-badge {
+    color: var(--color-primary);
+    background-color: var(--color-primary-glare);
+    padding: 2px 8px;
+    border-radius: 4px;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+    line-height: 1.3;
+    margin-bottom: 15px;
+    font-family: var(--font-heading);
+    font-weight: 800;
+  }
+
+  @media (max-width: 600px) {
+    .hero-title {
+      font-size: 1.4rem;
+    }
+  }
+
+  .hero-title a {
+    color: var(--color-text);
+    transition: color var(--transition-fast);
+  }
+
+  .hero-title a:hover {
+    color: var(--color-primary);
+  }
+
+  .hero-desc {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+
+  .hero-author-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-top: 1px solid var(--glass-border);
+    padding-top: 24px;
+  }
+
+  .hero-author-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .hero-author-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--color-primary-light);
+  }
+
+  .hero-author-name {
+    display: block;
+    font-weight: 700;
+    font-size: 0.92rem;
+    color: var(--color-text);
+  }
+
+  .hero-author-title {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+  }
+
+  .hero-read-btn {
+    padding: 12px 24px;
+    font-size: 0.9rem;
+  }
+
+  /* Sidebar styling */
+  .portal-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: sticky;
+    top: 100px;
+  }
+
+  .sidebar-widget {
+    padding: 24px;
+    border-radius: 20px;
+    border: 1px solid var(--glass-border);
+    background: var(--glass-bg);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .widget-title {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-primary-dark);
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--color-secondary);
+    display: inline-block;
+  }
+
+  /* Author widget */
+  .author-widget-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .author-widget-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 14px;
+    border: 3px solid var(--color-primary-light);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .author-widget-name {
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--color-text);
+  }
+
+  .author-widget-title {
+    font-size: 0.8rem;
+    color: var(--color-primary);
+    font-weight: 600;
+    margin-bottom: 12px;
+    display: block;
+  }
+
+  .author-widget-bio {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+    margin-bottom: 18px;
+  }
+
+  .author-widget-social a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    background-color: var(--color-primary-glare);
+    padding: 8px 16px;
+    border-radius: 99px;
+    border: 1px solid rgba(0, 102, 170, 0.15);
+    transition: all var(--transition-fast);
+  }
+
+  .author-widget-social a:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    transform: translateY(-2px);
+  }
+
+  /* Tags Cloud Widget */
+  .tags-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .tag-cloud-btn {
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid var(--glass-border);
+    color: var(--color-text-muted);
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 0.82rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    font-family: var(--font-sans);
+  }
+
+  .tag-cloud-btn:hover {
+    border-color: var(--color-primary-light);
+    color: var(--color-primary);
+    background-color: var(--color-primary-glare);
+  }
+
+  /* CTA Banner Widget */
+  .cta-widget {
+    background: linear-gradient(135deg, hsl(var(--primary-hue), 85%, 20%) 0%, hsl(var(--primary-hue), 95%, 12%) 100%);
+    color: var(--color-white);
+    overflow: hidden;
+    position: relative;
+    border: none;
+    box-shadow: var(--shadow-lg);
+    border-radius: 20px;
+    padding: 30px 24px;
+  }
+
+  .cta-widget-glow {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 122, 0, 0.15) 0%, rgba(255, 255, 255, 0) 60%);
+    pointer-events: none;
+  }
+
+  .cta-widget-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cta-subtitle {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--color-secondary-light);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  .cta-title {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 12px;
+    color: var(--color-white);
+  }
+
+  .cta-text {
+    font-size: 0.85rem;
+    color: hsl(var(--primary-hue), 25%, 85%);
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .cta-hotline {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 1.15rem;
+    color: var(--color-white);
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 6px 14px;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .cta-btn {
+    width: 100%;
+  }
+
+  /* No results widget */
+  .no-posts-box {
+    padding: 60px 24px;
+    color: var(--color-text-muted);
+  }
+
+  /* SEO expanded block overrides */
   .blog-expanded-seo-section {
     background-color: var(--color-bg-alt);
-    border-top: 1px solid rgba(0, 102, 170, 0.05);
+    border-top: 1px solid var(--glass-border);
   }
 
   .expanded-content-box {
@@ -291,3 +918,95 @@ const sortedPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDa
     }
   }
 </style>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterButtons = document.querySelectorAll('.filter-tab-btn, .tag-cloud-btn');
+    const searchInput = document.getElementById('blog-search');
+    const blogCards = document.querySelectorAll('.grid-blog-card');
+    const noResultsBox = document.getElementById('no-results-message');
+    const heroSection = document.getElementById('featured-hero-article');
+    
+    let activeCategory = 'all';
+    let searchQuery = '';
+    
+    function filterPosts() {
+      let visibleCount = 0;
+      
+      // Cập nhật trạng thái active cho các nút danh mục trên thanh công cụ
+      document.querySelectorAll('.filter-tab-btn').forEach(btn => {
+        if (btn.getAttribute('data-filter') === activeCategory) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
+      
+      const isViewingAllNoSearch = activeCategory === 'all' && searchQuery === '';
+      
+      // Ẩn/Hiện bài viết tiêu điểm Hero ở trên đầu
+      if (heroSection) {
+        heroSection.style.display = isViewingAllNoSearch ? 'block' : 'none';
+      }
+      
+      // Duyệt qua từng bài viết trong grid để lọc
+      blogCards.forEach(card => {
+        const categories = card.getAttribute('data-categories').split(',');
+        const title = card.getAttribute('data-title').toLowerCase();
+        const desc = card.getAttribute('data-desc').toLowerCase();
+        
+        const matchesCategory = activeCategory === 'all' || categories.includes(activeCategory);
+        const matchesSearch = title.includes(searchQuery) || desc.includes(searchQuery);
+        
+        const isDuplicate = card.classList.contains('is-featured-post-duplicate');
+        
+        if (matchesCategory && matchesSearch) {
+          // Nếu bài viết này trùng với bài viết tiêu điểm Hero ở trên, 
+          // và người dùng đang ở chế độ xem 'Tất cả' + không tìm kiếm, hãy ẩn nó trong grid để tránh bị lặp
+          if (isDuplicate && isViewingAllNoSearch) {
+            card.style.display = 'none';
+          } else {
+            card.style.display = 'flex';
+            visibleCount++;
+          }
+        } else {
+          card.style.display = 'none';
+        }
+      });
+      
+      // Ẩn/Hiện thông báo không tìm thấy kết quả
+      if (visibleCount === 0) {
+        noResultsBox.style.display = 'block';
+      } else {
+        noResultsBox.style.display = 'none';
+      }
+    }
+    
+    // Gán sự kiện click cho các nút danh mục và tag cloud bên sidebar
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        activeCategory = btn.getAttribute('data-filter');
+        filterPosts();
+        
+        // Cuộn mượt mà về vùng danh sách bài viết trên màn hình nhỏ để tăng trải nghiệm người dùng
+        if (window.innerWidth <= 1024) {
+          const toolbar = document.querySelector('.portal-toolbar');
+          if (toolbar) {
+            toolbar.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+      });
+    });
+    
+    // Gán sự kiện tìm kiếm thời gian thực
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        searchQuery = e.target.value.toLowerCase().trim();
+        filterPosts();
+      });
+    }
+    
+    // Khởi chạy bộ lọc ban đầu để ẩn bản sao bài viết tiêu điểm
+    filterPosts();
+  });
+</script>

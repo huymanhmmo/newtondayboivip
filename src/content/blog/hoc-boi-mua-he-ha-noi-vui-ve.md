@@ -52,20 +52,44 @@ Hãy tránh xa các lớp học bơi hè giá rẻ có sĩ số lên tới 20 - 
 
 Đáp ứng đầy đủ các tiêu chuẩn khắt khe nhất về chất lượng và độ an toàn, trung tâm dạy bơi CanSwim tại [Bể bơi Newton Cầu Giấy](/be-boi-newton-hoang-quoc-viet/) (cuối ngõ 234 Hoàng Quốc Việt, phường Nghĩa Đô) là địa chỉ tin cậy hàng đầu được hàng ngàn phụ huynh khu vực Cầu Giấy, Nam Cường lựa chọn mỗi khi hè về.
 
-```mermaid
-gantt
-    title Chương trình học bơi hè CanSwim Bể bơi Newton
-    dateFormat  X
-    axisFormat %d
-    section Tuần 1 - 2: Xóa sợ nước
-    Làm quen cảm giác nước, trò chơi bong bóng, thở chậu :active, 1, 4
-    section Tuần 3 - 4: Tập kỹ thuật
-    Học chân ếch chuẩn xác, quạt tay thở nước phối hợp : 5, 8
-    section Tuần 5 - 6: Bơi quãng ngắn
-    Phối hợp tay chân nhịp nhàng, bơi cự ly 10m - 15m : 9, 12
-    section Tuần 7 - 8: Hoàn thiện & Tự cứu
-    Bơi 25m tiêu chuẩn bể, tốt nghiệp chứng chỉ sinh tồn : 13, 16
-```
+<div class="syllabus-timeline">
+  <div class="timeline-header">
+    <strong>Chương trình học bơi hè CanSwim Bể bơi Newton</strong>
+    <span>CanSwim Bể bơi Newton</span>
+  </div>
+  
+  <div class="timeline-step">
+    <div class="timeline-badge highlight">Tuần 1 - 2</div>
+    <div class="timeline-content">
+      <div class="timeline-title">Giai đoạn 1: Xóa sợ nước (Buổi 1 - 4)</div>
+      <div class="timeline-desc">Làm quen cảm giác nước, trò chơi bong bóng dưới nước, tập thở nước giải tỏa tâm lý sợ nước cho trẻ.</div>
+    </div>
+  </div>
+  
+  <div class="timeline-step">
+    <div class="timeline-badge">Tuần 3 - 4</div>
+    <div class="timeline-content">
+      <div class="timeline-title">Giai đoạn 2: Luyện tập kỹ thuật (Buổi 5 - 8)</div>
+      <div class="timeline-desc">Học chân ếch chuẩn xác và quạt tay phối hợp thở nước nhịp nhàng.</div>
+    </div>
+  </div>
+  
+  <div class="timeline-step">
+    <div class="timeline-badge">Tuần 5 - 6</div>
+    <div class="timeline-content">
+      <div class="timeline-title">Giai đoạn 3: Bơi quãng ngắn (Buổi 9 - 12)</div>
+      <div class="timeline-desc">Phối hợp tay chân và thở nhịp nhàng dưới nước, bơi cự ly 10m - 15m.</div>
+    </div>
+  </div>
+  
+  <div class="timeline-step">
+    <div class="timeline-badge highlight">Tuần 7 - 8</div>
+    <div class="timeline-content">
+      <div class="timeline-title">Giai đoạn 4: Hoàn thiện & Tự cứu (Buổi 13 - 16)</div>
+      <div class="timeline-desc">Bơi 25m tiêu chuẩn (hết chiều dài bể bơi Newton), tốt nghiệp khóa học và lấy chứng chỉ sinh tồn.</div>
+    </div>
+  </div>
+</div>
 
 ### Phương pháp giảng dạy "Học mà chơi - Chơi mà học" độc quyền
 Tại lớp học bơi CanSwim, chúng tôi không áp đặt những giáo án khô khan, nặng nề lên trẻ nhỏ. Dưới sự dẫn dắt của HLV trưởng Bùi Văn Cán, các buổi học đầu tiên được thiết kế như một hành trình khám phá thế giới nước vui vẻ:

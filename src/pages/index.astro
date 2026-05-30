@@ -642,7 +642,7 @@ const galleryImages = [
   <section class="section-padding courses-section" id="courses">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">CÁC KHÓA HỌC ĐANG TUYỂN SINH</h2>
+        <h2 class="section-title">CÁC KHÓA HỌC BƠI ĐANG TUYỂN SINH</h2>
         <p class="section-subtitle">Chương trình học bơi được chia theo nhóm trình độ và lứa tuổi, tối ưu hóa thời gian biết bơi cho học viên.</p>
       </div>
 
@@ -1211,8 +1211,20 @@ const galleryImages = [
   /* Courses grid */
   .courses-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+  }
+
+  @media (max-width: 1024px) {
+    .courses-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .courses-grid {
+      grid-template-columns: 1fr;
+    }
   }
 
   /* Section Commitment */

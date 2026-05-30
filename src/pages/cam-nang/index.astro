@@ -42,7 +42,7 @@ const sortedPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDa
               <article class="blog-card glass-card">
                 {post.data.image && (
                   <div class="blog-card-img-wrapper">
-                    <a href={`/blog/${post.id}`}>
+                    <a href={`/cam-nang/${post.id}`}>
                       <Image src={post.data.image} alt={post.data.title} class="blog-card-img" width={360} height={200} quality="high" />
                     </a>
                   </div>
@@ -57,12 +57,12 @@ const sortedPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDa
                   </div>
 
                   <h3 class="blog-card-title">
-                    <a href={`/blog/${post.id}`}>{post.data.title}</a>
+                    <a href={`/cam-nang/${post.id}`}>{post.data.title}</a>
                   </h3>
 
                   <p class="blog-card-desc">{post.data.description}</p>
 
-                  <a href={`/blog/${post.id}`} class="btn btn-secondary btn-read-more">ĐỌC CHI TIẾT</a>
+                  <a href={`/cam-nang/${post.id}`} class="btn btn-secondary btn-read-more">ĐỌC CHI TIẾT</a>
                 </div>
               </article>
             );

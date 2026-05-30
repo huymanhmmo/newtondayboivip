@@ -1,7 +1,7 @@
 ---
 title: "Lớp bơi tập thể CanSwim tại bể bơi Newton: Học phí rẻ, chất lượng cao"
 description: "Đăng ký lớp bơi tập thể CanSwim tại bể bơi Newton Hoàng Quốc Việt Cầu Giấy. Khóa học bơi giá rẻ chỉ 1.5 triệu trọn gói đã gồm vé bơi, giáo viên kèm sát."
-pubDate: 2026-05-31
+pubDate: 2026-04-28 08:30:00 +07:00
 image: "/images/tuyen-sinh/lop-boi-tap-the-1t5.webp"
 tags: ["lớp bơi tập thể", "học bơi Cầu Giấy", "bể bơi Newton", "CanSwim"]
 ---

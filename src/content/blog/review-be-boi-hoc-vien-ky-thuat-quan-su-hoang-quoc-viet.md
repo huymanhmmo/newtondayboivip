@@ -1,7 +1,7 @@
 ---
 title: "Review Bể bơi Học viện Kỹ thuật Quân sự Hoàng Quốc Việt"
 description: "Review chi tiết Bể bơi Học viện Kỹ thuật Quân sự (236 Hoàng Quốc Việt). Cập nhật giá vé, giờ mở cửa, và so sánh thực tế với lớp học bơi Bể bơi Newton sát bên."
-pubDate: 2026-05-31
+pubDate: 2026-05-07 08:30:00 +07:00
 image: "/images/tuyen-sinh/lop-hoc-boi-be-boi-newton.webp"
 tags: ["bể bơi học viện kỹ thuật quân sự", "bể bơi hvktqs", "bể bơi hoàng quốc việt", "học bơi Cầu Giấy", "bể bơi Newton"]
 ---
@@ -99,54 +99,48 @@ Tại CanSwim Bể bơi Newton Cầu Giấy, chúng tôi áp dụng chính sách
 * **Chính sách bảo lưu linh hoạt**: Học viên bận việc đột xuất được sắp xếp ca học bù hoàn toàn miễn phí, bảo lưu khóa học trọn vẹn trong vòng 1 năm không lo mất buổi học.
 
 <div class="canswim-table-wrapper">
-  <table>
-    <caption>Bảng So Sánh Quyền Lợi Học Viên Tại CanSwim Newton và Bể Bơi HVKTQS</caption>
-    <thead>
-      <tr>
-        <th>Tiêu chí so sánh quyền lợi</th>
-        <th>Học bơi tại CanSwim Bể bơi Newton</th>
-        <th>Học bơi tự túc tại Bể bơi HVKTQS</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><strong>Học phí trọn gói</strong></td>
-        <td>Có, đóng 1 lần duy nhất, cam kết không phát sinh chi phí ẩn.</td>
-        <td>Không, học viên phải tự mua vé vào cổng bể bơi hàng ngày.</td>
-        
-      </tr>
-      <tr>
-        <td><strong>Vé vào cổng đi kèm</strong></td>
-        <td>Tặng kèm **30 lượt vé vào cổng** (15 buổi học + 15 buổi tự bơi).</td>
-        <td>Học viên tự trả từ 60.000Đ - 80.000Đ mỗi lượt vào bể học/tập.</td>
-        
-      </tr>
-      <tr>
-        <td><strong>Suất bơi tự ôn luyện free</strong></td>
-        <td>Tặng **15 buổi tự bơi miễn phí** để tự rèn luyện kỹ năng.</td>
-        <td>Không có, học viên muốn tự tập bơi ôn bài phải tự mua vé mới.</td>
-        
-      </tr>
-      <tr>
-        <td><strong>Giờ giấc học tập</strong></td>
-        <td>Linh hoạt tự chọn từ 6h00 - 20h00, được đổi ca học thoải mái.</td>
-        <td>Bị bó hẹp theo các ca bơi cố định 60 phút của đơn vị quản lý.</td>
-        
-      </tr>
-      <tr>
-        <td><strong>Độ sâu nước an toàn</strong></td>
-        <td>Độ sâu đều 1.1m - 1.3m an toàn tuyệt đối, chân chạm đáy bể.</td>
-        <td>Đáy bể dốc dốc dần từ 1.2m lên đến 1.8m nguy hiểm.</td>
-        
-      </tr>
-      <tr>
-        <td><strong>Mái che thời tiết</strong></td>
-        <td>Có mái che kiên cố kín gió, nước mát sạch sẽ quanh năm.</td>
-        <td>Bể ngoài trời không mái che, nắng gắt dễ ốm, mưa bão phải hủy.</td>
-        
-      </tr>
-    </tbody>
-  </table>
+<table>
+<caption>Bảng So Sánh Quyền Lợi Học Viên Tại CanSwim Newton và Bể Bơi HVKTQS</caption>
+<thead>
+<tr>
+<th>Tiêu chí so sánh quyền lợi</th>
+<th>Học bơi tại CanSwim Bể bơi Newton</th>
+<th>Học bơi tự túc tại Bể bơi HVKTQS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Học phí trọn gói</strong></td>
+<td>Có, đóng 1 lần duy nhất, cam kết không phát sinh chi phí ẩn.</td>
+<td>Không, học viên phải tự mua vé vào cổng bể bơi hàng ngày.</td>
+</tr>
+<tr>
+<td><strong>Vé vào cổng đi kèm</strong></td>
+<td>Tặng kèm <strong>30 lượt vé vào cổng</strong> (15 buổi học + 15 buổi tự bơi).</td>
+<td>Học viên tự trả từ 60.000Đ - 80.000Đ mỗi lượt vào bể học/tập.</td>
+</tr>
+<tr>
+<td><strong>Suất bơi tự ôn luyện free</strong></td>
+<td>Tặng <strong>15 buổi tự bơi miễn phí</strong> để tự rèn luyện kỹ năng.</td>
+<td>Không có, học viên muốn tự tập bơi ôn bài phải tự mua vé mới.</td>
+</tr>
+<tr>
+<td><strong>Giờ giấc học tập</strong></td>
+<td>Linh hoạt tự chọn từ 6h00 - 20h00, được đổi ca học thoải mái.</td>
+<td>Bị bó hẹp theo các ca bơi cố định 60 phút của đơn vị quản lý.</td>
+</tr>
+<tr>
+<td><strong>Độ sâu nước an toàn</strong></td>
+<td>Độ sâu đều 1.1m - 1.3m an toàn tuyệt đối, chân chạm đáy bể.</td>
+<td>Đáy bể dốc dốc dần từ 1.2m lên đến 1.8m nguy hiểm.</td>
+</tr>
+<tr>
+<td><strong>Mái che thời tiết</strong></td>
+<td>Có mái che kiên cố kín gió, nước mát sạch sẽ quanh năm.</td>
+<td>Bể ngoài trời không mái che, nắng gắt dễ ốm, mưa bão phải hủy.</td>
+</tr>
+</tbody>
+</table>
 </div>
 
 ---

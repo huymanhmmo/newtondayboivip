@@ -1,7 +1,7 @@
 ---
 title: "Đánh giá Bể bơi Học viện Chính trị Nguyễn Phong Sắc chi tiết"
 description: "Đánh giá chi tiết Bể bơi Học viện Chính trị Cầu Giấy (Nguyễn Phong Sắc). Cập nhật giá vé, giờ mở cửa, và so sánh thực tế với lớp học bơi Bể bơi Newton."
-pubDate: 2026-05-31
+pubDate: 2026-03-20 08:30:00 +07:00
 image: "/images/tuyen-sinh/lop-hoc-boi-be-boi-newton.webp"
 tags: ["bể bơi học viện chính trị", "bể bơi nguyễn phong sắc", "bể bơi trần quốc hoàn", "học bơi Cầu Giấy", "bể bơi Newton"]
 ---
@@ -96,54 +96,48 @@ Bên cạnh ưu thế vượt trội về chất lượng cơ sở vật chất 
 * **Chính sách bù buổi linh hoạt**: Học viên bận việc đột xuất được sắp xếp ca học bù hoàn toàn miễn phí, bảo lưu khóa học trọn vẹn trong vòng 1 năm không lo bị mất buổi học.
 
 <div class="canswim-table-wrapper">
-  <table>
-    <caption>Bảng So Sánh Quyền Lợi Học Viên Tại CanSwim Newton và Bể Học Viện Chính Trị</caption>
-    <thead>
-      <tr>
-        <th>Tiêu chí so sánh quyền lợi</th>
-        <th>Học bơi tại CanSwim Bể bơi Newton</th>
-        <th>Học bơi tự túc tại Bể Học viện Chính trị</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><strong>Giá học phí trọn gói</strong></td>
-        <td>Có, đóng 1 lần duy nhất, cam kết không phát sinh chi phí ẩn.</td>
-        <td>Không, học viên phải tự mua vé bơi lẻ vào cổng hàng ngày.</td>
-        
-      </tr>
-      <tr>
-        <td><strong>Vé vào cổng đi kèm</strong></td>
-        <td>Tặng kèm **30 lượt vé vào cổng** (15 buổi học + 15 buổi tự bơi).</td>
-        <td>Học viên tự trả từ 60.000Đ - 70.000Đ mỗi lượt vào bể học/tập.</td>
-        
-      </tr>
-      <tr>
-        <td><strong>Suất bơi tự ôn luyện free</strong></td>
-        <td>Tặng **15 buổi tự bơi miễn phí** để tự rèn luyện phản xạ nước.</td>
-        <td>Không có, muốn tự tập bơi ôn bài phải tự bỏ tiền mua vé.</td>
-        
-      </tr>
-      <tr>
-        <td><strong>Độ sâu nước an toàn</strong></td>
-        <td>Độ sâu phẳng đều 1.1m - 1.3m, chân chạm đáy bể an tâm.</td>
-        <td>Đáy bể dốc dốc dần từ 1.1m lên đến trên 1.7m nguy hiểm.</td>
-        
-      </tr>
-      <tr>
-        <td><strong>Môi trường học bơi</strong></td>
-        <td>Không gian trường học yên tĩnh, sạch sẽ, riêng tư tối đa.</td>
-        <td>Bể bơi công cộng đông đúc, ồn ào quá tải khách vãng lai chiều hè.</td>
-        
-      </tr>
-      <tr>
-        <td><strong>Chất lượng nguồn nước</strong></td>
-        <td>Nguồn nước lọc tuần hoàn trong sạch, rất ít mùi clo, không cay mắt.</td>
-        <td>Nồng độ hóa chất clo tương đối nồng gây đỏ mắt, xót da.</td>
-        
-      </tr>
-    </tbody>
-  </table>
+<table>
+<caption>Bảng So Sánh Quyền Lợi Học Viên Tại CanSwim Newton và Bể Học Viện Chính Trị</caption>
+<thead>
+<tr>
+<th>Tiêu chí so sánh quyền lợi</th>
+<th>Học bơi tại CanSwim Bể bơi Newton</th>
+<th>Học bơi tự túc tại Bể Học viện Chính trị</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Giá học phí trọn gói</strong></td>
+<td>Có, đóng 1 lần duy nhất, cam kết không phát sinh chi phí ẩn.</td>
+<td>Không, học viên phải tự mua vé bơi lẻ vào cổng hàng ngày.</td>
+</tr>
+<tr>
+<td><strong>Vé vào cổng đi kèm</strong></td>
+<td>Tặng kèm <strong>30 lượt vé vào cổng</strong> (15 buổi học + 15 buổi tự bơi).</td>
+<td>Học viên tự trả từ 60.000Đ - 70.000Đ mỗi lượt vào bể học/tập.</td>
+</tr>
+<tr>
+<td><strong>Suất bơi tự ôn luyện free</strong></td>
+<td>Tặng <strong>15 buổi tự bơi miễn phí</strong> để tự rèn luyện phản xạ nước.</td>
+<td>Không có, muốn tự tập bơi ôn bài phải tự bỏ tiền mua vé.</td>
+</tr>
+<tr>
+<td><strong>Độ sâu nước an toàn</strong></td>
+<td>Độ sâu phẳng đều 1.1m - 1.3m, chân chạm đáy bể an tâm.</td>
+<td>Đáy bể dốc dốc dần từ 1.1m lên đến trên 1.7m nguy hiểm.</td>
+</tr>
+<tr>
+<td><strong>Môi trường học bơi</strong></td>
+<td>Không gian trường học yên tĩnh, sạch sẽ, riêng tư tối đa.</td>
+<td>Bể bơi công cộng đông đúc, ồn ào quá tải khách vãng lai chiều hè.</td>
+</tr>
+<tr>
+<td><strong>Chất lượng nguồn nước</strong></td>
+<td>Nguồn nước lọc tuần hoàn trong sạch, rất ít mùi clo, không cay mắt.</td>
+<td>Nồng độ hóa chất clo tương đối nồng gây đỏ mắt, xót da.</td>
+</tr>
+</tbody>
+</table>
 </div>
 
 ---

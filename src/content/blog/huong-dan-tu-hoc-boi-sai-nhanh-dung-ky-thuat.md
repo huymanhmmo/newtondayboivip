@@ -1,7 +1,7 @@
 ---
 title: "Cách tự học bơi sải nhanh nhất: Hướng dẫn kỹ thuật bơi sải không mệt"
 description: "Hướng dẫn cách tự học bơi sải nhanh nhất và đúng kỹ thuật cho người mới bắt đầu. Lớp dạy bơi sải kèm riêng nhóm nhỏ uy tín tại Bể bơi Newton Cầu Giấy."
-pubDate: 2026-05-31
+pubDate: 2026-04-19 08:30:00 +07:00
 image: "/images/tuyen-sinh/day-hoc-boi-ech-boi-sai.webp"
 tags: ["cách học bơi sải", "học bơi sải", "dạy bơi sải", "lớp học bơi sải", "bể bơi Newton"]
 ---
@@ -112,43 +112,43 @@ CanSwim cam kết công khai minh bạch toàn bộ thông tin lịch học và 
 ### Bảng học phí trọn gói ưu đãi mới nhất (Đã bao gồm 30 lượt vé vào cổng):
 
 <div class="canswim-table-wrapper">
-  <table>
-    <caption>Bảng Học Phí Khóa Học Bơi Trọn Gói Tại CanSwim Bể Bơi Newton Cầu Giấy</caption>
-    <thead>
-      <tr>
-        <th>Tên khóa học bơi</th>
-        <th>Hình thức giảng dạy</th>
-        <th>Học phí trọn gói (Đồng)</th>
-        <th>Quyền lợi học viên đi kèm</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><strong>Khóa học bơi Ếch cơ bản</strong></td>
-        <td>Kèm riêng nhóm nhỏ (1:3)</td>
-        <td>2.500.000Đ</td>
-        <td>Bao gồm 15 buổi thực hành dưới nước + Tặng thêm 15 buổi tự tập bơi tự do miễn phí tại bể Newton.</td>
-      </tr>
-      <tr>
-        <td><strong>Khóa học bơi Sải nâng cao</strong></td>
-        <td>Kèm riêng nhóm nhỏ (1:3)</td>
-        <td>3.000.000Đ</td>
-        <td>Bao gồm 15 buổi thực hành dưới nước + Tặng thêm 15 buổi tự bơi ôn luyện động tác chuẩn đẹp.</td>
-      </tr>
-      <tr>
-        <td><strong>Lớp học bơi Tập thể giá rẻ</strong></td>
-        <td>Học nhóm tập trung (tối đa 10 học viên)</td>
-        <td>1.500.000Đ</td>
-        <td>Bao gồm 10 buổi thực hành bơi lội trọn gói vé vào cổng. Phù hợp cho học viên rèn luyện thể chất cơ bản.</td>
-      </tr>
-      <tr>
-        <td><strong>Khóa học bơi kèm riêng VIP 1-1</strong></td>
-        <td>Huấn luyện viên kèm riêng 1 thầy 1 trò</td>
-        <td>4.500.000Đ</td>
-        <td>Cá nhân hóa giáo trình 100%. Giáo viên theo sát sửa động tác từng nhịp bơi. Tặng 30 - 50 lượt vào bể Newton.</td>
-      </tr>
-    </tbody>
-  </table>
+<table>
+<caption>Bảng Học Phí Khóa Học Bơi Trọn Gói Tại CanSwim Bể Bơi Newton Cầu Giấy</caption>
+<thead>
+<tr>
+<th>Tên khóa học bơi</th>
+<th>Hình thức giảng dạy</th>
+<th>Học phí trọn gói (Đồng)</th>
+<th>Quyền lợi học viên đi kèm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Khóa học bơi Ếch cơ bản</strong></td>
+<td>Kèm riêng nhóm nhỏ (1:3)</td>
+<td>2.500.000Đ</td>
+<td>Bao gồm 15 buổi thực hành dưới nước + Tặng thêm 15 buổi tự tập bơi tự do miễn phí tại bể Newton.</td>
+</tr>
+<tr>
+<td><strong>Khóa học bơi Sải nâng cao</strong></td>
+<td>Kèm riêng nhóm nhỏ (1:3)</td>
+<td>3.000.000Đ</td>
+<td>Bao gồm 15 buổi thực hành dưới nước + Tặng thêm 15 buổi tự bơi ôn luyện động tác chuẩn đẹp.</td>
+</tr>
+<tr>
+<td><strong>Lớp học bơi Tập thể giá rẻ</strong></td>
+<td>Học nhóm tập trung (tối đa 10 học viên)</td>
+<td>1.500.000Đ</td>
+<td>Bao gồm 10 buổi thực hành bơi lội trọn gói vé vào cổng. Phù hợp cho học viên rèn luyện thể chất cơ bản.</td>
+</tr>
+<tr>
+<td><strong>Khóa học bơi kèm riêng VIP 1-1</strong></td>
+<td>Huấn luyện viên kèm riêng 1 thầy 1 trò</td>
+<td>4.500.000Đ</td>
+<td>Cá nhân hóa giáo trình 100%. Giáo viên theo sát sửa động tác từng nhịp bơi. Tặng 30 - 50 lượt vào bể Newton.</td>
+</tr>
+</tbody>
+</table>
 </div>
 
 > [!TIP]

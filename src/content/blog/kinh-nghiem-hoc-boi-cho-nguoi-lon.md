@@ -1,7 +1,7 @@
 ---
 title: "Kinh nghiệm học bơi cho người lớn tự tin biết bơi nhanh nhất"
 description: "Kinh nghiệm học bơi cho người lớn hiệu quả, cách vượt qua nỗi sợ nước. Đăng ký học bơi người lớn tại bể bơi Newton Cầu Giấy cam kết biết bơi 100%."
-pubDate: 2026-05-31
+pubDate: 2026-04-22 08:30:00 +07:00
 image: "/images/tuyen-sinh/lop-hoc-boi-be-boi-newton.webp"
 tags: ["học bơi cho người lớn", "lớp học bơi người lớn", "bể bơi Newton", "học bơi Cầu Giấy"]
 ---

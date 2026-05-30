@@ -1,7 +1,7 @@
 ---
 title: "Bản đồ chỉ đường đến Bể bơi Newton 234 Hoàng Quốc Việt"
 description: "Định vị bản đồ Google Maps và hướng dẫn chỉ đường đi chi tiết tới Bể bơi Newton cuối ngõ 234 Hoàng Quốc Việt. Cẩm nang đỗ xe máy, ô tô và phương tiện công cộng."
-pubDate: 2026-05-30
+pubDate: 2026-03-05 08:30:00 +07:00
 image: "/images/tuyen-sinh/tuyen-sinh-hoc-boi-newton-cau-giay.webp"
 tags: ["bản đồ", "chỉ đường", "bể bơi Newton", "gửi xe"]
 ---

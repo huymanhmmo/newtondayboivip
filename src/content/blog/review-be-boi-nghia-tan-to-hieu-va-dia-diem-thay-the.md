@@ -1,7 +1,7 @@
 ---
 title: "Review Bể bơi Nghĩa Tân Tô Hiệu và địa điểm thay thế"
 description: "Review chi tiết Bể bơi THCS Nghĩa Tân (Tô Hiệu). Cập nhật giá vé, giờ mở cửa, và so sánh thực tế với lớp học bơi Bể bơi Newton sát bên."
-pubDate: 2026-05-31
+pubDate: 2026-05-10 08:30:00 +07:00
 image: "/images/tuyen-sinh/lop-hoc-boi-be-boi-newton.webp"
 tags: ["bể bơi nghĩa tân", "bể bơi tô hiệu", "bể bơi trường thcs nghĩa tân", "học bơi Cầu Giấy", "bể bơi Newton"]
 ---
@@ -96,54 +96,48 @@ Bên cạnh sự vượt trội về cơ sở vật chất an toàn, chính sác
 * **Chính sách bảo lưu linh hoạt**: Học viên bận việc đột xuất được sắp xếp ca học bù hoàn toàn miễn phí, bảo lưu khóa học trọn vẹn trong vòng 1 năm không lo bị mất buổi học.
 
 <div class="canswim-table-wrapper">
-  <table>
-    <caption>Bảng So Sánh Quyền Lợi Học Viên Tại CanSwim Newton và Bể THCS Nghĩa Tân</caption>
-    <thead>
-      <tr>
-        <th>Tiêu chí so sánh quyền lợi</th>
-        <th>Học bơi tại CanSwim Bể bơi Newton</th>
-        <th>Học bơi tự túc tại Bể THCS Nghĩa Tân</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><strong>Giá học phí trọn gói</strong></td>
-        <td>Có, đóng 1 lần duy nhất, cam kết không phát sinh chi phí ẩn.</td>
-        <td>Không, học viên phải tự mua vé bơi lẻ vào cổng hàng ngày.</td>
-        
-      </tr>
-      <tr>
-        <td><strong>Vé vào cổng đi kèm</strong></td>
-        <td>Tặng kèm **30 lượt vé vào cổng** (15 buổi học + 15 buổi tự bơi).</td>
-        <td>Học viên tự trả từ 50.000Đ - 60.000Đ mỗi lượt vào bể học/tập.</td>
-        
-      </tr>
-      <tr>
-        <td><strong>Suất bơi tự ôn luyện free</strong></td>
-        <td>Tặng **15 buổi tự bơi miễn phí** để tự rèn luyện phản xạ nước.</td>
-        <td>Không có, muốn tự tập bơi ôn bài phải tự bỏ tiền mua vé.</td>
-        
-      </tr>
-      <tr>
-        <td><strong>Giờ học trong ngày</strong></td>
-        <td>Cực kỳ linh hoạt, tự chọn ca học từ 6h00 - 20h00 hàng ngày.</td>
-        <td>Bị bó hẹp theo ca bơi ngắn của trường học phục vụ chính khóa.</td>
-        
-      </tr>
-      <tr>
-        <td><strong>Độ sâu nước an toàn</strong></td>
-        <td>Độ sâu phẳng đều 1.1m - 1.3m, chân chạm đáy bể an tâm.</td>
-        <td>Độ sâu từ 1.1m đến 1.4m tương đối ổn định.</td>
-        
-      </tr>
-      <tr>
-        <td><strong>Môi trường học bơi</strong></td>
-        <td>Không gian trường học yên tĩnh, sạch sẽ, riêng tư tối đa.</td>
-        <td>Bể bơi đông đúc, ồn ào quá tải khách vãng lai chiều hè.</td>
-        
-      </tr>
-    </tbody>
-  </table>
+<table>
+<caption>Bảng So Sánh Quyền Lợi Học Viên Tại CanSwim Newton và Bể THCS Nghĩa Tân</caption>
+<thead>
+<tr>
+<th>Tiêu chí so sánh quyền lợi</th>
+<th>Học bơi tại CanSwim Bể bơi Newton</th>
+<th>Học bơi tự túc tại Bể THCS Nghĩa Tân</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Giá học phí trọn gói</strong></td>
+<td>Có, đóng 1 lần duy nhất, cam kết không phát sinh chi phí ẩn.</td>
+<td>Không, học viên phải tự mua vé bơi lẻ vào cổng hàng ngày.</td>
+</tr>
+<tr>
+<td><strong>Vé vào cổng đi kèm</strong></td>
+<td>Tặng kèm <strong>30 lượt vé vào cổng</strong> (15 buổi học + 15 buổi tự bơi).</td>
+<td>Học viên tự trả từ 50.000Đ - 60.000Đ mỗi lượt vào bể học/tập.</td>
+</tr>
+<tr>
+<td><strong>Suất bơi tự ôn luyện free</strong></td>
+<td>Tặng <strong>15 buổi tự bơi miễn phí</strong> để tự rèn luyện phản xạ nước.</td>
+<td>Không có, muốn tự tập bơi ôn bài phải tự bỏ tiền mua vé.</td>
+</tr>
+<tr>
+<td><strong>Giờ học trong ngày</strong></td>
+<td>Cực kỳ linh hoạt, tự chọn ca học từ 6h00 - 20h00 hàng ngày.</td>
+<td>Bị bó hẹp theo ca bơi ngắn của trường học phục vụ chính khóa.</td>
+</tr>
+<tr>
+<td><strong>Độ sâu nước an toàn</strong></td>
+<td>Độ sâu phẳng đều 1.1m - 1.3m, chân chạm đáy bể an tâm.</td>
+<td>Độ sâu từ 1.1m đến 1.4m tương đối ổn định.</td>
+</tr>
+<tr>
+<td><strong>Môi trường học bơi</strong></td>
+<td>Không gian trường học yên tĩnh, sạch sẽ, riêng tư tối đa.</td>
+<td>Bể bơi đông đúc, ồn ào quá tải khách vãng lai chiều hè.</td>
+</tr>
+</tbody>
+</table>
 </div>
 
 ---

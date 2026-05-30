@@ -1,7 +1,7 @@
 ---
 title: "Học bơi ở đâu Cầu Giấy tốt nhất? Bể bơi và Lớp dạy bơi uy tín"
 description: "Học bơi ở đâu quận Cầu Giấy chất lượng? Review địa chỉ học bơi uy tín, giá rẻ trọn gói tại bể bơi Newton ngõ 234 Hoàng Quốc Việt Nghĩa Đô."
-pubDate: 2026-05-31
+pubDate: 2026-04-07 08:30:00 +07:00
 image: "/images/tuyen-sinh/lop-hoc-boi-be-boi-newton.webp"
 tags: ["học bơi ở đâu", "học bơi Cầu Giấy", "bể bơi Newton", "địa điểm học bơi Hà Nội"]
 ---

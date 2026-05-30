@@ -1,7 +1,7 @@
 ---
 title: "Lớp học bơi ở các bể bơi Cầu Giấy lân cận: So sánh khóa học tốt nhất"
 description: "So sánh chi tiết lớp học bơi ở bể bơi Học viện Kỹ thuật Quân sự, Học viện Chính trị, Nghĩa Tân và lý do lớp bơi Newton CanSwim là lựa chọn tối ưu nhất."
-pubDate: 2026-05-31
+pubDate: 2026-05-01 08:30:00 +07:00
 image: "/images/tuyen-sinh/lop-hoc-boi-be-boi-newton.webp"
 tags: ["lớp học bơi ở Cầu Giấy", "học bơi ở Cầu Giấy", "học bơi Cầu Giấy", "bể bơi Newton", "lớp dạy bơi Cầu Giấy"]
 ---
@@ -82,54 +82,48 @@ Thông thường, học phí niêm yết của các lớp học bơi tự do kho
 * **Chính sách bảo lưu linh hoạt**: Học viên bận việc đột xuất được sắp xếp ca học bù hoàn toàn miễn phí, bảo lưu khóa học trọn vẹn trong vòng 1 năm không lo bị mất buổi học.
 
 <div class="canswim-table-wrapper">
-  <table>
-    <caption>Bảng So Sánh Quyền Lợi Học Viên Tại CanSwim Newton và Lớp Học Đối Thủ</caption>
-    <thead>
-      <tr>
-        <th>Tiêu chí so sánh quyền lợi</th>
-        <th>Lớp học bơi CanSwim Bể bơi Newton</th>
-        <th>Lớp học bơi tự phát tại các bể đối thủ</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><strong>Giá học phí trọn gói</strong></td>
-        <td>Có, đóng 1 lần duy nhất, cam kết không phát sinh chi phí ẩn.</td>
-        <td>Không, học viên phải tự mua vé bơi lẻ vào cổng hàng ngày.</td>
-        
-      </tr>
-      <tr>
-        <td><strong>Vé vào cổng đi kèm</strong></td>
-        <td>Tặng kèm **30 lượt vé vào cổng** (15 buổi học + 15 buổi tự bơi).</td>
-        <td>Học viên tự trả từ 50.000Đ - 80.000Đ mỗi lượt vào bể học/tập.</td>
-        
-      </tr>
-      <tr>
-        <td><strong>Suất bơi tự ôn luyện free</strong></td>
-        <td>Tặng **15 buổi tự bơi miễn phí** để tự rèn luyện phản xạ nước.</td>
-        <td>Không có, muốn tự tập bơi ôn bài phải tự bỏ tiền mua vé.</td>
-        
-      </tr>
-      <tr>
-        <td><strong>Độ sâu nước an toàn</strong></td>
-        <td>Độ sâu phẳng đều 1.1m - 1.3m, chân chạm đáy bể an tâm.</td>
-        <td>Đáy bể dốc dốc dần từ 1.1m lên đến 1.8m nguy hiểm hoảng hốt.</td>
-        
-      </tr>
-      <tr>
-        <td><strong>Không gian học bơi</strong></td>
-        <td>Không gian trường học yên tĩnh, sạch sẽ, riêng tư tối đa.</td>
-        <td>Bể bơi đông đúc, ồn ào quá tải khách vãng lai chiều hè.</td>
-        
-      </tr>
-      <tr>
-        <td><strong>Mái che thời tiết</strong></td>
-        <td>Có mái che kiên cố kín gió, bơi mát mẻ quanh năm.</td>
-        <td>Bể ngoài trời không mái che hoặc bể mái tôn nóng bức.</td>
-        
-      </tr>
-    </tbody>
-  </table>
+<table>
+<caption>Bảng So Sánh Quyền Lợi Học Viên Tại CanSwim Newton và Lớp Học Đối Thủ</caption>
+<thead>
+<tr>
+<th>Tiêu chí so sánh quyền lợi</th>
+<th>Lớp học bơi CanSwim Bể bơi Newton</th>
+<th>Lớp học bơi tự phát tại các bể đối thủ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Giá học phí trọn gói</strong></td>
+<td>Có, đóng 1 lần duy nhất, cam kết không phát sinh chi phí ẩn.</td>
+<td>Không, học viên phải tự mua vé bơi lẻ vào cổng hàng ngày.</td>
+</tr>
+<tr>
+<td><strong>Vé vào cổng đi kèm</strong></td>
+<td>Tặng kèm <strong>30 lượt vé vào cổng</strong> (15 buổi học + 15 buổi tự bơi).</td>
+<td>Học viên tự trả từ 50.000Đ - 80.000Đ mỗi lượt vào bể học/tập.</td>
+</tr>
+<tr>
+<td><strong>Suất bơi tự ôn luyện free</strong></td>
+<td>Tặng <strong>15 buổi tự bơi miễn phí</strong> để tự rèn luyện phản xạ nước.</td>
+<td>Không có, muốn tự tập bơi ôn bài phải tự bỏ tiền mua vé.</td>
+</tr>
+<tr>
+<td><strong>Độ sâu nước an toàn</strong></td>
+<td>Độ sâu phẳng đều 1.1m - 1.3m, chân chạm đáy bể an tâm.</td>
+<td>Đáy bể dốc dốc dần từ 1.1m lên đến 1.8m nguy hiểm hoảng hốt.</td>
+</tr>
+<tr>
+<td><strong>Không gian học bơi</strong></td>
+<td>Không gian trường học yên tĩnh, sạch sẽ, riêng tư tối đa.</td>
+<td>Bể bơi đông đúc, ồn ào quá tải khách vãng lai chiều hè.</td>
+</tr>
+<tr>
+<td><strong>Mái che thời tiết</strong></td>
+<td>Có mái che kiên cố kín gió, bơi mát mẻ quanh năm.</td>
+<td>Bể ngoài trời không mái che hoặc bể mái tôn nóng bức.</td>
+</tr>
+</tbody>
+</table>
 </div>
 
 ---

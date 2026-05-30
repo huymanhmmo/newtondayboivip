@@ -1,7 +1,7 @@
 ---
 title: "Lớp học bơi trẻ em Cầu Giấy kèm riêng tại Bể bơi Newton"
 description: "Khóa học bơi trẻ em Cầu Giấy kèm riêng chất lượng cao tại bể bơi Newton ngõ 234 Hoàng Quốc Việt. Bé học bơi vui vẻ, an toàn, cam kết biết bơi 100%."
-pubDate: 2026-05-30
+pubDate: 2026-03-11 08:30:00 +07:00
 image: "/images/tuyen-sinh/lop-day-boi-tre-em-cau-giay.webp"
 tags: ["dạy bơi trẻ em", "học bơi Cầu Giấy", "bể bơi Newton", "CanSwim"]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Review Bể bơi Newton 234 Hoàng Quốc Việt chi tiết chất lượng"
 description: "Đánh giá chi tiết bể bơi Newton cuối ngõ 234 Hoàng Quốc Việt Cầu Giấy. Thông tin chân thực về chất lượng nước, dịch vụ và các khóa dạy bơi uy tín."
-pubDate: 2026-05-30
+pubDate: 2026-03-14 08:30:00 +07:00
 image: "/images/tuyen-sinh/lop-hoc-boi-be-boi-newton.webp"
 tags: ["review bể bơi", "bể bơi Newton", "Hoàng Quốc Việt", "Cầu Giấy"]
 ---

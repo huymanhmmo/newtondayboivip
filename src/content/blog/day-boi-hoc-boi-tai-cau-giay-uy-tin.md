@@ -1,7 +1,7 @@
 ---
 title: "Dạy bơi ở Cầu Giấy: Khóa học bơi kèm riêng tốt nhất tại Bể bơi Newton"
 description: "Lớp dạy học bơi ở Cầu Giấy chất lượng cao, sĩ số nhóm nhỏ 1-3 học viên tại Bể bơi Newton 234 Hoàng Quốc Việt. Cam kết biết bơi nhanh, đúng kỹ thuật và an toàn."
-pubDate: 2026-05-31
+pubDate: 2026-03-23 08:30:00 +07:00
 image: "/images/tuyen-sinh/lop-hoc-boi-be-boi-newton.webp"
 tags: ["dạy bơi ở Cầu Giấy", "học bơi ở Cầu Giấy", "lớp học bơi ở Cầu Giấy", "bể bơi Newton", "học bơi Cầu Giấy"]
 ---
@@ -40,31 +40,31 @@ Lớp học bơi cho trẻ em của trung tâm CanSwim tại cơ sở Bể bơi 
 
 <div class="syllabus-timeline">
   <div class="timeline-step">
-    <div class="step-badge">Bước 1</div>
-    <div class="step-content">
-      <h5>Khơi dậy hứng thú & Làm quen nước</h5>
-      <p>Bé được giáo viên dắt tay làm quen với nước nông, chơi các trò chơi khởi động vui nhộn dưới nước để giải tỏa hoàn toàn tâm lý sợ sệt. Học kỹ năng hít thở nước bằng miệng và thổi bong bóng tuần hoàn dưới nước.</p>
+    <div class="timeline-badge">Bước 1</div>
+    <div class="timeline-content">
+      <h5 class="timeline-title">Khơi dậy hứng thú & Làm quen nước</h5>
+      <p class="timeline-desc">Bé được giáo viên dắt tay làm quen với nước nông, chơi các trò chơi khởi động vui nhộn dưới nước để giải tỏa hoàn toàn tâm lý sợ sệt. Học kỹ năng hít thở nước bằng miệng và thổi bong bóng tuần hoàn dưới nước.</p>
     </div>
   </div>
   <div class="timeline-step">
-    <div class="step-badge">Bước 2</div>
-    <div class="step-content">
-      <h5>Rèn luyện kỹ năng sinh tồn tự cứu</h5>
-      <p>Học cách thả nổi ngửa toàn thân tự do trên mặt nước mà không cần phao nâng đỡ. Thực hành kỹ năng bám men mép bể di chuyển và kỹ thuật đứng nước an toàn khi vô tình rơi vào vùng nước sâu.</p>
+    <div class="timeline-badge">Bước 2</div>
+    <div class="timeline-content">
+      <h5 class="timeline-title">Rèn luyện kỹ năng sinh tồn tự cứu</h5>
+      <p class="timeline-desc">Học cách thả nổi ngửa toàn thân tự do trên mặt nước mà không cần phao nâng đỡ. Thực hành kỹ năng bám men mép bể di chuyển và kỹ thuật đứng nước an toàn khi vô tình rơi vào vùng nước sâu.</p>
     </div>
   </div>
   <div class="timeline-step">
-    <div class="step-badge">Bước 3</div>
-    <div class="step-content">
-      <h5>Tập luyện động tác bơi kỹ thuật</h5>
-      <p>Hướng dẫn chi tiết kỹ thuật bơi ếch (phối hợp đạp chân khép nước và tay ôm nước đẩy người) hoặc bơi sải (đập chân sải liên tục và xoay trục cơ thể quạt tay lấy hơi). Giáo viên theo sát nắn chỉnh tư thế thân người thẳng (streamline) giảm lực cản.</p>
+    <div class="timeline-badge">Bước 3</div>
+    <div class="timeline-content">
+      <h5 class="timeline-title">Tập luyện động tác bơi kỹ thuật</h5>
+      <p class="timeline-desc">Hướng dẫn chi tiết kỹ thuật bơi ếch (phối hợp đạp chân khép nước và tay ôm nước đẩy người) hoặc bơi sải (đập chân sải liên tục và xoay trục cơ thể quạt tay lấy hơi). Giáo viên theo sát nắn chỉnh tư thế thân người thẳng (streamline) giảm lực cản.</p>
     </div>
   </div>
   <div class="timeline-step">
-    <div class="step-badge">Bước 4</div>
-    <div class="step-content">
-      <h5>Nâng cao thể lực & Thi sát hạch</h5>
-      <p>Luyện tập tăng cự ly bơi liên tục dài từ 25m đến 50m bể. Học viên trải qua bài kiểm tra đánh giá năng lực thực tế cuối khóa và được hỗ trợ cấp chứng chỉ bơi tiểu học uy tín để nộp hồ sơ thể chất tại trường học.</p>
+    <div class="timeline-badge">Bước 4</div>
+    <div class="timeline-content">
+      <h5 class="timeline-title">Nâng cao thể lực & Thi sát hạch</h5>
+      <p class="timeline-desc">Luyện tập tăng cự ly bơi liên tục dài từ 25m đến 50m bể. Học viên trải qua bài kiểm tra đánh giá năng lực thực tế cuối khóa và được hỗ trợ cấp chứng chỉ bơi tiểu học uy tín để nộp hồ sơ thể chất tại trường học.</p>
     </div>
   </div>
 </div>
@@ -97,55 +97,55 @@ Học viên có thể xem thông tin chi tiết tại trang khóa học [Lớp h
 Để giúp bạn đưa ra sự lựa chọn khách quan và tối ưu nhất cho việc học bơi, hãy cùng CanSwim phân tích so sánh chi tiết giữa Bể bơi Newton Cầu Giấy với các bể bơi lân cận nổi tiếng trong khu vực quận Cầu Giấy:
 
 <div class="canswim-table-wrapper">
-  <table>
-    <caption>Bảng So Sánh Bể Bơi Newton Cầu Giấy và Các Bể Lân Cận</caption>
-    <thead>
-      <tr>
-        <th>Tiêu chí so sánh</th>
-        <th>Bể bơi Newton Cầu Giấy</th>
-        <th>Bể bơi HV Kỹ thuật Quân sự</th>
-        <th>Bể bơi Học viện Chính trị</th>
-        <th>Bể bơi THCS Nghĩa Tân</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><strong>Thiết kế & Mái che</strong></td>
-        <td>Có mái che kiên cố, kín gió, che mưa nắng tuyệt đối.</td>
-        <td>Bể bơi ngoài trời 100%, không có mái che chắn.</td>
-        <td>Bể bơi trong nhà có mái tôn che nắng tiêu chuẩn.</td>
-        <td>Bể bơi trong nhà có mái che, thuộc trường học Nghĩa Tân.</td>
-      </tr>
-      <tr>
-        <td><strong>Độ sâu mực nước</strong></td>
-        <td>Độ sâu đều từ 1.1m đến 1.3m, cực kỳ an toàn cho học bơi.</td>
-        <td>Mực nước sâu thay đổi dốc từ 1.2m đến 1.8m.</td>
-        <td>Độ sâu thay đổi dốc từ 1.1m đến trên 1.7m.</td>
-        <td>Độ sâu nước trung bình từ 1.1m đến 1.4m tương đối ổn định.</td>
-      </tr>
-      <tr>
-        <td><strong>Nguồn nước & Vệ sinh</strong></td>
-        <td>Lọc tuần hoàn liên tục công nghệ cao, nước trong sạch, ít mùi clo.</td>
-        <td>Lọc cát thông thường, dễ đục nước khi có giông bão lá cây.</td>
-        <td>Lọc nước tiêu chuẩn, nồng độ hóa chất clo tương đối nồng.</td>
-        <td>Lọc nước trường học tiêu chuẩn, chất lượng nước ở mức khá.</td>
-      </tr>
-      <tr>
-        <td><strong>Môi trường & Không gian</strong></td>
-        <td>Nằm trong khuôn viên trường học, riêng tư, yên tĩnh, sạch sẽ.</td>
-        <td>Bể bơi quân đội mở cửa tự do đông đúc khách vãng lai tự do.</td>
-        <td>Khá đông đúc vào giờ cao điểm buổi chiều mát.</td>
-        <td>Chủ yếu phục vụ học sinh trường học thể chất học đường.</td>
-      </tr>
-      <tr>
-        <td><strong>Chính sách học phí</strong></td>
-        <td>Học phí trọn gói rẻ, đã bao gồm 30 lượt vé vào cổng bể bơi.</td>
-        <td>Học phí chưa bao gồm vé bể bơi, học viên tự mua vé lẻ hàng ngày.</td>
-        <td>Chưa bao gồm vé bể bơi vào cổng cho mỗi buổi học thực tế.</td>
-        <td>Học phí chưa bao gồm chi phí vé vào cổng vãng lai tự bơi.</td>
-      </tr>
-    </tbody>
-  </table>
+<table>
+<caption>Bảng So Sánh Bể Bơi Newton Cầu Giấy và Các Bể Lân Cận</caption>
+<thead>
+<tr>
+<th>Tiêu chí so sánh</th>
+<th>Bể bơi Newton Cầu Giấy</th>
+<th>Bể bơi HV Kỹ thuật Quân sự</th>
+<th>Bể bơi Học viện Chính trị</th>
+<th>Bể bơi THCS Nghĩa Tân</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Thiết kế & Mái che</strong></td>
+<td>Có mái che kiên cố, kín gió, che mưa nắng tuyệt đối.</td>
+<td>Bể bơi ngoài trời 100%, không có mái che chắn.</td>
+<td>Bể bơi trong nhà có mái tôn che nắng tiêu chuẩn.</td>
+<td>Bể bơi trong nhà có mái che, thuộc trường học Nghĩa Tân.</td>
+</tr>
+<tr>
+<td><strong>Độ sâu mực nước</strong></td>
+<td>Độ sâu đều từ 1.1m đến 1.3m, cực kỳ an toàn cho học bơi.</td>
+<td>Mực nước sâu thay đổi dốc từ 1.2m đến 1.8m.</td>
+<td>Độ sâu thay đổi dốc từ 1.1m đến trên 1.7m.</td>
+<td>Độ sâu nước trung bình từ 1.1m đến 1.4m tương đối ổn định.</td>
+</tr>
+<tr>
+<td><strong>Nguồn nước & Vệ sinh</strong></td>
+<td>Lọc tuần hoàn liên tục công nghệ cao, nước trong sạch, ít mùi clo.</td>
+<td>Lọc cát thông thường, dễ đục nước khi có giông bão lá cây.</td>
+<td>Lọc nước tiêu chuẩn, nồng độ hóa chất clo tương đối nồng.</td>
+<td>Lọc nước trường học tiêu chuẩn, chất lượng nước ở mức khá.</td>
+</tr>
+<tr>
+<td><strong>Môi trường & Không gian</strong></td>
+<td>Nằm trong khuôn viên trường học, riêng tư, yên tĩnh, sạch sẽ.</td>
+<td>Bể bơi quân đội mở cửa tự do đông đúc khách vãng lai tự do.</td>
+<td>Khá đông đúc vào giờ cao điểm buổi chiều mát.</td>
+<td>Chủ yếu phục vụ học sinh trường học thể chất học đường.</td>
+</tr>
+<tr>
+<td><strong>Chính sách học phí</strong></td>
+<td>Học phí trọn gói rẻ, đã bao gồm 30 lượt vé vào cổng bể bơi.</td>
+<td>Học phí chưa bao gồm vé bể bơi, học viên tự mua vé lẻ hàng ngày.</td>
+<td>Chưa bao gồm vé bể bơi vào cổng cho mỗi buổi học thực tế.</td>
+<td>Học phí chưa bao gồm chi phí vé vào cổng vãng lai tự bơi.</td>
+</tr>
+</tbody>
+</table>
 </div>
 
 ### Đánh giá lựa chọn tối ưu cho học viên tại Cầu Giấy:

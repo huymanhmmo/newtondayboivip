@@ -1,7 +1,7 @@
 ---
 title: "Cách tự học bơi cơ bản và an toàn cho người mới bắt đầu"
 description: "Hướng dẫn chi tiết cách tự học bơi cơ bản và an toàn cho người mới bắt đầu. Tập nổi nước sinh tồn, đạp chân và quạt tay cùng HLV CanSwim."
-pubDate: 2026-05-31
+pubDate: 2026-05-19 08:30:00 +07:00
 image: "/images/tuyen-sinh/lop-boi-tap-the-1t5.webp"
 tags: ["tự học bơi", "cách tự học bơi", "tự học bơi cơ bản", "bể bơi Newton", "học bơi Cầu Giấy"]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Hướng dẫn đường đi đến Bể bơi Newton 234 Hoàng Quốc Việt"
 description: "Hướng dẫn bản đồ đường đi đến bể bơi Newton, ngõ 234 Hoàng Quốc Việt, Cầu Giấy, Hà Nội. Hướng dẫn đỗ xe ô tô, xe máy thuận tiện và an toàn cho phụ huynh."
-pubDate: 2026-05-30
+pubDate: 2026-03-08 08:30:00 +07:00
 image: "/images/tuyen-sinh/tuyen-sinh-hoc-boi-newton-cau-giay.webp"
 tags: ["đường đi", "bể bơi Newton", "Hoàng Quốc Việt", "Nghĩa Đô", "gửi xe"]
 ---

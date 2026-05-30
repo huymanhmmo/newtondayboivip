@@ -1,7 +1,7 @@
 ---
 title: "Chứng chỉ bơi tiểu học Hà Nội: Quy định và Lớp học bơi uy tín"
 description: "Quy định chứng chỉ bơi tiểu học Hà Nội cho học sinh tiểu học mới nhất. Đăng ký học bơi và cấp chứng chỉ uy tín tại bể bơi Newton Cầu Giấy."
-pubDate: 2026-05-31
+pubDate: 2026-03-17 08:30:00 +07:00
 image: "/images/tuyen-sinh/lop-day-boi-tre-em-cau-giay.webp"
 tags: ["chứng chỉ bơi tiểu học", "học bơi trẻ em", "bể bơi Newton", "học bơi Cầu Giấy"]
 ---
@@ -30,49 +30,49 @@ Tùy vào điều kiện cơ sở vật chất của từng trường và địn
 Dưới đây là bảng tổng hợp các quy chuẩn đánh giá năng lực bơi lội học sinh tiểu học phổ biến tại các trường Hà Nội:
 
 <div class="canswim-table-wrapper">
-  <table>
-    <caption>Bảng Quy Chuẩn Đánh Giá Đạt Chuẩn Biết Bơi Học Sinh Tiểu Học</caption>
-    <thead>
-      <tr>
-        <th>Tiêu chí sát hạch</th>
-        <th>Yêu cầu tối thiểu (Khối 1 - 3)</th>
-        <th>Yêu cầu tối thiểu (Khối 4 - 5)</th>
-        <th>Lưu ý kỹ thuật bắt buộc</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><strong>Cự ly bơi liên tục</strong></td>
-        <td>15m - 20m</td>
-        <td>25m - 50m</td>
-        <td>Không chạm đáy bể, không bám phao hay dây làn bơi.</td>
-      </tr>
-      <tr>
-        <td><strong>Kiểu bơi thực hiện</strong></td>
-        <td>Bơi ếch hoặc Bơi sải tự do</td>
-        <td>Bơi ếch hoặc Bơi sải tự do</td>
-        <td>Thực hiện đúng kỹ thuật nhịp nhàng, không hoảng loạn.</td>
-      </tr>
-      <tr>
-        <td><strong>Kỹ năng thả nổi tự cứu</strong></td>
-        <td>Tối thiểu 30 giây</td>
-        <td>Tối thiểu 60 giây - 120 giây</td>
-        <td>Thả nổi ngửa toàn thân, tai chìm dưới nước, thở đều.</td>
-      </tr>
-      <tr>
-        <td><strong>Kỹ năng đứng nước</strong></td>
-        <td>Tối thiểu 15 giây</td>
-        <td>Tối thiểu 30 giây - 45 giây</td>
-        <td>Đứng thẳng tại chỗ ở mực nước sâu vượt đầu.</td>
-      </tr>
-      <tr>
-        <td><strong>Kỹ năng lấy hơi thở nước</strong></td>
-        <td>Hít miệng ngụp mũi 20 lần</td>
-        <td>Hít miệng ngụp mũi 30 lần</td>
-        <td>Nhịp thở tuần hoàn đều đặn, không sặc nước.</td>
-      </tr>
-    </tbody>
-  </table>
+<table>
+<caption>Bảng Quy Chuẩn Đánh Giá Đạt Chuẩn Biết Bơi Học Sinh Tiểu Học</caption>
+<thead>
+<tr>
+<th>Tiêu chí sát hạch</th>
+<th>Yêu cầu tối thiểu (Khối 1 - 3)</th>
+<th>Yêu cầu tối thiểu (Khối 4 - 5)</th>
+<th>Lưu ý kỹ thuật bắt buộc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Cự ly bơi liên tục</strong></td>
+<td>15m - 20m</td>
+<td>25m - 50m</td>
+<td>Không chạm đáy bể, không bám phao hay dây làn bơi.</td>
+</tr>
+<tr>
+<td><strong>Kiểu bơi thực hiện</strong></td>
+<td>Bơi ếch hoặc Bơi sải tự do</td>
+<td>Bơi ếch hoặc Bơi sải tự do</td>
+<td>Thực hiện đúng kỹ thuật nhịp nhàng, không hoảng loạn.</td>
+</tr>
+<tr>
+<td><strong>Kỹ năng thả nổi tự cứu</strong></td>
+<td>Tối thiểu 30 giây</td>
+<td>Tối thiểu 60 giây - 120 giây</td>
+<td>Thả nổi ngửa toàn thân, tai chìm dưới nước, thở đều.</td>
+</tr>
+<tr>
+<td><strong>Kỹ năng đứng nước</strong></td>
+<td>Tối thiểu 15 giây</td>
+<td>Tối thiểu 30 giây - 45 giây</td>
+<td>Đứng thẳng tại chỗ ở mực nước sâu vượt đầu.</td>
+</tr>
+<tr>
+<td><strong>Kỹ năng lấy hơi thở nước</strong></td>
+<td>Hít miệng ngụp mũi 20 lần</td>
+<td>Hít miệng ngụp mũi 30 lần</td>
+<td>Nhịp thở tuần hoàn đều đặn, không sặc nước.</td>
+</tr>
+</tbody>
+</table>
 </div>
 
 Do đó, sở hữu một tấm [chứng chỉ bơi tiểu học] không chỉ giúp bé hoàn thành xuất sắc các yêu cầu thể chất tại trường học mà quan trọng hơn cả, đó là sự chứng nhận khoa học rằng con yêu đã làm chủ kỹ năng sinh tồn quan trọng để tự bảo vệ mình dưới nước sâu.

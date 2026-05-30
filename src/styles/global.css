@@ -392,7 +392,7 @@ input, button, select, textarea {
   .tuition-title,
   h1:not(.hero-title):not(.markdown-body *):not(.post-title-heading),
   h2:not(.hero-title):not(.markdown-body *),
-  h3:not(.hero-title):not(.markdown-body *):not(.footer-title) {
+  h3:not(.hero-title):not(.markdown-body *):not(.footer-title):not(.blog-card-title) {
     white-space: nowrap !important;
     overflow: visible !important;
     text-overflow: clip !important;

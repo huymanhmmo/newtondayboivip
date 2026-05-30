@@ -435,15 +435,9 @@ const relatedPosts = allPosts
     position: sticky;
     top: 100px;
     align-self: start;
-    height: auto;
     max-height: calc(100vh - 120px);
-    overflow-y: auto;
-    scrollbar-width: none; /* Hide scrollbar for clean look */
-    padding-bottom: 20px;
-  }
-
-  .post-sidebar-left::-webkit-scrollbar {
-    display: none;
+    display: flex;
+    flex-direction: column;
   }
 
   /* Right sidebar - Widgets (20%) */
@@ -469,6 +463,7 @@ const relatedPosts = allPosts
     display: flex;
     flex-direction: column;
     gap: 24px;
+    max-height: 100%;
   }
 
   /* TOC styling */
@@ -477,6 +472,10 @@ const relatedPosts = allPosts
     border-radius: 20px;
     border: 1px solid var(--glass-border);
     background: var(--glass-bg);
+    display: flex;
+    flex-direction: column;
+    max-height: calc(100vh - 140px);
+    overflow: hidden;
   }
 
   .toc-box h4 {
@@ -488,6 +487,7 @@ const relatedPosts = allPosts
     text-transform: uppercase;
     border-bottom: 2px solid var(--color-primary-glare);
     padding-bottom: 10px;
+    flex-shrink: 0;
   }
 
   .toc-list {
@@ -499,6 +499,29 @@ const relatedPosts = allPosts
     gap: 14px;
     border-left: 1px solid rgba(0, 102, 170, 0.1);
     position: relative;
+    overflow-y: auto;
+    flex-grow: 1;
+    padding-right: 8px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-primary-light) rgba(0, 102, 170, 0.05);
+  }
+
+  .toc-list::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .toc-list::-webkit-scrollbar-track {
+    background: rgba(0, 102, 170, 0.05);
+    border-radius: 3px;
+  }
+
+  .toc-list::-webkit-scrollbar-thumb {
+    background: var(--color-primary-light);
+    border-radius: 3px;
+  }
+
+  .toc-list::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary);
   }
 
   .toc-item {
@@ -1103,5 +1126,45 @@ const relatedPosts = allPosts
     }, observerOptions);
 
     headings.forEach(heading => observer.observe(heading));
+
+    // 3. Đồng bộ cuộn hai chiều giữa trang bài viết và danh sách mục lục (toc-list)
+    let activeScrollSource = null;
+    let scrollTimeout;
+
+    // Khi cuộn trang bài viết chính -> cuộn TOC tương ứng
+    window.addEventListener('scroll', () => {
+      if (activeScrollSource === 'toc') return;
+      activeScrollSource = 'page';
+
+      const maxPageScroll = document.documentElement.scrollHeight - window.innerHeight;
+      if (maxPageScroll > 0) {
+        const ratio = window.scrollY / maxPageScroll;
+        const maxTocScroll = tocList.scrollHeight - tocList.clientHeight;
+        tocList.scrollTop = ratio * maxTocScroll;
+      }
+
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(() => {
+        activeScrollSource = null;
+      }, 50);
+    });
+
+    // Khi cuộn trực tiếp trên TOC -> cuộn trang bài viết chính tương ứng
+    tocList.addEventListener('scroll', () => {
+      if (activeScrollSource === 'page') return;
+      activeScrollSource = 'toc';
+
+      const maxTocScroll = tocList.scrollHeight - tocList.clientHeight;
+      if (maxTocScroll > 0) {
+        const ratio = tocList.scrollTop / maxTocScroll;
+        const maxPageScroll = document.documentElement.scrollHeight - window.innerHeight;
+        window.scrollTo(0, ratio * maxPageScroll);
+      }
+
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(() => {
+        activeScrollSource = null;
+      }, 50);
+    });
   });
 </script>

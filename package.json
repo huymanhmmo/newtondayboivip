@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && node postbuild.js",
+    "build": "astro build && node postbuild.js && node scripts/ping-google-indexing.js",
     "preview": "npm run build && wrangler dev",
     "astro": "astro",
     "generate-types": "wrangler types",
@@ -16,7 +16,8 @@
   "dependencies": {
     "@astrojs/cloudflare": "^13.6.0",
     "@astrojs/sitemap": "^3.7.3",
-    "astro": "^6.4.2"
+    "astro": "^6.4.2",
+    "google-auth-library": "^10.6.2"
   },
   "devDependencies": {
     "wrangler": "^4.95.0"

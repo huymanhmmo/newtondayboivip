@@ -1,30 +1,61 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%">
   <defs>
-    <linearGradient id="dropGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0088cc" />
-      <stop offset="100%" stop-color="#004488" />
+    <!-- Deep blue to vibrant aqua gradient representing clear pool water -->
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0052d4" />
+      <stop offset="50%" stop-color="#4364f7" />
+      <stop offset="100%" stop-color="#6fb1fc" />
     </linearGradient>
-    <linearGradient id="waveGrad" x1="0%" y1="100%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ff9900" />
-      <stop offset="100%" stop-color="#ff5500" />
+    <!-- Energetic coral orange to gold gradient representing movement and energy -->
+    <linearGradient id="orangeGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff416c" />
+      <stop offset="100%" stop-color="#ff4b2b" />
     </linearGradient>
-    <filter id="glow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#004488" flood-opacity="0.15" />
+    <!-- Clean cyan glow gradient -->
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
+    <filter id="premiumGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="softShadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#002266" flood-opacity="0.18" />
     </filter>
   </defs>
-  
-  <!-- Outer circle with subtle glow -->
-  <circle cx="64" cy="64" r="58" fill="#ffffff" filter="url(#glow)" />
-  <circle cx="64" cy="64" r="54" fill="none" stroke="url(#dropGrad)" stroke-width="4" />
-  
-  <!-- Stylized water drop representing Newton Canswim -->
-  <path d="M64,22 C64,22 88,48 88,68 C88,81.25 77.25,92 64,92 C50.75,92 40,81.25 40,68 C40,48 64,22 64,22 Z" fill="url(#dropGrad)" />
-  
-  <!-- Stylized wave cutout or swimmer in orange -->
-  <path d="M48,68 C56,60 64,74 72,66 C76,62 78,56 80,52 C76,58 72,60 68,58 C60,54 52,66 48,68 Z" fill="url(#waveGrad)" />
-  
-  <!-- Dynamic splash circle -->
-  <circle cx="64" cy="40" r="4" fill="#ffffff" />
-  <circle cx="56" cy="50" r="3" fill="#ffffff" />
-  <circle cx="72" cy="50" r="3" fill="#ffffff" />
+
+  <!-- Outer rounded glassmorphism tile -->
+  <rect x="8" y="8" width="112" height="112" rx="30" fill="#ffffff" filter="url(#softShadow)" />
+  <rect x="8" y="8" width="112" height="112" rx="30" fill="none" stroke="url(#blueGrad)" stroke-width="1.5" opacity="0.25" />
+
+  <!-- The Intertwined CanSwim "C" and "S" waves -->
+  <g transform="translate(8, 8)">
+    <!-- Wave "C" (representing Can & Safety Pool) -->
+    <path d="M 80,24 
+             A 38,38 0 1,0 80,88 
+             C 86,88 90,83 90,83 
+             C 90,83 84,78 78,78 
+             A 28,28 0 1,1 78,34 
+             C 84,34 90,29 90,29 
+             C 90,29 86,24 80,24 Z" 
+          fill="url(#blueGrad)" />
+
+    <!-- Wave "S" (representing Swim & Velocity) -->
+    <path d="M 52,82
+             C 62,88 74,84 80,74
+             C 86,64 78,54 68,48
+             C 58,42 54,34 60,24
+             C 66,14 78,16 84,24
+             C 86,26 90,20 88,18
+             C 80,6 64,4 54,16
+             C 44,28 50,42 58,48
+             C 68,54 74,60 68,70
+             C 62,80 50,76 46,70
+             Z"
+          fill="url(#orangeGrad)" />
+
+    <!-- A sparkling water droplet for splash -->
+    <path d="M 76,44 C 76,44 83,52 83,58 C 83,62 80,65 76,65 C 72,65 69,62 69,58 C 69,52 76,44 76,44 Z" fill="url(#cyanGrad)" filter="url(#premiumGlow)" />
+  </g>
 </svg>

@@ -3,12 +3,31 @@
 <header class="site-header">
   <div class="container header-container">
     <a href="/" class="logo-area">
-      <div class="logo-circle">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="water-icon"><path d="M12 22a7 7 0 0 0 7-7c0-4.3-7-11-7-11S5 10.7 5 15a7 7 0 0 0 7 7z"/></svg>
-      </div>
+      <svg class="logo-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="44" height="44">
+        <defs>
+          <linearGradient id="logoBlueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#0052d4" />
+            <stop offset="50%" stop-color="#4364f7" />
+            <stop offset="100%" stop-color="#6fb1fc" />
+          </linearGradient>
+          <linearGradient id="logoOrangeGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#ff416c" />
+            <stop offset="100%" stop-color="#ff4b2b" />
+          </linearGradient>
+          <linearGradient id="logoCyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#00f2fe" />
+            <stop offset="100%" stop-color="#4facfe" />
+          </linearGradient>
+        </defs>
+        <g transform="scale(0.9) translate(5, 5)">
+          <path d="M 80,24 A 38,38 0 1,0 80,88 C 86,88 90,83 90,83 C 90,83 84,78 78,78 A 28,28 0 1,1 78,34 C 84,34 90,29 90,29 C 90,29 86,24 80,24 Z" fill="url(#logoBlueGrad)" />
+          <path d="M 52,82 C 62,88 74,84 80,74 C 86,64 78,54 68,48 C 58,42 54,34 60,24 C 66,14 78,16 84,24 C 86,26 90,20 88,18 C 80,6 64,4 54,16 C 44,28 50,42 58,48 C 68,54 74,60 68,70 C 62,80 50,76 46,70 Z" fill="url(#logoOrangeGrad)" />
+          <path d="M 76,44 C 76,44 83,52 83,58 C 83,62 80,65 76,65 C 72,65 69,62 69,58 C 69,52 76,44 76,44 Z" fill="url(#logoCyanGrad)" />
+        </g>
+      </svg>
       <div class="logo-text">
-        <span class="logo-brand">BỂ BƠI NEWTON</span>
-        <span class="logo-sub">CANSWIM</span>
+        <span class="logo-brand"><span class="brand-can">Can</span><span class="brand-swim">Swim</span></span>
+        <span class="logo-sub">BỂ BƠI NEWTON</span>
       </div>
     </a>
 
@@ -95,16 +114,25 @@
   .logo-brand {
     font-family: var(--font-heading);
     font-weight: 800;
-    font-size: 1.2rem;
-    color: var(--color-primary);
+    font-size: 1.4rem;
     line-height: 1.1;
     letter-spacing: -0.5px;
+    display: flex;
+    gap: 1px;
+  }
+
+  .brand-can {
+    color: var(--color-primary);
+  }
+
+  .brand-swim {
+    color: var(--color-secondary);
   }
 
   .logo-sub {
-    font-size: 0.8rem;
+    font-size: 0.72rem;
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     color: var(--color-text-muted);
   }
 

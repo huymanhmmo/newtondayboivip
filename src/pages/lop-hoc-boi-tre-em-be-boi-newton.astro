@@ -1,11 +1,6 @@
 ---
-import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
 import FormRegister from '../components/FormRegister.astro';
-
-// Import ảnh học viên nhỏ tuổi
-import kidSwim1 from '../assets/be-boi-newton/be-boi-newton-be-tap-boi.jpg';
-import kidSwim2 from '../assets/be-boi-newton/be-boi-newton-giao-vien-huong-dan.jpg';
 ---
 
 <Layout 
@@ -63,7 +58,7 @@ import kidSwim2 from '../assets/be-boi-newton/be-boi-newton-giao-vien-huong-dan.
       </div>
 
       <div class="benefits-media">
-        <Image src={kidSwim1} alt="Bé học bơi tại bể bơi Newton" class="kids-benefit-img" width={500} height={355} quality="high" />
+        <img src="/images/be-boi-newton-be-tap-boi.jpg" alt="Bé học bơi tại bể bơi Newton" class="kids-benefit-img" width="500" height="355" loading="lazy" />
       </div>
     </div>
   </section>
@@ -112,7 +107,7 @@ import kidSwim2 from '../assets/be-boi-newton/be-boi-newton-giao-vien-huong-dan.
   <section class="section-padding safety-section">
     <div class="container safety-grid">
       <div class="safety-media">
-        <Image src={kidSwim2} alt="Giáo viên kèm sát bảo vệ trẻ em khi học bơi" class="safety-img" width={480} height={320} quality="high" />
+        <img src="/images/be-boi-newton-giao-vien-huong-dan.jpg" alt="Giáo viên kèm sát bảo vệ trẻ em khi học bơi" class="safety-img" width="480" height="320" loading="lazy" />
       </div>
 
       <div class="safety-content">
@@ -138,6 +133,20 @@ import kidSwim2 from '../assets/be-boi-newton/be-boi-newton-giao-vien-huong-dan.
         title="ĐĂNG KÝ HỌC THỬ LỚP BƠI TRẺ EM"
         subtitle="Để lại thông tin liên hệ, CanSwim sẽ liên hệ xếp lịch kiểm tra trình độ nước miễn phí cho bé tại bể bơi Newton."
       />
+    </div>
+  </section>
+
+  <!-- HOTLINE CTA STRIP -->
+  <section class="hotline-cta-strip">
+    <div class="container hotline-cta-container">
+      <div class="hotline-cta-text">
+        <span class="hotline-cta-label">📞 Liên hệ đăng ký & tư vấn miễn phí</span>
+        <span class="hotline-cta-number">0907 992 336</span>
+      </div>
+      <div class="hotline-cta-actions">
+        <a href="tel:0907992336" class="btn btn-primary btn-hotline-call">GỌI NGAY</a>
+        <a href="http://zalo.me/0907992336" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-hotline-zalo">CHAT ZALO</a>
+      </div>
     </div>
   </section>
 </Layout>
@@ -359,6 +368,79 @@ import kidSwim2 from '../assets/be-boi-newton/be-boi-newton-giao-vien-huong-dan.
       max-width: 500px;
       margin-left: auto;
       margin-right: auto;
+    }
+  }
+
+  /* Hotline CTA Strip */
+  .hotline-cta-strip {
+    background: linear-gradient(135deg, hsl(205, 85%, 18%) 0%, hsl(205, 90%, 12%) 100%);
+    padding: 30px 0;
+    border-top: 3px solid var(--color-secondary);
+  }
+
+  .hotline-cta-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+
+  .hotline-cta-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .hotline-cta-label {
+    color: hsl(205, 15%, 75%);
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .hotline-cta-number {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--color-white);
+    letter-spacing: 1px;
+  }
+
+  .hotline-cta-actions {
+    display: flex;
+    gap: 12px;
+  }
+
+  .btn-hotline-call {
+    padding: 12px 28px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+  }
+
+  .btn-hotline-zalo {
+    padding: 12px 28px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    background: transparent;
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
+  }
+
+  .btn-hotline-zalo:hover {
+    background: var(--color-white);
+    color: var(--color-primary);
+  }
+
+  @media (max-width: 576px) {
+    .hotline-cta-container {
+      flex-direction: column;
+      text-align: center;
+    }
+    .hotline-cta-text {
+      align-items: center;
+    }
+    .hotline-cta-number {
+      font-size: 1.6rem;
     }
   }
 </style>

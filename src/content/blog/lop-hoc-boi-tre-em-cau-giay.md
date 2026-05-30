@@ -2,7 +2,7 @@
 title: "Dạy bơi trẻ em khu Cầu Giấy: Vì sao phụ huynh chọn bể bơi Newton?"
 description: "Dạy bơi trẻ em tại Cầu Giấy ở đâu tốt? Tìm hiểu lý do nhiều phụ huynh khu Hoàng Quốc Việt - Nghĩa Đô lựa chọn lớp học bơi CanSwim tại bể bơi Newton cho con."
 pubDate: 2026-05-30
-image: "../../assets/be-boi-newton/be-boi-newton-lop-hoc-boi.jpg"
+image: "/images/tuyen-sinh/lop-day-boi-tre-em-cau-giay.png"
 tags: ["dạy bơi trẻ em", "học bơi Cầu Giấy", "bể bơi Newton", "CanSwim"]
 ---
 Mùa hè đến cũng là lúc các bậc phụ huynh tại quận Cầu Giấy rục rịch tìm kiếm lớp học bơi cho con em mình. Học bơi không chỉ giúp bé rèn luyện sức khỏe, tăng chiều cao mà quan trọng hơn hết là trang bị kỹ năng sinh tồn, phòng chống tai nạn đuối nước. Giữa rất nhiều bể bơi tại Cầu Giấy, **lớp học bơi CanSwim tại bể bơi Newton** (cuối ngõ 234 Hoàng Quốc Việt, phường Nghĩa Đô) đang là địa chỉ được truyền tai nhau nhiều nhất. Dưới đây là những lý do cốt lõi làm nên sức hút này.
@@ -28,6 +28,9 @@ Tại CanSwim bể bơi Newton, chúng tôi áp dụng mô hình:
 - **Lớp nhóm nhỏ tối ưu:** Chỉ từ **1 - 3 học viên/thầy** hoặc tối đa **4 - 6 học viên/thầy**.
 - Với sĩ số này, huấn luyện viên luôn ở dưới nước bên cạnh bé, trực tiếp nâng đỡ, sửa từng động tác quạt tay, đạp chân và phản xạ thở nước đúng cách.
 - Giáo án được thiết kế cá nhân hóa, phù hợp với thể trạng và tốc độ tiếp thu của từng bé, giúp các bé học tập vui vẻ, không bị áp lực.
+
+![HLV CanSwim kèm sát học viên học chậm tại bể bơi Newton](/images/tuyen-sinh/hoc-cham-kem-toi-khi-boi-tot.png)
+<p class="image-caption">Tại CanSwim, HLV luôn kiên trì kèm sát từng bé dưới nước để bé tự tin làm quen và thực hành đúng động tác.</p>
 
 ## 4. Cam kết chất lượng đầu ra bài bản
 

@@ -6,28 +6,7 @@ const currentYear = new Date().getFullYear();
     <!-- Brand / Intro -->
     <div class="footer-col brand-col">
       <div class="footer-logo">
-        <svg class="logo-icon-svg-footer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="38" height="38">
-          <defs>
-            <linearGradient id="logoBlueGradFooter" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#0052d4" />
-              <stop offset="50%" stop-color="#4364f7" />
-              <stop offset="100%" stop-color="#6fb1fc" />
-            </linearGradient>
-            <linearGradient id="logoOrangeGradFooter" x1="0%" y1="100%" x2="100%" y2="0%">
-              <stop offset="0%" stop-color="#ff416c" />
-              <stop offset="100%" stop-color="#ff4b2b" />
-            </linearGradient>
-            <linearGradient id="logoCyanGradFooter" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#00f2fe" />
-              <stop offset="100%" stop-color="#4facfe" />
-            </linearGradient>
-          </defs>
-          <g transform="scale(0.9) translate(5, 5)">
-            <path d="M 80,24 A 38,38 0 1,0 80,88 C 86,88 90,83 90,83 C 90,83 84,78 78,78 A 28,28 0 1,1 78,34 C 84,34 90,29 90,29 C 90,29 86,24 80,24 Z" fill="url(#logoBlueGradFooter)" />
-            <path d="M 52,82 C 62,88 74,84 80,74 C 86,64 78,54 68,48 C 58,42 54,34 60,24 C 66,14 78,16 84,24 C 86,26 90,20 88,18 C 80,6 64,4 54,16 C 44,28 50,42 58,48 C 68,54 74,60 68,70 C 62,80 50,76 46,70 Z" fill="url(#logoOrangeGradFooter)" />
-            <path d="M 76,44 C 76,44 83,52 83,58 C 83,62 80,65 76,65 C 72,65 69,62 69,58 C 69,52 76,44 76,44 Z" fill="url(#logoCyanGradFooter)" />
-          </g>
-        </svg>
+        <img src="/logo.png" alt="CanSwim Logo" class="logo-image-footer" width="38" height="38" />
         <div class="logo-text-footer">
           <span class="logo-brand-footer"><span class="brand-can-footer">Can</span><span class="brand-swim-footer">Swim</span></span>
           <span class="logo-sub-footer">BỂ BƠI NEWTON</span>
@@ -66,7 +45,7 @@ const currentYear = new Date().getFullYear();
       <ul class="footer-contact">
         <li class="contact-item">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="contact-icon"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          <span><strong>Địa chỉ:</strong> Bể bơi Newton, lô TH2 khu đô thị Hoàng Quốc Việt, cuối ngõ 234 Hoàng Quốc Việt, phường Nghĩa Đô, quận Cầu Giấy, Hà Nội</span>
+          <span><strong>Địa chỉ:</strong> Bể bơi Newton, khu Trường Newton, lô TH2 khu đô thị Nam Cường, cuối ngõ 234 Hoàng Quốc Việt, phường Nghĩa Đô, quận Cầu Giấy, Hà Nội</span>
         </li>
         <li class="contact-item">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="contact-icon"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -118,6 +97,13 @@ const currentYear = new Date().getFullYear();
     align-items: center;
     gap: 12px;
     margin-bottom: 20px;
+  }
+
+  .logo-image-footer {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+    border-radius: 4px;
   }
 
   .logo-circle-footer {

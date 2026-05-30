@@ -1,5 +1,4 @@
 ---
-import { Image } from 'astro:assets';
 
 interface Props {
   course: {
@@ -9,7 +8,7 @@ interface Props {
       price_group_1_desc: string;
       price_group_2?: string;
       price_group_2_desc?: string;
-      image?: any;
+      image?: string;
     };
     body: string;
   };
@@ -17,12 +16,13 @@ interface Props {
 
 const { course } = Astro.props;
 const { title, price_group_1, price_group_1_desc, price_group_2, price_group_2_desc, image } = course.data;
+const isTapThe = title.includes('Tập Thể');
 ---
 
 <div class="course-card glass-card">
   {image && (
     <div class="course-image-wrapper">
-      <Image src={image} alt={title} class="course-image" width={360} height={220} quality="high" />
+      <img src={image} alt={title} class="course-image" width="360" height="220" loading="lazy" />
       <span class="course-badge">Đang Tuyển Sinh</span>
     </div>
   )}
@@ -42,6 +42,12 @@ const { title, price_group_1, price_group_1_desc, price_group_2, price_group_2_d
         </div>
       )}
     </div>
+
+    {isTapThe ? (
+      <div class="promo-tag promo-warning">⚠️ 10 buổi • Không tặng thêm vé • Từ 10 tuổi</div>
+    ) : (
+      <div class="promo-tag promo-success">✅ Đã gồm 15 vé + Tặng thêm 15 buổi tự bơi</div>
+    )}
 
     <a href="/lien-he-chi-duong-be-boi-newton#register" class="btn btn-secondary btn-course-cta">ĐĂNG KÝ HỌC</a>
   </div>
@@ -145,5 +151,27 @@ const { title, price_group_1, price_group_1_desc, price_group_2, price_group_2_d
     width: 100%;
     border-radius: 10px;
     padding: 12px;
+  }
+
+  .promo-tag {
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 8px 16px;
+    border-radius: 99px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+  }
+
+  .promo-success {
+    color: #2ecc71;
+    background-color: rgba(46, 204, 113, 0.1);
+    border: 1px solid rgba(46, 204, 113, 0.25);
+  }
+
+  .promo-warning {
+    color: #e67e22;
+    background-color: rgba(230, 126, 34, 0.1);
+    border: 1px solid rgba(230, 126, 34, 0.25);
   }
 </style>

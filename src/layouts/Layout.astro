@@ -6,6 +6,7 @@ import Footer from '../components/Footer.astro';
 interface Props {
   title: string;
   description: string;
+  image?: string;
   canonicalURL?: string;
   schemaType?: 'WebSite' | 'LocalBusiness' | 'FAQPage' | 'Article';
   customSchema?: any;
@@ -14,10 +15,41 @@ interface Props {
 const { 
   title, 
   description, 
+  image,
   canonicalURL = Astro.url.href, 
   schemaType = 'WebSite',
   customSchema 
 } = Astro.props;
+
+// Phân loại hình ảnh phù hợp mạng xã hội theo kích thước:
+// banner-tuyen-sinh-1.png: 1734 x 907 (tỷ lệ 1.91:1) -> Đẹp nhất cho Facebook, Zalo, LinkedIn link sharing
+// banner-tuyen-sinh-3.png: 1734 x 907 (tỷ lệ 1.91:1) -> Đẹp nhất cho Twitter
+// banner-tuyen-sinh-2.png: 1536 x 1024 (tỷ lệ 3:2) -> Phù hợp cho chia sẻ dạng hình ảnh ngang
+// banner-tuyen-sinh-4.png: 1536 x 1024 (tỷ lệ 3:2) -> Phù hợp cho chia sẻ dạng hình ảnh ngang
+const ogImage = image || "https://newton.dayboi.vip/images/banner-tuyen-sinh-1.png";
+const twitterImage = image || "https://newton.dayboi.vip/images/banner-tuyen-sinh-3.png";
+
+// Tự động phân loại kích thước và định dạng tương thích cho meta tags
+let ogWidth = "1734";
+let ogHeight = "907";
+let ogType = "image/png";
+
+if (image) {
+  if (image.includes("banner-tuyen-sinh-2") || image.includes("banner-tuyen-sinh-4")) {
+    ogWidth = "1536";
+    ogHeight = "1024";
+    ogType = "image/png";
+  } else if (image.includes("banner-tuyen-sinh-1") || image.includes("banner-tuyen-sinh-3")) {
+    ogWidth = "1734";
+    ogHeight = "907";
+    ogType = "image/png";
+  } else {
+    // Giá trị fallback an toàn
+    ogWidth = "1200";
+    ogHeight = "630";
+    ogType = "image/jpeg";
+  }
+}
 
 // Schema mặc định của LocalBusiness
 const localBusinessSchema = {
@@ -27,11 +59,11 @@ const localBusinessSchema = {
   "alternateName": "CanSwim Bể bơi Newton Cầu Giấy",
   "url": "https://newton.dayboi.vip",
   "logo": "https://newton.dayboi.vip/logo.png",
-  "image": "https://newton.dayboi.vip/assets/be-boi-newton-toan-canh-be-boi.jpg",
+  "image": ogImage,
   "description": description || "Lớp học bơi trẻ em và người lớn uy tín tại bể bơi Newton, ngõ 234 Hoàng Quốc Việt, Nghĩa Đô, Cầu Giấy, Hà Nội.",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Bể bơi Newton, lô TH2 khu đô thị Hoàng Quốc Việt, cuối ngõ 234 Hoàng Quốc Việt, phường Nghĩa Đô",
+    "streetAddress": "Bể bơi Newton, khu Trường Newton, lô TH2 khu đô thị Nam Cường, cuối ngõ 234 Hoàng Quốc Việt, phường Nghĩa Đô",
     "addressLocality": "Cầu Giấy",
     "addressRegion": "Hà Nội",
     "postalCode": "100000",
@@ -87,7 +119,7 @@ const activeSchema = customSchema
 <html lang="vi">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
     
@@ -96,19 +128,24 @@ const activeSchema = customSchema
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalURL} />
     
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph / Facebook / Zalo / LinkedIn -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content="https://newton.dayboi.vip/assets/be-boi-newton-toan-canh-be-boi.jpg" />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content={ogWidth} />
+    <meta property="og:image:height" content={ogHeight} />
+    <meta property="og:image:type" content={ogType} />
+    <meta property="og:site_name" content="CanSwim - Dạy bơi bể bơi Newton" />
+    <meta property="og:locale" content="vi_VN" />
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content={canonicalURL} />
-    <meta property="twitter:title" content={title} />
-    <meta property="twitter:description" content={description} />
-    <meta property="twitter:image" content="https://newton.dayboi.vip/assets/be-boi-newton-toan-canh-be-boi.jpg" />
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonicalURL} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={twitterImage} />
 
     <!-- Schema JSON-LD -->
     <script type="application/ld+json" set:html={JSON.stringify(activeSchema)} />

@@ -1,6 +1,6 @@
 ---
 import { getCollection, render } from 'astro:content';
-import { Image } from 'astro:assets';
+
 import Layout from '../../layouts/Layout.astro';
 
 // 1. Tạo static paths cho toàn bộ các bài viết
@@ -29,7 +29,7 @@ const articleSchema = {
   "@type": "BlogPosting",
   "headline": title,
   "description": description,
-  "image": image ? `https://newton.dayboi.vip${image.src}` : "https://newton.dayboi.vip/assets/be-boi-newton-toan-canh-be-boi.jpg",
+  "image": image ? `https://newton.dayboi.vip${image}` : "https://newton.dayboi.vip/images/banner-tuyen-sinh-1.png",
   "datePublished": pubDate.toISOString().split('T')[0],
   "author": {
     "@type": "Organization",
@@ -81,7 +81,7 @@ const articleSchema = {
     {image && (
       <div class="container max-width-post-content">
         <div class="post-cover-img-wrapper">
-          <Image src={image} alt={title} class="post-cover-img" priority width={800} height={450} quality="high" />
+          <img src={image} alt={title} class="post-cover-img" width="800" height="450" loading="eager" fetchpriority="high" />
         </div>
       </div>
     )}
@@ -256,6 +256,25 @@ const articleSchema = {
 
   .markdown-body :global(strong) {
     font-weight: 700;
+  }
+
+  .markdown-body :global(img) {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 24px auto 10px auto;
+    display: block;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--glass-border);
+  }
+
+  .markdown-body :global(.image-caption) {
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    font-style: italic;
+    margin-top: 5px;
+    margin-bottom: 25px;
   }
 
   /* CTA at bottom of post */

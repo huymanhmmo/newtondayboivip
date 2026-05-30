@@ -2,7 +2,7 @@
 title: "Hướng dẫn đường đi tới bể bơi Newton cuối ngõ 234 Hoàng Quốc Việt"
 description: "Chỉ đường chi tiết tới bể bơi Newton cuối ngõ 234 Hoàng Quốc Việt, lô TH2 khu đô thị Nam Cường, phường Nghĩa Đô. Hướng dẫn di chuyển và đỗ xe thuận tiện nhất."
 pubDate: 2026-05-30
-image: "../../assets/be-boi-newton/be-boi-newton-be-boi-co-mai-che.jpg"
+image: "/images/tuyen-sinh/tuyen-sinh-hoc-boi-newton-cau-giay.png"
 tags: ["đường đi", "bể bơi Newton", "Hoàng Quốc Việt", "Nghĩa Đô"]
 ---
 Bể bơi Newton nằm trong khuôn viên trường liên cấp Newton là địa điểm bơi lội và học bơi quen thuộc của cư dân quận Cầu Giấy và Bắc Từ Liêm. Tuy nhiên, do bể nằm trong khu đô thị mới nên nhiều người lần đầu đến có thể gặp khó khăn khi tìm đường. Dưới đây là hướng dẫn chi tiết chỉ đường tới bể bơi Newton cuối ngõ 234 Hoàng Quốc Việt, phường Nghĩa Đô.
@@ -38,5 +38,8 @@ Nhờ vị trí giao thông thuận tiện, bể bơi Newton rất dễ tiếp c
 - Khu đô thị Nam Cường, khu đô thị Nghĩa Đô.
 - Các tuyến phố lân cận như Trần Cung, Phạm Văn Đồng, Phùng Chí Kiên, Nguyễn Văn Huyên, Cổ Nhuế.
 - Các bậc phụ huynh có con học quanh khu Nghĩa Đô, Cầu Giấy, Cổ Nhuế muốn chọn một địa điểm học bơi gần nhà để tiện đưa đón.
+
+![Lớp học bơi người lớn tại bể bơi Newton Cầu Giấy](/images/tuyen-sinh/day-boi-nguoi-lon-be-boi-newton.png)
+<p class="image-caption">Lớp học bơi người lớn tại bể bơi Newton thuận tiện cho học viên di chuyển từ các phố xung quanh sau giờ làm.</p>
 
 Để tránh việc thay đổi khung giờ mở cửa đột xuất của bể bơi trường học, học viên đăng ký lớp dạy bơi CanSwim tại bể bơi Newton nên liên hệ trước qua hotline **0907 992 336** hoặc Zalo để được cập nhật lịch bơi và lịch học mới nhất!

@@ -1,11 +1,6 @@
 ---
-import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
 import FormRegister from '../components/FormRegister.astro';
-
-// Import ảnh học viên lớn tuổi
-import adultSwim1 from '../assets/be-boi-newton/be-boi-newton-hoc-vien-tap-luyen.jpg';
-import adultSwim2 from '../assets/be-boi-newton/be-boi-newton-huong-dan-hoc-vien.jpg';
 ---
 
 <Layout 
@@ -59,7 +54,7 @@ import adultSwim2 from '../assets/be-boi-newton/be-boi-newton-huong-dan-hoc-vien
       </div>
 
       <div class="adult-intro-media">
-        <Image src={adultSwim1} alt="Học viên lớn tuổi tập bơi sải" class="adult-img" width={500} height={355} quality="high" />
+        <img src="/images/be-boi-newton-hoc-vien-tap-luyen.jpg" alt="Học viên lớn tuổi tập bơi sải" class="adult-img" width="500" height="355" loading="lazy" />
       </div>
     </div>
   </section>
@@ -68,7 +63,7 @@ import adultSwim2 from '../assets/be-boi-newton/be-boi-newton-huong-dan-hoc-vien
   <section class="section-padding adult-methods-section">
     <div class="container methods-grid">
       <div class="methods-media">
-        <Image src={adultSwim2} alt="Giáo viên sửa tư thế bơi cho người lớn" class="methods-img" width={480} height={320} quality="high" />
+        <img src="/images/be-boi-newton-huong-dan-hoc-vien.jpg" alt="Giáo viên sửa tư thế bơi cho người lớn" class="methods-img" width="480" height="320" loading="lazy" />
       </div>
 
       <div class="methods-content">
@@ -94,6 +89,20 @@ import adultSwim2 from '../assets/be-boi-newton/be-boi-newton-huong-dan-hoc-vien
         title="ĐĂNG KÝ NHẬN TƯ VẤN KHÓA NGƯỜI LỚN"
         subtitle="Để lại thông tin, CanSwim sẽ liên hệ xếp lịch học thử và sắp xếp huấn luyện viên phù hợp nhất với trình độ của bạn."
       />
+    </div>
+  </section>
+
+  <!-- HOTLINE CTA STRIP -->
+  <section class="hotline-cta-strip">
+    <div class="container hotline-cta-container">
+      <div class="hotline-cta-text">
+        <span class="hotline-cta-label">📞 Liên hệ đăng ký & tư vấn miễn phí</span>
+        <span class="hotline-cta-number">0907 992 336</span>
+      </div>
+      <div class="hotline-cta-actions">
+        <a href="tel:0907992336" class="btn btn-primary btn-hotline-call">GỌI NGAY</a>
+        <a href="http://zalo.me/0907992336" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-hotline-zalo">CHAT ZALO</a>
+      </div>
     </div>
   </section>
 </Layout>
@@ -274,6 +283,79 @@ import adultSwim2 from '../assets/be-boi-newton/be-boi-newton-huong-dan-hoc-vien
       max-width: 500px;
       margin-left: auto;
       margin-right: auto;
+    }
+  }
+
+  /* Hotline CTA Strip */
+  .hotline-cta-strip {
+    background: linear-gradient(135deg, hsl(205, 85%, 18%) 0%, hsl(205, 90%, 12%) 100%);
+    padding: 30px 0;
+    border-top: 3px solid var(--color-secondary);
+  }
+
+  .hotline-cta-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+
+  .hotline-cta-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .hotline-cta-label {
+    color: hsl(205, 15%, 75%);
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .hotline-cta-number {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--color-white);
+    letter-spacing: 1px;
+  }
+
+  .hotline-cta-actions {
+    display: flex;
+    gap: 12px;
+  }
+
+  .btn-hotline-call {
+    padding: 12px 28px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+  }
+
+  .btn-hotline-zalo {
+    padding: 12px 28px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    background: transparent;
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
+  }
+
+  .btn-hotline-zalo:hover {
+    background: var(--color-white);
+    color: var(--color-primary);
+  }
+
+  @media (max-width: 576px) {
+    .hotline-cta-container {
+      flex-direction: column;
+      text-align: center;
+    }
+    .hotline-cta-text {
+      align-items: center;
+    }
+    .hotline-cta-number {
+      font-size: 1.6rem;
     }
   }
 </style>

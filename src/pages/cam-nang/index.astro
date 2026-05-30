@@ -1,6 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
-import { Image } from 'astro:assets';
+
 import Layout from '../../layouts/Layout.astro';
 
 // Fetch bài viết và sắp xếp theo ngày xuất bản giảm dần (mới nhất lên đầu)
@@ -43,7 +43,7 @@ const sortedPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDa
                 {post.data.image && (
                   <div class="blog-card-img-wrapper">
                     <a href={`/cam-nang/${post.id}`}>
-                      <Image src={post.data.image} alt={post.data.title} class="blog-card-img" width={360} height={200} quality="high" />
+                      <img src={post.data.image} alt={post.data.title} class="blog-card-img" width="360" height="200" loading="lazy" />
                     </a>
                   </div>
                 )}

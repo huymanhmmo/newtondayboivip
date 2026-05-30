@@ -1,17 +1,10 @@
 ---
 import { getCollection } from 'astro:content';
-import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
 import CourseCard from '../components/CourseCard.astro';
 import TestimonialCard from '../components/TestimonialCard.astro';
 import FormRegister from '../components/FormRegister.astro';
 import MapEmbed from '../components/MapEmbed.astro';
-
-// Import ảnh Hero & Section
-import heroImage from '../assets/be-boi-newton/be-boi-newton-giao-vien-huong-dan.jpg';
-import spaceImage from '../assets/be-boi-newton/be-boi-newton-khong-gian-be-boi.jpg';
-import supportImage from '../assets/be-boi-newton/be-boi-newton-be-tap-boi.jpg';
-import registerSectionImage from '../assets/be-boi-newton/be-boi-newton-lop-hoc-boi.jpg';
 
 // Fetch dữ liệu CMS động từ Content Collections
 const courses = await getCollection('courses');
@@ -23,25 +16,17 @@ const sortedTestimonials = testimonials.sort((a, b) => a.data.order - b.data.ord
 const faqs = await getCollection('faqs');
 const sortedFaqs = faqs.sort((a, b) => a.data.order - b.data.order);
 
-// Lấy danh sách ảnh thực tế để làm Gallery
+// Danh sách ảnh thực tế để làm Gallery (dùng ảnh tĩnh từ public/images/)
 const galleryImages = [
-  { src: import('../assets/be-boi-newton/be-boi-newton-lop-hoc-boi.jpg'), alt: "Lớp học bơi nhóm nhỏ cho trẻ em tại bể bơi Newton" },
-  { src: import('../assets/be-boi-newton/be-boi-newton-be-boi-co-mai-che.jpg'), alt: "Không gian bể bơi Newton có mái che kín gió" },
-  { src: import('../assets/be-boi-newton/be-boi-newton-be-tap-boi.jpg'), alt: "Học viên tập nổi dưới sự kèm sát của huấn luyện viên" },
-  { src: import('../assets/be-boi-newton/be-boi-newton-giao-vien-huong-dan.jpg'), alt: "Giáo viên trực tiếp xuống nước hướng dẫn học viên" },
-  { src: import('../assets/be-boi-newton/be-boi-newton-hoc-vien-tap-luyen.jpg'), alt: "Học viên tự tin tập bơi sải sải dài tay" },
-  { src: import('../assets/be-boi-newton/be-boi-newton-huong-dan-hoc-vien.jpg'), alt: "Hướng dẫn kỹ thuật quạt tay bơi ngửa chuẩn xác" },
-  { src: import('../assets/be-boi-newton/be-boi-newton-khong-gian-be-boi.jpg'), alt: "Bể bơi Newton sạch sẽ làn nước trong mát" },
-  { src: import('../assets/be-boi-newton/be-boi-newton-toan-canh-be-boi.jpg'), alt: "Toàn cảnh làn bơi chia lane tại bể bơi Newton" }
+  { src: "/images/be-boi-newton-lop-hoc-boi.jpg", alt: "Lớp học bơi nhóm nhỏ cho trẻ em tại bể bơi Newton" },
+  { src: "/images/be-boi-newton-be-boi-co-mai-che.jpg", alt: "Không gian bể bơi Newton có mái che kín gió" },
+  { src: "/images/be-boi-newton-be-tap-boi.jpg", alt: "Học viên tập nổi dưới sự kèm sát của huấn luyện viên" },
+  { src: "/images/be-boi-newton-giao-vien-huong-dan.jpg", alt: "Giáo viên trực tiếp xuống nước hướng dẫn học viên" },
+  { src: "/images/be-boi-newton-hoc-vien-tap-luyen.jpg", alt: "Học viên tự tin tập bơi sải sải dài tay" },
+  { src: "/images/be-boi-newton-huong-dan-hoc-vien.jpg", alt: "Hướng dẫn kỹ thuật quạt tay bơi ngửa chuẩn xác" },
+  { src: "/images/be-boi-newton-khong-gian-be-boi.jpg", alt: "Bể bơi Newton sạch sẽ làn nước trong mát" },
+  { src: "/images/be-boi-newton-toan-canh-be-boi.jpg", alt: "Toàn cảnh làn bơi chia lane tại bể bơi Newton" }
 ];
-
-// Giải quyết các promise của hình ảnh trong gallery
-const resolvedGallery = await Promise.all(
-  galleryImages.map(async (img) => {
-    const mod = await img.src;
-    return { src: mod.default, alt: img.alt };
-  })
-);
 ---
 
 <Layout 
@@ -67,7 +52,7 @@ const resolvedGallery = await Promise.all(
           </li>
           <li class="bullet-item">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="bullet-icon"><polyline points="20 6 9 17 4 12"/></svg>
-            <span>Giáo viên giàu kinh nghiệm, chứng chỉ sư phạm</span>
+            <span>HLV giàu kinh nghiệm, chứng chỉ sư phạm</span>
           </li>
           <li class="bullet-item">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="bullet-icon"><polyline points="20 6 9 17 4 12"/></svg>
@@ -75,7 +60,7 @@ const resolvedGallery = await Promise.all(
           </li>
           <li class="bullet-item">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="bullet-icon"><polyline points="20 6 9 17 4 12"/></svg>
-            <span>Đối tác chính thức tổ chức lớp bơi cho cư dân Vinhomes</span>
+            <span>An toàn tuyệt đối trong khuôn viên trường Newton</span>
           </li>
         </ul>
 
@@ -93,10 +78,349 @@ const resolvedGallery = await Promise.all(
         </div>
       </div>
       <div class="hero-media animate-wave">
-        <Image src={heroImage} alt="Tuyển sinh học bơi bể bơi Newton" class="hero-img" priority width={580} height={400} quality="high" />
+        <img src="/images/be-boi-newton-giao-vien-huong-dan.jpg" alt="Tuyển sinh học bơi bể bơi Newton" class="hero-img" width="580" height="400" loading="eager" fetchpriority="high" />
         <div class="hero-media-backdrop"></div>
       </div>
     </div>
+  </section>
+
+  <!-- PROMOTION BANNER SECTION -->
+  <section class="promo-section">
+    <div class="promo-wave-overlay"></div>
+    <div class="promo-sparkle promo-sparkle-1">✦</div>
+    <div class="promo-sparkle promo-sparkle-2">✦</div>
+    <div class="promo-sparkle promo-sparkle-3">✦</div>
+    <div class="promo-sparkle promo-sparkle-4">✧</div>
+    <div class="promo-sparkle promo-sparkle-5">✧</div>
+    <div class="container promo-container">
+      <div class="promo-fire-label">
+        <span class="fire-emoji">🔥</span>
+        <span>Ưu đãi khủng duy nhất mùa này</span>
+        <span class="fire-emoji">🔥</span>
+      </div>
+      <h2 class="promo-headline">
+        ĐĂNG KÝ 1 KHÓA – NHẬN NGAY <span class="promo-highlight">30 VÉ VÀO BỂ</span>
+      </h2>
+      <p class="promo-subheadline">
+        15 BUỔI CÙNG HLV + TẶNG THÊM 15 BUỔI TỰ BƠI
+      </p>
+      <div class="promo-badges-row">
+        <div class="promo-badge-card">
+          <div class="promo-badge-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <span class="promo-badge-num">15</span>
+          <span class="promo-badge-text">buổi học cùng HLV</span>
+        </div>
+        <div class="promo-badge-card">
+          <div class="promo-badge-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 7V5a4 4 0 0 0-8 0v2"/><line x1="12" y1="11" x2="12" y2="17"/></svg>
+          </div>
+          <span class="promo-badge-num">15</span>
+          <span class="promo-badge-text">vé vào bể</span>
+        </div>
+        <div class="promo-badge-card promo-badge-bonus">
+          <div class="promo-badge-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 12V8H6a2 2 0 0 1-2-2c0-1.1.9-2 2-2h12v4"/><path d="M4 6v12c0 1.1.9 2 2 2h14v-4"/><path d="M18 12a2 2 0 0 0-2 2c0 1.1.9 2 2 2h4v-4h-4z"/></svg>
+          </div>
+          <span class="promo-badge-gift">🎁 TẶNG THÊM</span>
+          <span class="promo-badge-num">15</span>
+          <span class="promo-badge-text">buổi tự bơi</span>
+        </div>
+      </div>
+      <div class="promo-cta-group">
+        <a href="#register" class="promo-cta-btn">ĐĂNG KÝ NGAY</a>
+        <a href="tel:0907992336" class="promo-hotline-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="promo-phone-icon"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>0907 992 336</span>
+        </a>
+      </div>
+    </div>
+
+    <style>
+      /* ===== PROMO SECTION STYLES ===== */
+      .promo-section {
+        position: relative;
+        padding: 70px 0 80px;
+        background: linear-gradient(135deg, #003d66 0%, #0066AA 25%, #0077cc 50%, #e85d04 78%, #FF7A00 100%);
+        overflow: hidden;
+        text-align: center;
+      }
+
+      /* Wave / pattern overlay */
+      .promo-wave-overlay {
+        position: absolute;
+        inset: 0;
+        background:
+          repeating-linear-gradient(
+            120deg,
+            rgba(255,255,255,0.03) 0px,
+            rgba(255,255,255,0.03) 2px,
+            transparent 2px,
+            transparent 40px
+          ),
+          radial-gradient(ellipse at 20% 50%, rgba(255,255,255,0.08) 0%, transparent 70%),
+          radial-gradient(ellipse at 80% 50%, rgba(255,122,0,0.12) 0%, transparent 60%);
+        pointer-events: none;
+        z-index: 0;
+      }
+
+      /* Sparkle decorations */
+      .promo-sparkle {
+        position: absolute;
+        color: rgba(255,255,255,0.25);
+        font-size: 1.5rem;
+        z-index: 1;
+        animation: promo-twinkle 3s ease-in-out infinite;
+        pointer-events: none;
+      }
+      .promo-sparkle-1 { top: 12%; left: 8%; animation-delay: 0s; font-size: 2rem; }
+      .promo-sparkle-2 { top: 25%; right: 5%; animation-delay: 0.8s; font-size: 1.8rem; }
+      .promo-sparkle-3 { bottom: 18%; left: 15%; animation-delay: 1.6s; }
+      .promo-sparkle-4 { top: 10%; right: 18%; animation-delay: 2.2s; font-size: 1.2rem; }
+      .promo-sparkle-5 { bottom: 12%; right: 10%; animation-delay: 0.5s; font-size: 2.2rem; }
+
+      @keyframes promo-twinkle {
+        0%, 100% { opacity: 0.2; transform: scale(0.8) rotate(0deg); }
+        50% { opacity: 0.7; transform: scale(1.3) rotate(180deg); }
+      }
+
+      .promo-container {
+        position: relative;
+        z-index: 2;
+      }
+
+      /* Fire label */
+      .promo-fire-label {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: rgba(255,255,255,0.15);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255,255,255,0.25);
+        padding: 8px 24px;
+        border-radius: 99px;
+        color: #fff;
+        font-size: 0.95rem;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        margin-bottom: 24px;
+        text-transform: uppercase;
+      }
+      .fire-emoji {
+        font-size: 1.2rem;
+        animation: promo-fire-bounce 1.5s ease-in-out infinite;
+      }
+      @keyframes promo-fire-bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-4px); }
+      }
+
+      /* Main headline with glow */
+      .promo-headline {
+        font-size: 2.8rem;
+        font-weight: 900;
+        color: #fff;
+        line-height: 1.2;
+        margin-bottom: 12px;
+        text-shadow: 0 0 30px rgba(255,255,255,0.2);
+        animation: promo-glow-pulse 3s ease-in-out infinite;
+      }
+      .promo-highlight {
+        color: #ffe066;
+        text-shadow: 0 0 20px rgba(255,224,102,0.5), 0 0 40px rgba(255,224,102,0.3);
+      }
+      @keyframes promo-glow-pulse {
+        0%, 100% { text-shadow: 0 0 20px rgba(255,255,255,0.15); }
+        50% { text-shadow: 0 0 40px rgba(255,255,255,0.35), 0 4px 20px rgba(255,224,102,0.25); }
+      }
+
+      .promo-subheadline {
+        font-size: 1.35rem;
+        font-weight: 700;
+        color: rgba(255,255,255,0.9);
+        letter-spacing: 2px;
+        margin-bottom: 40px;
+      }
+
+      /* Feature badges row */
+      .promo-badges-row {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+      }
+
+      .promo-badge-card {
+        background: rgba(255,255,255,0.12);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(255,255,255,0.25);
+        border-radius: 20px;
+        padding: 28px 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        min-width: 180px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .promo-badge-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 16px 40px rgba(0,0,0,0.25);
+      }
+
+      .promo-badge-bonus {
+        background: rgba(255,224,102,0.18);
+        border-color: rgba(255,224,102,0.4);
+      }
+
+      .promo-badge-icon {
+        width: 40px;
+        height: 40px;
+        color: rgba(255,255,255,0.9);
+        margin-bottom: 4px;
+      }
+      .promo-badge-icon svg {
+        width: 100%;
+        height: 100%;
+      }
+
+      .promo-badge-gift {
+        font-size: 0.75rem;
+        font-weight: 800;
+        color: #ffe066;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+
+      .promo-badge-num {
+        font-family: var(--font-heading);
+        font-size: 3rem;
+        font-weight: 900;
+        color: #fff;
+        line-height: 1;
+        text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      }
+
+      .promo-badge-text {
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: rgba(255,255,255,0.85);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      /* CTA group */
+      .promo-cta-group {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        flex-wrap: wrap;
+      }
+
+      .promo-cta-btn {
+        display: inline-block;
+        padding: 18px 48px;
+        background: linear-gradient(135deg, #ffe066 0%, #ffb300 100%);
+        color: #1a1a2e;
+        font-size: 1.15rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        border-radius: 99px;
+        text-decoration: none;
+        box-shadow: 0 6px 30px rgba(255,179,0,0.4), inset 0 1px 0 rgba(255,255,255,0.4);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+        animation: promo-btn-pulse 2.5s ease-in-out infinite;
+      }
+      .promo-cta-btn:hover {
+        transform: translateY(-3px) scale(1.03);
+        box-shadow: 0 10px 40px rgba(255,179,0,0.55), inset 0 1px 0 rgba(255,255,255,0.5);
+      }
+      @keyframes promo-btn-pulse {
+        0%, 100% { box-shadow: 0 6px 30px rgba(255,179,0,0.4); }
+        50% { box-shadow: 0 6px 50px rgba(255,179,0,0.65), 0 0 20px rgba(255,224,102,0.3); }
+      }
+
+      .promo-hotline-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 14px 28px;
+        background: rgba(255,255,255,0.15);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 2px solid rgba(255,255,255,0.35);
+        border-radius: 99px;
+        color: #fff;
+        font-size: 1.1rem;
+        font-weight: 800;
+        text-decoration: none;
+        transition: background 0.25s ease, transform 0.25s ease;
+      }
+      .promo-hotline-link:hover {
+        background: rgba(255,255,255,0.25);
+        transform: translateY(-2px);
+      }
+      .promo-phone-icon {
+        width: 22px;
+        height: 22px;
+        animation: wiggle 2s ease-in-out infinite;
+      }
+
+      /* Responsive promo */
+      @media (max-width: 768px) {
+        .promo-section {
+          padding: 50px 0 60px;
+        }
+        .promo-headline {
+          font-size: 1.8rem;
+        }
+        .promo-subheadline {
+          font-size: 1rem;
+          letter-spacing: 1px;
+          margin-bottom: 30px;
+        }
+        .promo-badges-row {
+          flex-direction: column;
+          align-items: center;
+          gap: 16px;
+        }
+        .promo-badge-card {
+          width: 80%;
+          max-width: 280px;
+          padding: 20px 24px;
+        }
+        .promo-badge-num {
+          font-size: 2.5rem;
+        }
+        .promo-cta-btn {
+          padding: 14px 36px;
+          font-size: 1rem;
+        }
+        .promo-fire-label {
+          font-size: 0.8rem;
+          padding: 6px 16px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .promo-headline {
+          font-size: 1.5rem;
+        }
+        .promo-subheadline {
+          font-size: 0.9rem;
+        }
+        .promo-cta-group {
+          flex-direction: column;
+          gap: 14px;
+        }
+      }
+    </style>
   </section>
 
   <!-- SECTION 2: PAIN POINT & SOLVED -->
@@ -286,7 +610,7 @@ const resolvedGallery = await Promise.all(
         </div>
 
         <div class="venue-media-center">
-          <Image src={spaceImage} alt="Không gian Bể bơi Newton" class="venue-img" width={480} height={320} quality="high" />
+          <img src="/images/be-boi-newton-khong-gian-be-boi.jpg" alt="Không gian Bể bơi Newton" class="venue-img" width="480" height="320" loading="lazy" />
         </div>
 
         <div class="venue-right-card glass-card">
@@ -334,7 +658,7 @@ const resolvedGallery = await Promise.all(
   <section class="section-padding commitment-section">
     <div class="container commitment-grid">
       <div class="commitment-media">
-        <Image src={supportImage} alt="Học viên chưa đạt tiếp tục được kèm tại CanSwim" class="commitment-img" width={480} height={320} quality="high" />
+        <img src="/images/be-boi-newton-be-tap-boi.jpg" alt="Học viên chưa đạt tiếp tục được kèm tại CanSwim" class="commitment-img" width="480" height="320" loading="lazy" />
       </div>
       
       <div class="commitment-content">
@@ -348,11 +672,15 @@ const resolvedGallery = await Promise.all(
         <div class="commitment-features">
           <div class="commit-feat-box">
             <span class="commit-feat-num">15</span>
-            <span class="commit-feat-text">Vé bơi theo buổi học</span>
+            <span class="commit-feat-text">Buổi học cùng HLV</span>
+          </div>
+          <div class="commit-feat-box">
+            <span class="commit-feat-num">15</span>
+            <span class="commit-feat-text">Vé bơi đi kèm</span>
           </div>
           <div class="commit-feat-box">
             <span class="commit-feat-icon">👤</span>
-            <span class="commit-feat-text">Giáo viên kèm sát</span>
+            <span class="commit-feat-text">HLV kèm sát</span>
           </div>
           <div class="commit-feat-box">
             <span class="commit-feat-icon">🎯</span>
@@ -380,9 +708,9 @@ const resolvedGallery = await Promise.all(
       </div>
 
       <div class="gallery-grid">
-        {resolvedGallery.map((img) => (
+        {galleryImages.map((img) => (
           <div class="gallery-item">
-            <Image src={img.src} alt={img.alt} class="gallery-img" width={320} height={240} quality="medium" />
+            <img src={img.src} alt={img.alt} class="gallery-img" width="320" height="240" loading="lazy" />
             <div class="gallery-hover-overlay">
               <span class="gallery-hover-text">{img.alt}</span>
             </div>
@@ -437,13 +765,13 @@ const resolvedGallery = await Promise.all(
             </div>
             <div>
               <h5>Địa điểm lớp học</h5>
-              <p>Bể bơi Newton, cuối ngõ 234 Hoàng Quốc Việt, Nghĩa Đô, Cầu Giấy</p>
+              <p>Bể bơi Newton, khu Trường Newton, lô TH2 khu đô thị Nam Cường, cuối ngõ 234 Hoàng Quốc Việt, Nghĩa Đô, Cầu Giấy</p>
             </div>
           </div>
         </div>
 
         <div class="register-visual-box">
-          <Image src={registerSectionImage} alt="Đăng ký lớp học bơi hè" class="register-visual-img" width={480} height={200} quality="medium" />
+          <img src="/images/be-boi-newton-lop-hoc-boi.jpg" alt="Đăng ký lớp học bơi hè" class="register-visual-img" width="480" height="200" loading="lazy" />
           <div class="visual-actions">
             <a href="tel:0907992336" class="btn btn-primary btn-call-now">GỌI HOTLINE 0907 992 336</a>
           </div>

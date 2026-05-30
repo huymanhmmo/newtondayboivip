@@ -2,7 +2,7 @@
 title: "Review bể bơi Newton 234 Hoàng Quốc Việt, phường Nghĩa Đô chi tiết"
 description: "Review chi tiết bể bơi Newton cuối ngõ 234 Hoàng Quốc Việt, lô TH2 khu đô thị Nam Cường, phường Nghĩa Đô, Cầu Giấy. Đánh giá chất lượng nước, dịch vụ và lớp học bơi."
 pubDate: 2026-05-30
-image: "../../assets/be-boi-newton/be-boi-newton-toan-canh-be-boi.jpg"
+image: "/images/tuyen-sinh/lop-hoc-boi-be-boi-newton.png"
 tags: ["review bể bơi", "bể bơi Newton", "Hoàng Quốc Việt", "Cầu Giấy"]
 ---
 Bạn đang tìm kiếm một địa điểm bơi lội sạch sẽ, kín gió và thuận tiện đi lại tại khu vực Hoàng Quốc Việt, Nghĩa Đô, quận Cầu Giấy? **Bể bơi Newton** chính là một trong những lựa chọn hàng đầu được nhiều người dân và các bậc phụ huynh tin tưởng. Dưới đây là bài review chi tiết về cơ sở vật chất, chất lượng nước và dịch vụ dạy học bơi tại đây.
@@ -33,5 +33,8 @@ Nếu bạn hoặc con em mình đang muốn học bơi một cách bài bản, 
 - **Lớp học nhóm nhỏ:** Chỉ từ 1-3 học viên hoặc 4-6 học viên trên một thầy giáo, đảm bảo sự an toàn và kèm sát kỹ thuật cho từng cá nhân.
 - **Đầy đủ các kiểu bơi:** Bơi ếch, bơi sải, bơi ngửa, bơi bướm.
 - **Cam kết đầu ra:** Học viên học chậm được kèm cặp đến khi biết bơi thực tế và có kỹ năng phòng chống đuối nước mà không phát sinh thêm chi phí.
+
+![Dạy học bơi ếch và bơi sải tại bể bơi Newton Cầu Giấy](/images/tuyen-sinh/day-hoc-boi-ech-boi-sai.png)
+<p class="image-caption">Các khóa học bơi ếch và bơi sải từ cơ bản đến nâng cao phù hợp với mọi độ tuổi của học viên.</p>
 
 Nếu bạn ở khu vực Hoàng Quốc Việt, Nghĩa Đô hay Cầu Giấy, hãy ghé thăm bể bơi Newton hoặc đăng ký lớp học bơi tại CanSwim để trải nghiệm dịch vụ chất lượng tốt nhất!

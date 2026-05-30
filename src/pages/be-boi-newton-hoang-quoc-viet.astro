@@ -1,12 +1,6 @@
 ---
-import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
 import MapEmbed from '../components/MapEmbed.astro';
-
-// Import ảnh thực tế
-import poolImage1 from '../assets/be-boi-newton/be-boi-newton-toan-canh-be-boi.jpg';
-import poolImage2 from '../assets/be-boi-newton/be-boi-newton-be-boi-co-mai-che.jpg';
-import poolImage3 from '../assets/be-boi-newton/be-boi-newton-khong-gian-be-boi.jpg';
 ---
 
 <Layout 
@@ -45,8 +39,8 @@ import poolImage3 from '../assets/be-boi-newton/be-boi-newton-khong-gian-be-boi.
 
       <div class="venue-intro-media">
         <div class="img-card-stack">
-          <Image src={poolImage1} alt="Toàn cảnh làn bơi bể bơi Newton" class="stack-img img-1" width={400} height={260} quality="high" />
-          <Image src={poolImage2} alt="Bể bơi Newton có mái che" class="stack-img img-2" width={400} height={260} quality="high" />
+          <img src="/images/be-boi-newton-toan-canh-be-boi.jpg" alt="Toàn cảnh làn bơi bể bơi Newton" class="stack-img img-1" width="400" height="260" loading="lazy" />
+          <img src="/images/be-boi-newton-be-boi-co-mai-che.jpg" alt="Bể bơi Newton có mái che" class="stack-img img-2" width="400" height="260" loading="lazy" />
         </div>
       </div>
     </div>
@@ -150,6 +144,20 @@ import poolImage3 from '../assets/be-boi-newton/be-boi-newton-khong-gian-be-boi.
         <div class="directions-map">
           <MapEmbed height="400px" />
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOTLINE CTA STRIP -->
+  <section class="hotline-cta-strip">
+    <div class="container hotline-cta-container">
+      <div class="hotline-cta-text">
+        <span class="hotline-cta-label">📞 Liên hệ đăng ký & tư vấn miễn phí</span>
+        <span class="hotline-cta-number">0907 992 336</span>
+      </div>
+      <div class="hotline-cta-actions">
+        <a href="tel:0907992336" class="btn btn-primary btn-hotline-call">GỌI NGAY</a>
+        <a href="http://zalo.me/0907992336" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-hotline-zalo">CHAT ZALO</a>
       </div>
     </div>
   </section>
@@ -448,6 +456,79 @@ import poolImage3 from '../assets/be-boi-newton/be-boi-newton-khong-gian-be-boi.
 
     .directions-grid {
       grid-template-columns: 1fr;
+    }
+  }
+
+  /* Hotline CTA Strip */
+  .hotline-cta-strip {
+    background: linear-gradient(135deg, hsl(205, 85%, 18%) 0%, hsl(205, 90%, 12%) 100%);
+    padding: 30px 0;
+    border-top: 3px solid var(--color-secondary);
+  }
+
+  .hotline-cta-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+
+  .hotline-cta-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .hotline-cta-label {
+    color: hsl(205, 15%, 75%);
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .hotline-cta-number {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--color-white);
+    letter-spacing: 1px;
+  }
+
+  .hotline-cta-actions {
+    display: flex;
+    gap: 12px;
+  }
+
+  .btn-hotline-call {
+    padding: 12px 28px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+  }
+
+  .btn-hotline-zalo {
+    padding: 12px 28px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    background: transparent;
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
+  }
+
+  .btn-hotline-zalo:hover {
+    background: var(--color-white);
+    color: var(--color-primary);
+  }
+
+  @media (max-width: 576px) {
+    .hotline-cta-container {
+      flex-direction: column;
+      text-align: center;
+    }
+    .hotline-cta-text {
+      align-items: center;
+    }
+    .hotline-cta-number {
+      font-size: 1.6rem;
     }
   }
 </style>

@@ -136,7 +136,7 @@ const relatedPosts = allPosts
             <h4>Đăng Ký Học Bơi Tại Bể Bơi Newton Hôm Nay!</h4>
             <p>Đội ngũ HLV CanSwim chuyên nghiệp trực tiếp kèm sát 1-1 hoặc nhóm nhỏ cam kết chất lượng đầu ra bài bản, đúng kỹ thuật và rèn luyện thể chất toàn diện.</p>
             <div class="post-cta-buttons">
-              <a href="/lien-he-chi-duong-be-boi-newton#register" class="btn btn-primary">ĐĂNG KÝ NGAY</a>
+              <a href="/lien-he#register" class="btn btn-primary">ĐĂNG KÝ NGAY</a>
               <a href="tel:0907992336" class="btn btn-secondary">HOTLINE: 0907.992.336</a>
             </div>
           </div>
@@ -170,7 +170,7 @@ const relatedPosts = allPosts
             <div class="sidebar-box glass-card quick-register-box">
               <h4>Tư Vấn Khóa Học</h4>
               <p>Đặt lịch kiểm tra trình độ bơi lội miễn phí cho bé và nhận ưu đãi tốt nhất.</p>
-              <a href="/lien-he-chi-duong-be-boi-newton#register" class="btn btn-primary sidebar-btn-register">GỬI THÔNG TIN</a>
+              <a href="/lien-he#register" class="btn btn-primary sidebar-btn-register">GỬI THÔNG TIN</a>
             </div>
 
             <!-- Widget 3: Support Info -->
@@ -228,6 +228,7 @@ const relatedPosts = allPosts
     position: relative;
     border-bottom: 1px solid var(--glass-border);
     margin-bottom: 50px;
+    overflow: hidden; /* Prevent background glow from causing horizontal overflow */
   }
   
   /* Soft background glow for the article header */
@@ -296,12 +297,23 @@ const relatedPosts = allPosts
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 16px;
+    gap: 12px;
     font-size: 0.85rem;
     font-weight: 600;
     margin-bottom: 20px;
     position: relative;
     z-index: 2;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    padding-bottom: 8px; /* Avoid cutting off letters and descenders */
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .post-meta::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
   }
 
   .post-date-span {
@@ -309,6 +321,8 @@ const relatedPosts = allPosts
     display: flex;
     align-items: center;
     gap: 6px;
+    flex-shrink: 0;
+    white-space: nowrap;
   }
 
   .post-date-span::before {
@@ -318,6 +332,7 @@ const relatedPosts = allPosts
     height: 6px;
     border-radius: 50%;
     background-color: var(--color-secondary);
+    flex-shrink: 0;
   }
 
   .tag-badge-span {
@@ -327,6 +342,8 @@ const relatedPosts = allPosts
     border-radius: 20px;
     font-size: 0.8rem;
     transition: all var(--transition-fast);
+    flex-shrink: 0;
+    white-space: nowrap;
   }
 
   .tag-badge-span:hover {
@@ -616,6 +633,9 @@ const relatedPosts = allPosts
     font-size: 1.1rem;
     color: var(--color-text);
     margin-bottom: 50px;
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
   }
 
   .markdown-body :global(p) {
@@ -971,7 +991,9 @@ const relatedPosts = allPosts
     }
     
     .post-meta {
-      justify-content: center;
+      justify-content: flex-start;
+      padding-left: 0;
+      padding-right: 0;
     }
 
     .post-lead-desc {

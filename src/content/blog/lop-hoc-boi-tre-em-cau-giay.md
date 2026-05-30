@@ -11,20 +11,6 @@ Lớp dạy bơi trẻ em Cầu Giấy tại bể bơi Newton (khu đô thị Na
 
 ---
 
-## Mục lục
-- [1. Tầm quan trọng của việc cho trẻ học bơi sớm tại Cầu Giấy](#1-tam-quan-trong-cua-viec-cho-tre-hoc-boi-som-tai-cau-giay)
-- [2. Giới thiệu địa điểm học bơi cho bé: Bể bơi Newton Cầu Giấy](#2-gioi-thieu-dia-diem-hoc-boi-cho-be-be-boi-newton-cau-giay)
-- [3. Lý do phụ huynh Nghĩa Đô lựa chọn trung tâm dạy bơi CanSwim](#3-ly-do-phu-huynh-nghia-do-lua-chon-trung-tam-day-boi-canswim)
-- [4. Lộ trình học bơi trẻ em chi tiết từng giai đoạn](#4-lo-trinh-hoc-boi-tre-em-chi-tiet-tung-giai-doan)
-- [5. Giáo án rèn luyện kỹ năng sinh tồn dưới nước cho bé](#5-giao-an-ren-luyen-ky-nang-sinh-ton-duoi-nuoc-cho-be)
-- [6. So sánh học phí các lớp dạy bơi trẻ em tại Cầu Giấy](#6-so-sanh-hoc-phi-cac-lop-day-boi-tre-em-tai-cau-giay)
-- [7. Lịch học dạy bơi linh hoạt cho phụ huynh đưa đón](#7-lich-hoc-dieu-phu-huynh-dua-don)
-- [8. Kinh nghiệm chuẩn bị đồ đi học bơi đầy đủ cho con](#8-kinh-nghiem-chuan-bi-do-di-hoc-boi-day-du-cho-con)
-- [9. Những sai lầm thường gặp của cha mẹ khi cho con học bơi](#9-nhung-sai-lam-thuong-gap-cua-cha-me-khi-cho-con-hoc-boi)
-- [10. Đánh giá từ phụ huynh có con tốt nghiệp tại CanSwim](#10-danh-gia-tu-phu-huynh-co-con-tot-nghiep-tai-canswim)
-- [11. Câu hỏi thường gặp (FAQs) của phụ huynh về lớp bơi trẻ em Newton](#11-cau-hoi-thuong-gap-faqs-cua-phu-huynh-ve-lop-boi-tre-em-newton)
-
----
 
 ## 1. Tầm quan trọng của việc cho trẻ học bơi sớm tại Cầu Giấy
 
@@ -56,6 +42,8 @@ Quá trình vươn người, đạp chân và quạt tay liên tục kích thíc
 Địa điểm học bơi chính thức của trung tâm dạy bơi CanSwim nằm tại [bể bơi Newton Cầu Giấy](/be-boi-newton-hoang-quoc-viet/).
 
 Bể bơi tọa lạc tại lô TH2 khu đô thị Nam Cường, cuối ngõ 234 Hoàng Quốc Việt, phường Nghĩa Đô, quận Cầu Giấy, Hà Nội.
+
+Để việc đưa đón con đi học được thuận tiện nhất, phụ huynh có thể tham khảo hướng dẫn [Hướng dẫn đường đi và gửi xe tại Bể bơi Newton](/cam-nang/huong-dan-duong-di-be-boi-newton/) chi tiết của chúng tôi.
 
 Đường đi vào ngõ 234 rất rộng rãi, thoáng mát, tạo điều kiện thuận lợi cho xe máy và ô tô di chuyển thoải mái.
 
@@ -292,7 +280,7 @@ Sau khi lên bờ, phụ huynh chú ý sấy khô tai và nhỏ nước muối s
 
 Cha mẹ chỉ cần liên hệ trước với trung tâm qua hotline để được hỗ trợ bảo lưu và sắp xếp lịch học bù phù hợp nhất cho bé.
 
-Để đăng ký ca học thử và nhận tư vấn chi tiết từ huấn luyện viên, quý phụ huynh vui lòng truy cập trang [liên hệ và chỉ đường bể bơi Newton](/lien-he-chi-duong-be-boi-newton/) để điền thông tin biểu mẫu liên hệ của chúng tôi.
+Để đăng ký ca học thử và nhận tư vấn chi tiết từ huấn luyện viên, quý phụ huynh vui lòng truy cập trang [liên hệ và chỉ đường bể bơi Newton](/lien-he/) để điền thông tin biểu mẫu liên hệ của chúng tôi.
 
 ![Học viên thực hành các kỹ thuật bơi sải và bơi ngửa dưới sự giám sát chặt chẽ của huấn luyện viên để bảo đảm an toàn.](/images/be-boi-newton-lop-hoc-boi.jpg)
 <p class="image-caption">Các bé thực hành tập bơi bền bỉ chuẩn bị cho bài kiểm tra tốt nghiệp của trung tâm CanSwim.</p>

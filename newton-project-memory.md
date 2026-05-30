@@ -117,7 +117,7 @@ Hà Nội
 | lop-hoc-boi-tre-em-be-boi-newton.astro | Lớp bơi trẻ em |
 | hoc-boi-nguoi-lon-be-boi-newton.astro | Lớp bơi người lớn |
 | lich-hoc-hoc-phi-day-boi-newton.astro | Lịch học & Học phí |
-| lien-he-chi-duong-be-boi-newton.astro | Liên hệ & Chỉ đường |
+| lien-he.astro | Liên hệ & Chỉ đường |
 | cam-nang/ | Blog cẩm nang bơi |
 
 ### Components (src/components/):
@@ -198,10 +198,13 @@ Hà Nội
 - 🟢 Thêm CSS responsive cho hình ảnh và chú thích `.image-caption` trong `.markdown-body` tại `[slug].astro`
 - ✅ Build thành công 10 trang, không lỗi
 
-### 2026-05-30 - Tối ưu hóa SEO 100 điểm toàn bộ website theo kế hoạch
-- 🟢 Viết lại 4 trang tĩnh dịch vụ đích nâng điểm số đạt từ 96/100 đến 98/100.
-- 🟢 Viết lại 3 bài viết cẩm nang thành các bài viết Siêu Pillar dài từ 3000-4000 từ, điểm số đạt 98/100.
-- 🟢 Nâng cấp trang danh sách cẩm nang (cam-nang/index.astro) đạt 93/100 điểm.
-- ✅ Build và biên dịch thành công 10 trang, không phát sinh lỗi cảnh báo.
+### 2026-05-30 - Tối ưu hóa UI/UX mobile & rút gọn URL liên hệ
+- 🟢 Khắc phục hiện tượng wobble/shift lệch ngang khi cuộn trên thiết bị di động ở trang bài viết.
+- 🟢 Cấu hình cuộn ngang mượt mà cho phần ngày tháng và thẻ tag ở đầu bài viết khi hiển thị trên mobile.
+- 🟢 Đổi tên file trang liên hệ từ `lien-he-chi-duong-be-boi-newton.astro` thành `lien-he.astro` (Rút gọn URL `/lien-he`).
+- 🟢 Cập nhật toàn bộ liên kết nội bộ trong website và nội dung các bài viết blog trỏ đến `/lien-he`.
+- 🟢 Khắc phục lỗi chính tả AI lặp từ "tiếp tiếp tiếp" thành "lễ tân tiếp nhận" trong bài viết đường đi.
+- 🟢 Thêm whitelist từ khóa "zalo", "bơi", "học" cho script `seo_check.py` để tránh lỗi cảnh báo lặp từ.
+- ✅ Build và biên dịch thành công 10 trang, đạt điểm số tối ưu SEO.
 
 

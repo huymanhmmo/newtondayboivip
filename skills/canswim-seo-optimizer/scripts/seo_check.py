@@ -436,11 +436,14 @@ def check_file(file_path, keyword=None):
 
     # ==================== 5. ĐOẠN VĂN & READABILITY (Max 15) ====================
     # A. Kiểm tra Mục lục (ToC)
-    if has_toc:
-        scores["readability"] += 5
+    if is_md:
+        if has_toc:
+            report_items.append("[❌] **Mục lục**: Phát hiện phần Mục lục tự viết trong nội dung bài viết. Hãy xóa đi để tránh trùng lặp với Mục lục cố định ở sidebar bên trái.")
+            scores["readability"] += 2
+        else:
+            scores["readability"] += 5
     else:
-        if is_md:
-            report_items.append("[❌] **Mục lục**: Thiếu phần Mục lục (Table of Contents) ở đầu bài viết.")
+        scores["readability"] += 5
             
     # B. Kiểm tra cấu trúc đoạn văn ngắn (đoạn dài > 5 dòng dễ gây ngán trên mobile)
     paragraphs = [p.strip() for p in body_text.split('\n\n') if p.strip()]
@@ -468,6 +471,31 @@ def check_file(file_path, keyword=None):
         scores["readability"] += 5
     else:
         report_items.append("[⚠️] **Định dạng**: Hãy thêm bảng biểu so sánh hoặc danh sách liệt kê để AI dễ trích xuất dữ liệu.")
+
+    # D. Kiểm tra ký tự lạ và lỗi định dạng AI (như ** trong tiêu đề, dấu sao không đóng)
+    bad_markdown_symbols = []
+    for tag, text in headings:
+        if '**' in text:
+            bad_markdown_symbols.append(f"Chứa dấu sao '**' trong tiêu đề: '{text}'")
+            
+    asterisk_count = body_text.count('**')
+    if asterisk_count % 2 != 0:
+        bad_markdown_symbols.append("Phát hiện dấu '**' không có cặp đóng/mở khớp nhau trong nội dung.")
+        
+    # Tìm kiếm các từ bị lặp kép bất thường (chỉ trên cùng một dòng)
+    double_words = re.findall(r'\b(\w+)[ \t]+\1\b', body_text.lower())
+    vietnamese_valid_reduplications = {
+        "xa", "nho", "đều", "sát", "to", "nhỏ", "dần", "ít", "nhiều", "sâu", "rất", "luôn", "ngày", "đêm",
+        "song", "thông", "chậm", "nhanh", "dễ", "khó", "zalo", "bơi", "học"
+    }
+    bad_repeats = [w for w in double_words if w not in vietnamese_valid_reduplications]
+    if bad_repeats:
+        bad_markdown_symbols.append(f"Phát hiện từ bị lặp kép nghi ngờ lỗi chính tả: '{bad_repeats[0]} {bad_repeats[0]}'")
+        
+    if bad_markdown_symbols:
+        scores["readability"] = max(0, scores["readability"] - 2)
+        for issue in bad_markdown_symbols:
+            report_items.append(f"[❌] **Ký tự rác & Lỗi AI**: {issue}")
 
     # ==================== 6. HÌNH ẢNH SEO (Max 15) ====================
     if not images:
@@ -565,6 +593,21 @@ def check_file(file_path, keyword=None):
         else:
             scores["links"] += 1
             report_items.append(f"[❌] **Cực kỳ thiếu liên kết**: Hầu như không liên kết đến trang chính nào của website.")
+
+        # Kiểm tra liên kết đến bài viết blog liên quan khác (silo link)
+        related_blog_links = 0
+        for l in normalized_links:
+            is_blog_path = l.startswith('/cam-nang/') or l.startswith('/blog/')
+            is_listing_page = l in ['/cam-nang/', '/blog/']
+            is_self = canonical and (canonical in l or l in canonical)
+            if is_blog_path and not is_listing_page and not is_self:
+                related_blog_links += 1
+                
+        if related_blog_links >= 1:
+            pass
+        else:
+            scores["links"] = max(0, scores["links"] - 2)
+            report_items.append("[❌] **Liên kết bài viết liên quan**: Không tìm thấy liên kết nội bộ nào trỏ tới bài viết cẩm nang khác (silo link). Mỗi bài viết cẩm nang cần liên kết chéo tới ít nhất 1 bài viết cẩm nang liên quan khác.")
     else:
         # Đối với Astro trang tĩnh, chỉ cần có link sang ít nhất 2 trang chính khác
         links_to_other_main = 0

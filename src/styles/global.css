@@ -70,7 +70,9 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
+html,
 body {
+  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -343,12 +345,18 @@ input, button, select, textarea {
   content: '';
   position: absolute;
   bottom: -8px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
   width: 60px;
   height: 4px;
   border-radius: 2px;
   background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+}
+
+.text-center .section-title::after,
+.center-title .section-title::after,
+.text-center > .section-title::after {
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .section-subtitle {

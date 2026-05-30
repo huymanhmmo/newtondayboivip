@@ -74,45 +74,7 @@ const sortedPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDa
 </Layout>
 
 <style>
-  /* Header styling */
-  .page-header-section {
-    background: linear-gradient(135deg, hsl(205, 70%, 15%) 0%, hsl(205, 90%, 8%) 100%);
-    color: var(--color-white);
-    padding: 140px 20px 70px 20px;
-    border-bottom: 3px solid var(--color-secondary);
-  }
 
-  .blog-theme {
-    background: linear-gradient(135deg, hsl(200, 60%, 16%) 0%, hsl(205, 75%, 9%) 100%);
-  }
-
-  .page-meta-badge {
-    background-color: var(--color-secondary);
-    color: var(--color-white);
-    padding: 6px 14px;
-    border-radius: 99px;
-    font-size: 0.8rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    display: inline-block;
-    margin-bottom: 15px;
-  }
-
-  .page-title-main {
-    font-size: 2.8rem;
-    color: var(--color-white);
-    margin-bottom: 15px;
-    font-weight: 800;
-  }
-
-  .page-desc-main {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 1.1rem;
-    color: hsl(205, 15%, 80%);
-    line-height: 1.6;
-  }
 
   /* Grid layout */
   .blog-list-section {
@@ -232,9 +194,5 @@ const sortedPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDa
     color: var(--color-text-muted);
   }
 
-  @media (max-width: 768px) {
-    .page-title-main {
-      font-size: 2.2rem;
-    }
-  }
+
 </style>

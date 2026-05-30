@@ -90,42 +90,44 @@ import MapEmbed from '../components/MapEmbed.astro';
           <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 20px;">
             Đặc quyền: Tặng thêm 15 buổi tự bơi (Tổng cộng <strong>30 lượt vào bể</strong>). Cam kết hỗ trợ tới khi bơi tốt.
           </p>
-          <table class="op-table" style="margin-bottom: 0;">
-            <thead>
-              <tr>
-                <th>Khóa học</th>
-                <th>Kèm 1–3 học viên / HLV</th>
-                <th>Kèm 4–6 học viên / HLV</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>Bơi Ếch</strong> (Cơ bản)</td>
-                <td><strong style="color: var(--color-primary);">3.000.000đ</strong></td>
-                <td><strong style="color: var(--color-text);">2.500.000đ</strong></td>
-              </tr>
-              <tr>
-                <td><strong>Bơi Sải</strong> (Nâng cao)</td>
-                <td><strong style="color: var(--color-primary);">3.500.000đ</strong></td>
-                <td><strong style="color: var(--color-text);">3.000.000đ</strong></td>
-              </tr>
-              <tr>
-                <td><strong>Bơi Ngửa</strong> (Kỹ năng)</td>
-                <td><strong style="color: var(--color-primary);">3.500.000đ</strong></td>
-                <td><strong style="color: var(--color-text);">3.000.000đ</strong></td>
-              </tr>
-              <tr>
-                <td><strong>Bơi Bướm</strong> (Nâng cao nghệ thuật)</td>
-                <td><strong style="color: var(--color-primary);">4.500.000đ</strong></td>
-                <td><strong style="color: var(--color-text);">4.000.000đ</strong></td>
-              </tr>
-              <tr>
-                <td><strong>Ếch + Sải</strong> (Combo toàn diện)</td>
-                <td><strong style="color: var(--color-primary);">6.000.000đ</strong></td>
-                <td><span style="color: var(--color-text-muted);">Liên hệ tư vấn</span></td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="canswim-table-wrapper">
+            <table class="canswim-table" style="margin-bottom: 0;">
+              <thead>
+                <tr>
+                  <th>Khóa học</th>
+                  <th>Kèm 1–3 học viên / HLV</th>
+                  <th>Kèm 4–6 học viên / HLV</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Bơi Ếch</strong> (Cơ bản)</td>
+                  <td><strong style="color: var(--color-primary);">3.000.000đ</strong></td>
+                  <td><strong style="color: var(--color-text);">2.500.000đ</strong></td>
+                </tr>
+                <tr>
+                  <td><strong>Bơi Sải</strong> (Nâng cao)</td>
+                  <td><strong style="color: var(--color-primary);">3.500.000đ</strong></td>
+                  <td><strong style="color: var(--color-text);">3.000.000đ</strong></td>
+                </tr>
+                <tr>
+                  <td><strong>Bơi Ngửa</strong> (Kỹ năng)</td>
+                  <td><strong style="color: var(--color-primary);">3.500.000đ</strong></td>
+                  <td><strong style="color: var(--color-text);">3.000.000đ</strong></td>
+                </tr>
+                <tr>
+                  <td><strong>Bơi Bướm</strong> (Nâng cao nghệ thuật)</td>
+                  <td><strong style="color: var(--color-primary);">4.500.000đ</strong></td>
+                  <td><strong style="color: var(--color-text);">4.000.000đ</strong></td>
+                </tr>
+                <tr>
+                  <td><strong>Ếch + Sải</strong> (Combo toàn diện)</td>
+                  <td><strong style="color: var(--color-primary);">6.000.000đ</strong></td>
+                  <td><span style="color: var(--color-text-muted);">Liên hệ tư vấn</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
 
         <!-- Right: Group class card -->
@@ -169,48 +171,50 @@ import MapEmbed from '../components/MapEmbed.astro';
           <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 20px;">
             Áp dụng cho khách vào bơi tự do tại bể bơi Newton Cầu Giấy:
           </p>
-          <table class="op-table" style="margin-bottom: 0;">
-            <thead>
-              <tr>
-                <th>Loại Vé / Thẻ</th>
-                <th style="text-align: right;">Giá Vé</th>
-                <th>Đơn Vị</th>
-                <th>Ghi Chú</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>Vé lẻ</strong></td>
-                <td style="text-align: right;"><strong style="color: var(--color-primary); font-size: 1.1rem;">50.000đ</strong></td>
-                <td>1 vé</td>
-                <td>Có giá trị trong ngày</td>
-              </tr>
-              <tr>
-                <td><strong>Thẻ bơi tháng</strong></td>
-                <td style="text-align: right;"><strong style="color: var(--color-primary); font-size: 1.1rem;">900.000đ</strong></td>
-                <td>1 thẻ</td>
-                <td>Hạn dùng 35 ngày</td>
-              </tr>
-              <tr>
-                <td><strong>Thẻ bơi 30 lượt</strong></td>
-                <td style="text-align: right;"><strong style="color: var(--color-primary); font-size: 1.1rem;">1.200.000đ</strong></td>
-                <td>1 thẻ</td>
-                <td>Hạn dùng 45 ngày</td>
-              </tr>
-              <tr>
-                <td><strong>Thẻ bơi 3 tháng</strong></td>
-                <td style="text-align: right;"><strong style="color: var(--color-primary); font-size: 1.1rem;">2.500.000đ</strong></td>
-                <td>1 thẻ</td>
-                <td>Hạn dùng 95 ngày</td>
-              </tr>
-              <tr>
-                <td><strong>Thẻ bơi 60 lượt</strong></td>
-                <td style="text-align: right;"><strong style="color: var(--color-primary); font-size: 1.1rem;">2.100.000đ</strong></td>
-                <td>1 thẻ</td>
-                <td>Hạn dùng 70 ngày</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="canswim-table-wrapper">
+            <table class="canswim-table" style="margin-bottom: 0;">
+              <thead>
+                <tr>
+                  <th>Loại Vé / Thẻ</th>
+                  <th style="text-align: right;">Giá Vé</th>
+                  <th>Đơn Vị</th>
+                  <th>Ghi Chú</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Vé lẻ</strong></td>
+                  <td style="text-align: right;"><strong style="color: var(--color-primary); font-size: 1.1rem;">50.000đ</strong></td>
+                  <td>1 vé</td>
+                  <td>Có giá trị trong ngày</td>
+                </tr>
+                <tr>
+                  <td><strong>Thẻ bơi tháng</strong></td>
+                  <td style="text-align: right;"><strong style="color: var(--color-primary); font-size: 1.1rem;">900.000đ</strong></td>
+                  <td>1 thẻ</td>
+                  <td>Hạn dùng 35 ngày</td>
+                </tr>
+                <tr>
+                  <td><strong>Thẻ bơi 30 lượt</strong></td>
+                  <td style="text-align: right;"><strong style="color: var(--color-primary); font-size: 1.1rem;">1.200.000đ</strong></td>
+                  <td>1 thẻ</td>
+                  <td>Hạn dùng 45 ngày</td>
+                </tr>
+                <tr>
+                  <td><strong>Thẻ bơi 3 tháng</strong></td>
+                  <td style="text-align: right;"><strong style="color: var(--color-primary); font-size: 1.1rem;">2.500.000đ</strong></td>
+                  <td>1 thẻ</td>
+                  <td>Hạn dùng 95 ngày</td>
+                </tr>
+                <tr>
+                  <td><strong>Thẻ bơi 60 lượt</strong></td>
+                  <td style="text-align: right;"><strong style="color: var(--color-primary); font-size: 1.1rem;">2.100.000đ</strong></td>
+                  <td>1 thẻ</td>
+                  <td>Hạn dùng 70 ngày</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
 
         <!-- Right: Rules Card -->
@@ -290,24 +294,26 @@ import MapEmbed from '../components/MapEmbed.astro';
         <h3 class="op-title">Khung Giờ Hoạt Động & Lưu Ý</h3>
         <p class="op-desc">Bể bơi Newton ưu tiên hoạt động giảng dạy cho học sinh trong trường vào ban ngày. Khung giờ mở cửa tham khảo dành cho khách ngoài và lớp học bơi CanSwim:</p>
         
-        <table class="op-table">
-          <thead>
-            <tr>
-              <th>Ngày trong tuần</th>
-              <th>Khung giờ hoạt động</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Ngày thường (T2 - T6)</td>
-              <td><strong>16:00 - 20:30</strong></td>
-            </tr>
-            <tr>
-              <td>Cuối tuần (T7 - CN)</td>
-              <td><strong>15:00 - 20:30</strong></td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="canswim-table-wrapper">
+          <table class="canswim-table">
+            <thead>
+              <tr>
+                <th>Ngày trong tuần</th>
+                <th>Khung giờ hoạt động</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ngày thường (T2 - T6)</td>
+                <td><strong>16:00 - 20:30</strong></td>
+              </tr>
+              <tr>
+                <td>Cuối tuần (T7 - CN)</td>
+                <td><strong>15:00 - 20:30</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
         <div class="note-box">
           <p>⚠️ <strong>Lưu ý:</strong> Khung giờ hoạt động và giá vé có thể thay đổi theo mùa hoặc sự kiện riêng của nhà trường. Quý khách vui lòng liên hệ trước qua Hotline/Fanpage để kiểm tra lịch trống.</p>
@@ -400,41 +406,7 @@ import MapEmbed from '../components/MapEmbed.astro';
 </Layout>
 
 <style>
-  /* Header styling */
-  .page-header-section {
-    background: linear-gradient(135deg, hsl(205, 70%, 15%) 0%, hsl(205, 90%, 8%) 100%);
-    color: var(--color-white);
-    padding: 140px 20px 70px 20px;
-    border-bottom: 3px solid var(--color-secondary);
-  }
 
-  .page-meta-badge {
-    background-color: var(--color-secondary);
-    color: var(--color-white);
-    padding: 6px 14px;
-    border-radius: 99px;
-    font-size: 0.8rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    display: inline-block;
-    margin-bottom: 15px;
-  }
-
-  .page-title-main {
-    font-size: 2.8rem;
-    color: var(--color-white);
-    margin-bottom: 15px;
-    font-weight: 800;
-  }
-
-  .page-desc-main {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 1.1rem;
-    color: hsl(205, 15%, 80%);
-    line-height: 1.6;
-  }
 
   /* Intro Section */
   .venue-intro-grid {
@@ -695,78 +667,7 @@ import MapEmbed from '../components/MapEmbed.astro';
     }
   }
 
-  /* Hotline CTA Strip */
-  .hotline-cta-strip {
-    background: linear-gradient(135deg, hsl(205, 85%, 18%) 0%, hsl(205, 90%, 12%) 100%);
-    padding: 30px 0;
-    border-top: 3px solid var(--color-secondary);
-  }
 
-  .hotline-cta-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 25px;
-    flex-wrap: wrap;
-  }
-
-  .hotline-cta-text {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-  }
-
-  .hotline-cta-label {
-    color: hsl(205, 15%, 75%);
-    font-size: 0.9rem;
-    font-weight: 500;
-  }
-
-  .hotline-cta-number {
-    font-family: var(--font-heading);
-    font-size: 2rem;
-    font-weight: 800;
-    color: var(--color-white);
-    letter-spacing: 1px;
-  }
-
-  .hotline-cta-actions {
-    display: flex;
-    gap: 12px;
-  }
-
-  .btn-hotline-call {
-    padding: 12px 28px;
-    border-radius: 10px;
-    font-size: 0.9rem;
-  }
-
-  .btn-hotline-zalo {
-    padding: 12px 28px;
-    border-radius: 10px;
-    font-size: 0.9rem;
-    background: transparent;
-    border: 2px solid var(--color-white);
-    color: var(--color-white);
-  }
-
-  .btn-hotline-zalo:hover {
-    background: var(--color-white);
-    color: var(--color-primary);
-  }
-
-  @media (max-width: 576px) {
-    .hotline-cta-container {
-      flex-direction: column;
-      text-align: center;
-    }
-    .hotline-cta-text {
-      align-items: center;
-    }
-    .hotline-cta-number {
-      font-size: 1.6rem;
-    }
-  }
 
   /* Promo banner at Newton */
   .promo-banner-newton {

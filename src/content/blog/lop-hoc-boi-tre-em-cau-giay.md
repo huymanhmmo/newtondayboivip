@@ -56,7 +56,7 @@ Công nghệ lọc nước muối điện phân hiện đại, không sử dụn
 
 ## 3. Lý do phụ huynh Nghĩa Đô lựa chọn trung tâm dạy bơi CanSwim
 
-CanSwim tự hào là đơn vị dạy bơi chất lượng cao được hàng ngàn phụ huynh tại khu vực Cầu Giấy tin tưởng gửi gắm con em mình.
+CanSwim tự hào là đơn vị [dạy bơi trẻ em tại bể bơi Newton 234](/lop-day-boi-be-boi-newton-234-hoang-quoc-viet/) chất lượng cao được hàng ngàn phụ huynh tại khu vực Cầu Giấy tin tưởng gửi gắm con em mình.
 
 ### Sĩ số lớp nhóm siêu nhỏ kèm sát an toàn
 Chúng tôi cam kết duy trì sĩ số vàng trong suốt khóa học: từ 1 đến 3 học viên trong một ca dạy bơi.

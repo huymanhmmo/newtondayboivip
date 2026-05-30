@@ -151,6 +151,117 @@ import MapEmbed from '../components/MapEmbed.astro';
     </div>
   </section>
 
+  <!-- Pool Tickets Section -->
+  <section class="section-padding pool-tickets-section" style="background-color: var(--color-bg-alt); border-top: 1px solid rgba(0, 0, 0, 0.05); border-bottom: 1px solid rgba(0, 0, 0, 0.05);">
+    <div class="container">
+      <div class="section-header text-center" style="margin-bottom: 40px;">
+        <span class="page-meta-badge" style="background-color: var(--color-primary);">Bảng Giá Vé Vào Cửa</span>
+        <h2 class="section-title" style="margin-top: 10px;">BẢNG GIÁ VÉ BƠI – BỂ BƠI NEWTON</h2>
+        <p class="section-subtitle" style="max-width: 700px; margin: 10px auto 0 auto; color: var(--color-text-muted);">
+          Thông tin chi tiết về các loại vé lẻ, thẻ bơi tích lượt, thẻ bơi tháng và quy định sử dụng tại bể bơi Newton ngõ 234 Hoàng Quốc Việt.
+        </p>
+      </div>
+
+      <div class="tickets-grid">
+        <!-- Left: Ticket Pricing Table -->
+        <div class="tickets-table-card glass-card">
+          <h3>Vé Bơi – Thẻ Bơi Tự Do</h3>
+          <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 20px;">
+            Áp dụng cho khách vào bơi tự do tại bể bơi Newton Cầu Giấy:
+          </p>
+          <table class="op-table" style="margin-bottom: 0;">
+            <thead>
+              <tr>
+                <th>Loại Vé / Thẻ</th>
+                <th style="text-align: right;">Giá Vé</th>
+                <th>Đơn Vị</th>
+                <th>Ghi Chú</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Vé lẻ</strong></td>
+                <td style="text-align: right;"><strong style="color: var(--color-primary); font-size: 1.1rem;">50.000đ</strong></td>
+                <td>1 vé</td>
+                <td>Có giá trị trong ngày</td>
+              </tr>
+              <tr>
+                <td><strong>Thẻ bơi tháng</strong></td>
+                <td style="text-align: right;"><strong style="color: var(--color-primary); font-size: 1.1rem;">900.000đ</strong></td>
+                <td>1 thẻ</td>
+                <td>Hạn dùng 35 ngày</td>
+              </tr>
+              <tr>
+                <td><strong>Thẻ bơi 30 lượt</strong></td>
+                <td style="text-align: right;"><strong style="color: var(--color-primary); font-size: 1.1rem;">1.200.000đ</strong></td>
+                <td>1 thẻ</td>
+                <td>Hạn dùng 45 ngày</td>
+              </tr>
+              <tr>
+                <td><strong>Thẻ bơi 3 tháng</strong></td>
+                <td style="text-align: right;"><strong style="color: var(--color-primary); font-size: 1.1rem;">2.500.000đ</strong></td>
+                <td>1 thẻ</td>
+                <td>Hạn dùng 95 ngày</td>
+              </tr>
+              <tr>
+                <td><strong>Thẻ bơi 60 lượt</strong></td>
+                <td style="text-align: right;"><strong style="color: var(--color-primary); font-size: 1.1rem;">2.100.000đ</strong></td>
+                <td>1 thẻ</td>
+                <td>Hạn dùng 70 ngày</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Right: Rules & CanSwim Promo Callout -->
+        <div class="tickets-info-card">
+          <div class="glass-card" style="padding: 25px; margin-bottom: 30px; border-left: 4px solid var(--color-primary); text-align: left;">
+            <h4 style="font-size: 1.15rem; color: var(--color-primary); margin-bottom: 15px; font-weight: 700;">Quy Định Sử Dụng Vé/Thẻ Bơi</h4>
+            <ul class="op-list" style="gap: 15px; padding-left: 0;">
+              <li style="display: flex; gap: 10px; align-items: flex-start;">
+                <span style="color: #2ecc71; font-weight: bold;">✅</span>
+                <p style="margin: 0; font-size: 0.95rem; color: var(--color-text);"><strong>Thẻ bơi tích lượt (30 lượt, 60 lượt)</strong> được dùng chung cho nhiều người cùng lúc.</p>
+              </li>
+              <li style="display: flex; gap: 10px; align-items: flex-start;">
+                <span style="color: #2ecc71; font-weight: bold;">✅</span>
+                <p style="margin: 0; font-size: 0.95rem; color: var(--color-text);">Dùng hết số lượt hoặc hết hạn sử dụng thì thẻ sẽ tự động hết hiệu lực.</p>
+              </li>
+              <li style="display: flex; gap: 10px; align-items: flex-start;">
+                <span style="color: #2ecc71; font-weight: bold;">✅</span>
+                <p style="margin: 0; font-size: 0.95rem; color: var(--color-text);"><strong>Thẻ bơi theo tháng</strong> chỉ áp dụng định danh cho <strong>1 người duy nhất</strong>.</p>
+              </li>
+              <li style="display: flex; gap: 10px; align-items: flex-start;">
+                <span style="color: #e74c3c; font-weight: bold;">❌</span>
+                <p style="margin: 0; font-size: 0.95rem; color: var(--color-text); font-weight: 600;">Không dùng chung thẻ tháng cho nhiều người.</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- CanSwim course pitch -->
+          <div class="canswim-pitch-box">
+            <span class="promo-badge-hot" style="font-size: 0.75rem; margin-bottom: 8px;">Gợi Ý Tiết Kiệm</span>
+            <h4>Đăng Ký Khóa Học Bơi CanSwim Tại Newton</h4>
+            <p style="font-size: 0.9rem; color: hsl(205, 10%, 90%); margin-bottom: 15px; line-height: 1.5;">
+              Thay vì mua thẻ bơi tự do, bạn có thể đăng ký khóa học bơi tiêu chuẩn cùng HLV CanSwim để được kèm cặp bài bản và nhận ngay ưu đãi:
+            </p>
+            <ul class="specs-list" style="margin: 0 0 20px 0; color: var(--color-white); padding-left: 0;">
+              <li style="color: var(--color-white); font-size: 0.9rem; margin-bottom: 8px; padding-left: 20px; position: relative;"><strong style="color: var(--color-secondary);">🎁 Đăng ký 1 khóa – Nhận ngay 30 vé vào bể</strong></li>
+              <li style="color: var(--color-white); font-size: 0.9rem; margin-bottom: 8px; padding-left: 20px; position: relative;">✔ 15 buổi học thực hành trực tiếp cùng HLV</li>
+              <li style="color: var(--color-white); font-size: 0.9rem; margin-bottom: 8px; padding-left: 20px; position: relative;">✔ Tặng thêm 15 buổi tự bơi miễn phí</li>
+              <li style="color: var(--color-white); font-size: 0.9rem; padding-left: 20px; position: relative;">✔ Cam kết hỗ trợ huấn luyện tới khi bơi tốt</li>
+            </ul>
+            <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+              <a href="#register" class="btn btn-secondary" style="font-size: 0.8rem; padding: 8px 16px;">ĐĂNG KÝ HỌC NGAY</a>
+              <a href="tel:0907992336" style="color: var(--color-white); font-weight: 700; text-decoration: none; display: flex; align-items: center; gap: 6px; font-size: 0.9rem;">
+                📞 0907 992 336
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Operational Info Section -->
   <section class="section-padding op-info-section">
     <div class="container op-info-grid">
@@ -823,12 +934,58 @@ import MapEmbed from '../components/MapEmbed.astro';
     display: block;
   }
 
+  /* Tickets Section */
+  .tickets-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 40px;
+    margin-top: 30px;
+  }
+
+  .tickets-table-card {
+    background: var(--color-white);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+  }
+
+  .tickets-table-card h3 {
+    font-size: 1.4rem;
+    color: var(--color-primary);
+    margin-bottom: 8px;
+    font-weight: 700;
+  }
+
+  .canswim-pitch-box {
+    background: linear-gradient(135deg, hsl(205, 80%, 25%) 0%, hsl(205, 90%, 15%) 100%);
+    border-radius: 16px;
+    padding: 25px;
+    color: var(--color-white);
+    box-shadow: var(--shadow-md);
+    text-align: left;
+  }
+
+  .canswim-pitch-box h4 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: var(--color-white);
+  }
+
+  .canswim-pitch-box .specs-list li::before {
+    color: var(--color-secondary) !important;
+  }
+
   @media (max-width: 1024px) {
     .courses-pricing-grid {
       grid-template-columns: 1fr;
     }
     
     .promo-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .tickets-grid {
       grid-template-columns: 1fr;
     }
   }

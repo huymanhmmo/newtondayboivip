@@ -6,11 +6,6 @@ image: "/images/tuyen-sinh/lop-hoc-boi-be-boi-newton.png"
 tags: ["review bể bơi", "bể bơi Newton", "Hoàng Quốc Việt", "Cầu Giấy"]
 ---
 
-## TL;DR / Tóm Tắt Nhanh
-Bể bơi Newton Nghĩa Đô (lô TH2 khu đô thị Nam Cường, cuối ngõ 234 Hoàng Quốc Việt, Cầu Giấy) là một trong những địa điểm bơi lội và dạy học bơi được đánh giá cao nhất khu vực phía Tây Hà Nội. Bể sở hữu thiết kế bốn mùa có mái che kín gió, công nghệ lọc nước muối điện phân dịu nhẹ không cay mắt và bãi đỗ xe ô tô cực kỳ thông thoáng. Các lớp dạy bơi nhóm nhỏ kèm riêng từ 1-3 học viên của trung tâm CanSwim dưới sự chỉ đạo của HLV trưởng Bùi Văn Cán cam kết 100% biết bơi chuẩn kỹ thuật, mang lại trải nghiệm thể thao an toàn và chất lượng nhất.
-
----
-
 
 ## 1. Tổng quan về bể bơi Newton 234 Hoàng Quốc Việt
 

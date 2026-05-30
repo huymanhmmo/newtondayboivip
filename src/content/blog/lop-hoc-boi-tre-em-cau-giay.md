@@ -6,11 +6,6 @@ image: "/images/tuyen-sinh/lop-day-boi-tre-em-cau-giay.png"
 tags: ["dạy bơi trẻ em", "học bơi Cầu Giấy", "bể bơi Newton", "CanSwim"]
 ---
 
-## TL;DR / Tóm Tắt Nhanh
-Lớp dạy bơi trẻ em Cầu Giấy tại bể bơi Newton (khu đô thị Nam Cường, cuối ngõ 234 Hoàng Quốc Việt) của trung tâm CanSwim là địa chỉ vàng được nhiều phụ huynh lựa chọn. Dưới sự chỉ đạo chuyên môn của HLV trưởng Bùi Văn Cán, khóa học áp dụng mô hình kèm riêng nhóm nhỏ 1-3 học viên, cam kết an toàn tuyệt đối. Giáo trình cá nhân hóa được chia nhỏ thành các chặng ngắn giúp trẻ dễ dàng làm quen với nước, thành thạo kỹ thuật bơi ếch, bơi sải chuẩn xác và trang bị đầy đủ kỹ năng sinh tồn chống đuối nước tự cứu.
-
----
-
 
 ## 1. Tầm quan trọng của việc cho trẻ học bơi sớm tại Cầu Giấy
 
@@ -279,6 +274,8 @@ Sau khi lên bờ, phụ huynh chú ý sấy khô tai và nhỏ nước muối s
 **Trả lời:** Có. CanSwim áp dụng chính sách bảo lưu học phí linh hoạt cho học viên nhí gặp sự cố về sức khỏe hoặc lịch học văn hóa đột xuất.
 
 Cha mẹ chỉ cần liên hệ trước với trung tâm qua hotline để được hỗ trợ bảo lưu và sắp xếp lịch học bù phù hợp nhất cho bé.
+
+Đội ngũ tư vấn viên và trợ giảng tại trung tâm CanSwim luôn túc trực để hỗ trợ giải đáp 24/7, nhằm giúp cha mẹ dễ dàng cập nhật tình hình tập luyện cũng như sự tiến bộ vượt bậc từng ngày của bé.
 
 Để đăng ký ca học thử và nhận tư vấn chi tiết từ huấn luyện viên, quý phụ huynh vui lòng truy cập trang [liên hệ và chỉ đường bể bơi Newton](/lien-he/) để điền thông tin biểu mẫu liên hệ của chúng tôi.
 

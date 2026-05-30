@@ -6,11 +6,6 @@ image: "/images/tuyen-sinh/tuyen-sinh-hoc-boi-newton-cau-giay.png"
 tags: ["đường đi", "bể bơi Newton", "Hoàng Quốc Việt", "Nghĩa Đô", "gửi xe"]
 ---
 
-## TL;DR / Tóm Tắt Nhanh
-Bể bơi Newton nằm tại địa chỉ lô TH2 khu đô thị Nam Cường, cuối ngõ 234 Hoàng Quốc Việt, quận Cầu Giấy, Hà Nội là địa điểm bơi lội và học bơi lý tưởng. Để đến bể bơi này thuận tiện nhất, bạn đi thẳng vào ngõ 234 Hoàng Quốc Việt (ngõ rộng ô tô tránh nhau), rẽ trái vào khu đô thị Nam Cường và đi tới cuối đường là đến cổng trường TH2 Newton. Bể bơi nằm trong tòa nhà thể chất trường học, có bãi trông xe máy có mái che và vị trí đỗ ô tô nội khu an toàn. Học viên học bơi kèm riêng tại trung tâm [CanSwim](/) sẽ được hướng dẫn đỗ xe và lối đi thuận lợi nhất.
-
----
-
 
 ## 1. Vị trí địa lý của bể bơi Newton ở đâu tại Cầu Giấy?
 

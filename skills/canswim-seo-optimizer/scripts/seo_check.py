@@ -37,7 +37,7 @@ MAIN_PAGES = [
     {"name": "Lớp bơi trẻ em", "path": "/lop-hoc-boi-tre-em-be-boi-newton/"},
     {"name": "Lớp bơi người lớn", "path": "/hoc-boi-nguoi-lon-be-boi-newton/"},
     {"name": "Lịch học & Học phí", "path": "/lich-hoc-hoc-phi-day-boi-newton/"},
-    {"name": "Liên hệ & Chỉ đường", "path": "/lien-he-chi-duong-be-boi-newton/"}
+    {"name": "Liên hệ & Chỉ đường", "path": "/lien-he/"}
 ]
 
 # --- PARSER CHO FILE ASTRO / HTML ---
@@ -197,7 +197,6 @@ def check_file(file_path, keyword=None):
     body_text = ""
     word_count = 0
     has_toc = False
-    has_tldr = False
     author_name = ""
     has_author_avatar = False
     has_author_bio = False
@@ -246,12 +245,7 @@ def check_file(file_path, keyword=None):
         # Kiểm tra Mục lục (ToC)
         has_toc = any(h[1].lower() in ['mục lục', 'table of contents', 'danh mục'] for h in headings) or "## mục lục" in body.lower()
         
-        # Kiểm tra TL;DR (đoạn tóm tắt ngay sau H1/ở đầu)
-        first_few_lines = [line.strip() for line in body.splitlines() if line.strip() and not line.strip().startswith('#')][:3]
-        combined_intro = " ".join(first_few_lines)
-        intro_words = len([w for w in combined_intro.split() if w.strip()])
-        has_tldr = "tldr" in combined_intro.lower() or "tl;dr" in combined_intro.lower() or (40 <= intro_words <= 90)
-        
+
         # Kiểm tra khối tác giả E-E-A-T (Bùi Văn Cán)
         author_name_match = re.search(r'tác giả\s*:\s*(bùi văn cán)', body.lower()) or "bùi văn cán" in body.lower()
         if author_name_match:
@@ -303,7 +297,6 @@ def check_file(file_path, keyword=None):
         
         # Đối với Astro tĩnh, không kiểm tra ToC, E-E-A-T khắt khe như Blog
         has_toc = True
-        has_tldr = True
         author_name = "Bùi Văn Cán"
         has_author_avatar = True
         has_author_bio = True

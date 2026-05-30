@@ -1,8 +1,8 @@
 ---
-title: "Nên học bơi sải hay bơi ếch trước? Hướng dẫn học bơi nhanh nhất cho người mới bắt đầu"
+title: "Nên học bơi sải hay bơi ếch trước cho người mới bắt đầu?"
 description: "So sánh kỹ thuật bơi sải và bơi ếch chi tiết từ HLV CanSwim. Tìm hiểu cách học bơi nhanh nhất cho người mới bắt đầu giá rẻ trọn gói tại bể bơi Newton Cầu Giấy."
 pubDate: 2026-05-31
-image: "/images/tuyen-sinh/lop-boi-tap-the-gia-re.png"
+image: "/images/tuyen-sinh/lop-boi-tap-the-gia-re.webp"
 tags: ["học bơi sải", "học bơi ếch", "bể bơi Newton", "học bơi Cầu Giấy"]
 ---
 

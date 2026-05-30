@@ -1,8 +1,8 @@
 ---
-title: "Hướng dẫn tra cứu Bể bơi Newton 234 Hoàng Quốc Việt Map và chỉ đường đi nhanh nhất"
+title: "Bản đồ chỉ đường đến Bể bơi Newton 234 Hoàng Quốc Việt"
 description: "Định vị bản đồ Google Maps và hướng dẫn chỉ đường đi chi tiết tới Bể bơi Newton cuối ngõ 234 Hoàng Quốc Việt. Cẩm nang đỗ xe máy, ô tô và phương tiện công cộng."
 pubDate: 2026-05-30
-image: "/images/tuyen-sinh/tuyen-sinh-hoc-boi-newton-cau-giay.png"
+image: "/images/tuyen-sinh/tuyen-sinh-hoc-boi-newton-cau-giay.webp"
 tags: ["bản đồ", "chỉ đường", "bể bơi Newton", "gửi xe"]
 ---
 
@@ -47,7 +47,7 @@ Có một số bản đồ tự phát định vị bể bơi Newton ở khu vự
 
 Vì thế, CanSwim khuyến cáo học viên chỉ sử dụng duy nhất liên kết bản đồ chuẩn của trung tâm. Hãy tìm đúng biển hiệu Trường Newton tại cuối ngõ 234 Hoàng Quốc Việt.
 
-![Bản đồ định vị chính xác vị trí bể bơi Newton trên điện thoại](/images/tuyen-sinh/tuyen-sinh-hoc-boi-newton-cau-giay.png)
+![Bản đồ định vị chính xác vị trí bể bơi Newton trên điện thoại](/images/tuyen-sinh/tuyen-sinh-hoc-boi-newton-cau-giay.webp)
 <p class="image-caption">Sử dụng định vị chính xác giúp học viên dễ dàng tìm đường tới bể bơi Newton mà không lo lạc hướng.</p>
 
 ---
@@ -86,7 +86,7 @@ Bể bơi Newton nằm gần Học viện Kỹ thuật Quân sự, Đại học 
 
 Lớp dạy bơi tập thể giá rẻ của CanSwim luôn thu hút đông đảo bạn trẻ đăng ký học bơi. Đây là địa điểm rèn luyện thể thao lý tưởng cho sinh viên quanh khu vực.
 
-![Nhóm học viên sinh viên di chuyển bằng phương tiện công cộng tới lớp học bơi](/images/tuyen-sinh/lop-day-boi-tre-em-cau-giay.png)
+![Nhóm học viên sinh viên di chuyển bằng phương tiện công cộng tới lớp học bơi](/images/tuyen-sinh/lop-day-boi-tre-em-cau-giay.webp)
 <p class="image-caption">Các tuyến xe buýt chạy liên tục qua đường Hoàng Quốc Việt rất thuận lợi cho học sinh, sinh viên đi học bơi.</p>
 
 ---

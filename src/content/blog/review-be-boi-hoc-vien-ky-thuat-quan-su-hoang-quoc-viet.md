@@ -1,8 +1,8 @@
 ---
-title: "Review Bể bơi Học viện Kỹ thuật Quân sự Cầu Giấy: Giá vé, giờ mở cửa và sự thật"
+title: "Review Bể bơi Học viện Kỹ thuật Quân sự Hoàng Quốc Việt"
 description: "Review chi tiết Bể bơi Học viện Kỹ thuật Quân sự (236 Hoàng Quốc Việt). Cập nhật giá vé, giờ mở cửa, và so sánh thực tế với lớp học bơi Bể bơi Newton sát bên."
 pubDate: 2026-05-31
-image: "/images/tuyen-sinh/lop-hoc-boi-be-boi-newton.png"
+image: "/images/tuyen-sinh/lop-hoc-boi-be-boi-newton.webp"
 tags: ["bể bơi học viện kỹ thuật quân sự", "bể bơi hvktqs", "bể bơi hoàng quốc việt", "học bơi Cầu Giấy", "bể bơi Newton"]
 ---
 

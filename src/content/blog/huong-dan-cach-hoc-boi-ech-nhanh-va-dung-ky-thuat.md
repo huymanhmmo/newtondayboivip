@@ -2,7 +2,7 @@
 title: "Cách học bơi ếch nhanh nhất: Giáo trình dạy bơi ếch tại Bể bơi Newton"
 description: "Hướng dẫn cách học bơi ếch nhanh nhất và đúng kỹ thuật cho người mới bắt đầu. Khóa học dạy bơi ếch kèm riêng nhóm nhỏ uy tín tại Bể bơi Newton Cầu Giấy."
 pubDate: 2026-05-31
-image: "/images/tuyen-sinh/day-hoc-boi-ech-boi-sai.png"
+image: "/images/tuyen-sinh/day-hoc-boi-ech-boi-sai.webp"
 tags: ["cách học bơi ếch", "học bơi ếch", "dạy bơi ếch", "lớp học bơi ếch", "bể bơi Newton"]
 ---
 

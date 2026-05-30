@@ -1,8 +1,8 @@
 ---
-title: "Review Bể bơi Nghĩa Tân Tô Hiệu: Thông tin giá vé, suất bơi và địa điểm tốt nhất"
+title: "Review Bể bơi Nghĩa Tân Tô Hiệu và địa điểm thay thế"
 description: "Review chi tiết Bể bơi THCS Nghĩa Tân (Tô Hiệu). Cập nhật giá vé, giờ mở cửa, và so sánh thực tế với lớp học bơi Bể bơi Newton sát bên."
 pubDate: 2026-05-31
-image: "/images/tuyen-sinh/lop-hoc-boi-be-boi-newton.png"
+image: "/images/tuyen-sinh/lop-hoc-boi-be-boi-newton.webp"
 tags: ["bể bơi nghĩa tân", "bể bơi tô hiệu", "bể bơi trường thcs nghĩa tân", "học bơi Cầu Giấy", "bể bơi Newton"]
 ---
 

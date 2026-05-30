@@ -1,8 +1,8 @@
 ---
-title: "Trẻ em mấy tuổi nên học bơi? Thời điểm vàng cho bé học bơi tại Cầu Giấy"
+title: "Trẻ em mấy tuổi nên học bơi? Thời điểm vàng cho bé học bơi"
 description: "Trẻ mấy tuổi học bơi là tốt nhất? Hướng dẫn lựa chọn lớp học bơi cho bé an toàn, học phí rẻ, chuẩn E-E-A-T từ HLV CanSwim tại bể bơi trường Newton Cầu Giấy."
 pubDate: 2026-05-31
-image: "/images/tuyen-sinh/lop-day-boi-tre-em-cau-giay.png"
+image: "/images/tuyen-sinh/lop-day-boi-tre-em-cau-giay.webp"
 tags: ["trẻ mấy tuổi học bơi", "lớp học bơi cho bé", "bể bơi Newton", "học bơi Cầu Giấy"]
 ---
 

@@ -1,8 +1,8 @@
 ---
-title: "Kinh nghiệm học bơi cho người lớn từ con số 0 tại Bể bơi Newton Hoàng Quốc Việt"
-description: "Tổng hợp kinh nghiệm học bơi cho người lớn hiệu quả từ HLV CanSwim. Đăng ký lớp học bơi người lớn giá rẻ trọn gói tại bể bơi Newton Cầu Giấy thời gian linh hoạt."
+title: "Kinh nghiệm học bơi cho người lớn tự tin biết bơi nhanh nhất"
+description: "Kinh nghiệm học bơi cho người lớn hiệu quả, cách vượt qua nỗi sợ nước. Đăng ký học bơi người lớn tại bể bơi Newton Cầu Giấy cam kết biết bơi 100%."
 pubDate: 2026-05-31
-image: "/images/tuyen-sinh/lop-hoc-boi-be-boi-newton.png"
+image: "/images/tuyen-sinh/lop-hoc-boi-be-boi-newton.webp"
 tags: ["học bơi cho người lớn", "lớp học bơi người lớn", "bể bơi Newton", "học bơi Cầu Giấy"]
 ---
 

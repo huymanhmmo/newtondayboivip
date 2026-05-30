@@ -1,8 +1,8 @@
 ---
-title: "Lớp dạy bơi trẻ em Cầu Giấy tại bể bơi Newton: HLV Bùi Văn Cán kèm riêng"
-description: "Dạy bơi trẻ em tại Cầu Giấy ở đâu tốt? Tìm hiểu giáo trình dạy bơi trẻ em chuẩn sư phạm, lộ trình rèn luyện an toàn và cam kết biết bơi từ HLV trưởng Bùi Văn Cán tại bể bơi Newton."
+title: "Lớp học bơi trẻ em Cầu Giấy kèm riêng tại Bể bơi Newton"
+description: "Khóa học bơi trẻ em Cầu Giấy kèm riêng chất lượng cao tại bể bơi Newton ngõ 234 Hoàng Quốc Việt. Bé học bơi vui vẻ, an toàn, cam kết biết bơi 100%."
 pubDate: 2026-05-30
-image: "/images/tuyen-sinh/lop-day-boi-tre-em-cau-giay.png"
+image: "/images/tuyen-sinh/lop-day-boi-tre-em-cau-giay.webp"
 tags: ["dạy bơi trẻ em", "học bơi Cầu Giấy", "bể bơi Newton", "CanSwim"]
 ---
 
@@ -106,7 +106,7 @@ Con học cách quạt hai tay sang bên để đẩy nước nâng đầu lên 
 
 HLV sẽ kiên trì chỉnh sửa sự phối hợp nhịp nhàng giữa nhịp chân đạp và nhịp tay quạt thở.
 
-![Lớp dạy bơi trẻ em Cầu Giấy tại bể bơi Newton](/images/tuyen-sinh/lop-day-boi-tre-em-cau-giay.png)
+![Lớp dạy bơi trẻ em Cầu Giấy tại bể bơi Newton](/images/tuyen-sinh/lop-day-boi-tre-em-cau-giay.webp)
 <p class="image-caption">Lớp học bơi trẻ em được HLV hướng dẫn kỹ thuật đạp chân và quạt tay chuẩn sư phạm.</p>
 
 ### Giai đoạn 3: Nâng cao kỹ thuật bơi sải và bơi ngửa
@@ -143,7 +143,7 @@ HLV hướng dẫn bé cách ôm gối thả nổi nghiêng đầu thở và bơ
 
 Bé cũng tập luyện cách kêu cứu to và dứt khoát để thu hút sự chú ý của cứu hộ bể bơi Newton.
 
-![HLV CanSwim hướng dẫn học viên nhút nhát vượt nỗi sợ nước](/images/tuyen-sinh/hoc-cham-kem-toi-khi-boi-tot.png)
+![HLV CanSwim hướng dẫn học viên nhút nhát vượt nỗi sợ nước](/images/tuyen-sinh/hoc-cham-kem-toi-khi-boi-tot.webp)
 <p class="image-caption">Các thầy giáo CanSwim luôn ở bên cạnh nâng đỡ bé, rèn luyện cho con kỹ năng tự cứu và thoát hiểm an toàn nước.</p>
 
 ---

@@ -1,8 +1,8 @@
 ---
-title: "Đánh giá Bể bơi Học viện Chính trị Cầu Giấy: Review chất lượng nước & học bơi"
+title: "Đánh giá Bể bơi Học viện Chính trị Nguyễn Phong Sắc chi tiết"
 description: "Đánh giá chi tiết Bể bơi Học viện Chính trị Cầu Giấy (Nguyễn Phong Sắc). Cập nhật giá vé, giờ mở cửa, và so sánh thực tế với lớp học bơi Bể bơi Newton."
 pubDate: 2026-05-31
-image: "/images/tuyen-sinh/lop-hoc-boi-be-boi-newton.png"
+image: "/images/tuyen-sinh/lop-hoc-boi-be-boi-newton.webp"
 tags: ["bể bơi học viện chính trị", "bể bơi nguyễn phong sắc", "bể bơi trần quốc hoàn", "học bơi Cầu Giấy", "bể bơi Newton"]
 ---
 

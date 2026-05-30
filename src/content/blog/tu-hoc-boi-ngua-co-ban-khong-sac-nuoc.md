@@ -2,7 +2,7 @@
 title: "Cách tự học bơi ngửa cơ bản đúng kỹ thuật: Lướt nhẹ, không sặc nước"
 description: "Hướng dẫn cách tự học bơi ngửa cơ bản đúng kỹ thuật tại nhà và bể bơi. Khóa học bơi ngửa kèm riêng nhóm nhỏ uy tín tại Bể bơi Newton Cầu Giấy."
 pubDate: 2026-05-31
-image: "/images/tuyen-sinh/4-ky-thuat-boi-loi-co-ban.png"
+image: "/images/tuyen-sinh/4-ky-thuat-boi-loi-co-ban.webp"
 tags: ["cách học bơi ngửa", "học bơi ngửa", "dạy bơi ngửa", "lớp học bơi ngửa", "bể bơi Newton"]
 ---
 

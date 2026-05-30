@@ -1,8 +1,8 @@
 ---
-title: "Dạy bơi ở Nghĩa Đô Cầu Giấy: Khóa học bơi kèm riêng uy tín tại Bể bơi Newton"
-description: "Lớp dạy học bơi ở Nghĩa Đô Cầu Giấy chất lượng cao. Khóa học bơi kèm riêng 1-1 cho trẻ em và người lớn tại Bể bơi Newton ngõ 234 Hoàng Quốc Việt. Cam kết biết bơi nhanh."
+title: "Dạy học bơi tại Nghĩa Đô Cầu Giấy kèm riêng uy tín"
+description: "Lớp dạy học bơi tại Nghĩa Đô Cầu Giấy kèm riêng chất lượng cao cho trẻ em và người lớn. Học bơi tại bể bơi Newton kín gió mát mẻ, cam kết biết bơi."
 pubDate: 2026-05-31
-image: "/images/tuyen-sinh/lop-hoc-boi-be-boi-newton.png"
+image: "/images/tuyen-sinh/lop-hoc-boi-be-boi-newton.webp"
 tags: ["dạy bơi ở Nghĩa Đô", "học bơi ở Nghĩa Đô", "lớp học bơi ở Nghĩa Đô", "bể bơi Newton", "học bơi Cầu Giấy"]
 ---
 

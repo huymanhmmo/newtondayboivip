@@ -2,7 +2,7 @@
 title: "Kinh nghiệm chọn đồ bơi học sinh và dụng cụ học bơi thiết yếu cho trẻ"
 description: "Cách lựa chọn đồ bơi học sinh cấp 2, cấp 3, đồ bơi tiểu học co giãn bền bỉ. Trọn bộ dụng cụ học bơi cần thiết cho bé khi tập luyện tại bể bơi Newton Cầu Giấy."
 pubDate: 2026-05-31
-image: "/images/tuyen-sinh/lop-day-boi-tre-em-cau-giay.png"
+image: "/images/tuyen-sinh/lop-day-boi-tre-em-cau-giay.webp"
 tags: ["đồ bơi học sinh", "dụng cụ học bơi", "học bơi trẻ em", "bể bơi Newton"]
 ---
 

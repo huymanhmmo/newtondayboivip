@@ -2,7 +2,7 @@
 title: "Dạy bơi ở Cầu Giấy: Khóa học bơi kèm riêng tốt nhất tại Bể bơi Newton"
 description: "Lớp dạy học bơi ở Cầu Giấy chất lượng cao, sĩ số nhóm nhỏ 1-3 học viên tại Bể bơi Newton 234 Hoàng Quốc Việt. Cam kết biết bơi nhanh, đúng kỹ thuật và an toàn."
 pubDate: 2026-05-31
-image: "/images/tuyen-sinh/lop-hoc-boi-be-boi-newton.png"
+image: "/images/tuyen-sinh/lop-hoc-boi-be-boi-newton.webp"
 tags: ["dạy bơi ở Cầu Giấy", "học bơi ở Cầu Giấy", "lớp học bơi ở Cầu Giấy", "bể bơi Newton", "học bơi Cầu Giấy"]
 ---
 

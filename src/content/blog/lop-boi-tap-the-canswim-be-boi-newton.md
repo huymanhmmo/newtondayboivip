@@ -2,7 +2,7 @@
 title: "Lớp bơi tập thể CanSwim tại bể bơi Newton: Học phí rẻ, chất lượng cao"
 description: "Đăng ký lớp bơi tập thể CanSwim tại bể bơi Newton Hoàng Quốc Việt Cầu Giấy. Khóa học bơi giá rẻ chỉ 1.5 triệu trọn gói đã gồm vé bơi, giáo viên kèm sát."
 pubDate: 2026-05-31
-image: "/images/tuyen-sinh/lop-boi-tap-the-1t5.png"
+image: "/images/tuyen-sinh/lop-boi-tap-the-1t5.webp"
 tags: ["lớp bơi tập thể", "học bơi Cầu Giấy", "bể bơi Newton", "CanSwim"]
 ---
 
@@ -62,7 +62,7 @@ Chỉ với **1.500.000đ / khóa**, học viên sẽ nhận được toàn bộ
 
 * **Sĩ số giới hạn chuẩn hóa**: Khóa học quy định tối đa 10 học viên / 1 HLV / 1 ca học để đảm bảo chất lượng giảng dạy và sự an toàn tối đa dưới nước.
 
-![Lớp bơi tập thể CanSwim chỉ 1.5 triệu](/images/tuyen-sinh/lop-boi-tap-the-1t5.png)
+![Lớp bơi tập thể CanSwim chỉ 1.5 triệu](/images/tuyen-sinh/lop-boi-tap-the-1t5.webp)
 <p class="image-caption">Lớp học bơi tập thể CanSwim siêu tiết kiệm chỉ 1.5 triệu một khóa 10 buổi đã gồm vé vào cửa tại bể bơi Newton Cầu Giấy.</p>
 
 ### Những quy định bắt buộc của lớp bơi tập thể
@@ -131,7 +131,7 @@ Học viên bắt đầu kết hợp các động tác quạt tay, đạp chân 
 
 * **Chỉnh sửa lỗi sai thường gặp**: HLV trực tiếp sửa tư thế co chân quá sâu hoặc quạt tay quá rộng làm mất lực nâng cơ thể.
 
-![Học viên tập bơi nhóm tập thể tại Newton](/images/tuyen-sinh/lop-boi-tap-the-gia-re.png)
+![Học viên tập bơi nhóm tập thể tại Newton](/images/tuyen-sinh/lop-boi-tap-the-gia-re.webp)
 <p class="image-caption">Khóa dạy bơi tập thể giá cực rẻ, sĩ số 10 học viên trên 1 HLV theo lịch cố định tại bể bơi Newton Cầu Giấy.</p>
 
 #### Buổi 9 - 10: Hoàn thiện kỹ thuật bơi và kiểm tra đầu ra

@@ -2,7 +2,7 @@
 title: "Lớp học bơi ở các bể bơi Cầu Giấy lân cận: So sánh khóa học tốt nhất"
 description: "So sánh chi tiết lớp học bơi ở bể bơi Học viện Kỹ thuật Quân sự, Học viện Chính trị, Nghĩa Tân và lý do lớp bơi Newton CanSwim là lựa chọn tối ưu nhất."
 pubDate: 2026-05-31
-image: "/images/tuyen-sinh/lop-hoc-boi-be-boi-newton.png"
+image: "/images/tuyen-sinh/lop-hoc-boi-be-boi-newton.webp"
 tags: ["lớp học bơi ở Cầu Giấy", "học bơi ở Cầu Giấy", "học bơi Cầu Giấy", "bể bơi Newton", "lớp dạy bơi Cầu Giấy"]
 ---
 

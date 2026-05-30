@@ -1,8 +1,8 @@
 ---
-title: "So sánh học bơi ở bể Newton Cầu Giấy, bể HVKT Quân sự và bể Học viện Chính trị: Đâu là lựa chọn tối ưu?"
-description: "So sánh thực tế khóa học bơi tại bể bơi Newton, bể Học viện Kỹ thuật Quân sự và bể Học viện Chính trị Cầu Giấy. Đánh giá chất lượng nước, độ sâu, học phí và độ an toàn."
+title: "So sánh học bơi Bể bơi Newton và các bể bơi Cầu Giấy"
+description: "So sánh chi tiết học bơi tại bể bơi Newton với các bể lân cận Cầu Giấy (HVKTQS, HV Chính Trị, Nghĩa Tân) giúp phụ huynh lựa chọn địa điểm tốt nhất."
 pubDate: 2026-05-31
-image: "/images/tuyen-sinh/lop-boi-tap-the-1t5.png"
+image: "/images/tuyen-sinh/lop-boi-tap-the-1t5.webp"
 tags: ["học bơi ở đâu Cầu Giấy", "bể bơi Newton", "bể bơi học viện kỹ thuật quân sự", "bể bơi học viện chính trị"]
 ---
 

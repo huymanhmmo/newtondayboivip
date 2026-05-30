@@ -2,7 +2,7 @@
 title: "Cách tự học bơi sải nhanh nhất: Hướng dẫn kỹ thuật bơi sải không mệt"
 description: "Hướng dẫn cách tự học bơi sải nhanh nhất và đúng kỹ thuật cho người mới bắt đầu. Lớp dạy bơi sải kèm riêng nhóm nhỏ uy tín tại Bể bơi Newton Cầu Giấy."
 pubDate: 2026-05-31
-image: "/images/tuyen-sinh/day-hoc-boi-ech-boi-sai.png"
+image: "/images/tuyen-sinh/day-hoc-boi-ech-boi-sai.webp"
 tags: ["cách học bơi sải", "học bơi sải", "dạy bơi sải", "lớp học bơi sải", "bể bơi Newton"]
 ---
 

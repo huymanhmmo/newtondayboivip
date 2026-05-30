@@ -2,7 +2,7 @@
 title: "Kỹ thuật bơi trườn sấp: Hướng dẫn cách học bơi trườn sấp nhanh nhất"
 description: "Hướng dẫn kỹ thuật bơi trườn sấp từ cơ bản đến nâng cao. Khóa học dạy bơi trườn sấp kèm riêng nhóm nhỏ uy tín tại Bể bơi Newton Cầu Giấy."
 pubDate: 2026-05-31
-image: "/images/tuyen-sinh/day-hoc-boi-ech-boi-sai.png"
+image: "/images/tuyen-sinh/day-hoc-boi-ech-boi-sai.webp"
 tags: ["học bơi trườn sấp", "dạy bơi trườn sấp", "lớp học bơi trườn sấp", "cách học bơi trườn sấp", "bể bơi Newton"]
 ---
 

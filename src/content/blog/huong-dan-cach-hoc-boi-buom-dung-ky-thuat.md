@@ -2,7 +2,7 @@
 title: "Cách học bơi bướm đúng kỹ thuật từ cơ bản đến nâng cao cho người mới"
 description: "Cẩm nang hướng dẫn cách tự học bơi bướm chuẩn kỹ thuật, uốn sóng thân mềm mại và quạt tay bướm mạnh mẽ. Lớp học bơi bướm kèm riêng tại Bể bơi Newton Cầu Giấy."
 pubDate: 2026-05-31
-image: "/images/tuyen-sinh/4-ky-thuat-boi-loi-co-ban.png"
+image: "/images/tuyen-sinh/4-ky-thuat-boi-loi-co-ban.webp"
 tags: ["học bơi bướm", "dạy bơi bướm", "lớp học bơi bướm", "cách học bơi bướm", "bơi bướm nhanh", "bể bơi Newton"]
 ---
 

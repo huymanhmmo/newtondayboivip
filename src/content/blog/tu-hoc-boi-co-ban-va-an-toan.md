@@ -1,8 +1,8 @@
 ---
-title: "Cách tự học bơi cơ bản và an toàn tại nhà: Hướng dẫn tự học bơi hiệu quả từ con số 0"
-description: "Hướng dẫn cách tự học bơi cơ bản và an toàn tại nhà cho người mới bắt đầu. Tìm hiểu lộ trình tự học bơi sải, bơi ếch và kỹ năng tự cứu tại bể bơi Newton Cầu Giấy."
+title: "Cách tự học bơi cơ bản và an toàn cho người mới bắt đầu"
+description: "Hướng dẫn chi tiết cách tự học bơi cơ bản và an toàn cho người mới bắt đầu. Tập nổi nước sinh tồn, đạp chân và quạt tay cùng HLV CanSwim."
 pubDate: 2026-05-31
-image: "/images/tuyen-sinh/lop-boi-tap-the-1t5.png"
+image: "/images/tuyen-sinh/lop-boi-tap-the-1t5.webp"
 tags: ["tự học bơi", "cách tự học bơi", "tự học bơi cơ bản", "bể bơi Newton", "học bơi Cầu Giấy"]
 ---
 

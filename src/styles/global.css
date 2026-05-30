@@ -686,7 +686,7 @@ input, button, select, textarea {
 .promo-terms a,
 .pricing-table-container p a,
 .safety-content p a,
-li a:not(.btn):not(.nav-link):not(.recent-post-link-card):not(.related-post-card-link) {
+li:not(.toc-item) a:not(.btn):not(.nav-link):not(.recent-post-link-card):not(.related-post-card-link) {
   color: var(--color-primary);
   font-weight: 700;
   border-bottom: 2px solid var(--color-secondary); /* Accent orange underline */
@@ -703,7 +703,7 @@ li a:not(.btn):not(.nav-link):not(.recent-post-link-card):not(.related-post-card
 .promo-terms a:hover,
 .pricing-table-container p a:hover,
 .safety-content p a:hover,
-li a:not(.btn):not(.nav-link):not(.recent-post-link-card):not(.related-post-card-link):hover {
+li:not(.toc-item) a:not(.btn):not(.nav-link):not(.recent-post-link-card):not(.related-post-card-link):hover {
   color: var(--color-white) !important;
   background-color: var(--color-secondary); /* Vibrant orange highlight fill on hover */
   border-bottom-color: var(--color-secondary);

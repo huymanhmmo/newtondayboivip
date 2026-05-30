@@ -532,15 +532,17 @@ const relatedPosts = allPosts
 
   .toc-item a {
     color: var(--color-text-muted);
-    font-size: 0.85rem;
+    font-size: 0.8rem; /* Slightly smaller size */
     line-height: 1.4;
     transition: all var(--transition-fast);
     display: block;
-    text-decoration: none;
+    text-decoration: none !important;
+    border-bottom: none !important; /* Ensure no underlines inherited globally */
+    font-weight: 400; /* Normal weight by default */
   }
 
-  .toc-item.h2-item {
-    font-weight: 600;
+  .toc-item.h2-item a {
+    font-weight: 500; /* Medium weight for H2 sections, not too heavy */
   }
 
   .toc-item.h3-item {
@@ -549,11 +551,15 @@ const relatedPosts = allPosts
 
   .toc-item:hover a {
     color: var(--color-primary);
+    text-decoration: none !important;
+    border-bottom: none !important;
   }
 
   .toc-item.active a {
     color: var(--color-primary);
-    font-weight: 700;
+    font-weight: 600; /* Active item is semi-bold, clean */
+    text-decoration: none !important;
+    border-bottom: none !important;
   }
 
   /* Active marker at the track line */

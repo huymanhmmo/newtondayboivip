@@ -329,7 +329,7 @@ input, button, select, textarea {
 
 /* Section Header Utility */
 .section-header {
-  max-width: 600px;
+  max-width: 900px;
   margin: 0 auto 50px auto;
   text-align: center;
 }
@@ -339,6 +339,7 @@ input, button, select, textarea {
   margin-bottom: 12px;
   position: relative;
   display: inline-block;
+  text-align: center;
 }
 
 .section-title::after {
@@ -376,10 +377,9 @@ input, button, select, textarea {
 
 /* ==========================================================================
    UNIFIED PAGE LAYOUTS (CANSWIM STANDARD)
-   ========================================================================== */
+   ========================================================================= */
 
-/* 1. Header wrap prevention on desktop (strictly 1 line for all headings except homepage Hero) */
-/* 1. Header wrap prevention on desktop (strictly 1 line, showing all text with fluid sizes) */
+/* 1. Header wrapping on desktop (allowing natural multiline wrapping with fluid sizes) */
 @media (min-width: 1024px) {
   .section-title,
   .page-title-main,
@@ -393,9 +393,8 @@ input, button, select, textarea {
   h1:not(.hero-title):not(.markdown-body *):not(.post-title-heading),
   h2:not(.hero-title):not(.markdown-body *),
   h3:not(.hero-title):not(.markdown-body *):not(.footer-title):not(.blog-card-title) {
-    white-space: nowrap !important;
-    overflow: visible !important;
-    text-overflow: clip !important;
+    white-space: normal !important;
+    word-wrap: break-word;
     max-width: 100% !important;
   }
 

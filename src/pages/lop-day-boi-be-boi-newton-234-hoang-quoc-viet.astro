@@ -180,13 +180,27 @@ const customSchema = {
 
   <!-- Register Form -->
   <section class="section-padding register-form-section" id="register">
-    <div class="container" style="max-width: 600px;">
-      <div class="glass-card" style="padding: 30px; border-radius: 20px;">
-        <h3 class="section-subheading text-center" style="font-size: 1.6rem; color: var(--color-primary); margin-bottom: 10px;">ĐĂNG KÝ HỌC BƠI HÔM NAY</h3>
-        <p class="text-center" style="font-size: 0.95rem; color: var(--color-text-muted); margin-bottom: 25px;">
-          Để lại thông tin để giáo viên CanSwim liên hệ tư vấn lịch học và ưu đãi 30 vé vào bể bơi có mái che Newton.
-        </p>
-        <FormRegister />
+    <div class="container">
+      <div class="register-split-container">
+        <!-- Left Column: Unified Form Register -->
+        <div class="register-form-box">
+          <FormRegister 
+            title="ĐĂNG KÝ HỌC BƠI HÔM NAY" 
+            subtitle="Để lại thông tin để giáo viên CanSwim liên hệ tư vấn lịch học và ưu đãi 30 vé vào bể bơi có mái che Newton."
+          />
+        </div>
+
+        <!-- Right Column: Registration Banner Image -->
+        <div class="register-image-box">
+          <img 
+            src="/images/tuyen-sinh/lop-hoc-boi-be-boi-newton.png" 
+            alt="Lớp dạy bơi tại bể bơi Newton 234 Hoàng Quốc Việt" 
+            class="register-side-img" 
+            width="600" 
+            height="450" 
+            loading="lazy" 
+          />
+        </div>
       </div>
     </div>
   </section>

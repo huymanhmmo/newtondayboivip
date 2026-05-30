@@ -266,6 +266,8 @@ const relatedPosts = allPosts
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 100%;
+    min-width: 0; /* Prevent flex children from stretching container horizontally */
   }
 
   .post-header-right {
@@ -659,6 +661,7 @@ const relatedPosts = allPosts
     word-wrap: break-word;
     word-break: break-word;
     overflow-wrap: break-word;
+    text-align: justify; /* Justify text align */
   }
 
   .markdown-body :global(p) {
@@ -1004,13 +1007,13 @@ const relatedPosts = allPosts
 
   @media (max-width: 992px) {
     .post-header-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
       gap: 30px;
     }
 
     .post-title-heading {
       font-size: 2.4rem;
-      text-align: center;
+      text-align: left;
     }
     
     .post-meta {
@@ -1021,23 +1024,34 @@ const relatedPosts = allPosts
 
     .post-lead-desc {
       text-align: left;
-      margin: 24px auto 0 auto;
+      margin: 24px 0 0 0;
       border-radius: 0 20px 20px 0;
     }
     
     .post-header-left {
-      align-items: center;
+      align-items: flex-start;
     }
   }
 
   @media (max-width: 768px) {
+    .max-width-post-header-grid {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    .max-width-post-layout-3cols {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
     .post-title-heading {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
 
     .post-lead-desc {
-      font-size: 1.15rem;
-      padding: 20px;
+      font-size: 1.1rem;
+      padding: 20px 16px;
+      margin-top: 16px;
     }
 
     .post-layout-grid-3cols {

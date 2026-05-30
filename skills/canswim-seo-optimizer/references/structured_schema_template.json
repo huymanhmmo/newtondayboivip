@@ -1,0 +1,94 @@
+{
+  "LocalBusinessSchema": {
+    "@context": "https://schema.org",
+    "@type": "SportsActivityLocation",
+    "name": "Trung tâm dạy bơi CanSwim tại Bể bơi Newton",
+    "alternateName": "CanSwim Bể bơi Newton Cầu Giấy",
+    "url": "https://newton.dayboi.vip",
+    "logo": "https://newton.dayboi.vip/logo.png",
+    "image": "https://newton.dayboi.vip/images/banner-tuyen-sinh-1.png",
+    "description": "Lớp học bơi trẻ em và người lớn uy tín tại bể bơi Newton, ngõ 234 Hoàng Quốc Việt, Nghĩa Đô, Cầu Giấy, Hà Nội.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Bể bơi Newton, khu Trường Newton, lô TH2 khu đô thị Nam Cường, cuối ngõ 234 Hoàng Quốc Việt, phường Nghĩa Đô",
+      "addressLocality": "Cầu Giấy",
+      "addressRegion": "Hà Nội",
+      "postalCode": "100000",
+      "addressCountry": "VN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "21.047464",
+      "longitude": "105.792557"
+    },
+    "telephone": "0907992336",
+    "priceRange": "$$",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "16:00",
+        "closes": "20:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday", "Sunday"],
+        "opens": "15:00",
+        "closes": "20:30"
+      }
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "0907992336",
+      "contactType": "customer service",
+      "areaServed": ["HN", "Cầu Giấy", "Bắc Từ Liêm"],
+      "availableLanguage": "Vietnamese"
+    }
+  },
+  "FAQPageSchema": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Bể bơi Newton có mái che không và nước có lạnh không?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bể bơi Newton là bể bơi có mái che hiện đại, kín gió, giúp nước luôn ấm áp vào mùa lạnh và mát mẻ vào mùa hè, đảm bảo an toàn sức khỏe cho trẻ em và người lớn khi học bơi tại đây."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Giá vé lẻ vào cửa bể bơi Newton là bao nhiêu?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Giá vé lẻ vào cửa bể bơi Newton hiện tại là 50.000đ/lượt đối với khách bơi tự do. Các học viên đăng ký khóa học bơi CanSwim nhóm nhỏ sẽ được miễn phí vé vào cổng trong các buổi học chính thức."
+        }
+      }
+    ]
+  },
+  "BlogPostingSchema": {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Tiêu đề bài viết cẩm nang học bơi",
+    "description": "Mô tả ngắn bài viết cẩm nang học bơi để hiển thị trên kết quả tìm kiếm và các AI tóm tắt.",
+    "image": "https://newton.dayboi.vip/images/blog-post-cover.png",
+    "datePublished": "2026-05-30",
+    "author": {
+      "@type": "Organization",
+      "name": "CanSwim Bể bơi Newton"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Trung tâm dạy bơi CanSwim",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://newton.dayboi.vip/logo.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://newton.dayboi.vip/cam-nang/duong-dan-bai-viet"
+    }
+  }
+}

@@ -2,7 +2,7 @@
 title: "Chứng chỉ bơi tiểu học Hà Nội: Quy định và địa chỉ học bơi cấp chứng chỉ uy tín"
 description: "Quy định chứng chỉ bơi tiểu học Hà Nội cho học sinh tiểu học mới nhất. Đăng ký học bơi và cấp chứng chỉ uy tín tại bể bơi Newton Cầu Giấy."
 pubDate: 2026-05-31
-image: "/images/tuyen-sink/lop-day-boi-tre-em-cau-giay.png"
+image: "/images/tuyen-sinh/lop-day-boi-tre-em-cau-giay.png"
 tags: ["chứng chỉ bơi tiểu học", "học bơi trẻ em", "bể bơi Newton", "học bơi Cầu Giấy"]
 ---
 

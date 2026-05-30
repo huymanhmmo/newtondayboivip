@@ -214,4 +214,10 @@ Hà Nội
 - 🟢 Đẩy toàn bộ thay đổi lên GitHub nhánh `main`.
 - ✅ Build thành công toàn bộ dự án 12 trang tĩnh hoàn chỉnh.
 
+### 2026-05-30 - Cấu hình Sitemap và Audit SEO hoàn chỉnh
+- 🟢 Cài đặt và tích hợp gói `@astrojs/sitemap` tự động tạo sitemap khi build.
+- 🟢 Cập nhật `astro.config.mjs` định nghĩa URL `https://newton.dayboi.vip`.
+- 🟢 Xác minh robots.txt đạt chuẩn SEO & AI Search 2026 và đã khai báo đường dẫn sitemap-index.xml.
+- 🟢 Biên dịch dự án tạo ra các file sitemap và đẩy toàn bộ code lên GitHub nhánh `main`.
+
 

@@ -61,7 +61,7 @@ export const POST: APIRoute = async ({ request, locals }) => {
     // Gửi email về hòm thư thứ nhất (dayboivip@gmail.com)
     await emailBinding.send({
       from: { email: 'form@dayboi.vip', name: 'CanSwim Bể bơi Newton' },
-      to: [{ email: 'dayboivip@gmail.com' }],
+      to: [{ email: 'dayboivip@gmail.com', name: 'Ban Quản Trị' }],
       subject: emailSubject,
       html: emailHtml,
       text: emailText
@@ -71,7 +71,7 @@ export const POST: APIRoute = async ({ request, locals }) => {
     try {
       await emailBinding.send({
         from: { email: 'form@dayboi.vip', name: 'CanSwim Bể bơi Newton' },
-        to: [{ email: 'buican336@gmail.com' }],
+        to: [{ email: 'buican336@gmail.com', name: 'Ban Quản Trị' }],
         subject: emailSubject,
         html: emailHtml,
         text: emailText

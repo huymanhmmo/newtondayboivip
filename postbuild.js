@@ -3,6 +3,7 @@ import path from 'path';
 
 const filesToProcess = [
   'dist/client/wrangler.json',
+  'dist/server/wrangler.json',
   'dist/server/.prerender/wrangler.json'
 ];
 

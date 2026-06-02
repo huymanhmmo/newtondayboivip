@@ -1,6 +1,7 @@
 export const prerender = false; // Bắt buộc chạy Dynamic SSR trên Cloudflare
 
 import type { APIRoute } from 'astro';
+import { env } from 'cloudflare:workers';
 
 export const POST: APIRoute = async ({ request, locals }) => {
   try {
@@ -14,8 +15,8 @@ export const POST: APIRoute = async ({ request, locals }) => {
       );
     }
 
-    // Lấy Email Binding từ Cloudflare Locals (SEND_EMAIL)
-    const emailBinding = (locals as any).runtime?.env?.SEND_EMAIL;
+    // Lấy Email Binding từ Cloudflare Workers runtime (Astro v6)
+    const emailBinding = (env as any).SEND_EMAIL;
     if (!emailBinding) {
       return new Response(
         JSON.stringify({ success: false, message: 'Chưa cấu hình Cloudflare Email Binding (SEND_EMAIL) hoặc đang chạy ở môi trường không được hỗ trợ.' }),

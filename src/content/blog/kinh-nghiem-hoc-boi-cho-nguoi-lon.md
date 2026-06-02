@@ -90,4 +90,4 @@ Bắt đầu hành trình chinh phục đường bơi xanh cùng CanSwim tại b
 
 ---
 
-*(Bài viết liên quan khuyên đọc: Xem thêm đánh giá chi tiết về cơ sở vật chất và nước bể tại bài viết [Review Bể bơi Newton Cầu Giấy](/cam-nang/review-be-boi-newton-234-hoang-quoc-viet/) từ các học viên đi trước).*
+*(Bài viết liên quan khuyên đọc: Xem thêm đánh giá chi tiết về cơ sở vật chất và nước bể tại bài viết [Review Bể bơi Newton Cầu Giấy](/cam-nang/review-be-boi-newton-234-hoang-quoc-viet-nghia-do-cau-giay-chi-tiet/) từ các học viên đi trước).*

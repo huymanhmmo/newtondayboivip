@@ -89,4 +89,4 @@ Phụ huynh có thể tham khảo chi tiết về giáo trình và đăng ký ch
 
 ---
 
-*(Bài viết liên quan khuyên đọc: Xem thêm đánh giá chi tiết về chất lượng bể bơi tại bài viết [Review Bể bơi Newton Cầu Giấy](/cam-nang/review-be-boi-newton-234-hoang-quoc-viet/) từ các học viên đi trước).*
+*(Bài viết liên quan khuyên đọc: Xem thêm đánh giá chi tiết về chất lượng bể bơi tại bài viết [Review Bể bơi Newton Cầu Giấy](/cam-nang/review-be-boi-newton-234-hoang-quoc-viet-nghia-do-cau-giay-chi-tiet/) từ các học viên đi trước).*

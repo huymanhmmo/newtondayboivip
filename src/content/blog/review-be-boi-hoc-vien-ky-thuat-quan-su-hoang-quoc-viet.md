@@ -132,7 +132,7 @@ Tại CanSwim Bể bơi Newton Cầu Giấy, chúng tôi áp dụng chính sách
 <tr>
 <td><strong>Độ sâu nước an toàn</strong></td>
 <td>Độ sâu đều 1.1m - 1.3m an toàn tuyệt đối, chân chạm đáy bể.</td>
-<td>Đáy bể dốc dốc dần từ 1.2m lên đến 1.8m nguy hiểm.</td>
+<td>Đáy bể dốc dần từ 1.2m lên đến 1.8m nguy hiểm.</td>
 </tr>
 <tr>
 <td><strong>Mái che thời tiết</strong></td>

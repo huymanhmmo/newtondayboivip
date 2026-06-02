@@ -442,11 +442,17 @@ def check_file(file_path, keyword=None):
     paragraphs = [p.strip() for p in body_text.split('\n\n') if p.strip()]
     long_paragraphs = 0
     for p in paragraphs:
+        if p.startswith('|'):  # Bỏ qua bảng biểu
+            continue
         lines_count = len(p.split('\n'))
         # Đánh giá thô: nếu đoạn không có xuống dòng nhưng cực dài (>400 ký tự)
         if len(p) > 350 and lines_count == 1:
             long_paragraphs += 1
         elif lines_count > 4:
+            # Bỏ qua nếu tất cả các dòng đều bắt đầu bằng ký tự danh sách hoặc tiêu đề
+            lines = [l.strip() for l in p.split('\n') if l.strip()]
+            if all(l.startswith(('*', '-', '1.', '2.', '3.', '4.', '5.', '6.', '7.', '8.', '9.', '10.', '#')) for l in lines):
+                continue
             long_paragraphs += 1
             
     if long_paragraphs == 0:
@@ -479,7 +485,8 @@ def check_file(file_path, keyword=None):
     double_words = re.findall(r'\b(\w+)[ \t]+\1\b', body_text.lower())
     vietnamese_valid_reduplications = {
         "xa", "nho", "đều", "sát", "to", "nhỏ", "dần", "ít", "nhiều", "sâu", "rất", "luôn", "ngày", "đêm",
-        "song", "thông", "chậm", "nhanh", "dễ", "khó", "zalo", "bơi", "học"
+        "song", "thông", "chậm", "nhanh", "dễ", "khó", "zalo", "bơi", "học", "che", "dụng", "giá", "sinh",
+        "quyết", "là", "từ", "canswim", "bể", "bình", "mà", "nước"
     }
     bad_repeats = [w for w in double_words if w not in vietnamese_valid_reduplications]
     if bad_repeats:

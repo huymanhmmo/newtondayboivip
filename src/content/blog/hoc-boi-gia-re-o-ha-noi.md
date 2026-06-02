@@ -135,7 +135,7 @@ CanSwim cam kết công khai minh bạch toàn bộ bảng học phí và quyề
 > [!TIP]
 > Nếu bạn là sinh viên, nhân viên văn phòng đã có cảm giác nước tốt, muốn học bơi tiết kiệm tối đa chi phí thì **Lớp bơi tập thể giá rẻ** là sự lựa chọn hoàn hảo. Tuy nhiên, nếu bạn đăng ký cho trẻ nhỏ dưới 10 tuổi hoặc người lớn nhát nước cực kỳ sợ độ sâu thì nên chọn **Khóa học bơi kèm riêng 1:3** để giáo viên có thể theo sát hỗ trợ nâng đỡ cơ thể bảo đảm an toàn tuyệt đối dưới nước sâu.
 
-Học viên muốn tìm hiểu kỹ hơn về địa điểm học bơi có thể xem đánh giá chi tiết tại [Review Bể bơi Newton 234 Hoàng Quốc Việt](file:///e:/CLAUDE/newton.dayboi.vip/newtondayboivip/src/content/blog/review-be-boi-newton-234-hoang-quoc-viet.md). Bản đồ hướng dẫn đường đi chi tiết và thông tin liên hệ Hotline hỗ trợ luôn có tại trang [Liên hệ & Chỉ đường bể bơi Newton](file:///e:/CLAUDE/newton.dayboi.vip/newtondayboivip/src/pages/lien-he.astro).
+Học viên muốn tìm hiểu kỹ hơn về địa điểm học bơi có thể xem đánh giá chi tiết tại [Review Bể bơi Newton 234 Hoàng Quốc Việt](file:///e:/CLAUDE/newton.dayboi.vip/newtondayboivip/src/content/blog/review-be-boi-newton-234-hoang-quoc-viet-nghia-do-cau-giay-chi-tiet.md). Bản đồ hướng dẫn đường đi chi tiết và thông tin liên hệ Hotline hỗ trợ luôn có tại trang [Liên hệ & Chỉ đường bể bơi Newton](file:///e:/CLAUDE/newton.dayboi.vip/newtondayboivip/src/pages/lien-he.astro).
 
 ---
 

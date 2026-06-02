@@ -1,6 +1,6 @@
 ---
-title: "Giáo trình dạy bơi ếch 10 buổi từ cơ bản đến nâng cao"
-description: "Chi tiết giáo trình học bơi ếch 10 buổi chuẩn sư phạm của HLV CanSwim. Hướng dẫn học bơi ếch và cách học bơi nhanh nhất tại bể bơi nước nóng Newton Cầu Giấy."
+title: "10 Buổi trong giáo trình dạy bơi ếch chuẩn sư phạm cho người mới | CanSwim"
+description: "Chi tiết 10 buổi trong giáo trình dạy bơi ếch chuẩn sư phạm của HLV CanSwim. Giáo trình dạy bơi ếch tự học bơi nhanh nhất tại bể bơi Newton Cầu Giấy."
 pubDate: 2026-04-01 08:30:00 +07:00
 image: "/images/tuyen-sinh/lop-boi-tap-the-gia-re.webp"
 tags: ["giáo trình học bơi", "cách học bơi ếch", "bể bơi Newton", "học bơi Cầu Giấy"]
@@ -169,4 +169,4 @@ Liên hệ đăng ký khóa học bơi CanSwim tại bể bơi Newton ngay hôm 
 
 ---
 
-*(Bài viết liên quan khuyên đọc: Xem thêm hướng dẫn chỉ đường đi nhanh nhất tại bài viết [Bản đồ chỉ đường bể bơi Newton 234 Hoàng Quốc Việt](/cam-nang/ban-do-chi-duong-be-boi-newton-234-hoang-quoc-viet/) từ các huấn luyện viên).*
+*(Bài viết liên quan khuyên đọc: Xem thêm hướng dẫn chỉ đường đi nhanh nhất tại bài viết [Bản đồ chỉ đường bể bơi Newton 234 Hoàng Quốc Việt](/cam-nang/1-ban-do-chi-duong-be-boi-newton-234-hoang-quoc-viet/) từ các huấn luyện viên).*

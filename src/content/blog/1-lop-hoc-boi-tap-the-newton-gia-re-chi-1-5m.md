@@ -1,6 +1,6 @@
 ---
-title: "Lớp bơi tập thể CanSwim tại bể bơi Newton: Học phí rẻ, chất lượng cao"
-description: "Đăng ký lớp bơi tập thể CanSwim tại bể bơi Newton Hoàng Quốc Việt Cầu Giấy. Khóa học bơi giá rẻ chỉ 1.5 triệu trọn gói đã gồm vé bơi, giáo viên kèm sát."
+title: "1 Lớp học bơi tập thể Newton giá rẻ chỉ 1.500.000Đ trọn gói | CanSwim"
+description: "Đăng ký 1 lớp học bơi tập thể Newton giá rẻ chỉ 1.5M trọn gói. Khóa học bơi tập thể tại bể bơi Newton Hoàng Quốc Việt do HLV CanSwim trực tiếp dạy."
 pubDate: 2026-04-28 08:30:00 +07:00
 image: "/images/tuyen-sinh/lop-boi-tap-the-1t5.webp"
 tags: ["lớp bơi tập thể", "học bơi Cầu Giấy", "bể bơi Newton", "CanSwim"]
@@ -191,7 +191,7 @@ Nếu bạn muốn gửi thông tin liên hệ nhận tư vấn nhanh, hãy truy
 Bể bơi Newton nằm cuối ngõ 234 Hoàng Quốc Việt, một con ngõ rất rộng rãi, ô tô tránh nhau thoải mái nên việc di chuyển vô cùng thuận tiện. Dưới đây là hướng dẫn chi tiết dành cho học viên mới:
 
 ### Chỉ đường đi chi tiết trên Google Maps
-Học viên có thể tra cứu định vị chính xác bằng cách tìm kiếm từ khóa \"Bể bơi Trường Tiểu học I-sắc Niu-tơn\" trên Google Maps hoặc truy cập bài viết hướng dẫn [Bản đồ chỉ đường bể bơi Newton 234 Hoàng Quốc Việt](/cam-nang/ban-do-chi-duong-be-boi-newton-234-hoang-quoc-viet/) của chúng tôi. 
+Học viên có thể tra cứu định vị chính xác bằng cách tìm kiếm từ khóa \"Bể bơi Trường Tiểu học I-sắc Niu-tơn\" trên Google Maps hoặc truy cập bài viết hướng dẫn [Bản đồ chỉ đường bể bơi Newton 234 Hoàng Quốc Việt](/cam-nang/1-ban-do-chi-duong-be-boi-newton-234-hoang-quoc-viet/) của chúng tôi. 
 
 Lộ trình đi cụ thể: Từ trục đường Hoàng Quốc Việt, rẽ vào Ngõ 234, đi thẳng kịch ngõ gặp ngã ba giao với khu đô thị Nam Cường thì rẽ trái nhẹ. Bạn sẽ thấy ngay cổng trường liên cấp Newton (lô TH2 KĐT Nam Cường) bên tay phải.
 
@@ -262,4 +262,4 @@ Nếu bạn đang sinh sống, học tập hoặc làm việc tại khu vực Ho
 
 ---
 
-*(Bài viết liên quan khuyên đọc: Xem thêm đánh giá chi tiết về cơ sở vật chất và nước bể tại bài viết [Review Bể bơi Newton Cầu Giấy](/cam-nang/review-be-boi-newton-234-hoang-quoc-viet/) từ các học viên đi trước).*
+*(Bài viết liên quan khuyên đọc: Xem thêm đánh giá chi tiết về cơ sở vật chất và nước bể tại bài viết [Review Bể bơi Newton Cầu Giấy](/cam-nang/review-be-boi-newton-234-hoang-quoc-viet-nghia-do-cau-giay-chi-tiet/) từ các học viên đi trước).*

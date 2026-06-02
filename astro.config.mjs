@@ -7,7 +7,10 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   site: 'https://newton.dayboi.vip',
   adapter: cloudflare({
-    imageService: 'passthrough'
+    imageService: 'passthrough',
+    platformProxy: {
+      enabled: true
+    }
   }),
   build: {
     assets: 'assets'

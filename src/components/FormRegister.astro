@@ -9,9 +9,7 @@ const {
   subtitle = "Điền thông tin bên dưới, CanSwim sẽ liên hệ tư vấn lịch học phù hợp nhất cho bé hoặc bạn trong vòng 15 phút." 
 } = Astro.props;
 
-// Sử dụng Access Key mặc định của Web3Forms.
-// Người dùng có thể lấy key miễn phí tại https://web3forms.com và thay thế ở đây hoặc qua biến môi trường.
-const web3formsAccessKey = "443a4903-3110-4cd2-8b96-2e867325ad15"; 
+ 
 ---
 
 <div class="registration-form-wrapper glass-card">
@@ -20,15 +18,7 @@ const web3formsAccessKey = "443a4903-3110-4cd2-8b96-2e867325ad15";
     <p class="form-subtitle">{subtitle}</p>
   </div>
 
-  <form action="https://api.web3forms.com/submit" method="POST" id="swimRegisterForm" class="swim-form">
-    <!-- Web3Forms Configuration -->
-    <input type="hidden" name="access_key" value={web3formsAccessKey} />
-    <input type="hidden" name="subject" value="Đăng ký học bơi mới từ newton.dayboi.vip" />
-    <input type="hidden" name="from_name" value="CanSwim Bể bơi Newton" />
-    <input type="hidden" name="replyto" value="dayboivip@gmail.com" />
-    <input type="hidden" name="ccemail" value="dayboivip@gmail.com;buican336@gmail.com" />
-    <!-- Bot Protection -->
-    <input type="checkbox" name="botcheck" class="botcheck-field" style="display: none;" />
+  <form action="/api/register" method="POST" id="swimRegisterForm" class="swim-form">
 
     <div class="form-group">
       <label for="fullName" class="form-label">Họ và tên *</label>
@@ -252,18 +242,17 @@ const web3formsAccessKey = "443a4903-3110-4cd2-8b96-2e867325ad15";
       const json = JSON.stringify(object);
 
       try {
-        const response = await fetch('https://api.web3forms.com/submit', {
+        const response = await fetch('/api/register', {
           method: 'POST',
           headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
+            'Content-Type': 'application/json'
           },
           body: json
         });
 
         const result = await response.json();
 
-        if (response.status === 200 && result.success) {
+        if (response.ok && result.success) {
           // Success
           if (successIcon) successIcon.style.display = 'flex';
           if (errorIcon) errorIcon.style.display = 'none';

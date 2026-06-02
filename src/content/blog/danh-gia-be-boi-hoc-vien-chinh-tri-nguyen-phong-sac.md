@@ -12,7 +12,7 @@ Nằm trong khuôn viên của một trong những trung tâm đào tạo cán b
 
 Được đầu tư xây dựng nhằm mục đích chính phục vụ công tác rèn luyện thể chất cho học viên, cán bộ giảng dạy trong Học viện, bể bơi này cũng đã mở rộng cửa đón nhận khách bơi tự do bên ngoài vào bể và cho phép các trung tâm liên kết mở các khóa học bơi dịch vụ vào mùa hè. Với vị trí giao thông tương đối thuận tiện, nằm gần các trục đường lớn và khu dân cư Nghĩa Tân sầm uất, bể bơi Học viện Chính trị là điểm đến quen thuộc của nhiều gia đình mỗi khi thời tiết oi bức.
 
-Mặc dù có tuổi đời hoạt động khá lâu và được nhiều người biết đến, nhưng trước sự xuất hiện của nhiều bể bơi hiện đại thế hệ mới trong khu vực Cầu Giấy, chất lượng cơ sở vật chất, công nghệ xử lý nguồn nước cũng như dịch vụ giảng dạy dạy bơi tại đây đang bộc lộ những hạn chế nhất định. Việc tìm hiểu và đánh giá khách quan về chất lượng bể bơi Học viện Chính trị sẽ giúp quý phụ huynh và học viên có sự lựa chọn đúng đắn nhất khi tìm kiếm địa chỉ học bơi an toàn cho bản thân và con em mình.
+Mặc dù có tuổi đời hoạt động khá lâu và được nhiều người biết đến, nhưng trước sự xuất hiện của nhiều bể bơi hiện đại thế hệ mới trong khu vực Cầu Giấy, chất lượng cơ sở vật chất, công nghệ xử lý nguồn nước cũng như dịch vụ giảng dạy bơi tại đây đang bộc lộ những hạn chế nhất định. Việc tìm hiểu và đánh giá khách quan về chất lượng bể bơi Học viện Chính trị sẽ giúp quý phụ huynh và học viên có sự lựa chọn đúng đắn nhất khi tìm kiếm địa chỉ học bơi an toàn cho bản thân và con em mình.
 
 ---
 
@@ -22,7 +22,7 @@ Dưới đây là tổng hợp toàn bộ thông số kỹ thuật hoạt độn
 
 ### A. Thiết kế cấu trúc và độ sâu mực nước
 Bể bơi Học viện Chính trị được thiết kế dạng bể bơi trong nhà có mái che tôn kiên cố để cản mưa cản nắng trực tiếp. Kích thước chiều dài bể đạt chuẩn 25m tiêu chuẩn, phục vụ tốt cho nhu cầu bơi lội rèn luyện phổ thông.
-* **Độ sâu mực nước**: Mực nước bể được thiết kế dốc dốc dần từ đầu nông là **1.1m** lên tới đầu sâu nhất đạt trên **1.7m**. Thiết kế dốc này tạo ra sự phân chia khu vực tập bơi tương đối rõ ràng, tuy nhiên vùng nước sâu từ 1.5m trở lên chiếm diện tích khá lớn, dễ gây hoảng loạn tâm lý cho người mới học bơi khi vô tình bơi vượt quá ranh giới dây phao phân làn.
+* **Độ sâu mực nước**: Mực nước bể được thiết kế dốc dần từ đầu nông là **1.1m** lên tới đầu sâu nhất đạt trên **1.7m**. Thiết kế dốc này tạo ra sự phân chia khu vực tập bơi tương đối rõ ràng, tuy nhiên vùng nước sâu từ 1.5m trở lên chiếm diện tích khá lớn, dễ gây hoảng loạn tâm lý cho người mới học bơi khi vô tình bơi vượt quá ranh giới dây phao phân làn.
 * **Không gian tắm tráng, thay đồ**: Bể bơi bố trí khu vực tắm tráng thay đồ riêng biệt cho nam và nữ, tuy nhiên do hoạt động lâu năm nên cơ sở vật chất khu vực này có dấu hiệu xuống cấp nhẹ, gạch men và các thiết bị vệ sinh ở mức độ trung bình phổ thông.
 
 ### B. Giờ mở cửa và suất bơi trong ngày
@@ -124,7 +124,7 @@ Bên cạnh ưu thế vượt trội về chất lượng cơ sở vật chất 
 <tr>
 <td><strong>Độ sâu nước an toàn</strong></td>
 <td>Độ sâu phẳng đều 1.1m - 1.3m, chân chạm đáy bể an tâm.</td>
-<td>Đáy bể dốc dốc dần từ 1.1m lên đến trên 1.7m nguy hiểm.</td>
+<td>Đáy bể dốc dần từ 1.1m lên đến trên 1.7m nguy hiểm.</td>
 </tr>
 <tr>
 <td><strong>Môi trường học bơi</strong></td>

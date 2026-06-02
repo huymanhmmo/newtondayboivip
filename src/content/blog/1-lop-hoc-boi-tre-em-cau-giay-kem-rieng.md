@@ -1,6 +1,6 @@
 ---
-title: "Lớp học bơi trẻ em Cầu Giấy kèm riêng tại Bể bơi Newton"
-description: "Khóa học bơi trẻ em Cầu Giấy kèm riêng chất lượng cao tại bể bơi Newton ngõ 234 Hoàng Quốc Việt. Bé học bơi vui vẻ, an toàn, cam kết biết bơi 100%."
+title: "1 Lớp học bơi trẻ em Cầu Giấy kèm riêng chất lượng cao | CanSwim"
+description: "Đăng ký 1 lớp học bơi trẻ em Cầu Giấy kèm riêng tại Bể bơi Newton. Khóa học bơi trẻ em Cầu Giấy vui vẻ, an toàn, HLV kèm sát, cam kết biết bơi."
 pubDate: 2026-03-11 08:30:00 +07:00
 image: "/images/tuyen-sinh/lop-day-boi-tre-em-cau-giay.webp"
 tags: ["dạy bơi trẻ em", "học bơi Cầu Giấy", "bể bơi Newton", "CanSwim"]
@@ -38,7 +38,7 @@ Quá trình vươn người, đạp chân và quạt tay liên tục kích thíc
 
 Bể bơi tọa lạc tại lô TH2 khu đô thị Nam Cường, cuối ngõ 234 Hoàng Quốc Việt, phường Nghĩa Đô, quận Cầu Giấy, Hà Nội.
 
-Để việc đưa đón con đi học được thuận tiện nhất, phụ huynh có thể tham khảo hướng dẫn [Hướng dẫn đường đi và gửi xe tại Bể bơi Newton](/cam-nang/huong-dan-duong-di-be-boi-newton/) chi tiết của chúng tôi.
+Để việc đưa đón con đi học được thuận tiện nhất, phụ huynh có thể tham khảo hướng dẫn [Hướng dẫn đường đi và gửi xe tại Bể bơi Newton](/cam-nang/1-huong-dan-duong-di-be-boi-newton/) chi tiết của chúng tôi.
 
 Đường đi vào ngõ 234 rất rộng rãi, thoáng mát, tạo điều kiện thuận lợi cho xe máy và ô tô di chuyển thoải mái.
 

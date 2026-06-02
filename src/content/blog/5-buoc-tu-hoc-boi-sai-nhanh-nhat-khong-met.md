@@ -1,6 +1,6 @@
 ---
-title: "Cách tự học bơi sải nhanh nhất: Hướng dẫn kỹ thuật bơi sải không mệt"
-description: "Hướng dẫn cách tự học bơi sải nhanh nhất và đúng kỹ thuật cho người mới bắt đầu. Lớp dạy bơi sải kèm riêng nhóm nhỏ uy tín tại Bể bơi Newton Cầu Giấy."
+title: "5 Bước tự học bơi sải nhanh nhất tại nhà cực kỳ dễ dàng | CanSwim"
+description: "Hướng dẫn 5 bước tự học bơi sải nhanh nhất không mệt chuẩn kỹ thuật. Hướng dẫn tự học bơi sải cho người mới tại bể bơi trường Newton Cầu Giấy."
 pubDate: 2026-04-19 08:30:00 +07:00
 image: "/images/tuyen-sinh/day-hoc-boi-ech-boi-sai.webp"
 tags: ["cách học bơi sải", "học bơi sải", "dạy bơi sải", "lớp học bơi sải", "bể bơi Newton"]
@@ -48,7 +48,7 @@ Lấy hơi là kỹ năng khó nhất trong bơi sải:
 
 Khởi động kỹ lưỡng là bước bắt buộc tại trung tâm CanSwim để bảo vệ học viên khỏi các chấn thương cơ bắp và nâng cao tính linh hoạt của các khớp khi thực hiện động tác quạt tay, đập chân sải dưới bể bơi Newton Cầu Giấy:
 
-1. **Bài tập xoay khớp khớp vai lớn**:
+1. **Bài tập xoay khớp vai lớn**:
    * *Cách thực hiện*: Đứng thẳng, chân mở rộng bằng vai. Xoay tròn toàn bộ hai cánh tay theo chiều từ trước ra sau 15 lần, sau đó xoay ngược lại từ sau ra trước 15 lần. Khớp vai là khớp hoạt động với tần suất cao nhất và chịu lực cản nước lớn nhất trong bơi sải (pha quạt tay và vung tay trên cạn). Khởi động kỹ vai giúp tránh viêm gân chóp xoay vai hiệu quả.
 2. **Bài tập căng giãn cơ ngực và vai (Chest and Shoulder Stretch)**:
    * *Cách thực hiện*: Đứng đan hai tay ra phía sau lưng, từ từ đẩy ngực về phía trước và nâng hai tay lên cao hết mức có thể. Giữ tư thế giãn cơ này trong 15 giây. Bài tập này giúp mở rộng lồng ngực, tăng tính linh hoạt của nhóm cơ ngực giúp động tác vung tay trên cạn (recovery) thả lỏng hơn.

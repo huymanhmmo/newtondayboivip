@@ -1,0 +1,6 @@
+# Antigravity & AI Coding Assistant Rules
+
+1. Always read [newton-project-memory.md](file:///e:/CLAUDE/newton.dayboi.vip/newtondayboivip/newton-project-memory.md) at the beginning of the task to understand target address, promotions, and branding guidelines.
+2. If the user initiates a task with the `/goal` command or asks for SEO optimization, content creation, or page auditing, you MUST follow the automated pipeline documented in **Section 7: QUY TRÌNH TỐI ƯU SEO & MARKETING TÍCH HỢP CHO NHIỆM VỤ DÀI HẠN (/goal)**.
+3. Automatically load the installed skills (`find-keywords`, `brief`, `seo-audit`, `copywriting`, `optimize-for-ai`) from `~/.gemini/antigravity/skills` or the local `.agents/skills` to complete these tasks.
+4. Verify all content creations by running `npm run build` and compiling checking scripts, ensuring zero duplicate word spelling issues (`Total duplicate word typos found: 0`).

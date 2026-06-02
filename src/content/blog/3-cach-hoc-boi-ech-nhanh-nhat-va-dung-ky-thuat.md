@@ -1,6 +1,6 @@
 ---
-title: "Cách học bơi ếch nhanh nhất: Giáo trình dạy bơi ếch tại Bể bơi Newton"
-description: "Hướng dẫn cách học bơi ếch nhanh nhất và đúng kỹ thuật cho người mới bắt đầu. Khóa học dạy bơi ếch kèm riêng nhóm nhỏ uy tín tại Bể bơi Newton Cầu Giấy."
+title: "3 Cách học bơi ếch nhanh nhất cho người nhát nước | CanSwim"
+description: "Tìm hiểu 3 cách học bơi ếch nhanh nhất và đúng kỹ thuật cho người mới. Hướng dẫn cách học bơi ếch kèm riêng an toàn tại bể bơi Newton Cầu Giấy."
 pubDate: 2026-04-16 08:30:00 +07:00
 image: "/images/tuyen-sinh/day-hoc-boi-ech-boi-sai.webp"
 tags: ["cách học bơi ếch", "học bơi ếch", "dạy bơi ếch", "lớp học bơi ếch", "bể bơi Newton"]
@@ -39,7 +39,7 @@ Chân ếch chiếm tới 70% lực đẩy tiến về phía trước trong bơi
 Tay trong bơi ếch chủ yếu đóng vai trò hỗ trợ nâng phần thân trên nhô lên khỏi mặt nước để thở, chỉ chiếm 30% lực đẩy:
 * **Tư thế xuất phát**: Hai tay duỗi thẳng tắp về phía trước sát nhau, lòng bàn tay úp xuống đáy bể.
 * **Quạt nước rộng (Tách nước)**: Xoay lòng bàn tay hướng ra ngoài 45 độ, quạt hai tay vòng rộng sang hai bên cho đến khi ngang vai. Khuỷu tay hơi gập, cảm giác ôm chặt khối nước dưới lòng bàn tay.
-* **Chụm tay nâng người**: Thu nhanh hai cùi chỏ vào sát sườn, chụm hai lòng bàn tay lại trước ngực. Động tác thu tay đột ngột này tạo lực nâng nâng đầu và vai nhô lên mặt nước để há miệng lấy hơi nhanh.
+* **Chụm tay nâng người**: Thu nhanh hai cùi chỏ vào sát sườn, chụm hai lòng bàn tay lại trước ngực. Động tác thu tay đột ngột này tạo lực nâng đầu và vai nhô lên mặt nước để há miệng lấy hơi nhanh.
 * **Đưa tay về vị trí cũ**: Duỗi thẳng nhanh hai tay về phía trước trả lại tư thế xuất phát để chuẩn bị cho chu kỳ tiếp theo.
 
 ### Bước 4: Kỹ thuật phối hợp nhịp nhàng các chu kỳ Tay - Chân - Hít thở
@@ -81,7 +81,7 @@ Nhiều học viên lựa chọn phương pháp tự học bơi thông qua các 
 * **Khắc phục tại CanSwim**: HLV trực tiếp đỡ học viên nằm trên cạn hoặc sát mép bể nông, cầm tay bẻ cổ chân uốn nắn từng nhịp đạp để học viên cảm nhận đúng tư thế bẻ cổ chân.
 
 ### B. Lỗi đạp chân chéo (Đạp chân lệch làn hoặc co đầu gối quá rộng)
-* **Biểu hiện**: Hai chân đạp lệch hướng không đối xứng, hoặc co đầu gối quá rộng ra ngoài sườn sườn gây cản nước lớn.
+* **Biểu hiện**: Hai chân đạp lệch hướng không đối xứng, hoặc co đầu gối quá rộng ra ngoài sườn gây cản nước lớn.
 * **Khắc phục**: Tập trung ép đùi khép sát hơn khi co chân, bẻ gót chân mở rộng sang hai bên thay vì bẻ gối.
 
 ### C. Lỗi phối hợp sai nhịp (Đạp chân và quạt tay cùng lúc)

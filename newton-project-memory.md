@@ -169,7 +169,37 @@ Hà Nội
 
 ---
 
-## 7. LỊCH SỬ THAY ĐỔI
+## 7. QUY TRÌNH TỐI ƯU SEO & MARKETING TÍCH HỢP CHO NHIỆM VỤ DÀI HẠN (/goal)
+
+Khi người dùng chạy lệnh `/goal` để tạo mới bài viết, tối ưu hóa trang hoặc audit SEO, Agent PHẢI thực hiện theo quy trình tự động hóa khép kín sau:
+
+1. **Bước 1: Phân tích & Tìm Từ Khóa (seojuice-skills@find-keywords)**:
+   - Nghiên cứu từ khóa chính và phụ xung quanh chủ đề yêu cầu.
+   - Lập danh sách các từ khóa ngữ nghĩa LSI để phân bổ vào bài.
+
+2. **Bước 2: Lập Dàn Ý SEO (seojuice-skills@brief)**:
+   - Tạo cấu trúc dàn ý chuẩn SEO: Định nghĩa thẻ Meta Title, Meta Description, các thẻ Heading (H1, H2, H3, H4) tối ưu hóa phục vụ AI chunking.
+
+3. **Bước 3: Biên Tập & Copywriting (marketingskills@copywriting / copywriting)**:
+   - Viết hoặc chỉnh sửa nội dung bài viết. Đảm bảo:
+     - Văn phong chuyên môn E-E-A-T (HLV Bùi Văn Cán).
+     - Khối thông tin rõ ràng, chèn bảng biểu so sánh hoặc list liệt kê để AI dễ trích xuất.
+     - Các đoạn văn ngắn từ 2-3 câu, tối đa 350 ký tự, tránh tạo "bức tường chữ" trên mobile.
+
+4. **Bước 4: Nhúng Hình Ảnh & Thiết Lập Link**:
+   - Sử dụng hình ảnh thực tế từ thư viện `/images/tuyen-sinh/` hoặc `/images/` kèm Alt text SEO.
+   - Thêm chú thích ảnh có class `<p class="image-caption">` dưới mỗi ảnh.
+   - Chèn liên kết nội bộ (Internal link) trỏ đến ít nhất 2 trong 6 trang dịch vụ cốt lõi và liên kết chéo (silo link) đến bài viết cẩm nang liên quan.
+
+5. **Bước 5: Chạy SEO Audit & Biên Dịch (marketingskills@seo-audit / seo_check.py)**:
+   - Chạy `npm run build` để sinh mã nguồn HTML tĩnh.
+   - Sử dụng script `seo_check.py` hoặc skill `seo-audit` quét các file HTML tĩnh trong `dist/client/`.
+   - **Cam kết chất lượng**: Điểm số SEO tối ưu phải đạt từ 95-100/100.
+   - **Xác minh lỗi chính tả**: Đảm bảo không còn lỗi lặp từ kép thực tế nào (`Total duplicate word typos found: 0`).
+
+---
+
+## 8. LỊCH SỬ THAY ĐỔI
 
 ### 2026-05-30 - Rà soát thống nhất nội dung
 - Sửa địa chỉ Footer.astro: "khu đô thị Hoàng Quốc Việt" → "khu đô thị Nam Cường"

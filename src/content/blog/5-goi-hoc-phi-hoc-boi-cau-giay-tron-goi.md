@@ -1,6 +1,6 @@
 ---
-title: "Học phí học bơi tại Cầu Giấy trọn gói: Bảng giá chi tiết CanSwim"
-description: "Cập nhật học phí học bơi ở Hà Nội Cầu Giấy mới nhất. Đăng ký lớp học bơi giá rẻ trọn gói đã gồm vé bơi tại bể bơi trường Newton Cầu Giấy."
+title: "5 Gói học phí học bơi Cầu Giấy trọn gói không phát sinh | CanSwim"
+description: "Đăng ký 5 gói học phí học bơi Cầu Giấy trọn gói cực ưu đãi tại CanSwim. Bảng giá dạy học bơi Cầu Giấy kèm riêng chi tiết mới nhất."
 pubDate: 2026-04-10 08:30:00 +07:00
 image: "/images/tuyen-sinh/lop-boi-tap-the-1t5.webp"
 tags: ["giá 1 khóa học bơi", "học bơi giá rẻ", "bể bơi Newton", "học bơi Cầu Giấy"]
@@ -90,4 +90,4 @@ Bắt đầu hành trình chinh phục đường bơi xanh cùng CanSwim tại b
 
 ---
 
-*(Bài viết liên quan khuyên đọc: Xem thêm hướng dẫn chỉ đường đi nhanh nhất tại bài viết [Bản đồ chỉ đường bể bơi Newton 234 Hoàng Quốc Việt](/cam-nang/ban-do-chi-duong-be-boi-newton-234-hoang-quoc-viet/) từ các huấn luyện viên).*
+*(Bài viết liên quan khuyên đọc: Xem thêm hướng dẫn chỉ đường đi nhanh nhất tại bài viết [Bản đồ chỉ đường bể bơi Newton 234 Hoàng Quốc Việt](/cam-nang/1-ban-do-chi-duong-be-boi-newton-234-hoang-quoc-viet/) từ các huấn luyện viên).*

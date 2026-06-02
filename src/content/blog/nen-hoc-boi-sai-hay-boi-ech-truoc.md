@@ -89,4 +89,4 @@ Hãy bắt đầu hành trình học bơi an toàn và bài bản cùng CanSwim 
 
 ---
 
-*(Bài viết liên quan khuyên đọc: Xem thêm hướng dẫn chỉ đường đi nhanh nhất tại bài viết [Bản đồ chỉ đường bể bơi Newton 234 Hoàng Quốc Việt](/cam-nang/ban-do-chi-duong-be-boi-newton-234-hoang-quoc-viet/) từ các huấn luyện viên).*
+*(Bài viết liên quan khuyên đọc: Xem thêm hướng dẫn chỉ đường đi nhanh nhất tại bài viết [Bản đồ chỉ đường bể bơi Newton 234 Hoàng Quốc Việt](/cam-nang/1-ban-do-chi-duong-be-boi-newton-234-hoang-quoc-viet/) từ các huấn luyện viên).*

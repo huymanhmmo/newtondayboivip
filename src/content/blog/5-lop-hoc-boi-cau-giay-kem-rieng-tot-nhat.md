@@ -1,6 +1,6 @@
 ---
-title: "Dạy bơi ở Cầu Giấy: Khóa học bơi kèm riêng tốt nhất tại Bể bơi Newton"
-description: "Lớp dạy học bơi ở Cầu Giấy chất lượng cao, sĩ số nhóm nhỏ 1-3 học viên tại Bể bơi Newton 234 Hoàng Quốc Việt. Cam kết biết bơi nhanh, đúng kỹ thuật và an toàn."
+title: "5 Lớp học bơi Cầu Giấy kèm riêng tốt nhất năm 2026 | CanSwim"
+description: "Đăng ký 5 lớp học bơi Cầu Giấy kèm riêng tốt nhất của HLV CanSwim. Khóa học dạy bơi kèm riêng tại Bể bơi Newton cam kết biết bơi 100% trọn gói."
 pubDate: 2026-03-23 08:30:00 +07:00
 image: "/images/tuyen-sinh/lop-hoc-boi-be-boi-newton.webp"
 tags: ["dạy bơi ở Cầu Giấy", "học bơi ở Cầu Giấy", "lớp học bơi ở Cầu Giấy", "bể bơi Newton", "học bơi Cầu Giấy"]
@@ -152,7 +152,7 @@ Học viên có thể xem thông tin chi tiết tại trang khóa học [Lớp h
 * Bể bơi trường tiểu học Newton Nghĩa Đô (cuối ngõ 234 Hoàng Quốc Việt) nổi trội hoàn toàn như một địa điểm chuyên biệt cho việc dạy và học bơi chất lượng cao nhờ không gian yên tĩnh của trường học liên cấp quốc tế, độ sâu nước nông rất an toàn (1.1m - 1.3m) và thiết kế mái che chắn gió mưa bảo vệ sức khỏe tối đa.
 * Gói học phí của CanSwim tại bể Newton cực kỳ tiết kiệm vì đã tính trọn gói 30 lượt vé vào cổng bể bơi (gồm 15 buổi học trực tiếp cùng HLV kèm riêng nhóm nhỏ và tặng thêm 15 buổi tự tập bơi tự do miễn phí). Bạn không cần đóng thêm bất kỳ chi phí phụ thu nào khác. Trong khi đó, tại các bể bơi khác, tiền vé vào bể tự túc hàng ngày (từ 60.000Đ đến 80.000Đ/lượt) sẽ cộng thêm một khoản chi phí phát sinh rất lớn sau cả khóa học.
 
-Để có thông tin chi tiết hơn, bạn có thể tham khảo bài viết phân tích [So sánh học bơi bể Newton và các bể bơi lân cận Cầu Giấy](file:///e:/CLAUDE/newton.dayboi.vip/newtondayboivip/src/content/blog/so-sanh-hoc-boi-newton-va-be-boi-lan-can-cau-giay.md) của ban chuyên môn CanSwim.
+Để có thông tin chi tiết hơn, bạn có thể tham khảo bài viết phân tích [So sánh học bơi bể Newton và các bể bơi lân cận Cầu Giấy](file:///e:/CLAUDE/newton.dayboi.vip/newtondayboivip/src/content/blog/4-khac-biet-khi-so-sanh-hoc-boi-newton-va-be-cau-giay.md) của ban chuyên môn CanSwim.
 
 ---
 

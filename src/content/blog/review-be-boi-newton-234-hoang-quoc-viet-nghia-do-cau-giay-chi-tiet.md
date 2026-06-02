@@ -1,6 +1,6 @@
 ---
-title: "Review Bể bơi Newton 234 Hoàng Quốc Việt chi tiết chất lượng"
-description: "Đánh giá chi tiết bể bơi Newton cuối ngõ 234 Hoàng Quốc Việt Cầu Giấy. Thông tin chân thực về chất lượng nước, dịch vụ và các khóa dạy bơi uy tín."
+title: "Review bể bơi Newton 234 Hoàng Quốc Việt, Nghĩa Đô, Cầu Giấy chi tiết chất lượng | CanSwim"
+description: "Review bể bơi Newton 234 Hoàng Quốc Việt, Nghĩa Đô, Cầu Giấy chi tiết chất lượng nước, dịch vụ và thông tin khóa học bơi mới nhất tại CanSwim."
 pubDate: 2026-03-14 08:30:00 +07:00
 image: "/images/tuyen-sinh/lop-hoc-boi-be-boi-newton.webp"
 tags: ["review bể bơi", "bể bơi Newton", "Hoàng Quốc Việt", "Cầu Giấy"]
@@ -217,7 +217,7 @@ Mức học phí trọn gói đã bao gồm vé vào cổng bể bơi cho học 
 
 CanSwim cam kết không phát sinh thêm bất kỳ phụ phí nào khác ngoài học phí đã thỏa thuận trong suốt khóa học.
 
-Đối với các bậc phụ huynh đang cân nhắc cho con học bơi, bạn có thể tìm hiểu thêm thông tin về giáo trình và cách kèm cặp trẻ tại bài viết [Lớp dạy bơi trẻ em Cầu Giấy tại bể bơi Newton](/cam-nang/lop-hoc-boi-tre-em-cau-giay/) của chúng tôi.
+Đối với các bậc phụ huynh đang cân nhắc cho con học bơi, bạn có thể tìm hiểu thêm thông tin về giáo trình và cách kèm cặp trẻ tại bài viết [Lớp dạy bơi trẻ em Cầu Giấy tại bể bơi Newton](/cam-nang/1-lop-hoc-boi-tre-em-cau-giay-kem-rieng/) của chúng tôi.
 
 ---
 

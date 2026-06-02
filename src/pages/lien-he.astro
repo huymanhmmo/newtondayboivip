@@ -20,68 +20,74 @@ import MapEmbed from '../components/MapEmbed.astro';
 
   <!-- Contact & Form Section -->
   <section class="section-padding contact-main-section" id="register">
-    <div class="container contact-main-grid">
-      <!-- Contact Cards -->
-      <div class="contact-cards-col">
-        <h2 class="section-subheading">Kênh Liên Hệ Nhanh</h2>
-        <p class="intro-p">
-          Đội ngũ tư vấn viên của CanSwim luôn sẵn sàng hỗ trợ giải đáp mọi thắc mắc về khóa học bơi, lịch học thử và sắp xếp giáo viên cho bạn hoặc các bé.
-        </p>
+    <div class="container">
+      <div class="contact-main-grid">
+        <!-- Intro & Image Column -->
+        <div class="contact-intro-col">
+          <h2 class="section-subheading">Kênh Liên Hệ Nhanh</h2>
+          <p class="intro-p">
+            Đội ngũ tư vấn viên của CanSwim luôn sẵn sàng hỗ trợ giải đáp mọi thắc mắc về khóa học bơi, lịch học thử và xếp lớp học phù hợp nhất. Quý phụ huynh và học viên có thể điền thông tin đăng ký nhanh hoặc kết nối qua các kênh hỗ trợ chính thức dưới đây.
+          </p>
 
-        <div class="contact-side-image-wrapper">
-          <img src="/images/be-boi-newton-khong-gian-be-boi.jpg" alt="Không gian thoáng mát tại bể bơi Newton Hoàng Quốc Việt Cầu Giấy" class="contact-side-img" width="500" height="333" loading="lazy" />
+          <div class="contact-side-image-wrapper">
+            <img src="/images/be-boi-newton-khong-gian-be-boi.jpg" alt="Không gian thoáng mát tại bể bơi Newton Hoàng Quốc Việt Cầu Giấy" class="contact-side-img" width="500" height="333" loading="lazy" />
+          </div>
         </div>
 
-        <div class="contact-cards-stack">
-          <!-- Hotline Card -->
-          <div class="contact-info-card glass-card">
-            <div class="info-card-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="info-svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            </div>
-            <div class="info-card-content">
-              <h3 class="card-item-title">Điện thoại Hotline</h3>
-              <p><a href="tel:0907992336" class="contact-link-bold">0907.992.336</a> (Hỗ trợ 24/7)</p>
-            </div>
-          </div>
-
-          <!-- Zalo Card -->
-          <div class="contact-info-card glass-card">
-            <div class="info-card-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="info-svg"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-            </div>
-            <div class="info-card-content">
-              <h3 class="card-item-title">Chat qua Zalo</h3>
-              <p><a href="http://zalo.me/0907992336" target="_blank" rel="noopener noreferrer" class="contact-link-bold">Zalo: 0907 992 336</a></p>
-            </div>
-          </div>
-
-          <!-- Fanpage Card -->
-          <div class="contact-info-card glass-card">
-            <div class="info-card-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="info-svg"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-            </div>
-            <div class="info-card-content">
-              <h3 class="card-item-title">Fanpage Facebook</h3>
-              <p><a href="https://www.facebook.com/beboinewton" target="_blank" rel="noopener noreferrer" class="contact-link-bold">Bể Bơi Newton</a></p>
-            </div>
-          </div>
-
-          <!-- Address Card -->
-          <div class="contact-info-card glass-card">
-            <div class="info-card-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="info-svg"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            </div>
-            <div class="info-card-content">
-              <h3 class="card-item-title">Địa chỉ lớp học</h3>
-              <p>Khuôn viên trường liên cấp Newton, lô TH2 khu đô thị Nam Cường, cuối ngõ 234 Hoàng Quốc Việt, phường Nghĩa Đô, quận Cầu Giấy, Hà Nội.</p>
-            </div>
-          </div>
+        <!-- Registration Form Column -->
+        <div class="contact-form-col">
+          <FormRegister />
         </div>
       </div>
 
-      <!-- Registration Form -->
-      <div class="contact-form-col">
-        <FormRegister />
+      <!-- Contact Info Cards Grid (Horizontal Below for perfect balance) -->
+      <div class="contact-cards-grid">
+        <!-- Hotline Card -->
+        <div class="contact-info-card glass-card">
+          <div class="info-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="info-svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div class="info-card-content">
+            <h3 class="card-item-title">Điện thoại Hotline</h3>
+            <p><a href="tel:0907992336" class="contact-link-bold">0907.992.336</a></p>
+            <span class="note-text">(Hỗ trợ cuộc gọi 24/7)</span>
+          </div>
+        </div>
+
+        <!-- Zalo Card -->
+        <div class="contact-info-card glass-card">
+          <div class="info-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="info-svg"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <div class="info-card-content">
+            <h3 class="card-item-title">Chat qua Zalo</h3>
+            <p><a href="http://zalo.me/0907992336" target="_blank" rel="noopener noreferrer" class="contact-link-bold">0907 992 336</a></p>
+            <span class="note-text">(Tư vấn trực tuyến)</span>
+          </div>
+        </div>
+
+        <!-- Fanpage Card -->
+        <div class="contact-info-card glass-card">
+          <div class="info-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="info-svg"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </div>
+          <div class="info-card-content">
+            <h3 class="card-item-title">Fanpage Facebook</h3>
+            <p><a href="https://www.facebook.com/beboinewton" target="_blank" rel="noopener noreferrer" class="contact-link-bold">Bể Bơi Newton</a></p>
+            <span class="note-text">(Cập nhật ảnh và tin tức)</span>
+          </div>
+        </div>
+
+        <!-- Address Card -->
+        <div class="contact-info-card glass-card Address-card">
+          <div class="info-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="info-svg"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="info-card-content">
+            <h3 class="card-item-title">Địa chỉ lớp học</h3>
+            <p class="address-text">Trường Newton, lô TH2 KĐT Nam Cường, cuối ngõ 234 Hoàng Quốc Việt, Cầu Giấy.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -142,7 +148,8 @@ import MapEmbed from '../components/MapEmbed.astro';
     display: grid;
     grid-template-columns: 1.1fr 1fr;
     gap: 50px;
-    align-items: flex-start;
+    align-items: center;
+    margin-bottom: 40px;
   }
 
   .section-subheading {
@@ -159,7 +166,7 @@ import MapEmbed from '../components/MapEmbed.astro';
   }
 
   .contact-side-image-wrapper {
-    margin-bottom: 30px;
+    margin-bottom: 0;
   }
 
   .contact-side-img {
@@ -168,17 +175,32 @@ import MapEmbed from '../components/MapEmbed.astro';
     box-shadow: var(--shadow-md);
   }
 
-  .contact-cards-stack {
-    display: flex;
-    flex-direction: column;
+  /* Contact Cards Grid */
+  .contact-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    margin-top: 50px;
   }
 
   .contact-info-card {
-    padding: 20px 24px;
+    padding: 24px 20px;
     display: flex;
-    gap: 20px;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
+    gap: 15px;
+    height: 100%;
+    border-radius: 16px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    transition: all var(--transition-normal);
+  }
+
+  .contact-info-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0, 102, 170, 0.25);
+    box-shadow: var(--shadow-lg);
   }
 
   .info-card-icon {
@@ -200,14 +222,28 @@ import MapEmbed from '../components/MapEmbed.astro';
 
   .card-item-title {
     font-size: 1.05rem;
+    font-weight: 700;
     color: var(--color-text);
     margin-bottom: 6px;
   }
 
   .contact-info-card p {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: var(--color-text-muted);
     line-height: 1.4;
+    margin: 0;
+  }
+
+  .note-text {
+    font-size: 0.78rem;
+    color: var(--color-text-muted);
+    display: block;
+    margin-top: 4px;
+  }
+
+  .address-text {
+    font-size: 0.82rem !important;
+    line-height: 1.5 !important;
   }
 
   .contact-link-bold {
@@ -266,9 +302,21 @@ import MapEmbed from '../components/MapEmbed.astro';
       gap: 40px;
     }
 
+    .contact-cards-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
     .directions-grid-two-cols, .parking-grid-two-cols {
       grid-template-columns: 1fr;
       gap: 20px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .contact-cards-grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
     }
   }
 </style>

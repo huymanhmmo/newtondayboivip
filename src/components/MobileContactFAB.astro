@@ -1,0 +1,167 @@
+---
+// Mobile Contact Floating Action Bar
+---
+
+<div class="mobile-contact-bar">
+  <div class="mobile-contact-container">
+    <a href="tel:0907992336" class="contact-btn call-btn" aria-label="Gọi hotline tư vấn">
+      <div class="btn-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+      </div>
+      <div class="btn-text">
+        <span class="btn-label">GỌI HOTLINE</span>
+        <span class="btn-sub">0907.992.336</span>
+      </div>
+    </a>
+
+    <a href="http://zalo.me/0907992336" target="_blank" rel="noopener noreferrer" class="contact-btn zalo-btn" aria-label="Chat Zalo ngay">
+      <div class="btn-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+          <path d="M12.003 2.001c-5.522 0-9.997 3.805-9.997 8.498 0 2.642 1.433 4.996 3.722 6.535l-.821 3.084c-.235.856.299 1.047.741.765.342-.206 2.203-1.513 3.064-2.11a11.196 11.196 0 0 0 3.291.493c5.522 0 9.997-3.805 9.997-8.498 0-4.694-4.475-8.567-9.997-8.567zm4.27 10.932H8.384v-1.194h2.228l-2.228-2.61v-1.282h3.896V9.04h-2.167l2.167 2.61v1.283zm1.189-1.246h-1.597V7.809h1.597v3.878z"/>
+        </svg>
+      </div>
+      <div class="btn-text">
+        <span class="btn-label">NHẮN ZALO</span>
+        <span class="btn-sub">Tư vấn nhanh 24/7</span>
+      </div>
+    </a>
+  </div>
+</div>
+
+<style>
+  /* Base hidden on desktop, only display on mobile */
+  .mobile-contact-bar {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px 16px 24px 16px; /* extra bottom padding for iOS home indicator */
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.08);
+    z-index: 9999;
+    transform: translateY(100%);
+    animation: slideUpContactBar 0.6s cubic-bezier(0.16, 1, 0.3, 1) 1.2s forwards;
+  }
+
+  @keyframes slideUpContactBar {
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  .mobile-contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .contact-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 16px;
+    border-radius: 14px;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+
+  .contact-btn:active {
+    transform: scale(0.96);
+  }
+
+  /* Hotline Button Styles (Vibrant Orange-Red Gradient) */
+  .call-btn {
+    background: linear-gradient(135deg, #ff7a00 0%, #ff4b00 100%);
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(255, 75, 0, 0.3);
+  }
+
+  .call-btn .btn-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: phonePulse 2s infinite ease-in-out;
+  }
+
+  @keyframes phonePulse {
+    0% { transform: scale(1); }
+    15% { transform: scale(1.15) rotate(-15deg); }
+    30% { transform: scale(1.15) rotate(15deg); }
+    45% { transform: scale(1.15) rotate(-15deg); }
+    60% { transform: scale(1) rotate(0); }
+    100% { transform: scale(1); }
+  }
+
+  /* Zalo Button Styles (Vibrant Zalo Blue Gradient) */
+  .zalo-btn {
+    background: linear-gradient(135deg, #0088ff 0%, #0055ff 100%);
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 85, 255, 0.3);
+  }
+
+  .zalo-btn .btn-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: zaloFloat 3s infinite ease-in-out;
+  }
+
+  @keyframes zaloFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-3px); }
+  }
+
+  .btn-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn-label {
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    font-family: 'Outfit', sans-serif;
+  }
+
+  .btn-sub {
+    font-size: 0.72rem;
+    opacity: 0.9;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 1px;
+  }
+
+  /* Media Queries for Responsive Display */
+  @media (max-width: 768px) {
+    .mobile-contact-bar {
+      display: block;
+    }
+
+    /* Adjust page padding to avoid bottom overlap */
+    :global(body) {
+      padding-bottom: 90px !important;
+    }
+  }
+
+  /* Dark mode support */
+  @media (prefers-color-scheme: dark) {
+    .mobile-contact-bar {
+      background: rgba(15, 23, 42, 0.8);
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.3);
+    }
+  }
+</style>

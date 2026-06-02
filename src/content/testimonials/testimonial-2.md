@@ -1,7 +1,7 @@
 ---
 name: "Phương Thảo"
 role: "Phụ huynh học viên"
-avatar: "/images/avatar_phuong_thao.png"
+avatar: "/images/avatar_phuong_thao.webp"
 stars: 5
 order: 2
 ---

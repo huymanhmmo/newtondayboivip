@@ -1,7 +1,7 @@
 ---
 name: "Quang Huy"
 role: "Học viên"
-avatar: "/images/avatar_quang_huy.png"
+avatar: "/images/avatar_quang_huy.webp"
 stars: 5
 order: 3
 ---

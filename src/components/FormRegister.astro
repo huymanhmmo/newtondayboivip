@@ -260,6 +260,9 @@ const {
           if (statusMessage) statusMessage.textContent = 'Cảm ơn bạn đã để lại thông tin học bơi. CanSwim sẽ liên hệ lại với bạn trong vòng 15 phút để tư vấn lịch học phù hợp nhất!';
           
           form.reset();
+          
+          // Mở link Zalo liên hệ ngay
+          window.open('http://zalo.me/0907992336', '_blank');
         } else {
           // Response error
           throw new Error(result.message || 'Có lỗi xảy ra');
